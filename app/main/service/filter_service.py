@@ -29,7 +29,7 @@ def add_new_filter(data):
         hr.fiter_candidates.append(new_filter)
         db.session.add(hr)
         db.session.commit()
-    except:
+    except Exception as e:
         abort(400)
 
 
@@ -58,7 +58,7 @@ def update_filter(data, id):
         hr.fiter_candidates.append(filter)
         db.session.add(hr)
         db.session.commit()
-    except:
+    except Exception as e:
         abort(400)
 
     return response_object(message="Cập nhật bộ lọc thành công")

@@ -1,42 +1,51 @@
-[
-  {
-    "id": 1,
-    "name": "Frontend Developer",
-    "alternative_name": "frontend"
-  },
-  {
-    "id": 2,
-    "name": "Backend Developer",
-    "alternative_name": "backend"
-  },
-  {
-    "id": 3,
-    "name": "Fullstack Developer",
-    "alternative_name": "fullstack"
-  },
-  {
-    "id": 4,
-    "name": "Data Engineer",
-    "alternative_name": "data_engineer"
-  },
-  {
-    "id": 5,
-    "name": "Devops Engineer",
-    "alternative_name": "devops"
-  },
-  {
-    "id": 6,
-    "name": "iOS Developer",
-    "alternative_name": "ios"
-  },
-  {
-    "id": 7,
-    "name": "Android Developer",
-    "alternative_name": "android"
-  },
-  {
-    "id": 8,
-    "name": "AI Engineer",
-    "alternative_name": "ai_engineer"
-  }
+[{
+        "id": 1,
+        "name": "Frontend Developer",
+        "alternative_name": "frontend"
+    },
+    {
+        "id": 2,
+        "name": "Backend Developer",
+        "alternative_name": "backend"
+    },
+    {
+        "id": 3,
+        "name": "Fullstack Developer",
+        "alternative_name": "fullstack"
+    },
+    {
+        "id": 4,
+        "name": "Data Engineer",
+        "alternative_name": "data_engineer"
+    },
+    {
+        "id": 5,
+        "name": "Devops Engineer",
+        "alternative_name": "devops"
+    },
+    {
+        "id": 6,
+        "name": "iOS Developer",
+        "alternative_name": "ios"
+    },
+    {
+        "id": 7,
+        "name": "Android Developer",
+        "alternative_name": "android"
+    },
+    {
+        "id": 8,
+        "name": "AI Engineer",
+        "alternative_name": "ai_engineer"
+    },
+    {
+        "id": 9,
+        "name": "Game Developer",
+        "alternative_name": "game"
+    },
+    {
+        "id": 10,
+        "name": "Tester",
+        "alternative_name": "test"
+    }
 ]

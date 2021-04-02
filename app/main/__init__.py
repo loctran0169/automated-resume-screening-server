@@ -24,7 +24,7 @@ classify_manager = ClassifyManager()
 from firebase_admin import credentials, initialize_app
 basedir = os.path.abspath(os.path.dirname(__file__))
 cred = credentials.Certificate(os.path.join(basedir, "firebase_cert.json"))
-initialize_app(cred, {'storageBucket': 'automated-resume-screeni-b6254.appspot.com'})
+initialize_app(cred, {'storageBucket': 'automated-resume-screeni-87d75.appspot.com'})
 
 
 def create_app(config_name):

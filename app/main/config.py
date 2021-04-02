@@ -7,7 +7,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    BASE_URL_FE = "http://ec2-13-228-170-234.ap-southeast-1.compute.amazonaws.com/"
+    BASE_URL_FE = "http://localhost:3000/"
 
     #main
     SECRET_KEY = os.getenv('SECRET_KEY', 'my_precious_secret_key')
@@ -21,14 +21,14 @@ class Config:
     MAIL_USE_SSL = True
 
     # # gmail authentication
-    MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'automated.resume.screening@gmail.com')
-    MAIL_PASSWORD = os.getenv('MAIL_PASSWORD', 'khoaluan')
+    MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'locyasuo001@gmail.com')
+    MAIL_PASSWORD = os.getenv('MAIL_PASSWORD', 'Buffaloc1999')
 
     # mail accounts
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Flasky Admin automated.resume.screening@gmail.com'
+    FLASKY_MAIL_SENDER = 'Flasky Admin locyasuo001@gmail.com'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
-    MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER','automated.resume.screening@gmail.com')
+    MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER','locyasuo001@gmail.com')
 
     DEFAULT_PAGE_SIZE = 10
     DEFAULT_PAGE = 1
@@ -39,7 +39,7 @@ class DevelopmentConfig(Config):
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
     # SQLALCHEMY_DATABASE_URI = "mysql+pymysql://thesis:123123@localhost/thesis" # os.getenv('DATABASE_URL')
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://thesis:Tung3101@resume-screening.cec5tpyixou6.ap-southeast-1.rds.amazonaws.com/resume-screening"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://loctran0169:angel1999@13.67.105.72/resume-screening"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 

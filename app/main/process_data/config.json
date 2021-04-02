@@ -8,6 +8,8 @@
         "frontend": "models/ontology/frontend_ontology.p",
         "fullstack": "models/ontology/fullstack_ontology.p",
         "ios": "models/ontology/ios_ontology.p",
+        "game": "models/ontology/game_ontology.p",
+        "test": "models/ontology/test_ontology.p",
         "softskill": "models/ontology/softskill_ontology.p",
         "general": "models/ontology/general_ontology.p"
     },
@@ -21,6 +23,8 @@
         "frontend": "models/cached_model/frontend_cached_model.json",
         "fullstack": "models/cached_model/fullstack_cached_model.json",
         "ios": "models/cached_model/ios_cached_model.json",
+        "game": "models/cached_model/game_cached_model.json",
+        "test": "models/cached_model/test_cached_model.json",
         "softskill": "models/cached_model/softskill_cached_model.json",
         "general": "models/cached_model/general_cached_model.json"
     }
