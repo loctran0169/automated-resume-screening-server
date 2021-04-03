@@ -1,5 +1,7 @@
 import os
 import uuid
+
+from flask_restx.fields import String
 from app.main.util.resume_extractor import remove_temp_files
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.response import response_object
@@ -12,10 +14,13 @@ from ..util.dto import CompanyDto
 api = CompanyDto.api
 _company = CompanyDto.company
 
+search_parser = api.parser()
+search_parser.add_argument("name", type=str, location="args", required=True)
 @api.route('/search')
 @api.response(404, 'Company not found.')
 class CompanyFind(Resource):
-    @ api.doc('Find list companies')
+    @api.doc('Find list companies by name')
+    @api.expect(search_parser)
     def get(self):
         '''get list companies by name'''
         name = request.args.get('name')

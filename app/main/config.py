@@ -38,7 +38,7 @@ class DevelopmentConfig(Config):
     # uncomment the line below to use postgres
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
-    # SQLALCHEMY_DATABASE_URI = "mysql+pymysql://thesis:123123@localhost/thesis" # os.getenv('DATABASE_URL')
+    # SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:angel1999@localhost/resume-screening" # os.getenv('DATABASE_URL')
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://loctran0169:angel1999@13.67.105.72/resume-screening"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 

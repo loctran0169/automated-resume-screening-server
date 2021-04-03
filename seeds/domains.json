@@ -47,5 +47,15 @@
         "id": 10,
         "name": "Tester",
         "alternative_name": "test"
+    },
+    {
+        "id": 11,
+        "name": "Business Analyst",
+        "alternative_name": "ba"
+    },
+    {
+        "id": 12,
+        "name": "Project Manager",
+        "alternative_name": "pm"
     }
 ]

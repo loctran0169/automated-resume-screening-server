@@ -26,6 +26,8 @@ cue_phrases = [re.sub(r"\n", "", c) for c in cue_phrases]
 configuration = convert.Configuration()
 configuration.api_key['Apikey'] = '5cede973-e1ef-437c-a881-e72c52542b78'
 
+pytesseract.pytesseract.tesseract_cmd = 'C:/Users/LQTPL/AppData/Local/Tesseract-OCR/tesseract.exe'
+
 class ResumeExtractor:
 
     resume_local_path = None
@@ -83,7 +85,7 @@ def convert_pdf_to_jpg(filename):
 
     # TODO - ERROR: Remove for running on window
     images = convert_from_path(filename)
-    # images = convert_from_path(filename, poppler_path="/library/poppler-20.12.1/bin")
+    # images = convert_from_path(filename, poppler_path="D:\KLTN\libs\poppler-21.03.0\Library\bin")
 
     for img in images:
         index = images.index(img)
