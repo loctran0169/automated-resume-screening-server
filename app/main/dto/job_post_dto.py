@@ -122,7 +122,7 @@ class JobPostDto:
     single_job_post_in_search_fields = api.model("single_job_post_in_search_fields", {
         'jobpany_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
         'job_title': fields.String,
-        'comst_edit': fields.DateTime(),
+        'last_edit': fields.DateTime(),
         'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
         'contact_type': fields.String(attribute=lambda x: format_contract(x.contract_type)),
         'province_id': fields.String,
@@ -135,7 +135,7 @@ class JobPostDto:
         'jobpany_logo': fields.String(attribute=lambda x: x.recruiter.company.logo if x.recruiter.company is not None else None),
         'jobpany_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'job_title': fields.String,
-        'comst_edit': fields.DateTime(),
+        'last_edit': fields.DateTime(),
         'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
         'contact_type': fields.String(attribute=lambda x: format_contract(x.contract_type)),
         'province_id': fields.String,
