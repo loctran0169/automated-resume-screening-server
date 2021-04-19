@@ -1,3 +1,4 @@
+
 from app.main.util.custom_fields import NullableFloat
 from flask_restx import Namespace, fields, Model
 from app.main.dto.base_dto import base
@@ -20,6 +21,21 @@ class JobPostDto:
         'amount': fields.Integer(required=True, description='amount of candidates is recruiting'),
         'education_level': fields.Integer(required=True, description='education_level of candidates is recruiting'),
         'province_id': fields.String(required=True, description='locations of candidates is recruiting'),
+        'deadline': fields.DateTime(required=True, description='last day for candidate to apply'),
+    })
+
+    job_post_update = api.model('job_post_update', {
+        'job_domain_id': fields.Integer(required=True, description='id domain of this post'),
+        'description_text': fields.String(required=True, description='job description'),
+        'requirement_text': fields.String(required=True, description='job requirement'),
+        'benefit_text': fields.String(required=True, description='benefit for candidate'),
+        'job_title': fields.String(required=True, description='job title'),
+        'contract_type': fields.Integer(required=True, description='type of contract'),
+        'min_salary': NullableFloat(required=False, description='minimum salary'),
+        'max_salary': NullableFloat(required=False, description='maximum salary'),
+        'amount': fields.Integer(required=True, description='amount of candidates is recruiting'),
+        'is_active': fields.Boolean(required=True, description='is allow show'),
+        'province_id': fields.Integer(required=True, description='locations of candidates is recruiting'),
         'deadline': fields.DateTime(required=True, description='last day for candidate to apply'),
     })
 
@@ -92,17 +108,40 @@ class JobPostDto:
         'data': fields.Nested(job_post_for_edit)
     })
 
-
+    company_job = api.model('company_job', {
+        'name': fields.String(required=True, description='company name'),
+        'location': fields.String(required=True, description='company location'),
+        'phone': fields.String(required=True, description='company phone number'),
+        'email': fields.String(required=True, description='company email'),
+        'logo': fields.String(required=False, description='company logo'),
+        'background': fields.String(required=False, description='company background'),
+        'website': fields.String(required=True, description='company website'),
+        'description': fields.String(required=True, description='company description'),
+    })
     # Response for search job post
     single_job_post_in_search_fields = api.model("single_job_post_in_search_fields", {
-        'job_title': fields.String,
-        'company_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
-        'last_edit': fields.DateTime(),
+        'jobpany_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
+        'la_title': fields.String,
+        'comst_edit': fields.DateTime(),
         'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
         'contact_type': fields.String(attribute=lambda x: format_contract(x.contract_type)),
         'province_id': fields.String,
         'job_post_id': fields.Integer(attribute=lambda x: x.id),
         'job_description': fields.String(attribute=lambda x: x.description_text),
+        'posted_in': fields.String(attribute=lambda x: x.last_edit),
+    })
+    single_job_post_in_search_fields_with_company = api.model("single_job_post_in_search_fields_with_company", {
+        'jobpany_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
+        'jobpany_logo': fields.String(attribute=lambda x: x.recruiter.company.logo if x.recruiter.company is not None else None),
+        'jobpany_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
+        'la_title': fields.String,
+        'comst_edit': fields.DateTime(),
+        'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
+        'contact_type': fields.String(attribute=lambda x: format_contract(x.contract_type)),
+        'province_id': fields.String,
+        'job_post_id': fields.Integer(attribute=lambda x: x.id),
+        'job_description': fields.String(attribute=lambda x: x.description_text),
+        'posted_in': fields.String(attribute=lambda x: x.last_edit),
     })
     pagination = api.model('pagination', {
         'page': fields.Integer,
@@ -110,6 +149,10 @@ class JobPostDto:
     })
     job_post_in_search_cand_response = api.inherit('job_post_in_search_cand_response', base, {
         'data': fields.List(fields.Nested(single_job_post_in_search_fields)),
+        'pagination': fields.Nested(pagination)
+    })
+    job_post_similar_in_search_cand_response = api.inherit('job_post_similar_in_search_cand_response', base, {
+        'data': fields.List(fields.Nested(single_job_post_in_search_fields_with_company)),
         'pagination': fields.Nested(pagination)
     })
 

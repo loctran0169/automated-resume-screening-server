@@ -2,6 +2,7 @@ from sqlalchemy.sql.expression import true
 from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from sys import float_info
 from datetime import datetime, timedelta
+import time as log_time
 import dateutil.parser
 from flask import json
 from app.main import db
@@ -19,7 +20,7 @@ from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import HR_only
 from app.main.util.format_text import format_contract, format_education, format_salary
 from app.main.util.response import json_serial, response_object
-from app.main.util.data_processing import get_technical_skills
+from app.main.util.data_processing import get_technical_skills, tree_matching_score_jd
 from flask_restx import abort
 from sqlalchemy import or_
 from app.main.util.data_processing import tree_matching_score
@@ -27,25 +28,29 @@ from app.main.util.thread_pool import ThreadPool
 
 api = JobPostDto.api
 
+
 def add_new_post(post):
     parse_deadline = dateutil.parser.isoparse(post['deadline'])
 
-    recruiter = RecruiterModel.query.filter_by(email=post['recruiter_email']).first()
+    recruiter = RecruiterModel.query.filter_by(
+        email=post['recruiter_email']).first()
     job_domain = JobDomainModel.query.get(post['job_domain_id'])
 
     if (not recruiter) | (not job_domain):
         return "Error"
 
-    txt = " ".join([post.get('requirement_text', ""), post.get('description_text', "")])
+    txt = " ".join([post.get('requirement_text', ""),
+                   post.get('description_text', "")])
 
     executor = ThreadPool.instance().executor
-    domain_skills_res = executor.submit(get_technical_skills, job_domain.alternative_name, txt)
+    domain_skills_res = executor.submit(
+        get_technical_skills, job_domain.alternative_name, txt)
     general_skills_res = executor.submit(get_technical_skills, "general", txt)
     soft_skills_res = executor.submit(get_technical_skills, "softskill", txt)
 
     (domain_skills, _) = domain_skills_res.result()
-    (general_skills, _)= general_skills_res.result()
-    (soft_skills, _)= soft_skills_res.result()
+    (general_skills, _) = general_skills_res.result()
+    (soft_skills, _) = soft_skills_res.result()
 
     new_post = JobPostModel(
         job_domain_id=post['job_domain_id'],
@@ -75,13 +80,14 @@ def add_new_post(post):
 
     return response_object(code=200, message="Đăng tin tuyển dụng thành công.", data=new_post.to_json()), 200
 
+
 @HR_only
 def get_hr_posts(page, page_size, sort_values, is_showing):
     identity = get_jwt_identity()
     email = identity['email']
     hr = RecruiterModel.query.filter_by(email=email).first()
 
-    if is_showing: 
+    if is_showing:
         posts = JobPostModel.query\
             .filter(JobPostModel.recruiter_id == hr.id)\
             .filter((JobPostModel.deadline >= datetime.now()) & (JobPostModel.closed_in == None))\
@@ -94,16 +100,16 @@ def get_hr_posts(page, page_size, sort_values, is_showing):
             .order_by(*sort_job_list(sort_values))\
             .paginate(page, page_size, error_out=False)
 
-    res = [{ 
-        'id': post.id, 
-        'job_title': post.job_title, 
-        'salary': 'Thoả thuận', 
+    res = [{
+        'id': post.id,
+        'job_title': post.job_title,
+        'salary': 'Thoả thuận',
         'posted_in': json.dumps(post.posted_in, default=json_serial),
         'deadline': json.dumps(post.deadline, default=json_serial),
         'total_view': post.total_views,
         'total_save': post.total_saves,
         'total_apply': len(post.job_resume_submissions)
-    } for post in posts.items ]
+    } for post in posts.items]
 
     pagination = {
         'total': posts.total,
@@ -111,6 +117,7 @@ def get_hr_posts(page, page_size, sort_values, is_showing):
     }
 
     return response_object(code=200, message="Lấy danh sách thành công", data=res, pagination=pagination)
+
 
 def sort_job_list(sort_values):
     posted_in = sort_values['posted_in']
@@ -155,16 +162,16 @@ def count_jobs():
     hr = RecruiterModel.query.filter_by(email=email).first()
 
     is_showing = JobPostModel.query\
-            .filter(JobPostModel.recruiter_id == hr.id)\
-            .filter((JobPostModel.deadline >= datetime.now()) & (JobPostModel.closed_in == None))\
-            .count()
+        .filter(JobPostModel.recruiter_id == hr.id)\
+        .filter((JobPostModel.deadline >= datetime.now()) & (JobPostModel.closed_in == None))\
+        .count()
 
     is_closed = JobPostModel.query\
-            .filter(JobPostModel.recruiter_id == hr.id)\
-            .filter((JobPostModel.deadline < datetime.now()) | (JobPostModel.closed_in != None))\
-            .count()
+        .filter(JobPostModel.recruiter_id == hr.id)\
+        .filter((JobPostModel.deadline < datetime.now()) | (JobPostModel.closed_in != None))\
+        .count()
 
-    return response_object(code=200, message="", data={ "is_showing": is_showing, "is_closed": is_closed })
+    return response_object(code=200, message="", data={"is_showing": is_showing, "is_closed": is_closed})
 
 
 @HR_only
@@ -181,10 +188,10 @@ def update_jp(id, recruiter_email, args):
     job_post = JobPostModel.query.get(id)
     recruiter = RecruiterModel.query.filter_by(email=recruiter_email).first()
     if job_post == None or\
-        recruiter == None or\
-        job_post.recruiter_id != recruiter.id:
+            recruiter == None or\
+            job_post.recruiter_id != recruiter.id:
         abort(400)
-    
+
     job_domain_id = args.get("job_domain_id", None)
     description_text = args.get("description_text", None)
     requirement_text = args.get("requirement_text", None)
@@ -198,6 +205,32 @@ def update_jp(id, recruiter_email, args):
     deadline = args.get("deadline", None)
     province_id = args.get("province_id", None)
 
+    txt = " ".join([description_text, requirement_text])
+
+    executor = ThreadPool.instance().executor
+    global is_change_desc
+    global is_change_req
+
+    is_change_desc = False
+    is_change_req = False
+    print(job_post.job_domain.alternative_name)
+    if description_text != job_post.description_text or requirement_text != job_post.requirement_text or is_change_desc == False:
+        domain_skills_res = executor.submit(
+            get_technical_skills, job_post.job_domain.alternative_name, txt)
+        general_skills_res = executor.submit(
+            get_technical_skills, "general", txt)
+        soft_skills_res = executor.submit(
+            get_technical_skills, "softskill", txt)
+
+        (domain_skills, _) = domain_skills_res.result()
+        (general_skills, _) = general_skills_res.result()
+        (soft_skills, _) = soft_skills_res.result()
+        print(domain_skills)
+        print(general_skills)
+        print(soft_skills)
+        job_post.domain_skills = '|'.join(domain_skills)
+        job_post.general_skills = '|'.join(general_skills)
+        job_post.soft_skills = '|'.join(soft_skills)
     job_post.job_domain_id = job_domain_id
     job_post.description_text = description_text
     job_post.requirement_text = requirement_text
@@ -210,7 +243,6 @@ def update_jp(id, recruiter_email, args):
     job_post.deadline = dateutil.parser.isoparse(deadline)
     job_post.contract_type = contract_type
     job_post.province_id = province_id
-
     job_post.last_edit = datetime.now()
 
     db.session.add(job_post)
@@ -219,13 +251,12 @@ def update_jp(id, recruiter_email, args):
     return job_post
 
 
-
 def close_jp(id, recruiter_email):
     job_post = JobPostModel.query.get(id)
     recruiter = RecruiterModel.query.filter_by(email=recruiter_email).first()
     if job_post == None or\
-        recruiter == None or\
-        job_post.recruiter_id != recruiter.id:
+            recruiter == None or\
+            job_post.recruiter_id != recruiter.id:
         abort(400)
 
     job_post.is_active = False
@@ -235,7 +266,6 @@ def close_jp(id, recruiter_email):
     db.session.commit()
     return job_post
 
-    
 
 def apply_cv_to_jp(jp_id, args):
     resume_id = args['resume_id']
@@ -260,7 +290,7 @@ def apply_cv_to_jp(jp_id, args):
 
     db.session.add(submission)
     db.session.commit()
-    
+
     return {
         "id": submission.id,
         "resume_id": submission.resume_id,
@@ -269,7 +299,7 @@ def apply_cv_to_jp(jp_id, args):
         "score_explanation_array": submission.score_explanation_array,
         "is_calculating": False
     }
-    
+
 
 def calculate_scrore(submission, job_post_id, resume_id):
 
@@ -278,44 +308,48 @@ def calculate_scrore(submission, job_post_id, resume_id):
     resume = ResumeModel.query.get(resume_id)
 
     job_post_text = job_post.description_text + " " + job_post.requirement_text
-    resume_text = " ".join([resume.educations, resume.experiences, resume.technical_skills, resume.soft_skills])
+    resume_text = " ".join(
+        [resume.educations, resume.experiences, resume.technical_skills, resume.soft_skills])
 
     # Scores
-    domain_dict = tree_matching_score(job_post_text, resume_text, job_post.job_domain.alternative_name)
-    softskill_dict = tree_matching_score(job_post_text, resume_text, 'softskill')
+    domain_dict = tree_matching_score(
+        job_post_text, resume_text, job_post.job_domain.alternative_name)
+    softskill_dict = tree_matching_score(
+        job_post_text, resume_text, 'softskill')
     general_dict = tree_matching_score(job_post_text, resume_text, 'general')
 
     domain_score = domain_dict['score']
     softskill_score = softskill_dict['score']
     general_score = general_dict['score']
-    
-    score_explanation_array = '|'.join(['domain_score', 'general_score', 'softskill_score'])
-    score_array = '|'.join([str(domain_score), str(softskill_score), str(general_score)])
 
-    # Update 
+    score_explanation_array = '|'.join(
+        ['domain_score', 'general_score', 'softskill_score'])
+    score_array = '|'.join(
+        [str(domain_score), str(softskill_score), str(general_score)])
+
+    # Update
     submission.is_calculating = False
     submission.score_array = score_array
     submission.score_explanation_array = score_explanation_array
-    
 
-    
+
 def get_job_post_for_candidate(jp_id, cand_email):
 
     # Check if signed in
     cand = None
     if cand_email is not None:
         cand = CandidateModel.query.filter_by(email=cand_email).first()
-    
+
     save_record = None
     if cand is not None:
         save_record = CandidateJobSavesModel \
-                        .query \
-                        .filter_by(cand_id=cand.id, job_post_id=jp_id) \
-                        .first()
+            .query \
+            .filter_by(cand_id=cand.id, job_post_id=jp_id) \
+            .first()
 
     saved_date = None
     if save_record is not None:
-         saved_date = save_record.created_on
+        saved_date = save_record.created_on
 
     post = JobPostModel.query.get(jp_id)
     if not post:
@@ -333,8 +367,8 @@ def get_job_post_for_candidate(jp_id, cand_email):
 
 
 def search_jd_for_cand(args):
-    query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(JobPostModel.deadline > datetime.now())
-
+    query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
+        JobPostModel.deadline > datetime.now())
 
     posted_date = args.get('posted_date')
     contract_type = args.get('contract_type')
@@ -346,19 +380,19 @@ def search_jd_for_cand(args):
     province_id = args.get('province_id')
     job_domain_id = args.get('job_domain_id')
 
-    if contract_type is not None:   
+    if contract_type is not None:
         query = query.filter(JobPostModel.contract_type == contract_type)
 
     if min_salary is not None:
-        query = query.filter(or_(\
-            JobPostModel.max_salary == None,\
-            JobPostModel.max_salary >= min_salary)\
+        query = query.filter(or_(
+            JobPostModel.max_salary == None,
+            JobPostModel.max_salary >= min_salary)
         )
 
     if max_salary is not None:
-        query = query.filter(or_(\
-            JobPostModel.min_salary == None,\
-            JobPostModel.min_salary >= max_salary)\
+        query = query.filter(or_(
+            JobPostModel.min_salary == None,
+            JobPostModel.min_salary >= max_salary)
         )
 
     if keyword is not None:
@@ -371,13 +405,14 @@ def search_jd_for_cand(args):
     if job_domain_id is not None:
         query = query.filter(JobPostModel.job_domain_id == job_domain_id)
 
-    if posted_date is not None: 
-        query = query.filter((datetime.now() - timedelta(days=posted_date)) < JobPostModel.posted_in)
+    if posted_date is not None:
+        query = query.filter(
+            (datetime.now() - timedelta(days=posted_date)) < JobPostModel.posted_in)
 
     result = query\
         .order_by(JobPostModel.last_edit)\
         .paginate(page=page, per_page=page_size)
-    
+
     return result.items, {
         'total': result.total,
         'page': result.page
@@ -406,10 +441,10 @@ def proceed_resume(id, recruiter_email, args):
     submission = JobResumeSubmissionModel.query.get(submission_id)
 
     if job_post == None or\
-        recruiter == None or\
-        submission == None or\
-        job_post.recruiter_id != recruiter.id or\
-        submission.job_post_id != id:
+            recruiter == None or\
+            submission == None or\
+            job_post.recruiter_id != recruiter.id or\
+            submission.job_post_id != id:
         abort(400)
 
     if status != 0 or status != 1:
@@ -423,15 +458,19 @@ def proceed_resume(id, recruiter_email, args):
 def get_matched_cand_info_with_job_post(rec_email, job_id, resume_id):
     # Check existed rec
     recruiter = RecruiterModel.query.filter_by(email=rec_email).first()
-    if recruiter is None: abort(400)
+    if recruiter is None:
+        abort(400)
 
     # Check job post
     job = JobPostModel.query.get(job_id)
-    if job is None: abort(400)
-    if job.recruiter_id != recruiter.id: abort(400)
+    if job is None:
+        abort(400)
+    if job.recruiter_id != recruiter.id:
+        abort(400)
 
     resume = ResumeModel.query.get(resume_id)
-    if resume is None: abort(400)
+    if resume is None:
+        abort(400)
 
     cand = CandidateModel.query.get(resume.cand_id)
 
@@ -439,7 +478,8 @@ def get_matched_cand_info_with_job_post(rec_email, job_id, resume_id):
     submission = JobResumeSubmissionModel.query \
         .filter_by(resume_id=resume_id, job_post_id=job_id) \
         .first()
-    if submission is None: abort(400)
+    if submission is None:
+        abort(400)
 
     # Check save date
     saved_date = None
@@ -449,7 +489,7 @@ def get_matched_cand_info_with_job_post(rec_email, job_id, resume_id):
     if save_record is not None:
         saved_date = save_record.created_on
 
-    return {    
+    return {
         'submission': submission,
         'candidate': cand,
         'resume': resume,
@@ -461,48 +501,53 @@ def get_matched_cand_info_with_job_post(rec_email, job_id, resume_id):
 def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
     # Check existed rec
     recruiter = RecruiterModel.query.filter_by(email=rec_email).first()
-    if recruiter is None: abort(400, "No recruiter found.")
+    if recruiter is None:
+        abort(400, "No recruiter found.")
 
     # Check job post
     job = JobPostModel.query.get(job_id)
-    if job is None: abort(400, "No job post found.")
-    if job.recruiter_id != recruiter.id: abort(400, "The job post is not belong to the recruiter.")
+    if job is None:
+        abort(400, "No job post found.")
+    if job.recruiter_id != recruiter.id:
+        abort(400, "The job post is not belong to the recruiter.")
 
     domain_weight = args['domain_weight']
     general_weight = args['general_weight']
     soft_weight = args['soft_weight']
-    
+
     page = args['page']
     page_size = args['page-size']
 
     # if skill_weight + domain_weight != 1: abort(400)
 
-    # Filter 
+    # Filter
     all_items = JobResumeSubmissionModel.query \
         .filter_by(job_post_id=job.id) \
         .all()
 
-    all_items = sorted(all_items, key=lambda x: x.avg_score(domain_weight=domain_weight, \
-                                        soft_weight=soft_weight, \
-                                        general_weight=general_weight), reverse=True)
+    all_items = sorted(all_items, key=lambda x: x.avg_score(domain_weight=domain_weight,
+                                                            soft_weight=soft_weight,
+                                                            general_weight=general_weight), reverse=True)
 
-    chunks = [all_items[i:i+page_size] for i in range(0, len(all_items), page_size)]
+    chunks = [all_items[i:i+page_size]
+              for i in range(0, len(all_items), page_size)]
     items = []
 
-    if page > len(chunks): 
+    if page > len(chunks):
         items = []
-    else: 
+    else:
         items = chunks[page - 1]
 
     final_res = []
     for submission in items:
         resume = ResumeModel.query.get(submission.resume_id)
         scores = submission.score_dict
-        scores['avg'] = submission.avg_score(domain_weight=domain_weight, \
-                                        soft_weight=soft_weight, \
-                                        general_weight=general_weight)
+        scores['avg'] = submission.avg_score(domain_weight=domain_weight,
+                                             soft_weight=soft_weight,
+                                             general_weight=general_weight)
 
-        saved = RecruiterResumeSavesModel.query.filter_by(recruiter_id=recruiter.id, resume_id=resume.id).first()
+        saved = RecruiterResumeSavesModel.query.filter_by(
+            recruiter_id=recruiter.id, resume_id=resume.id).first()
 
         final_res.append({
             'submission': submission,
@@ -512,16 +557,18 @@ def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
             'saved': True if saved else False
         })
 
-
     avg_soft_score = 0
     avg_domain_score = 0
     avg_general_score = 0
     if len(all_items) > 0:
         scores = [sub.score_dict for sub in all_items]
-        avg_general_score = sum([s["general_score"] for s in scores]) / len(all_items)
-        avg_soft_score = sum([s["softskill_score"] for s in scores]) / len(all_items)
-        avg_domain_score = sum([s["domain_score"] for s in scores]) / len(all_items)
-    
+        avg_general_score = sum([s["general_score"]
+                                for s in scores]) / len(all_items)
+        avg_soft_score = sum([s["softskill_score"]
+                             for s in scores]) / len(all_items)
+        avg_domain_score = sum([s["domain_score"]
+                               for s in scores]) / len(all_items)
+
     return final_res, {
         'total': len(all_items),
         'page': page
@@ -530,3 +577,30 @@ def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
         'avg_domain_score': avg_domain_score,
         'avg_general_score': avg_general_score
     }
+
+
+def get_similar_job_post_with_id(job_id):
+    # Check job post
+    job = JobPostModel.query.get(job_id)
+    if job is None:
+        abort(400)
+
+    query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
+        JobPostModel.deadline > datetime.now())
+
+    query = query.filter(JobPostModel.id != job_id)
+    query = query.filter(JobPostModel.job_domain_id == job.job_domain_id)
+    
+    result = query\
+        .order_by(JobPostModel.last_edit)
+    _job_result = []
+    for _job in result:
+        if len(_job_result) <= 10:
+            domain_dict = tree_matching_score_jd(job.general_skills.split("|"),
+                                                 _job.general_skills.split(
+                                                     "|"),
+                                                 job.job_domain.alternative_name)
+            if domain_dict['score'] >= 0.7:
+                _job_result.append(_job)
+                print(domain_dict['score'])
+    return _job_result
