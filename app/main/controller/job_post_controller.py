@@ -11,7 +11,7 @@ from flask import request
 from ..dto.job_post_dto import JobPostDto
 from flask_restx import Resource
 from ..service.job_post_service import add_new_post, count_jobs, \
-        delete_job_post, get_hr_posts, hr_get_detail, apply_cv_to_jp,\
+        delete_job_post, get_hr_posts, get_similar_job_post_with_id, hr_get_detail, apply_cv_to_jp,\
         get_job_post_for_candidate, search_jd_for_cand, \
         update_jp, close_jp, proceed_resume, get_matched_cand_info_with_job_post, \
         get_matched_list_cand_info_with_job_post
@@ -22,6 +22,7 @@ import jwt
 
 api = JobPostDto.api
 _job_post = JobPostDto.job_post
+_job_post_update = JobPostDto.job_post_update
 
 
 
@@ -90,6 +91,7 @@ class JobPostCount(Resource):
 #
 #################################
 update_JP_parser = api.parser()
+update_JP_parser.add_argument("Authorization", location="headers", required=True)
 update_JP_parser.add_argument("job_domain_id", type=int, location="json")
 update_JP_parser.add_argument("description_text", location="json")
 update_JP_parser.add_argument("requirement_text", location="json")
@@ -114,6 +116,7 @@ class JobPostDetail(Resource):
 
     @api.doc('Update job post details.')
     @api.marshal_with(JobPostDto.response_for_update_job_post_from_hr, code=200)
+    @api.expect(update_JP_parser, validate=True)
     @HR_only
     def put(self, id):
         args = update_JP_parser.parse_args()
@@ -300,4 +303,26 @@ class GetListCandInfoForJobPost(Resource):
             'data': data,
             'pagination': pagination,
             'statistics': stats
+        }
+
+#################################################
+#
+# Get job post simalar
+#
+#################################################
+get_list_jp_similar_parser = api.parser()
+get_list_jp_similar_parser.add_argument("job_post_id", type=int, location="args", required=True)
+@api.route('/similar')
+class GetListJobPostSimilar(Resource):
+    @api.doc('Get job post simalar by id.')
+    @api.expect(get_list_jp_similar_parser)
+    @api.marshal_with(JobPostDto.job_post_similar_in_search_cand_response, code=200)    
+    # @HR_only
+    def get(self):
+        args = get_list_jp_similar_parser.parse_args()
+        data = get_similar_job_post_with_id(args['job_post_id'])
+        return {
+            'code': 200,
+            'message': "Thành công",
+            'data': data
         }

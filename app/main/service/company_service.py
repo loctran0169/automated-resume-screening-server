@@ -12,7 +12,10 @@ def get_all_company():
     return CompanyModel.query.all()
 
 def get_a_company_by_name(name, page, page_size=5):
-    query = CompanyModel.query.filter(CompanyModel.name.contains(name)).paginate(page, page_size, error_out=False)
+    if name == None:
+        query = CompanyModel.query.paginate(page, page_size, error_out=False)
+    else:
+        query = CompanyModel.query.filter(CompanyModel.name.contains(name)).paginate(page, page_size, error_out=False)
 
     companies = [ com for com in query.items ]
     has_next = query.has_next

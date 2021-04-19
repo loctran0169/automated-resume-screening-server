@@ -8,6 +8,7 @@ import numpy as np
 from app.main.util.draw_graph import radial_expansion_pos, draw
 import library.zss as zss
 from library.zss import Node
+import time
 # import zss
 # from zss import Node
 
@@ -146,6 +147,44 @@ def tree_matching_score(post_text, cv_text, domain):
         "post_skills": post_skills,
     }
 
+def tree_matching_score_jd(skill_post1, skill_post2, domain):
+    """
+    Return:
+    {
+        'score': float
+        'post1_explanation': dict
+        'post2_explanation': dict
+    }
+    
+    """
+
+    post_skills_1 = dict()
+    post_skills_1['union']=skill_post1
+    post_skills_2 = dict()
+    post_skills_2['union']=skill_post2
+    # print(post_skills_1['union'])
+    # print(post_skills_2['union'])
+
+
+    (post_graph_1, post_node_count_1) = __generate_graph_tree_with(domain=domain, skills=post_skills_1['union'])
+    (post_graph_2, post_node_count_2) = __generate_graph_tree_with(domain=domain, skills=post_skills_2['union'])
+
+    (score, ops) = __tree_edit_distance(post_graph_1, post_graph_2)
+    similarity_score = 1 / (1 + score)
+
+
+    DECIMAL_LENGTH = 4
+    return {
+        "score": np.round(similarity_score, DECIMAL_LENGTH),
+        # "post1_explanation": post_skills_1['explanation'],
+        # "post2_explanation": post_skills_2['explanation'],
+        "post1_graph": post_graph_1,
+        "post2_graph": post_graph_2,
+        
+        "post1_skills": post_skills_1,
+        "post2_skills": post_skills_2,
+    }
+
 def get_children(node):
     return node.children
 
@@ -167,11 +206,10 @@ def __tree_edit_distance(cv_graph, post_graph):
 
 def __generate_graph_tree_with(domain, skills): 
     (graph_data, root) = cm.get_ontology(domain).generate_graph_dict(skills)
-
     # (_, _) = __generate_graph_with(domain, skills)
 
     graph_data = dict(graph_data)
-
+    
     node_dict = {}
     # nodes
     for s in graph_data.keys():
@@ -190,5 +228,4 @@ def __generate_graph_tree_with(domain, skills):
     if not node_dict:
         node_dict['unknowed'] = Node('unknowed')
         return (node_dict['unknowed'], 1)
-
     return (node_dict[root], len(graph_data.keys()))

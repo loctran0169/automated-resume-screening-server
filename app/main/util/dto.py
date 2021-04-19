@@ -164,6 +164,16 @@ class RecruiterDto:
         'password': fields.String(required=True, description='user password'),
     })
 
+    company_job = api.model('company_job', {
+        'name': fields.String(required=True, description='company name'),
+        'location': fields.String(required=True, description='company location'),
+        'phone': fields.String(required=True, description='company phone number'),
+        'email': fields.String(required=True, description='company email'),
+        'logo': fields.String(required=False, description='company logo'),
+        'background': fields.String(required=False, description='company background'),
+        'website': fields.String(required=True, description='company website'),
+        'description': fields.String(required=True, description='company description'),
+    })
     ####################
     # Get saved resumes
     ####################
