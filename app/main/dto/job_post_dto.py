@@ -156,6 +156,19 @@ class JobPostDto:
         'pagination': fields.Nested(pagination)
     })
 
+    max_min_salary = api.inherit('max_min_salary', {
+        "max": fields.Integer,
+        "min": fields.Integer,        
+    })
+    list_suggest_job = api.inherit('list_suggest_job', {
+        "items": fields.List(fields.Nested(single_job_post_in_search_fields_with_company)),
+        "province_id": fields.Integer,
+        "totalCount": fields.Integer,
+        "salary": fields.Nested(max_min_salary)
+    })
+    suggest_job = api.inherit('suggest_job', base, {
+        'data': fields.Nested(list_suggest_job)
+    })
 
     #Response for update job post from HR
     response_for_update_job_post_from_hr_fields = api.model("response_for_update_job_post_from_hr_fields", {

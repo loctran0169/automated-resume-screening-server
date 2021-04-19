@@ -22,7 +22,7 @@ from app.main.util.format_text import format_contract, format_education, format_
 from app.main.util.response import json_serial, response_object
 from app.main.util.data_processing import get_technical_skills, tree_matching_score_jd
 from flask_restx import abort
-from sqlalchemy import or_
+from sqlalchemy import or_,func
 from app.main.util.data_processing import tree_matching_score
 from app.main.util.thread_pool import ThreadPool
 
@@ -604,3 +604,41 @@ def get_similar_job_post_with_id(job_id):
                 _job_result.append(_job)
                 print(domain_dict['score'])
     return _job_result
+
+def get_suggested_job_posts(email, args):
+    # Check Cand
+    cand = CandidateModel.query.filter_by(email=email).first()
+    if cand is None: abort(400)
+
+    if len(cand.resumes) == 0:
+        return None, {
+            'total': 0,
+            'page': 0
+    }
+    technical_skills = cand.resumes[0].technical_skills.split("|")
+    domain_id = args['domain_id']
+    query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
+        JobPostModel.deadline > datetime.now(),JobPostModel.job_domain_id == domain_id)
+    max_job = query.count()
+    max_salary = db.session.query(func.max(JobPostModel.max_salary)).scalar()
+    min_salary = db.session.query(func.max(JobPostModel.min_salary)).scalar()
+
+    query = query.filter(JobPostModel.job_domain_id == domain_id)
+
+    province_id = args['province_id']
+    if province_id is not None:
+        query = query.filter(JobPostModel.province_id == province_id)
+    
+    result = query\
+        .order_by(JobPostModel.last_edit) \
+        .paginate(page=1, per_page=10)
+
+    return {
+        'items': result.items,
+        'province_id':province_id,
+        'totalCount': max_job,
+        'salary':{
+            'max': max_salary,
+            'min': min_salary
+        }
+    }
