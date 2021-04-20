@@ -5,6 +5,7 @@ from app.main.dto.base_dto import base
 from app.main.util.format_text import format_contract, format_education, format_provinces, format_salary
 from app.main.dto.resume_dto import ResumeDTO
 
+
 class JobPostDto:
     api = Namespace('Job Posts', description='job post related operation')
 
@@ -50,14 +51,12 @@ class JobPostDto:
         'total_view': fields.Integer(description='nums of candidate who viewed this post'),
     })
 
-
-
     # Response job post for cand
     job_post_for_cand_fields = api.model("job_post_for_cand_fields", {
-        'id': fields.Integer, 
-        'job_title': fields.String, 
+        'id': fields.Integer,
+        'job_title': fields.String,
         'job_domain': fields.String(attribute='job_domain.name'),
-        'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)), 
+        'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
         'posted_in': fields.DateTime(attribute='posted_in'),
         'deadline': fields.DateTime(attribute='deadline'),
         'contract_type': fields.String(attribute=lambda x: format_contract(x.contract_type)),
@@ -120,7 +119,9 @@ class JobPostDto:
     })
     # Response for search job post
     single_job_post_in_search_fields = api.model("single_job_post_in_search_fields", {
-        'jobpany_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
+        'company_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
+        'company_logo': fields.String(attribute=lambda x: x.recruiter.company.logo if x.recruiter.company is not None else None),
+        'company_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'job_title': fields.String,
         'last_edit': fields.DateTime(),
         'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
@@ -131,9 +132,9 @@ class JobPostDto:
         'posted_in': fields.String(attribute=lambda x: x.last_edit),
     })
     single_job_post_in_search_fields_with_company = api.model("single_job_post_in_search_fields_with_company", {
-        'jobpany_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
-        'jobpany_logo': fields.String(attribute=lambda x: x.recruiter.company.logo if x.recruiter.company is not None else None),
-        'jobpany_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
+        'company_name': fields.String(attribute=lambda x: x.recruiter.company.name if x.recruiter.company is not None else None),
+        'company_logo': fields.String(attribute=lambda x: x.recruiter.company.logo if x.recruiter.company is not None else None),
+        'company_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'job_title': fields.String,
         'last_edit': fields.DateTime(),
         'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
@@ -158,7 +159,7 @@ class JobPostDto:
 
     max_min_salary = api.inherit('max_min_salary', {
         "max": fields.Integer,
-        "min": fields.Integer,        
+        "min": fields.Integer,
     })
     list_suggest_job = api.inherit('list_suggest_job', {
         "items": fields.List(fields.Nested(single_job_post_in_search_fields_with_company)),
@@ -170,12 +171,12 @@ class JobPostDto:
         'data': fields.Nested(list_suggest_job)
     })
 
-    #Response for update job post from HR
+    # Response for update job post from HR
     response_for_update_job_post_from_hr_fields = api.model("response_for_update_job_post_from_hr_fields", {
         'id': fields.Integer,
-        'job_title': fields.String, 
+        'job_title': fields.String,
         'job_domain': fields.String(attribute="job_domain.name"),
-        'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)), 
+        'salary': fields.String(attribute=lambda x: format_salary(x.min_salary, x.max_salary)),
         'posted_in': fields.DateTime(),
         'deadline': fields.DateTime(),
         'last_edit': fields.DateTime(),
@@ -191,7 +192,6 @@ class JobPostDto:
     response_for_update_job_post_from_hr = api.inherit('response_for_update_job_post_from_HR', base, {
         'data': fields.List(fields.Nested(single_job_post_in_search_fields)),
     })
-
 
     ########################################
     # Get matched cand info with job post
@@ -231,7 +231,6 @@ class JobPostDto:
     get_cand_info_with_matched_job_post_response = api.inherit('get_cand_info_with_matched_job_post_response', base, {
         'data': fields.Nested(submission_cand_info_fields)
     })
-
 
     ###############################
     # Get list applied candidates
