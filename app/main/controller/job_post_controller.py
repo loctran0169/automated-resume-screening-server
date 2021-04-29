@@ -330,22 +330,20 @@ class GetListJobPostSimilar(Resource):
 
 
 get_suggest_job = api.parser()
-get_suggest_job.add_argument("Authorization", location="headers", required=False)
+get_suggest_job.add_argument("Authorization", location="headers", required=True)
 get_suggest_job.add_argument("domain_id", type=int, location="args", required=True)
-get_suggest_job.add_argument("province_id", type=int, location="args", required=False, default=None)
+get_suggest_job.add_argument("province_id", type=int, location="args", required=True)
+get_suggest_job.add_argument("page", type=int, location="args", required=False, default=1)
+get_suggest_job.add_argument("page_size", type=int, location="args", required=False, default=10)
 @api.route('/suggest')
 class SuggestJob(Resource):
     @api.doc("Get list suggest job posts")
     @api.expect(get_suggest_job)
-    @api.marshal_with(JobPostDto.suggest_job, code=200) 
+    @api.marshal_with(JobPostDto.suggest_list, code=200) 
     @Candidate_only
     def get(self):
         identity = get_jwt_identity()
         email = identity['email']
         args = get_suggest_job.parse_args()
-        data = get_suggested_job_posts(email,args)
-        return {
-            'code': 200,
-            'message': "Thành công",
-            'data': data
-        }
+        data,pagination = get_suggested_job_posts(email,args)
+        return response_object(data=data, pagination=pagination)

@@ -1,3 +1,5 @@
+from sqlalchemy.sql.expression import and_
+from app.main.util.data_processing import tree_matching_score_jd
 from app.main.model.recruiter_model import RecruiterModel
 from sqlalchemy.orm import backref, defaultload
 from app.main.util.response import json_serial
@@ -5,6 +7,8 @@ from flask import json
 from app.main.model.job_domain_model import JobDomainModel
 from .. import db
 from datetime import datetime
+from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
+from sqlalchemy import func
 
 class JobPostModel(db.Model):
     __tablename__ = "job_posts"
@@ -46,6 +50,9 @@ class JobPostModel(db.Model):
     domain_skill_graph = db.Column(db.Text, nullable=True)
 
     job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="job_post", lazy=True)
+
+    def __init__(self, general_skills):
+            self.general_skills = general_skills
 
     def __repr__(self):
         return "<Job post: '{}'>".format(self.id)

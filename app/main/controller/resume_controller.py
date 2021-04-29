@@ -3,7 +3,7 @@ from app.main.service.candidate_service import delete_a_candidate_by_id, get_a_a
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from flask_restx.fields import String
-from app.main.service.resume_service import create_cv, delete_cv_by_cand_id, update_cv
+from app.main.service.resume_service import create_cv, delete_cv_by_id, update_cv
 from flask.globals import request
 from flask_restx import Namespace
 from flask_restx import Resource
@@ -59,32 +59,35 @@ class UpdateCV(Resource):
         data = update_cv(args)
         return response_object(data=data)
 
+delete_cv_parser = api.parser()
+delete_cv_parser.add_argument("Authorization", location="headers", required=True)
 @api.route("/delete")
 class UpdateCV(Resource):
     @api.doc('delete Resume')
+    @api.expect(delete_cv_parser)
     @Candidate_only
     def delete(self):
         identity = get_jwt_identity()
         email_in_token = identity['email']
-        try:
-            profile = get_a_account_candidate_by_email(email_in_token)
-            if not profile or not profile.resumes:
-                return {
-                    'status': 'failure',
-                    'message': 'Delete cv failure. Profile not found',
-                    'type' : 'candidate'
-                },400
-
-            delete_cv_by_cand_id(profile.id)
+        # try:
+        profile = get_a_account_candidate_by_email(email_in_token)
+        if not profile or not profile.resumes:
             return {
-                'status': 'success',
-                'message': 'Delete cv successfully',
-                'type' : 'candidate'
-            }, 200
-        except Exception as ex:
-            print(ex.args)
-            return{
                 'status': 'failure',
-                'message': 'Delete cv failure. Server occur',
+                'message': 'Delete cv failure. Profile not found',
                 'type' : 'candidate'
-            }, 200
+            },400
+
+        delete_cv_by_id(profile.resumes[0].id)
+        return {
+            'status': 'success',
+            'message': 'Delete cv successfully',
+            'type' : 'candidate'
+        }, 200
+        # except Exception as ex:
+        #     print(ex.args)
+        #     return{
+        #         'status': 'failure',
+        #         'message': 'Delete cv failure. Server occur',
+        #         'type' : 'candidate'
+        #     }, 200

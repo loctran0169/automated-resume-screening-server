@@ -69,8 +69,10 @@ def update_cv(args):
 
     return resume
     
-def delete_cv_by_cand_id(id):
-    resume = ResumeModel.query.filter_by(cand_id=id).first()
+def delete_cv_by_id(id):
+    resume = ResumeModel.query.get(id)
+    if not resume:
+            abort(400)
     urlCV = resume.store_url
     db.session.delete(resume)
     db.session.commit()
