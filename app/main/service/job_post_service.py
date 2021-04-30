@@ -65,7 +65,7 @@ def add_new_post(post):
     (domain_skills, _) = domain_skills_res.result()
     (general_skills, _) = general_skills_res.result()
     (soft_skills, _) = soft_skills_res.result()
-    print(str(post['job_domain_id']))
+
     new_post = JobPostModel(
         job_domain_id=post['job_domain_id'],
         description_text=post['description_text'],
@@ -690,5 +690,5 @@ def get_suggested_job_posts(email, args):
     }
     return data, {
         'page': page,
-        'total': math.ceil(len(all_items)/page_size)
+        'total': len(all_items)
     }
