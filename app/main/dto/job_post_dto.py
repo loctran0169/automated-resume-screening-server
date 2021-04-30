@@ -254,6 +254,6 @@ class JobPostDto:
     })
 
     suggest_list = api.inherit("suggest_list", base, {
-        'data': fields.List(fields.Nested(list_suggest_job)),
+        'data': fields.Nested(list_suggest_job),
         'pagination': fields.Nested(pagination)
     })
