@@ -51,9 +51,6 @@ class JobPostModel(db.Model):
 
     job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="job_post", lazy=True)
 
-    def __init__(self, general_skills):
-            self.general_skills = general_skills
-
     def __repr__(self):
         return "<Job post: '{}'>".format(self.id)
 
