@@ -25,10 +25,7 @@ class SkillFind(Resource):
             return response_object()
         else:
             return response_object(200, "Thành công.", data=[skill.to_json() for skill in skills], pagination={"has_next": has_next})
-
-
-skill_add_parser = api.parser()
-skill_add_parser.add_argument("name", type=str, location="args", required=True)
+            
 @api.route('')
 class SkillAdd(Resource):
     @api.doc('add a new skill')
