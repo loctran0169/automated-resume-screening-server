@@ -1,3 +1,5 @@
+from sqlalchemy.sql.expression import and_
+from app.main.util.data_processing import tree_matching_score_jd
 from app.main.model.recruiter_model import RecruiterModel
 from sqlalchemy.orm import backref, defaultload
 from app.main.util.response import json_serial
@@ -5,6 +7,8 @@ from flask import json
 from app.main.model.job_domain_model import JobDomainModel
 from .. import db
 from datetime import datetime
+from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
+from sqlalchemy import func
 
 class JobPostModel(db.Model):
     __tablename__ = "job_posts"

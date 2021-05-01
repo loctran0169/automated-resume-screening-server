@@ -30,6 +30,7 @@ class CompanyModel(db.Model):
             "phone": self.phone,
             "email": self.email,
             "logo": self.logo,
+            "background": self.background,
             "website": self.website,
             "description": self.description,
         }

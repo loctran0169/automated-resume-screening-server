@@ -11,7 +11,7 @@ from flask import request
 from ..dto.job_post_dto import JobPostDto
 from flask_restx import Resource
 from ..service.job_post_service import add_new_post, count_jobs, \
-        delete_job_post, get_hr_posts, get_similar_job_post_with_id, hr_get_detail, apply_cv_to_jp,\
+        delete_job_post, get_hr_posts, get_similar_job_post_with_id, get_suggested_job_posts, hr_get_detail, apply_cv_to_jp,\
         get_job_post_for_candidate, search_jd_for_cand, \
         update_jp, close_jp, proceed_resume, get_matched_cand_info_with_job_post, \
         get_matched_list_cand_info_with_job_post
@@ -326,3 +326,24 @@ class GetListJobPostSimilar(Resource):
             'message': "Thành công",
             'data': data
         }
+
+
+
+get_suggest_job = api.parser()
+get_suggest_job.add_argument("Authorization", location="headers", required=True)
+get_suggest_job.add_argument("domain_id", type=int, location="args", required=True)
+get_suggest_job.add_argument("province_id", type=int, location="args", required=True)
+get_suggest_job.add_argument("page", type=int, location="args", required=False, default=1)
+get_suggest_job.add_argument("page_size", type=int, location="args", required=False, default=10)
+@api.route('/suggest')
+class SuggestJob(Resource):
+    @api.doc("Get list suggest job posts")
+    @api.expect(get_suggest_job)
+    @api.marshal_with(JobPostDto.suggest_list, code=200) 
+    @Candidate_only
+    def get(self):
+        identity = get_jwt_identity()
+        email = identity['email']
+        args = get_suggest_job.parse_args()
+        data,pagination = get_suggested_job_posts(email,args)
+        return response_object(data=data, pagination=pagination)

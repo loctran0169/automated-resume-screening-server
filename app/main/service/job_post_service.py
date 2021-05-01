@@ -1,3 +1,4 @@
+from app.main.process_data.classify_wrapper.skill_paper import SkillPaper
 from sqlalchemy.sql.expression import true
 from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from sys import float_info
@@ -5,6 +6,7 @@ from datetime import datetime, timedelta
 import time as log_time
 import dateutil.parser
 from flask import json
+import math
 from app.main import db
 from app.main.dto.job_post_dto import JobPostDto
 from app.main.model.resume_model import ResumeModel
@@ -22,12 +24,24 @@ from app.main.util.format_text import format_contract, format_education, format_
 from app.main.util.response import json_serial, response_object
 from app.main.util.data_processing import get_technical_skills, tree_matching_score_jd
 from flask_restx import abort
-from sqlalchemy import or_
+from sqlalchemy import or_, func, and_
 from app.main.util.data_processing import tree_matching_score
 from app.main.util.thread_pool import ThreadPool
 
 api = JobPostDto.api
 
+
+def contain_province(province_ids):
+    res = []
+    for id in province_ids:
+        res.append(and_(JobPostModel.province_id.contains(id)))
+    return res
+
+
+def contain_province_with_one(province_id):
+    res = []
+    res.append(and_(JobPostModel.province_id.contains(province_id)))
+    return res
 
 def add_new_post(post):
     parse_deadline = dateutil.parser.isoparse(post['deadline'])
@@ -590,17 +604,91 @@ def get_similar_job_post_with_id(job_id):
 
     query = query.filter(JobPostModel.id != job_id)
     query = query.filter(JobPostModel.job_domain_id == job.job_domain_id)
-    
+    query = query.filter(and_(*contain_province(job.province_id)))
+
     result = query\
         .order_by(JobPostModel.last_edit)
     _job_result = []
+
     for _job in result:
         if len(_job_result) <= 10:
             domain_dict = tree_matching_score_jd(job.general_skills.split("|"),
                                                  _job.general_skills.split(
-                                                     "|"),
-                                                 job.job_domain.alternative_name)
+                "|"),
+                job.job_domain.alternative_name)
             if domain_dict['score'] >= 0.7:
                 _job_result.append(_job)
-                print(domain_dict['score'])
     return _job_result
+
+
+def get_suggested_job_posts(email, args):
+
+    min_similar = 0.8
+
+    # Check Cand
+    cand = CandidateModel.query.filter_by(email=email).first()
+    if cand is None:
+        abort(400)
+
+    if len(cand.resumes) == 0:
+        return None, {
+            'total': 0,
+            'page': 0
+        }
+    technical_skills = cand.resumes[0].technical_skills.split("|")
+
+    page = args['page']
+    page_size = args['page_size']
+    domain_id = args['domain_id']
+    province_id = args['province_id']
+
+    query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
+        JobPostModel.deadline > datetime.now(), JobPostModel.job_domain_id == domain_id)
+
+    max_job = query.count()
+    max_salary = db.session.query(func.max(
+        JobPostModel.max_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
+
+    min_salary = db.session.query(func.max(
+        JobPostModel.min_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
+
+    query = query.filter(JobPostModel.job_domain_id == domain_id)
+    query = query.filter(and_(*contain_province_with_one(province_id)))
+    all_items = query.all()
+
+    def cacular_score(job,dict, id):
+        score = tree_matching_score_jd(technical_skills,
+                               job.general_skills.split("|"),
+                               job.job_domain.alternative_name)['score']
+        print(str(id)+" "+str(score))
+        dict[id] = score
+        return score
+    
+    scores = dict()
+
+    all_items = sorted(all_items, key=lambda x: cacular_score(x,scores,x.id), reverse=True)
+ 
+    all_items = list(filter(lambda x: scores[x.id] >= min_similar, all_items))
+   
+    chunks = [all_items[i:i+page_size]
+              for i in range(0, len(all_items), page_size)]
+    items = []
+
+    if page > len(chunks):
+        items = []
+    else:
+        items = chunks[page - 1]
+
+    data = {
+        'items': items,
+        'province_id': province_id,
+        'totalCount': max_job,
+        'salary': {
+            'max': max_salary,
+            'min': min_salary
+        }
+    }
+    return data, {
+        'page': page,
+        'total': len(all_items)
+    }

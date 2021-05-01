@@ -1,3 +1,4 @@
+from app.main.model.job_post_model import JobPostModel
 from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from sqlalchemy import or_, and_, not_, extract
 from app.main.model.job_domain_model import JobDomainModel
