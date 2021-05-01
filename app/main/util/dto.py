@@ -20,6 +20,13 @@ class CompanyDto:
         'description': fields.String(required=True, description='company description'),
     })
 
+class SkillDto:
+    api = Namespace(
+        'Skill', description='skill related operations')
+    skill = api.model('skill', {
+        'name': fields.String(required=True, description='company name')
+    })
+
 class CandidateDto:
     api = Namespace(
         'Candidate', description='candidate related operations')
