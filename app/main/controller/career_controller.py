@@ -1,9 +1,9 @@
+from app.main.dto.career_dto import CareerDto
 from datetime import date
 
 from flask_restx.utils import default_id
 from app.main.service.career_service import match_domains_with_cand_skills
 from app.main.util.custom_jwt import Candidate_only
-from ..util.dto import CareerDto
 from flask_restx import Resource
 from flask import request
 from flask_jwt_extended.utils import get_jwt_identity

@@ -1,7 +1,9 @@
+from app.main.util.data_processing import get_technical_skills
 from flask_restx import abort
 from app.main.model.candidate_model import CandidateModel
 from app.main.model.job_domain_model import JobDomainModel
-
+from app.main.util.thread_pool import ThreadPool
+import time as time_log
 
 def match_domains_with_cand_skills(email,data):
     cand = CandidateModel.query.filter_by(email=email).first()
@@ -23,6 +25,7 @@ def match_domains_with_cand_skills(email,data):
 
     results = []
 
+    start_time = time_log.time()
     for domain in domains:
 
         # query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
@@ -35,19 +38,26 @@ def match_domains_with_cand_skills(email,data):
             max_salary = max(domain.job_posts,
                              key=lambda x: x.max_salary or 0).max_salary or 0
             min_salary = min(domain.job_posts,
-                             key=lambda x: x.min_salary or 0).min_salary or 0
-        print(str(len(domain.skills)))
+                             key=lambda x: x.min_salary or 0).min_salary or 0                             
+
+        executor = ThreadPool.instance().executor
+        domain_skills_res = executor.submit(get_technical_skills, domain.alternative_name, technical_skills)
+
+        (domain_skills, _) = domain_skills_res.result()
+
         # max_salary = db.session.query(func.max(
         #     JobPostModel.max_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
 
         # min_salary = db.session.query(func.max(
         #     JobPostModel.min_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
         results.append({
-            "domain" : domain.to_json(),
+            "domain" : domain,
+            "matchedSkills" : domain_skills,
             "totalCount": max_job,
             "salary": {
                 "max": max_salary,
                 "min": min_salary
             }
         })
+    print("--- %s seconds ---" % (time_log.time() - start_time))
     return results
