@@ -57,7 +57,7 @@ def seed_data(db):
             data = json.load(json_file)
 
             for domain in data:
-                d = JobDomainModel(id=domain['id'], name=domain['name'], alternative_name=domain['alternative_name'])
+                d = JobDomainModel(id=domain['id'], name=domain['name'], alternative_name=domain['alternative_name'],logo=domain['logo'],content=domain['content'])
                 db.session.add(d)
 
         db.session.commit()

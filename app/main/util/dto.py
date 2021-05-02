@@ -20,6 +20,10 @@ class CompanyDto:
         'description': fields.String(required=True, description='company description'),
     })
 
+class CareerDto:
+    api = Namespace(
+        'Career', description='career related operations')
+
 class SkillDto:
     api = Namespace(
         'Skill', description='skill related operations')

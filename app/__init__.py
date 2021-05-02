@@ -20,6 +20,7 @@ from .main.controller.resume_controller import api as resume_ns
 from .main.controller.filter_controller import api as filter_ns
 from .main.controller.test_controller import api as test_ns
 from .main.controller.special_skills_controll import api as skills_ns
+from .main.controller.career_controller import api as career_ns
 
 blueprint = Blueprint('api', __name__, url_prefix="/api", template_folder='templates')
 
@@ -40,6 +41,7 @@ api.add_namespace(job_domain_ns, path='/job-domains')
 api.add_namespace(resume_ns, path='/resume')
 api.add_namespace(filter_ns, path='/filters')
 api.add_namespace(skills_ns, path='/skills')
+api.add_namespace(career_ns, path='/career')
 
 @api.errorhandler(UnauthorizedError)
 def handle_custom_exception(error):
