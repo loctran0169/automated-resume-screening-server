@@ -5,8 +5,11 @@ from app.main.util.response import response_object
 from app.main.model.job_domain_model import JobDomainModel
 from app.main import db
 
-def get_all_domain():
-    domains = JobDomainModel.query.all()
+def get_all_domain(name):
+    if not name:
+        domains = JobDomainModel.query.all()
+    else:
+        domains = JobDomainModel.query.filter(JobDomainModel.name.contains(name))
     domains = [ d.to_json() for d in domains ]
 
     return response_object(code=200, message="Lấy danh sách domain thành công", data=domains)

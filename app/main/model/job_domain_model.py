@@ -30,6 +30,6 @@ class JobDomainModel(db.Model):
             'id': self.id,
             'name': self.name,
             'alternative_name': self.alternative_name,
-            'special_skills': [skill.to_json() for skill in self.skills],
-            'tasks': [task.to_json() for task in self.tasks],
+            # 'special_skills': [skill.to_json() for skill in self.skills],
+            # 'tasks': [task.to_json() for task in self.tasks],
         }
