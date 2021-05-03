@@ -9,20 +9,22 @@ from flask import request
 from flask_jwt_extended.utils import get_jwt_identity
 
 api = CareerDto.api
+api_explore_skills = CareerDto.skills_str
 
 explore_skills = api.parser()
 explore_skills.add_argument("Authorization", location="headers", required=True)
-explore_skills.add_argument("skills",action="append", location="args", required=False)
+# explore_skills.add_argument("skills",type = list,location="form", required=False)
 @api.route('/career/explore_skills')
 class ExploreSkills(Resource):
     @api.doc("explore skills matching with domain")
-    @api.expect(explore_skills)
+    @api.expect(explore_skills,api_explore_skills)
     @api.marshal_with(CareerDto.explore_skills, code=200) 
+    @api.header("Authorization")
     @Candidate_only
     def post(self):
         identity = get_jwt_identity()
         email = identity['email']
-        data = explore_skills.parse_args()      
+        data = request.json      
         return {
             'code': 200,
             'message': "Thành công",

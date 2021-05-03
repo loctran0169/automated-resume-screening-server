@@ -13,6 +13,7 @@ def match_domains_with_cand_skills(email,data):
     if len(cand.resumes) == 0:
         return None
     try:
+        print(data["skills"])
         resume = cand.resumes[0]
         resume.technical_skills=("|").join(data["skills"])
         # db.session.add(resume)

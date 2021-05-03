@@ -7,6 +7,9 @@ class CareerDto:
     api = Namespace(
         'Career', description='career related operations')
 
+    skills_str = api.inherit('skills_str', {
+            "skills": fields.List(fields.String),
+        })
     special_skills = api.inherit('special_skills', {
             "id": fields.Integer,
             "name": fields.String,
