@@ -40,7 +40,7 @@ api.add_namespace(job_domain_ns, path='/job-domains')
 # api.add_namespace(upload_ns, path='/upload')
 api.add_namespace(resume_ns, path='/resume')
 api.add_namespace(filter_ns, path='/filters')
-api.add_namespace(skills_ns, path='/skills')
+api.add_namespace(skills_ns, path='/skill')
 api.add_namespace(career_ns, path='/career')
 
 @api.errorhandler(UnauthorizedError)
