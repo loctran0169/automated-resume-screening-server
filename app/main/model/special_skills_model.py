@@ -8,6 +8,8 @@ class SpecialSkillsModel(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(255), nullable=False)
 
+    is_allow_search = db.Column(db.Boolean, nullable=False, default=False)
+
     domains = db.relationship('JobDomainModel', secondary= domain_skills, back_populates="skills")
 
     # job_posts = db.relationship("JobPostModel", backref=backref("job_domain", lazy="joined"), lazy=True)
@@ -18,5 +20,5 @@ class SpecialSkillsModel(db.Model):
     def to_json(self):
         return {
             'id': self.id,
-            'name': self.name
+            'name': self.name        
         }

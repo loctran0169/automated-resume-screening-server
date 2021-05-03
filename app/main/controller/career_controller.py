@@ -13,7 +13,6 @@ api_explore_skills = CareerDto.skills_str
 
 explore_skills = api.parser()
 explore_skills.add_argument("Authorization", location="headers", required=True)
-# explore_skills.add_argument("skills",type = list,location="form", required=False)
 @api.route('/career/explore_skills')
 class ExploreSkills(Resource):
     @api.doc("explore skills matching with domain")

@@ -16,11 +16,12 @@ class CareerDto:
         })
 
     domain = api.inherit('domain', {
+            "id" : fields.Integer,
             "name": fields.String,
             "alternative_name": fields.String,
             "logo": fields.String,
             "content": fields.String,
-            "special_skills" : fields.List(fields.Nested(special_skills),attribute=lambda x: x.skills)
+            # "special_skills" : fields.List(fields.Nested(special_skills),attribute=lambda x: x.skills)
         })
 
     max_min_salary = api.inherit('max_min_salary', {
