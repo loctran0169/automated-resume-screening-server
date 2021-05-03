@@ -19,7 +19,7 @@ class ExploreSkills(Resource):
     @api.expect(explore_skills)
     @api.marshal_with(CareerDto.explore_skills, code=200) 
     @Candidate_only
-    def get(self):
+    def post(self):
         identity = get_jwt_identity()
         email = identity['email']
         data = explore_skills.parse_args()      

@@ -25,7 +25,9 @@ def get_technical_skills(domain, text, modules="both"):
         print("Request to extract the unsupported domain.")
         raise ValueError("Unsupported domain.")
     
-    prepare_text = {'keywords':"data mining, computer science"}
+    # prepare_text = {'keywords':"data mining, computer science"}
+    prepare_text = {'keywords':""}
+
     prepare_text['abstract'] = text
     
     result_dict = cm.run_classifier(domain, prepare_text, modules=modules, explanation=True).get_dict()

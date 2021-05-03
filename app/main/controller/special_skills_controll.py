@@ -9,7 +9,7 @@ _skill = SkillDto.skill
 
 skill_parser = api.parser()
 skill_parser.add_argument("name", type=str, location="args", required=False)
-@api.route('/search')
+@api.route('')
 @api.response(404, 'Skill not found.')
 class SkillFind(Resource):
     @api.doc('Find list skills by name')
