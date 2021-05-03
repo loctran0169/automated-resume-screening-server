@@ -17,9 +17,9 @@ def get_a_skills_by_name(name, page, page_size=5):
 
     return skills, has_next
 
-def add_new_skill(data):    
+def add_new_skill(name):    
     skill = SpecialSkillsModel(
-        name=data['name']
+        name=name
     )
     try:
         db.session.add(skill)
