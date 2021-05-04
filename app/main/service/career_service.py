@@ -47,7 +47,7 @@ def match_domains_with_cand_skills(email, data):
     if not domains or len(domains) == 0:
         return None
 
-    results = []
+    domain_matched = []
 
     start_time = time_log.time()
     for domain in domains:
@@ -72,7 +72,7 @@ def match_domains_with_cand_skills(email, data):
 
         # (matched_list_skills, _) = domain_skills_res.result()
 
-        results.append({
+        domain_matched.append({
             "domain": domain,
             "matchedSkills": matched_list_skills,
             "totalCount": max_job,
@@ -83,7 +83,7 @@ def match_domains_with_cand_skills(email, data):
         })
     print("---explore domain skills in %s seconds ---" %
           (time_log.time() - start_time))
-    return results
+    return domain_matched
 
 
 def match_domains_with_skill(data):
@@ -92,7 +92,8 @@ def match_domains_with_skill(data):
     if not domains or len(domains) == 0:
         return None
 
-    results = []
+    start_time = time_log.time()
+    domain_matched = []
     for domain in domains:
 
         max_job = len(domain.job_posts)
@@ -108,7 +109,7 @@ def match_domains_with_skill(data):
         is_matched = data['skill'].strip() in domain_skills
 
         if is_matched:
-            results.append({
+            domain_matched.append({
                 "domain": domain,
                 "totalCount": max_job,
                 "salary": {
@@ -118,27 +119,27 @@ def match_domains_with_skill(data):
             })
 
     provinces_hot_id = ["46", "22", "74", "56", "89", "01", "38", "68"]
-    
+
     jobs_in_provinces = []
-    if len(results) > 0:
+
+    if len(domain_matched) > 0:
         query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
             JobPostModel.deadline > datetime.now())
         for pro_id in provinces_hot_id:
-        
-            province_query = query.filter(JobPostModel.province_id.contains(pro_id))            
+
+            province_query = query.filter(
+                JobPostModel.province_id.contains(pro_id))
 
             posts = province_query.filter(or_(JobPostModel.description_text.contains(
                 data['skill'].strip()), JobPostModel.requirement_text.contains(data['skill'].strip()))).paginate(1, 5, error_out=False)
 
-            res = [{
-                'id': post.id,
-                'job_title': post.job_title,
-                'salary': 'Thoả thuận',
-                'posted_in': json.dumps(post.posted_in, default=json_serial),
-                'deadline': json.dumps(post.deadline, default=json_serial),
-                'total_view': post.total_views,
-                'total_save': post.total_saves,
-                'total_apply': len(post.job_resume_submissions)
-            } for post in posts.items]
-
-    return results
+            jobs_in_provinces.append({
+                "province_id": pro_id,
+                "jobs": posts.items
+            })
+    print("---explore domain for skill in %s seconds ---" %
+          (time_log.time() - start_time))
+    return {
+        "domain_matched": domain_matched,
+        "jobs_in_hot_province": jobs_in_provinces
+    }
