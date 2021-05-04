@@ -19,12 +19,12 @@ class SkillFind(Resource):
         name = request.args.get('name')
         page = request.args.get('page', 1, type=int)
 
-        skills, has_next = get_a_skills_by_name(name, page)
+        skills = get_a_skills_by_name(name, page)
 
         if not skills:
             return response_object()
         else:
-            return response_object(200, "Thành công.", data=[skill.to_json() for skill in skills], pagination={"has_next": has_next})
+            return response_object(200, "Thành công.", data=[skill.to_json() for skill in skills])
     
     @api.doc('add a new skill')
     @api.expect(skill_parser)

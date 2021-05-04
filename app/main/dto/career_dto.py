@@ -21,7 +21,7 @@ class CareerDto:
             "alternative_name": fields.String,
             "logo": fields.String,
             "content": fields.String,
-            # "special_skills" : fields.List(fields.Nested(special_skills),attribute=lambda x: x.skills)
+            "special_skills" : fields.List(fields.Nested(special_skills),attribute=lambda x: x.skills)
         })
 
     max_min_salary = api.inherit('max_min_salary', {
@@ -38,4 +38,12 @@ class CareerDto:
 
     explore_skills = api.inherit("explore_skills", base, {
         'data': fields.List(fields.Nested(explore_skills_list)),
+    })
+
+    explore_domain_for_skill_data = api.inherit('explore_domain_for_skill_data', {
+            'domains': fields.List(fields.Nested(explore_skills_list)),
+        })
+
+    explore_domain_for_skill = api.inherit("explore_domain_for_skill", base, {
+        'data': fields.Nested(explore_domain_for_skill_data),
     })
