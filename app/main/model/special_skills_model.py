@@ -8,7 +8,7 @@ class SpecialSkillsModel(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(255), nullable=False)
 
-    is_allow_search = db.Column(db.Boolean, nullable=False, default=False)
+    is_main = db.Column(db.Boolean, nullable=False, default=False)
 
     domains = db.relationship('JobDomainModel', secondary= domain_skills, back_populates="skills")
 

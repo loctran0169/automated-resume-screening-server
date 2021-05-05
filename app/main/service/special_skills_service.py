@@ -6,13 +6,19 @@ from app.main.model.special_skills_model import SpecialSkillsModel
 def get_all_company():
     return SpecialSkillsModel.query.all()
 
-def get_a_skills_by_name(name, page, page_size=5):
+def get_a_skills_by_name(name, is_main_skill,page, page_size):
     if name == None:
-        query = SpecialSkillsModel.query.filter(SpecialSkillsModel.is_allow_search==True)
+        if is_main_skill:
+            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.is_main==True).paginate(page, page_size, error_out=False)
+        else:
+            query = SpecialSkillsModel.query.paginate(page, page_size, error_out=False)
     else:
-        query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name),SpecialSkillsModel.is_allow_search==True)
+        if is_main_skill:
+            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name),SpecialSkillsModel.is_main==True).paginate(page, page_size, error_out=False)
+        else:
+            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name)).paginate(page, page_size, error_out=False)
 
-    skills = [ com for com in query]
+    skills = [ com for com in query.items]
     
     return skills
 

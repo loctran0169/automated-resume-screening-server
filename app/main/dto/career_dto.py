@@ -23,7 +23,7 @@ class CareerDto:
         "alternative_name": fields.String,
         "logo": fields.String,
         "content": fields.String,
-        "special_skills": fields.List(fields.Nested(special_skills), attribute=lambda x: x.skills)
+        # "special_skills": fields.List(fields.Nested(special_skills), attribute=lambda x: x.skills)
     })
 
     domain_no_special_skills = api.inherit('domain_no_special_skills', {
@@ -43,6 +43,7 @@ class CareerDto:
         "domain": fields.Nested(domain),
         "totalCount": fields.Integer,
         "matchedSkills": fields.List(fields.String),
+        "mainSkills" : fields.List(fields.Nested(special_skills)),
         "salary": fields.Nested(max_min_salary)
     })
 

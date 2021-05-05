@@ -8,7 +8,7 @@ from app.main.model.special_skills_model import SpecialSkillsModel
 from app.main.util.data_processing import get_technical_skills
 from flask_restx import abort
 from app.main.model.candidate_model import CandidateModel
-from app.main.model.job_domain_model import JobDomainModel
+from app.main.model.job_domain_model import JobDomainModel, domain_skills as domain_skills_model
 from app.main.util.thread_pool import ThreadPool
 import time as time_log
 from app.main import db
@@ -51,7 +51,7 @@ def match_domains_with_cand_skills(email, data):
 
     start_time = time_log.time()
     for domain in domains:
-
+        _domain = domain
         max_job = len(domain.job_posts)
         max_salary = 0
         min_salary = 0
@@ -61,10 +61,10 @@ def match_domains_with_cand_skills(email, data):
             min_salary = min(domain.job_posts,
                              key=lambda x: x.min_salary or 0).min_salary or 0
 
-        domain_skills = [skill.name.lower() for skill in domain.skills]
+        skills = domain.skills
+        domain_skills = [skill.name.lower() for skill in skills]
         matched_set_skills = set(data["skills"]) & set(domain_skills)
-        matched_list_skills = sorted(
-            matched_set_skills, key=lambda k: data["skills"].index(k))
+        matched_list_skills = sorted(matched_set_skills, key=lambda k: data["skills"].index(k))
         # print(len(domain_skills))
         # print(matched_list_skills)
         # executor = ThreadPool.instance().executor
@@ -72,9 +72,12 @@ def match_domains_with_cand_skills(email, data):
 
         # (matched_list_skills, _) = domain_skills_res.result()
 
+        skills_main = [skill for skill in skills if skill.is_main == True]
+        print(len(skills_main))
         domain_matched.append({
             "domain": domain,
             "matchedSkills": matched_list_skills,
+            "mainSkills" : skills_main,
             "totalCount": max_job,
             "salary": {
                 "max": max_salary,

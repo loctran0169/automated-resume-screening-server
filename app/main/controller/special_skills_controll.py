@@ -1,3 +1,4 @@
+from flask_restx.fields import Boolean
 from app.main.util.response import response_object
 from app.main.service.special_skills_service import add_new_skill, get_a_skills_by_name
 from flask_restx import Resource
@@ -9,6 +10,14 @@ _skill = SkillDto.skill
 
 skill_parser = api.parser()
 skill_parser.add_argument("name", type=str, location="args", required=False)
+skill_parser.add_argument("isMainSkill", type=bool,
+                          location="args", required=False, default=True)
+skill_parser.add_argument(
+    "page", type=int, location="args", required=False, default=1)
+skill_parser.add_argument("page_size", type=int,
+                          location="args", required=False, default=10)
+
+
 @api.route('')
 @api.response(404, 'Skill not found.')
 class SkillFind(Resource):
@@ -17,15 +26,17 @@ class SkillFind(Resource):
     def get(self):
         '''get list skills by name'''
         name = request.args.get('name')
+        is_main_skill = request.args.get('isMainSkill')
         page = request.args.get('page', 1, type=int)
+        page_size = request.args.get('page_size', 10, type=int)
 
-        skills = get_a_skills_by_name(name, page)
+        skills = get_a_skills_by_name(name, is_main_skill, page, page_size)
 
         if not skills:
             return response_object()
         else:
             return response_object(200, "Thành công.", data=[skill.to_json() for skill in skills])
-    
+
     @api.doc('add a new skill')
     @api.expect(skill_parser)
     def post(self):
