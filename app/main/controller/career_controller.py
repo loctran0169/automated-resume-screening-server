@@ -2,7 +2,7 @@ from app.main.dto.career_dto import CareerDto
 from datetime import date
 
 from flask_restx.utils import default_id
-from app.main.service.career_service import match_domains_with_skill, match_domains_with_cand_skills
+from app.main.service.career_service import domain_description, match_domains_with_skill, match_domains_with_cand_skills
 from app.main.util.custom_jwt import Candidate_only
 from flask_restx import Resource
 from flask import request
@@ -48,4 +48,20 @@ class ExploreSkillsForDomain(Resource):
             'code': 200,
             'message': "Thành công",
             'data': match_domains_with_skill(data)
+        }
+
+explore_domain_for_skill = api.parser()
+explore_domain_for_skill.add_argument("domain_id", type = int,location="args", required=True)
+@api.route('/domain')
+class DomainDescription(Resource):
+    @api.doc("Get description domain")
+    @api.expect(explore_domain_for_skill)
+    @api.marshal_with(CareerDto.domain_description, code=200) 
+    def get(self):
+        identity = get_jwt_identity()
+        data = explore_domain_for_skill.parse_args() 
+        return {
+            'code': 200,
+            'message': "Thành công",
+            'data': domain_description(data['domain_id'])
         }
