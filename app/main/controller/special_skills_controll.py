@@ -10,12 +10,7 @@ _skill = SkillDto.skill
 
 skill_parser = api.parser()
 skill_parser.add_argument("name", type=str, location="args", required=False)
-skill_parser.add_argument("isMainSkill", type=bool,
-                          location="args", required=False, default=True)
-skill_parser.add_argument(
-    "page", type=int, location="args", required=False, default=1)
-skill_parser.add_argument("page_size", type=int,
-                          location="args", required=False, default=10)
+skill_parser.add_argument("isMainSkill",type=bool, location="args", required=False, default=True)
 
 
 @api.route('')
@@ -27,10 +22,8 @@ class SkillFind(Resource):
         '''get list skills by name'''
         name = request.args.get('name')
         is_main_skill = request.args.get('isMainSkill')
-        page = request.args.get('page', 1, type=int)
-        page_size = request.args.get('page_size', 10, type=int)
 
-        skills = get_a_skills_by_name(name, is_main_skill, page, page_size)
+        skills = get_a_skills_by_name(name, is_main_skill)
 
         if not skills:
             return response_object()

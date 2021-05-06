@@ -73,7 +73,7 @@ def match_domains_with_cand_skills(email, data):
         # (matched_list_skills, _) = domain_skills_res.result()
 
         skills_main = [skill for skill in skills if skill.is_main == True]
-        print(len(skills_main))
+
         domain_matched.append({
             "domain": domain,
             "matchedSkills": matched_list_skills,
