@@ -86,7 +86,7 @@ class CareerDto:
     })
 
     province_jobs_summary = api.inherit('province_jobs_summary', {
-        'province_id': fields.Integer,
+        'province_id': fields.String,
         'totalJobsCount': fields.Integer,
         'salary': fields.Nested(max_min_salary)
     })
