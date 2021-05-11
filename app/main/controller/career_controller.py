@@ -32,7 +32,6 @@ class ExploreSkills(Resource):
 
 
 explore_domain_for_skill = api.parser()
-explore_domain_for_skill.add_argument("Authorization", location="headers", required=True)
 explore_domain_for_skill.add_argument("skill", type = str,location="args", required=True)
 @api.route('/explore_domain_for_skill')
 class ExploreSkillsForDomain(Resource):
@@ -41,8 +40,6 @@ class ExploreSkillsForDomain(Resource):
     @api.marshal_with(CareerDto.explore_domain_for_skill, code=200) 
     @Candidate_only
     def get(self):
-        identity = get_jwt_identity()
-        email = identity['email']
         data = explore_domain_for_skill.parse_args() 
         return {
             'code': 200,
