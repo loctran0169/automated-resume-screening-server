@@ -38,7 +38,6 @@ class ExploreSkillsForDomain(Resource):
     @api.doc("explore domains for skill matching with domain")
     @api.expect(explore_domain_for_skill)
     @api.marshal_with(CareerDto.explore_domain_for_skill, code=200) 
-    @Candidate_only
     def get(self):
         data = explore_domain_for_skill.parse_args() 
         return {
