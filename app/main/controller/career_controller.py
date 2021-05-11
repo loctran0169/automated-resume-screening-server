@@ -46,16 +46,16 @@ class ExploreSkillsForDomain(Resource):
             'data': match_domains_with_skill(data)
         }
 
-explore_domain_for_skill = api.parser()
-explore_domain_for_skill.add_argument("domain_id", type = int,location="args", required=True)
+explore_domain = api.parser()
+explore_domain.add_argument("domain_id", type = int,location="args", required=True)
 @api.route('/domain')
 class DomainDescription(Resource):
     @api.doc("Get description domain")
-    @api.expect(explore_domain_for_skill)
+    @api.expect(explore_domain)
     @api.marshal_with(CareerDto.domain_description, code=200) 
     def get(self):
         identity = get_jwt_identity()
-        data = explore_domain_for_skill.parse_args() 
+        data = explore_domain.parse_args() 
         return {
             'code': 200,
             'message': "Thành công",
