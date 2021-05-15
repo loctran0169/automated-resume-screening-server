@@ -170,7 +170,7 @@ def domain_description(domain_id):
 
     skills_main = [skill for skill in domain.skills if skill.is_main == True]
 
-    provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"]
+    provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"] 
 
     jobs_in_provinces = []
     
