@@ -35,8 +35,8 @@ def match_domains_with_cand_skills(email, data):
     try:
         resume = cand.resumes[0]
         resume.technical_skills = ("|").join(data["skills"])
-        # db.session.add(resume)
-        # db.session.commit()
+        db.session.add(resume)
+        db.session.commit()
 
     except Exception as e:
         print(str(e.args))
