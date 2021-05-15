@@ -126,9 +126,21 @@ def match_domains_with_skill(data):
 
     jobs_in_provinces = []
 
+
     if len(domain_matched) > 0:
         query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
             JobPostModel.deadline > datetime.now())
+
+        #all_post top 10
+        posts_all = query.filter(or_(JobPostModel.description_text.contains(
+                data['skill'].strip()), JobPostModel.requirement_text.contains(data['skill'].strip()))).paginate(1, 5, error_out=False)
+
+
+        jobs_in_provinces.append({
+                "province_id": "00",
+                "jobs": posts_all.items
+            })
+
         for pro_id in provinces_hot_id:
 
             province_query = query.filter(

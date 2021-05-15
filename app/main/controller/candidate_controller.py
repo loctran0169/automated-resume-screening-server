@@ -64,16 +64,18 @@ class RegisterCandidateList(Resource):
                             'message': 'Đăng ký thất bại. Email không tồn tại',
                             'type':'candidate'
                         }, 501
-                else:                    
+                else:
+                    print("chổ else")                    
                     return {
                         'status': 'failure',
                         'message': 'Đăng ký không thành công',
                         'type':'candidate'
                     }, 409
             except Exception as e:
+                print(e.args)
                 return {
                     'status': 'failure',
-                    'message': 'Đăng ký không thành công',
+                    'message': 'Đăng ký không thành công 2',
                     'type':'candidate'
                 }, 409
         else:
