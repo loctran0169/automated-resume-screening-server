@@ -122,7 +122,7 @@ def match_domains_with_skill(data):
                 }
             })
 
-    provinces_hot_id = ["46", "22", "74", "56", "89", "01", "38", "68"]
+    provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"] 
 
     jobs_in_provinces = []
 
