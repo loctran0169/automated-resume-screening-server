@@ -69,7 +69,7 @@ class CareerDto:
 
     jobs_in_hot_province = api.inherit('jobs_in_hot_province', {
         'jobs': fields.List(fields.Nested(jobs_with_company)),
-        'province_id': fields.Integer
+        'province_id': fields.String
     })
 
     explore_skills = api.inherit('explore_skills', base, {
