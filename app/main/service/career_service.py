@@ -135,7 +135,6 @@ def match_domains_with_skill(data):
         posts_all = query.filter(or_(JobPostModel.description_text.contains(
                 data['skill'].strip()), JobPostModel.requirement_text.contains(data['skill'].strip()))).paginate(1, 5, error_out=False)
 
-
         jobs_in_provinces.append({
                 "province_id": "00",
                 "jobs": posts_all.items
@@ -153,7 +152,7 @@ def match_domains_with_skill(data):
                 "province_id": pro_id,
                 "jobs": posts.items
             })
-    print("---explore domain for skill in %s seconds ---" %
+    print("---explore domain for skill "+str(data['skill'])+" in %s seconds ---" %
           (time_log.time() - start_time))
     return {
         "domain_matched": domain_matched,
