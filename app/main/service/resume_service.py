@@ -58,7 +58,9 @@ def create_cv(cv_local_path, args, filename, file_ext):
 
 def update_cv(args):
     resume = ResumeModel.query.get(args['resume_id'])
-    resume.resume_id = args['resume_id']
+    if not resume:
+        abort(404)
+    # resume.resume_id = args['resume_id']
     resume.educations = args['educations']
     resume.experiences = args['experiences']
     resume.technical_skills = args['skills']

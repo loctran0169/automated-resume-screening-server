@@ -3,7 +3,8 @@ from enum import auto
 from flask_restx.fields import Date, DateTime, String
 from sqlalchemy.orm import backref
 from .. import db, flask_bcrypt
-
+from app.main.util.response import json_serial
+from flask import json
 
 class CandidateModel(db.Model):
     """ Candidate Model for storing account related details """
@@ -41,3 +42,16 @@ class CandidateModel(db.Model):
 
     def __repr__(self):
         return "<Candidate '{}'>".format(self.email)
+    
+    def to_json(self):
+        return {
+            'id': int(self.id),
+            'email': self.email,
+            'phone': self.phone,
+            'fullName': self.full_name,
+            'dateOfBirth': str(self.date_of_birth),
+            'gender': self.gender,
+            'status': self.status,
+            'provinceId': self.province_id,
+            'registeredOn': str(self.registered_on)
+        }

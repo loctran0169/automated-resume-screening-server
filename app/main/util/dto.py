@@ -38,8 +38,7 @@ class CandidateDto:
         'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
         'province_id': fields.Integer(required=True, description='candidate location'),
     })
-    profile = api.model('candidate_profile', {
-        'email': fields.String(required=True, description='user email address'),
+    profile_update = api.model('profile_update', {
         'fullName': fields.String(required=True, description='user full name'),
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
@@ -63,7 +62,8 @@ class CandidateDto:
         'educations': fields.String,
         'experiences': fields.String,
         'job_domain_id': fields.Integer,
-        'edit': fields.DateTime(attribute='last_edit')
+        'edit': fields.DateTime(attribute='last_edit'),
+        'created_on': fields.DateTime(attribute='created_on')
     })
 
     response_profile = api.model('response_profile', {

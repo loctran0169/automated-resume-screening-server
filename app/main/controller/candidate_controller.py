@@ -22,7 +22,7 @@ from app.main.util.custom_jwt import get_jwt_identity
 
 apiCandidate = CandidateDto.api
 _candidate = CandidateDto.candidate
-_candidateProfile = CandidateDto.profile
+_candidateUpdateProfile = CandidateDto.profile_update
 _candidateAccount = CandidateDto.account
 @apiCandidate.route('/candidate/register')
 class RegisterCandidateList(Resource):
@@ -229,11 +229,14 @@ class AccountLogin(Resource):
                 'type':'candidate'
             }, 500
 
+candidate_profile_header = apiCandidate.parser()
+candidate_profile_header.add_argument("Authorization", location="headers", required=True)
 @apiCandidate.route('/candidate/profile')
 @apiCandidate.response(404, 'Profile not found.')
 class CandidateFindProfile(Resource):
     @apiCandidate.doc('Find list companies')
     @apiCandidate.marshal_with(CandidateDto.candidate_profile, code=200)
+    @apiCandidate.expect(candidate_profile_header)
     @Candidate_only
     def get(self):
         '''get profile by token'''
@@ -250,14 +253,16 @@ class CandidateFindProfile(Resource):
             },400
         else:
             return response_object(data=profile)
-
+            
+candidate_update_profile = apiCandidate.parser()
+candidate_update_profile.add_argument("Authorization", location="headers", required=True)
 @apiCandidate.route('/candidate/profile/update')
 @apiCandidate.response(404, 'Profile not found.')
 class CandidateUpdateProfile(Resource):
 
-    @apiCandidate.response(200, 'update profile successfully.')
+    # @apiCandidate.response(200, 'update profile successfully.')
     @apiCandidate.doc('update a profile candidate')
-    @apiCandidate.expect(_candidateProfile, validate=True)
+    @apiCandidate.expect(candidate_update_profile,_candidateUpdateProfile, validate=True)
     @Candidate_only
     def post(self):
         '''update a new profile candiadate '''
@@ -266,12 +271,12 @@ class CandidateUpdateProfile(Resource):
         identity = get_jwt_identity()
         email_in_token = identity['email']
 
-        if email_in_token != data['email']:
-            return {
-                'status': 'failure',
-                'message': 'Email does not match to data body email',
-                'type' : 'candidate'
-            }, 200
+        # if email_in_token != data['email']:
+        #     return {
+        #         'status': 'failure',
+        #         'message': 'Email does not match to data body email',
+        #         'type' : 'candidate'
+        #     }, 200
 
         profile = get_a_account_candidate_by_email(email_in_token)
 
@@ -336,7 +341,7 @@ save_res_parser.add_argument('job_post_id', type=int, location='json', required=
 save_res_parser.add_argument('status', type=int, location='json', required=True)
 
 get_res_parser = apiCandidate.parser()
-get_res_parser.add_argument("Authorization", location="headers", required=False)
+get_res_parser.add_argument("Authorization", location="headers", required=True)
 get_res_parser.add_argument("page", type=int, location="args", required=False, default=1)
 get_res_parser.add_argument("page-size", type=int, location="args", required=False, default=10)
 get_res_parser.add_argument("from-date", type=inputs.datetime_from_iso8601, location="args", required=False)
