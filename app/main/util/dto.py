@@ -42,7 +42,7 @@ class CandidateDto:
         'fullName': fields.String(required=True, description='user full name'),
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
-        'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
+        'dateOfBirth': fields.String(attribute=lambda x: x.date_of_birth.strftime("%Y-%m-%d")),
         'provinceId': fields.String(required=True , description='province_id'),
     })
     account = api.model('account', {
