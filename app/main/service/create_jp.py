@@ -42,7 +42,7 @@ post = {
     'max_salary': 30000,
     'amount': 1,
     'education_level': 0,
-    'province_id': 91,
+    'province_id': "91",
     'recruiter_email': 'rec_email@gmail.com',
     'deadline': '2008-09-03T20:56:35.450686Z'
 }

@@ -332,7 +332,7 @@ class GetListJobPostSimilar(Resource):
 get_suggest_job = api.parser()
 get_suggest_job.add_argument("Authorization", location="headers", required=True)
 get_suggest_job.add_argument("domain_id", type=int, location="args", required=True)
-get_suggest_job.add_argument("province_id", type=int, location="args", required=True)
+get_suggest_job.add_argument("province_id", type=str, location="args", required=True)
 get_suggest_job.add_argument("page", type=int, location="args", required=False, default=1)
 get_suggest_job.add_argument("page_size", type=int, location="args", required=False, default=10)
 @api.route('/suggest')

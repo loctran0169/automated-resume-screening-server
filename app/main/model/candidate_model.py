@@ -18,7 +18,7 @@ class CandidateModel(db.Model):
     gender = db.Column(db.Boolean, nullable=False, default=False)
     date_of_birth = db.Column(db.DateTime, nullable=True)
     status = db.Column(db.Integer, nullable=True,default=1)
-    province_id = db.Column(db.Integer, nullable=True)
+    province_id = db.Column(db.String(100), nullable=True)
     
     access_token = db.Column(db.String(512), nullable=True)
     registered_on = db.Column(db.DateTime, nullable=False)

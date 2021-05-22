@@ -101,7 +101,7 @@ def seed_domain(domain_key, file):
             'contract_type': contract_type,
             'amount': amount,
             'education_level': education_level,
-            'province_id': 91,
+            'province_id': "91",
             'recruiter_email': 'rec_email@gmail.com',
             'deadline': '2008-09-03T20:56:35.450686Z',
             'recruiter_id': 1,

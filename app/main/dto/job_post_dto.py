@@ -36,7 +36,7 @@ class JobPostDto:
         'max_salary': NullableFloat(required=False, description='maximum salary'),
         'amount': fields.Integer(required=True, description='amount of candidates is recruiting'),
         'is_active': fields.Boolean(required=True, description='is allow show'),
-        'province_id': fields.Integer(required=True, description='locations of candidates is recruiting'),
+        'province_id': fields.String(required=True, description='locations of candidates is recruiting'),
         'deadline': fields.DateTime(required=True, description='last day for candidate to apply'),
     })
 
@@ -163,7 +163,7 @@ class JobPostDto:
     })
     list_suggest_job = api.inherit('list_suggest_job', {
         "items": fields.List(fields.Nested(single_job_post_in_search_fields_with_company)),
-        "province_id": fields.Integer,
+        "province_id": fields.String,
         "totalCount": fields.Integer,
         "salary": fields.Nested(max_min_salary)
     })
@@ -205,7 +205,7 @@ class JobPostDto:
         'gender': fields.Boolean,
         'date_of_birth': fields.DateTime(),
         'status': fields.Integer,
-        'province_id': fields.Integer,
+        'province_id': fields.String,
         'access_token': fields.String,
         'registered_on': fields.DateTime(),
         'confirmed': fields.Boolean,

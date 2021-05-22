@@ -262,7 +262,7 @@ class CandidateUpdateProfile(Resource):
 
     # @apiCandidate.response(200, 'update profile successfully.')
     @apiCandidate.doc('update a profile candidate')
-    @apiCandidate.expect(candidate_update_profile,_candidateUpdateProfile, validate=True)
+    @apiCandidate.expect(candidate_update_profile,CandidateDto.profile_update, validate=True)
     @Candidate_only
     def post(self):
         '''update a new profile candiadate '''

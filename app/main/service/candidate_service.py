@@ -27,7 +27,7 @@ def insert_new_account_candidate(account):
         gender = account['gender'],
         date_of_birth = account['dateOfBirth'],
         access_token=create_token(account['email'], 1/24),
-        province_id=int(account['province_id']),
+        province_id=account['province_id'],
         registered_on=datetime.datetime.utcnow()
     )
     db.session.add(new_account)
@@ -69,7 +69,6 @@ def get_candidate_by_id(id, rec_email, resume_id):
         "cand": cand,
         "saved_date": saved_date
     }
-
 
 def update_candidate_profile(id,profile):
     candidate = CandidateModel.query.get(id)

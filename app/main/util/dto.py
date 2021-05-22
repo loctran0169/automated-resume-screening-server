@@ -36,14 +36,14 @@ class CandidateDto:
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
         'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
-        'province_id': fields.Integer(required=True, description='candidate location'),
+        'province_id': fields.String(required=True, description='candidate location'),
     })
     profile_update = api.model('profile_update', {
         'fullName': fields.String(required=True, description='user full name'),
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
         'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
-        'provinceId': fields.Integer(required=True , description='province_id'),
+        'provinceId': fields.String(required=True , description='province_id'),
     })
     account = api.model('account', {
         'email': fields.String(required=True, description='user email address'),
@@ -74,7 +74,7 @@ class CandidateDto:
         'dateOfBirth': fields.String(attribute=lambda x: x.date_of_birth.strftime("%d/%m/%Y")),
         'gender': fields.Boolean,
         'status': fields.Boolean,
-        'provinceId': fields.Integer(attribute='province_id'),
+        'provinceId': fields.String(attribute='province_id'),
         'registeredOn': fields.String(attribute=lambda x: x.registered_on.strftime("%H:%M - %d/%m/%Y")),
         'resumes': fields.Nested(response_resume)
     })
@@ -95,7 +95,7 @@ class CandidateDto:
         'gender': fields.Boolean(attribute="cand.gender"),
         'date_of_birth': fields.DateTime(attribute="cand.date_of_birth"),
         'status': fields.Integer(attribute="cand.status"),
-        'province_id': fields.Integer(attribute="cand.province_id"),
+        'province_id': fields.String(attribute="cand.province_id"),
         'access_token': fields.String(attribute="cand.access_token"),
         'registered_on': fields.DateTime(attribute="cand.registered_on"),
         'confirmed': fields.Boolean(attribute="cand.confirmed"),
@@ -210,7 +210,7 @@ class RecruiterDto:
         'cand_name': fields.String(attribute='candidate.full_name'),
         'cand_email': fields.String(attribute='candidate.email'),
         'cand_phone_from_user_input': fields.String(attribute='candidate.phone'),
-        'province_id': fields.Integer(attribute='candidate.province_id'),
+        'province_id': fields.String(attribute='candidate.province_id'),
         'last_edit': fields.String(attribute=lambda x: format_edit_time(x))
     })
     saved_resume_info_fields = api.model("saved_resume_info_fields", {

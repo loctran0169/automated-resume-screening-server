@@ -139,7 +139,7 @@ def find_candidates(args, email):
         query = query.filter(ResumeModel.job_domain_id.in_(job_domains))
 
     if provinces:
-        province_ids = [int(id) for id in provinces]
+        province_ids = [id for id in provinces]
 
         query = query.filter(CandidateModel.province_id.in_(province_ids))
 

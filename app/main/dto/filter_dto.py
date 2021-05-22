@@ -67,7 +67,7 @@ class FilterDto:
         "name": fields.String(attribute=lambda x: x.candidate.full_name),
         "total_views": fields.Integer,
         "job_domain": fields.String(attribute=lambda x: x.job_domain.name),
-        "province_id": fields.Integer(attribute=lambda x: x.candidate.province_id),
+        "province_id": fields.String(attribute=lambda x: x.candidate.province_id),
         "experience": fields.String(attribute=lambda x: format_experience(x.months_of_experience)),
         "skills": fields.String(attribute=lambda x: format_skill(x)),
         "url": fields.String(attribute="store_url"),
