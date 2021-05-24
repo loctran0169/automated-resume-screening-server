@@ -116,6 +116,7 @@ class CandidateDto:
         'resume_id': fields.Integer, 
         'created_on': fields.DateTime(),
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
+        'saved_date': fields.DateTime(),
     })
     pagination = api.model('pagination', {
         'page': fields.Integer,

@@ -158,7 +158,8 @@ def get_saved_job_posts(email, args):
         i['cand_id'] = item.cand_id
         i['job_post_id'] = item.job_post_id
         i['created_on'] = item.created_on
-        
+        i['saved_date'] = item.created_on
+
         job_post = JobPostModel.query.get(item.job_post_id)
         i['job_post'] =  job_post
         final_res.append(i)

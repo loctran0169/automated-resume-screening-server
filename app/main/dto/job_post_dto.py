@@ -69,11 +69,11 @@ class JobPostDto:
         'company_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'provinces': fields.List(fields.String, attribute=lambda x: format_provinces(x.province_id)),
         'education': fields.String(attribute=lambda x: format_education(x)),
-        'saved_date': fields.String
+        # 'saved_date': fields.String
     })
     job_post_response_for_cand_fields = api.model("job_post_response_for_cand_fields", {
         'post': fields.Nested(job_post_for_cand_fields),
-        'save_date': fields.DateTime()
+        'saved_date': fields.DateTime()
     })
     job_post_for_cand = api.inherit('job_post_for_cand', base, {
         'data': fields.Nested(job_post_response_for_cand_fields)
