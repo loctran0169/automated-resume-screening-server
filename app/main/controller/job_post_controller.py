@@ -104,10 +104,14 @@ update_JP_parser.add_argument("amount", type=int, location="json")
 update_JP_parser.add_argument("education_level", type=int, location="json")
 update_JP_parser.add_argument("deadline", type=str, location="json")
 update_JP_parser.add_argument("province_id", type=str, location="json")
+
+detail_get_parser = api.parser()
+detail_get_parser.add_argument("Authorization", location="headers", required=True)
 @api.route('/<int:id>')
 class JobPostDetail(Resource):
     @api.doc('get detail of job post')
     @api.marshal_with(JobPostDto.response_jp_for_edit, code=200)
+    @api.expect(detail_get_parser)
     def get(self, id):
 
         data = hr_get_detail(id)

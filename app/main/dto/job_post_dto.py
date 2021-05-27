@@ -69,6 +69,9 @@ class JobPostDto:
         'company_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'provinces': fields.List(fields.String, attribute=lambda x: format_provinces(x.province_id)),
         'education': fields.String(attribute=lambda x: format_education(x)),
+        'domain_skills': fields.String,
+        'soft_skills': fields.String,
+        'general_skills': fields.String,
         # 'saved_date': fields.String
     })
     job_post_response_for_cand_fields = api.model("job_post_response_for_cand_fields", {
@@ -100,7 +103,10 @@ class JobPostDto:
         'total_apply': fields.Integer(attribute=lambda x: len(x.job_resume_submissions)),
         'provinces': fields.List(fields.String, attribute=lambda x: x.province_id.split(",")),
         'education': fields.String(attribute=lambda x: format_education(x)),
-        'education_level': fields.Integer
+        'education_level': fields.Integer,
+        'domain_skills': fields.String,
+        'soft_skills': fields.String,
+        'general_skills': fields.String,
     })
 
     response_jp_for_edit = api.inherit('response_jp_for_edit', base, {
