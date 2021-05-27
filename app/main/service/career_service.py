@@ -22,6 +22,11 @@ def contain_provinces_at_least_one(province_ids):
         res.append(and_(JobPostModel.province_id.contains(id)))
     return res
 
+def contain_domain(domain_ids):
+    res = []
+    for id in domain_ids:
+        res.append(or_(JobPostModel.job_domain_id==id))
+    return res
 
 def match_domains_with_cand_skills(email, data):
     cand = CandidateModel.query.filter_by(email=email).first()
@@ -52,8 +57,8 @@ def match_domains_with_cand_skills(email, data):
     start_time = time_log.time()
     for domain in domains:
         _domain = domain
-        max_job = len(domain.job_posts)
-        max_salary = 0
+        
+        max_job = len([job for job in domain.job_posts if job.deadline > datetime.now()])
         min_salary = 0
         if domain.job_posts and len(domain.job_posts) > 0:
             max_salary = max(domain.job_posts,
@@ -98,9 +103,11 @@ def match_domains_with_skill(data):
 
     start_time = time_log.time()
     domain_matched = []
-    for domain in domains:
+    domain_ids = []
 
-        max_job = len(domain.job_posts)
+    for domain in domains:
+        
+        max_job = len([job for job in domain.job_posts if job.deadline > datetime.now()])
         max_salary = 0
         min_salary = 0
         if domain.job_posts and len(domain.job_posts) > 0:
@@ -113,6 +120,7 @@ def match_domains_with_skill(data):
         is_matched = data['skill'].strip() in domain_skills
 
         if is_matched:
+            domain_ids.append(domain.id)
             domain_matched.append({
                 "domain": domain,
                 "totalCount": max_job,
@@ -126,10 +134,10 @@ def match_domains_with_skill(data):
 
     jobs_in_provinces = []
 
-
     if len(domain_matched) > 0:
         query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
             JobPostModel.deadline > datetime.now())
+        query = query.filter(or_(*contain_domain(domain_ids)))
 
         #all_post top 10
         posts_all = query.filter(or_(JobPostModel.description_text.contains(
@@ -169,8 +177,6 @@ def domain_description(domain_id):
 
     start_time = time_log.time()
 
-
-    max_job = len(domain.job_posts)
     max_salary = 0
     min_salary = 0
     if domain.job_posts and len(domain.job_posts) > 0:
@@ -187,6 +193,7 @@ def domain_description(domain_id):
     
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
         JobPostModel.deadline > datetime.now(), JobPostModel.job_domain_id==domain_id)
+    max_job = query.count()
 
     posts = query\
             .order_by(JobPostModel.last_edit)\

@@ -215,7 +215,7 @@ def update_jp(id, recruiter_email, args):
     min_salary = args.get("min_salary", None)
     max_salary = args.get("max_salary", None)
     amount = args.get("amount", None)
-    is_active = args.get("is_active", None)
+    education_level = args.get("education_level", None)
     deadline = args.get("deadline", None)
     province_id = args.get("province_id", None)
 
@@ -253,7 +253,7 @@ def update_jp(id, recruiter_email, args):
     job_post.min_salary = min_salary
     job_post.max_salary = max_salary
     job_post.amount = amount
-    job_post.is_active = is_active
+    job_post.is_active = education_level
     job_post.deadline = dateutil.parser.isoparse(deadline)
     job_post.contract_type = contract_type
     job_post.province_id = province_id
