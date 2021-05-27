@@ -46,7 +46,7 @@ def match_domains_with_cand_skills(email, data):
     except Exception as e:
         print(str(e.args))
 
-    technical_skills = (" | ").join(data["skills"])
+    technical_skills = [skill.lower() for skill in data["skills"]]
 
     domains = JobDomainModel.query.all()
     if not domains or len(domains) == 0:
@@ -68,9 +68,9 @@ def match_domains_with_cand_skills(email, data):
 
         skills = domain.skills
         domain_skills = [skill.name.lower() for skill in skills]
-        matched_set_skills = set(data["skills"]) & set(domain_skills)
+        matched_set_skills = set(technical_skills) & set(domain_skills)
         matched_list_skills = sorted(
-            matched_set_skills, key=lambda k: data["skills"].index(k))
+            matched_set_skills, key=lambda k: technical_skills.index(k))
         # print(len(domain_skills))
         # print(matched_list_skills)
         # executor = ThreadPool.instance().executor
