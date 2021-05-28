@@ -9,7 +9,7 @@ api = SkillDto.api
 _skill = SkillDto.skill
 
 skill_parser = api.parser()
-skill_parser.add_argument("name", type=str, location="args", required=False)
+skill_parser.add_argument("name", type=str, location="args", required=False, default="")
 skill_parser.add_argument("isMainSkill",type=bool, location="args", required=False, default=True)
 
 

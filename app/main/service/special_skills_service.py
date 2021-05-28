@@ -7,16 +7,22 @@ def get_all_company():
     return SpecialSkillsModel.query.all()
 
 def get_a_skills_by_name(name, is_main_skill):
+    print(name)
     print(is_main_skill)
     if name == None or name.strip() == "":
         if is_main_skill == "true" or is_main_skill == "True":
-            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.is_main==True)
+            print('1 true')
+            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.is_main.isnot(None))
+            print(query)
         else:
+            print('1 false')
             query = SpecialSkillsModel.query
     else:
         if is_main_skill == "true" or is_main_skill == "True":
-            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name),SpecialSkillsModel.is_main==True)
+            print('2 true')
+            query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name),SpecialSkillsModel.is_main.isnot(None))
         else:
+            print('2 false')
             query = SpecialSkillsModel.query.filter(SpecialSkillsModel.name.contains(name))
 
     skills = [ com for com in query]

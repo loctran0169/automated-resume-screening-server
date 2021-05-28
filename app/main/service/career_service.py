@@ -78,7 +78,7 @@ def match_domains_with_cand_skills(email, data):
 
         # (matched_list_skills, _) = domain_skills_res.result()
 
-        skills_main = [skill for skill in skills if skill.is_main == True]
+        skills_main = [skill for skill in skills if skill.is_main != None and (','+str(domain.id)+',') in skill.is_main]
 
         domain_matched.append({
             "domain": domain,
@@ -170,13 +170,14 @@ def match_domains_with_skill(data):
 
 def domain_description(domain_id):
 
+    start_time = time_log.time()
+    
     domain = JobDomainModel.query.get(domain_id)
     if not domain:
         print("Domain not exist")
         return None
 
-    start_time = time_log.time()
-
+    
     max_salary = 0
     min_salary = 0
     if domain.job_posts and len(domain.job_posts) > 0:
@@ -185,7 +186,7 @@ def domain_description(domain_id):
         min_salary = min(domain.job_posts,
                             key=lambda x: x.min_salary or 0).min_salary or 0
 
-    skills_main = [skill for skill in domain.skills if skill.is_main == True]
+    skills_main = [skill for skill in domain.skills if skill.is_main != None and (','+str(domain.id)+',') in skill.is_main]
 
     provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"] 
 
