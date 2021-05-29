@@ -64,6 +64,7 @@ def update_cv(args):
     resume.educations = args['educations']
     resume.experiences = args['experiences']
     resume.technical_skills = args['skills']
+    resume.soft_skills = args['softskills']
     resume.months_of_experience = args['months_of_experience']
 
     db.session.add(resume)

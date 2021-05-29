@@ -1,5 +1,4 @@
 from app.main.model.job_post_model import JobPostModel
-from app.main.util.dto import CandidateDto
 from app.main.service.account_service import create_token
 import datetime
 from app.main import db
@@ -11,6 +10,10 @@ from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from flask_restx import abort
 from sqlalchemy import or_
 
+def is_have_resume(resumes):
+    if not resumes or len(resumes)==0:
+        return False
+    return True
 
 def get_a_account_candidate_by_email(email):
     return CandidateModel.query.filter_by(email=email).first()

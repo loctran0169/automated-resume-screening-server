@@ -1,3 +1,4 @@
+from app.main.service.candidate_service import is_have_resume
 from app.main.util.format_text import format_edit_time
 from flask_restx import Namespace, fields
 
@@ -76,6 +77,7 @@ class CandidateDto:
         'status': fields.Boolean,
         'provinceId': fields.String(attribute='province_id'),
         'registeredOn': fields.String(attribute=lambda x: x.registered_on.strftime("%H:%M - %d/%m/%Y")),
+        'isHaveResume': fields.Boolean(attribute=lambda x: is_have_resume(x.resumes)),
         'resumes': fields.Nested(response_resume)
     })
 

@@ -46,6 +46,7 @@ update_cv_parser.add_argument("resume_id", type=int, location="json", required=T
 update_cv_parser.add_argument("educations", location="json", required=True)
 update_cv_parser.add_argument("experiences", location="json", required=True)
 update_cv_parser.add_argument("skills", location="json", required=True)
+update_cv_parser.add_argument("softskills", location="json", required=True)
 update_cv_parser.add_argument("months_of_experience", type=int, location="json", required=True)
 update_cv_parser.add_argument("Authorization", location="headers", required=True)
 @api.route("/update")

@@ -9,6 +9,7 @@ class SpecialSkillsModel(db.Model):
     name = db.Column(db.String(255), nullable=False)
 
     is_main = db.Column(db.String(255), nullable = True)
+    is_soft = db.Column(db.Boolean, nullable=True, default=False)
 
     domains = db.relationship('JobDomainModel', secondary= domain_skills, back_populates="skills")
 

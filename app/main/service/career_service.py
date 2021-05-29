@@ -171,12 +171,11 @@ def match_domains_with_skill(data):
 def domain_description(domain_id):
 
     start_time = time_log.time()
-    
+
     domain = JobDomainModel.query.get(domain_id)
     if not domain:
         print("Domain not exist")
         return None
-
     
     max_salary = 0
     min_salary = 0
