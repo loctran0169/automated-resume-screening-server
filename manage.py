@@ -27,7 +27,7 @@ mail = Mail(app)
 manager = Manager(app)
 migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
-CORS(app, resources={r"/api/*": { "origins": "http://localhost:3000" }})
+CORS(app, resources={r"/api/*": { "origins": ["http://localhost:3000","http://23.98.70.192:3000"] }})
 
 @app.route('/')
 def index():
@@ -45,7 +45,7 @@ def bad_request():
 @manager.command
 def run():
     seed_data(db)
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', use_reloader=False)
 
 
 @manager.command

@@ -76,6 +76,8 @@ class JobPostDto:
     })
     job_post_response_for_cand_fields = api.model("job_post_response_for_cand_fields", {
         'post': fields.Nested(job_post_for_cand_fields),
+        'cand_soft_skills': fields.String,
+        'cand_technical_skills': fields.String,
         'saved_date': fields.DateTime()
     })
     job_post_for_cand = api.inherit('job_post_for_cand', base, {

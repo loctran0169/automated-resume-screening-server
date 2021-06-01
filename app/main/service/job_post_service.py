@@ -355,11 +355,16 @@ def get_job_post_for_candidate(jp_id, cand_email):
         cand = CandidateModel.query.filter_by(email=cand_email).first()
 
     save_record = None
+    soft_skills = None
+    technical_skills = None
     if cand is not None:
         save_record = CandidateJobSavesModel \
             .query \
             .filter_by(cand_id=cand.id, job_post_id=jp_id) \
             .first()
+        if cand.resumes and len(cand.resumes) != 0:
+            soft_skills = cand.resumes[0].soft_skills
+            technical_skills = cand.resumes[0].technical_skills
 
     saved_date = None
     if save_record is not None:
@@ -376,6 +381,8 @@ def get_job_post_for_candidate(jp_id, cand_email):
 
     return {
         'post': post,
+        'cand_soft_skills': soft_skills,
+        'cand_technical_skills': technical_skills,
         'saved_date': saved_date
     }
 
