@@ -386,7 +386,6 @@ def get_job_post_for_candidate(jp_id, cand_email):
         'saved_date': saved_date
     }
 
-
 def search_jd_for_cand(args):
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
         JobPostModel.deadline > datetime.now()).order_by(JobPostModel.last_edit.desc())
@@ -614,7 +613,7 @@ def get_similar_job_post_with_id(job_id):
     query = query.filter(and_(*contain_province(job.province_id)))
 
     result = query\
-        .order_by(JobPostModel.last_edit)
+        .order_by(JobPostModel.last_edit.desc())
     _job_result = []
 
     for _job in result:
@@ -630,7 +629,7 @@ def get_similar_job_post_with_id(job_id):
 
 def get_suggested_job_posts(email, args):
 
-    min_similar = 0.8
+    min_similar = 0.6
 
     # Check Cand
     cand = CandidateModel.query.filter_by(email=email).first()
@@ -666,6 +665,7 @@ def get_suggested_job_posts(email, args):
     def cacular_score(job,dict, id):
         score = tree_matching_score_jd(technical_skills,
                                job.general_skills.split("|"),
+                            #    job.domain_skills.split("|"),
                                job.job_domain.alternative_name)['score']
         print(str(id)+" "+str(score))
         dict[id] = score
