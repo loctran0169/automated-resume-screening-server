@@ -45,7 +45,8 @@ def bad_request():
 @manager.command
 def run():
     seed_data(db)
-    app.run(debug=True, host='0.0.0.0', use_reloader=False)
+    # app.run(debug=True, host='0.0.0.0', use_reloader=False)
+    app.run(debug=True, host='0.0.0.0')
 
 
 @manager.command

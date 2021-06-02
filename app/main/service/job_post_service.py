@@ -78,9 +78,9 @@ def add_new_post(post):
         amount=post['amount'],
         education_level=post['education_level'],
         province_id=post['province_id'],
-        domain_skills='|'.join(domain_skills),
-        general_skills='|'.join(general_skills),
-        soft_skills='|'.join(soft_skills),
+        domain_skills='|'.join(domain_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
+        general_skills='|'.join(general_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
+        soft_skills='|'.join(soft_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
         deadline=parse_deadline
     )
 
@@ -242,9 +242,9 @@ def update_jp(id, recruiter_email, args):
         print(domain_skills)
         print(general_skills)
         print(soft_skills)
-        job_post.domain_skills = '|'.join(domain_skills)
-        job_post.general_skills = '|'.join(general_skills)
-        job_post.soft_skills = '|'.join(soft_skills)
+        job_post.domain_skills = '|'.join(domain_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True","")
+        job_post.general_skills = '|'.join(general_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True","")
+        job_post.soft_skills = '|'.join(soft_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True","")
     job_post.job_domain_id = job_domain_id
     job_post.description_text = description_text
     job_post.requirement_text = requirement_text
@@ -658,7 +658,7 @@ def get_suggested_job_posts(email, args):
 
     min_salary = db.session.query(func.max(
         JobPostModel.min_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
-
+    
     query = query.filter(JobPostModel.job_domain_id == domain_id)
     query = query.filter(and_(*contain_province_with_one(province_id)))
     all_items = query.all()
