@@ -80,6 +80,7 @@ def update_candidate_profile(id,profile):
     candidate.gender = profile['gender']
     candidate.date_of_birth = profile['dateOfBirth']
     candidate.province_id = profile['provinceId']
+    db.session.add(candidate)
     db.session.commit()
 
 

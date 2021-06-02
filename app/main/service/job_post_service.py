@@ -389,7 +389,7 @@ def get_job_post_for_candidate(jp_id, cand_email):
 
 def search_jd_for_cand(args):
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
-        JobPostModel.deadline > datetime.now())
+        JobPostModel.deadline > datetime.now()).order_by(JobPostModel.last_edit.desc())
 
     posted_date = args.get('posted_date')
     contract_type = args.get('contract_type')
