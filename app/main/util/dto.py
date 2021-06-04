@@ -7,6 +7,10 @@ from app.main.dto.base_dto import base
 from app.main.dto.resume_dto import ResumeDTO
 from app.main.dto.job_post_dto import JobPostDto
 
+class ProvinceDto:
+    api = Namespace(
+        'Province', description='Province related operations')
+
 class DataDto:
     api = Namespace(
         'Data', description='data related operations')
