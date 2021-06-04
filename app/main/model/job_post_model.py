@@ -48,6 +48,7 @@ class JobPostModel(db.Model):
 
     skill_graph = db.Column(db.Text, nullable=True)
     domain_skill_graph = db.Column(db.Text, nullable=True)
+    soft_skill_graph = db.Column(db.Text, nullable=True)
 
     job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="job_post", lazy=True)
 

@@ -1,3 +1,6 @@
+import codecs
+import pickle
+from app.main.util.data_processing import generate_graph_tree_with
 from app.main.model.job_domain_model import JobDomainModel
 from app.main.model.candidate_model import CandidateModel
 from flask_jwt_extended.utils import get_jwt_identity
@@ -37,8 +40,8 @@ def create_cv(cv_local_path, args, filename, file_ext):
         cand_twitter=resume_info['twitter'],
         cand_mail=resume_info['email'],
         cand_phone=resume_info['phone'],
-        soft_skills="|".join(resume_info['soft_skills']).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
-        technical_skills="|".join(resume_info['tech_skills']).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
+        soft_skills="|".join(resume_info['soft_skills']).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+        technical_skills="|".join(resume_info['tech_skills']).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
         store_url=blob.public_url,
         download_url=blob.media_link,
         is_finding_job=False,
@@ -47,7 +50,9 @@ def create_cv(cv_local_path, args, filename, file_ext):
         educations=resume_info["educations"],
         experiences=resume_info["experiences"],
         resume_filename=filename,
-        resume_file_extension=file_ext
+        resume_file_extension=file_ext,
+        technical_skill_graph = resume_info["graph_general"],
+        soft_skill_graph = resume_info["graph_softskill"],
     )
 
     db.session.add(resume)
@@ -61,11 +66,21 @@ def update_cv(args):
     if not resume:
         abort(404)
     # resume.resume_id = args['resume_id']
+
+    (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=resume.technical_skills.split("|"))
+    (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=resume.soft_skills.split("|"))
+
+    pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+    pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+
     resume.educations = args['educations']
     resume.experiences = args['experiences']
     resume.technical_skills = args['skills']
     resume.soft_skills = args['softskills']
     resume.months_of_experience = args['months_of_experience']
+    resume.technical_skill_graph = pickled_general,
+    resume.soft_skill_graph = pickled_softskill,
+
 
     db.session.add(resume)
     db.session.commit()

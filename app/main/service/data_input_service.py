@@ -1,3 +1,4 @@
+import pickle
 from app.main.util.firebase import Firebase
 from app.main.model.company_model import CompanyModel
 import re
@@ -26,7 +27,7 @@ from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import HR_only
 from app.main.util.format_text import format_contract, format_education, format_salary
 from app.main.util.response import json_serial, response_object
-from app.main.util.data_processing import get_technical_skills, tree_matching_score_jd
+from app.main.util.data_processing import generate_graph_tree_with, get_technical_skills, tree_matching_score_jd
 from flask_restx import abort
 from sqlalchemy import or_, func, and_
 from app.main.util.data_processing import tree_matching_score
@@ -101,14 +102,14 @@ def insert_data(file, domain_id):
         data = json.loads(json_str)
         #add jobs to db
         try:
-            firstJob = ""
+            first_local = ""
             provice_ids = []
             for provice_text in data['jobLocation']:
                 for pro in provice:
                     if str(provice_text['address']['addressRegion']).lower() in no_accent_vietnamese(pro['province_name']):
                         provice_ids.append(pro['province_id'])
-                    if firstJob =="":
-                        firstJob = str(provice_text['address']['addressRegion'])
+                    if first_local =="":
+                        first_local = str(provice_text['address']['addressRegion'])
             if len(provice_ids) == 0:
                 provice_ids = ["79"]
 
@@ -150,7 +151,7 @@ def insert_data(file, domain_id):
 
                 company_news = CompanyModel(
                     name=company_name, 
-                    location=firstJob,
+                    location=first_local,
                     phone=None,
                     email=email_genreral,
                     website=None,
@@ -176,8 +177,7 @@ def insert_data(file, domain_id):
             txt = " ".join([data['experienceRequirements'],data['description']])
 
             executor = ThreadPool.instance().executor
-            domain_skills_res = executor.submit(
-                get_technical_skills, job_domain.alternative_name, txt)
+            domain_skills_res = executor.submit(get_technical_skills, job_domain.alternative_name, txt)
             general_skills_res = executor.submit(get_technical_skills, "general", txt)
             soft_skills_res = executor.submit(get_technical_skills, "softskill", txt)
 
@@ -198,9 +198,9 @@ def insert_data(file, domain_id):
                 amount=0,
                 education_level= 0,
                 province_id= ",".join(provice_ids),
-                domain_skills='|'.join(domain_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
-                general_skills='|'.join(general_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
-                soft_skills='|'.join(soft_skills).replace("|True|","").replace("True|","").replace("|True","").replace("True",""),
+                domain_skills='|'.join(domain_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+                general_skills='|'.join(general_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+                soft_skills='|'.join(soft_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
                 deadline=parse_deadline
             )
 
@@ -215,3 +215,71 @@ def insert_data(file, domain_id):
             print("### insert one job")
         except Exception as ex:
             print(str(ex.args))
+
+import library.zss as zss
+from library.zss import Node
+import codecs
+def re_job_extract(id):
+    job = JobPostModel.query.get(id)
+    if not job:
+        return None
+    
+    domain = JobDomainModel.query.get(job.job_domain_id)
+    if not domain:
+        return None
+
+    # (domain_skills_graph, _) = generate_graph_tree_with(domain=domain.alternative_name, skills=job.domain_skills.split('|'))
+    # (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=job.general_skills.split('|'))
+    # (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=job.soft_skills.split('|'))
+
+    # pickled_domain = codecs.encode(pickle.dumps(domain_skills_graph), "base64").decode()
+    # pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+    # pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+
+    # job.skill_graph=pickled_domain
+    # job.domain_skill_graph=pickled_general
+    # job.soft_skill_graph=pickled_softskill
+
+    # db.session.add(job)
+    # db.session.commit() 
+
+    # unpickled = pickle.loads(codecs.decode(job.domain_skill_graph.encode(), "base64"))
+    # print(unpickled)
+    # print(type(unpickled))
+    # a = Node('2',[])
+    # b = Node('4',[])
+    # c = Node('3',[])
+    # d = Node('*',[a,b])
+    # e = Node('+',[c,d])
+    # print(e)
+    # print(domain_skills)
+    # print('|'.join(domain_skills))
+    # job.domain_skills='|'.join(domain_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+    # job.general_skills='|'.join(general_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+    # job.soft_skills='|'.join(soft_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+
+    # db.session.add(job)
+    # db.session.commit() 
+    print("success: "+str(id))
+    return None
+
+def re_extract_skill():
+    # re_job_extract(442)
+    # items = JobPostModel.query.all()
+    # for item in items:
+        # re_job_extract(item.id)
+    
+    items = ResumeModel.query.all()
+    for item in items:
+        (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=item.technical_skills.split('|'))
+        (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=item.soft_skills.split('|'))
+
+        pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+        pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+
+        item.technical_skill_graph=pickled_general
+        item.soft_skill_graph=pickled_softskill
+
+        db.session.add(item)
+        db.session.commit() 
+    return None

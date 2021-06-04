@@ -1,5 +1,5 @@
 from requests.sessions import default_headers
-from app.main.service.data_input_service import insert_data
+from app.main.service.data_input_service import insert_data, re_extract_skill
 import os
 import uuid
 
@@ -38,3 +38,18 @@ class DataInput(Resource):
             except Exception as ex:
                 print('save file lổi')
         return insert_data(file_jd_local, domain_id)
+
+re_data_parser = api.parser()
+re_data_parser.add_argument("password", type=int, location="args", required=True)
+@api.route('/re-extract-skills')
+class ReextractDataInput(Resource):
+    @api.doc('ReextractDataInput')
+    @api.expect(re_data_parser)
+    def post(self):
+        '''ReextractDataInput'''
+
+        password = request.args.get("password")
+
+        if password != "1999":
+            return "Wrong password"
+        return re_extract_skill()
