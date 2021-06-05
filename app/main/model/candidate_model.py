@@ -27,7 +27,8 @@ class CandidateModel(db.Model):
 
     resumes = db.relationship('ResumeModel', backref=backref("candidate", lazy="joined"), lazy=True)
     saved_job_posts = db.relationship('CandidateJobSavesModel', uselist=True, backref="candidate")
-
+    subcribes = db.relationship('SubcribeModel', backref=backref("candidate", lazy="joined"), lazy=True)
+    
     @property
     def password(self):
         raise AttributeError('password: write-only field')

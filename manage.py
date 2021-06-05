@@ -1,11 +1,10 @@
 from seeds.seed import seed_data
-from app.main.service.account_service import get_url_verify_email
 import os
 import unittest
 
 from flask_cors import CORS
 from flask_jwt_extended.jwt_manager import JWTManager
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 import jwt
@@ -23,7 +22,7 @@ app.config['SQLALCHEMY_POOL_SIZE'] = 100
 app.config['SQLALCHEMY_POOL_RECYCLE'] = 280
 app.app_context().push()
 
-mail = Mail(app)
+# mail = Mail(app)
 manager = Manager(app)
 migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)

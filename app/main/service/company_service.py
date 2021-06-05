@@ -52,7 +52,7 @@ def add_new_company(data, logo_file, background_file, email):
     db.session.add(company)
     db.session.commit()
 
-    token = create_token(email=email, is_HR=True, company_id=recruiter.company_id)
+    token = create_token(id =recruiter.id ,email=email, is_HR=True, company_id=recruiter.company_id)
     
     return response_object(200, "Cập nhật thông tin công ty thành công", data=token)
 
@@ -68,6 +68,6 @@ def update_company(id, email):
 
     db.session.commit()
 
-    token = create_token(email=email, is_HR=True, company_id=recruiter.company_id)
+    token = create_token(id=recruiter.id, email=email, is_HR=True, company_id=recruiter.company_id)
 
     return response_object(200, "Cập nhật thông tin công ty thành công", data=token)

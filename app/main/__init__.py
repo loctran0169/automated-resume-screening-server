@@ -35,6 +35,7 @@ def create_app(config_name):
     db.init_app(app)
     flask_bcrypt.init_app(app)
     jwt = JWTManager(app)
+    mail.init_app(app)
     @jwt.token_in_blacklist_loader
     def check_token_in_blacklist(token_dict: dict) -> bool:
         jti = token_dict['jti']

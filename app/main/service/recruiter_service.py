@@ -21,7 +21,7 @@ def insert_new_account_recruiter(account):
         phone = account['phone'],
         full_name = account['fullName'],
         gender = account['gender'],
-        access_token=create_token(account['email'], 1/24),
+        access_token=create_token(id = 1 ,email = account['email'], day = 1/24),
         registered_on=datetime.datetime.utcnow()
     )
     db.session.add(new_account)

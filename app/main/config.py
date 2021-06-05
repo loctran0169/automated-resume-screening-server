@@ -7,7 +7,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    BASE_URL_FE = "http://localhost:3000/"
+    BASE_URL_FE = "http://23.98.70.192:3000/"
 
     #main
     SECRET_KEY = os.getenv('SECRET_KEY', 'my_precious_secret_key')
@@ -16,9 +16,9 @@ class Config:
 
     # mail settings
     MAIL_SERVER = 'smtp.googlemail.com'
-    MAIL_PORT = 465
-    MAIL_USE_TLS = False
-    MAIL_USE_SSL = True
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USE_SSL = False
 
     # # gmail authentication
     MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'locyasuo001@gmail.com')

@@ -1,7 +1,6 @@
 from app.main.util.response import response_object
 from app.main.util.custom_jwt import Candidate_only, HR_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
-from app.main import send_email
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
@@ -90,7 +89,7 @@ class RegisterCandidateList(Resource):
                 # resend email if previously expired email
                 jwt_data = decode_token(account.access_token)
                 if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                    access_token = create_token(email=account.email)
+                    access_token = create_token(id = account.id ,email=account.email)
                     set_token_candidate(account.email, access_token)
                     try:
                         confirm_url = url_for('api.Candidate_candidate_verify',token=account.access_token, _external=True)
@@ -194,7 +193,7 @@ class AccountLogin(Resource):
                         # resend email if previously expired email
                         jwt_data = decode_token(account.access_token)
                         if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                            access_token = create_token(email=account.email)
+                            access_token = create_token(id = account.id ,email=account.email)
                             set_token_candidate(account.email, access_token)
                             # send email here
                         return {
@@ -203,7 +202,7 @@ class AccountLogin(Resource):
                             'type':'candidate'
                         }, 403
 
-                    access_token = create_token(email=account.email)
+                    access_token = create_token(id = account.id ,email=account.email)
                     return {
                         'status': 'success',
                         'access_token': access_token,
@@ -240,7 +239,7 @@ class CandidateFindProfile(Resource):
     @Candidate_only
     def get(self):
         '''get profile by token'''
-        identity = get_jwt_identity()
+        identity = get_jwt_identity() 
         email = identity['email']
 
         profile = get_a_account_candidate_by_email(email)

@@ -29,7 +29,7 @@ def insert_new_account_candidate(account):
         full_name = account['fullName'],
         gender = account['gender'],
         date_of_birth = account['dateOfBirth'],
-        access_token=create_token(account['email'], 1/24),
+        access_token=create_token(id =1,email = account['email'], day = 1/24),
         province_id=account['province_id'],
         registered_on=datetime.datetime.utcnow()
     )

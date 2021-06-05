@@ -25,7 +25,7 @@ from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import HR_only
 from app.main.util.format_text import format_contract, format_education, format_salary
 from app.main.util.response import json_serial, response_object
-from app.main.util.data_processing import distance_graph_score, generate_graph_tree_with, get_technical_skills, tree_matching_score_jd
+from app.main.util.data_processing import distance_graph_score, generate_graph_tree_with, get_technical_skills, score_skills_grahp, tree_matching_score_jd
 from flask_restx import abort
 from sqlalchemy import or_, func, and_
 from app.main.util.data_processing import tree_matching_score
@@ -669,7 +669,8 @@ def get_suggested_job_posts(email, args):
     if cand is None:
         abort(400)
 
-    if not cand.resumes or len(cand.resumes) == 0:
+    province_id = args['province_id']
+    if not cand.resumes or len(cand.resumes) == 0 or province_id == "":
         return None, {
             'total': 0,
             'page': 0
@@ -679,7 +680,6 @@ def get_suggested_job_posts(email, args):
     page = args['page']
     page_size = args['page_size']
     domain_id = args['domain_id']
-    province_id = args['province_id']
 
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
         JobPostModel.deadline > datetime.now(), JobPostModel.job_domain_id == domain_id)
@@ -696,72 +696,36 @@ def get_suggested_job_posts(email, args):
     all_items = query.all()
     start_time = time_log.time()
 
-    # results_matching = []
-    def cacular_score(job,dict, id):
+    def cacular_score(job,dict, id):                                                                   
 
-        general_score = distance_graph_score(pickle.loads(codecs.decode(job.skill_graph.encode(), "base64")),
-                                            pickle.loads(codecs.decode(resume.technical_skill_graph.encode(), "base64")))
+        match_general = tree_matching_score_jd(job.general_skills.split("|"),
+                               resume.technical_skills,
+                               job.job_domain.alternative_name)
 
-        domain_score = distance_graph_score(pickle.loads(codecs.decode(job.domain_skill_graph.encode(), "base64")),
-                                            pickle.loads(codecs.decode(resume.technical_skill_graph.encode(), "base64")))
+        match_domain = tree_matching_score_jd(job.domain_skills.split("|"),
+                               resume.technical_skills,
+                               job.job_domain.alternative_name)
 
-        soft_score = distance_graph_score(pickle.loads(codecs.decode(job.soft_skill_graph.encode(), "base64")),
-                                            pickle.loads(codecs.decode(resume.soft_skill_graph.encode(), "base64")))                                                                       
+        match_softskill = tree_matching_score_jd(job.soft_skills.split("|"),
+                               resume.soft_skills,
+                               job.job_domain.alternative_name)
 
-        overall = domain_score * 2 + soft_score * 1 + general_score * 1
+        overall = match_domain['score'] * 2 + match_softskill['score'] * 1 + match_general['score'] * 1
 
         dict[id] = overall
-        # print(overall)
-        # results_matching.append({
-        #     "domain": job.job_domain.alternative_name,
-        #     "post_id": job.id,
-        #     "cv_id": cand.resumes[0].id,
-        #     "cv_skills": match_general['post1_skills']['union'],
-        #     "post_skills": match_general['post2_skills']['union'],
-
-        #     "domain_w": 2,
-        #     "general_w": 1,
-        #     "soft_w": 1, 
-        #     "overall_score": overall,
-
-        #     "domain_score": float(match_general['score']),
-        #     "soft_score": float(match_domain['score']),
-        #     "general_score": float(match_softskill['score']),
-        # })
+        # print(str(id)+" "+str(overall)+" "+str(id)+" "+str(match_general['score'])+" "+str(match_domain['score'])+" "+str(match_softskill['score']))
         return overall
 
     scores = dict()
 
     all_items = sorted(all_items, key=lambda x: cacular_score(x,scores,x.id), reverse=True)
-    
-    # def sort_json(json):
-    #     try:
-    #         # Also convert to int since update_time will be string.  When comparing
-    #         # strings, "10" is smaller than "2".
-    #         return float(json['overall_score'])
-    #     except KeyError:
-    #         return 0
 
-    # lines.sort() is more efficient than lines = lines.sorted()
-    # results_matching.sort(key=sort_json, reverse=True)
+    MIN_SIMILAR = 3.3
 
-    
-    # results_matching_top_10 = list(filter(lambda x: x['overall_score'] >= min_similar, results_matching))
-    # chunks_matching = [results_matching_top_10[i:i+page_size]
-    #             for i in range(0, len(results_matching_top_10), page_size)]
-
-    #jump result
-    # print(len(results_matching))
-    # with open('D:/evaluation/'+str(domain_id)+'_'+str(cand.resumes[0].id)+'.json', 'w') as f:
-    #     f.write(json.dumps({
-    #         "add_match":results_matching,
-    #         "top_10" : chunks_matching
-    #     }))
-    MIN_SIMILAR = 3.5
-    
     all_items = list(filter(lambda x: scores[x.id] >= MIN_SIMILAR, all_items))
-   
+
     chunks = [all_items[i:i+page_size] for i in range(0, len(all_items), page_size)]
+
     items = []
 
     if page > len(chunks):

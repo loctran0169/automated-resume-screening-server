@@ -150,6 +150,24 @@ def tree_matching_score(post_text, cv_text, domain):
         "post_skills": post_skills,
     }
 
+def score_skills_grahp(skill_post1, grahped, domain):
+    """
+    Return: Score float
+
+    """
+
+    post_skills_1 = dict()
+    post_skills_1['union']=skill_post1
+
+    (post_graph_1, post_node_count_1) = generate_graph_tree_with(domain=domain, skills=post_skills_1['union'])
+
+    (score, ops) = __tree_edit_distance(post_graph_1, grahped)
+    similarity_score = 1 / (1 + score)
+
+
+    DECIMAL_LENGTH = 4
+    return np.round(similarity_score, DECIMAL_LENGTH)
+
 def tree_matching_score_jd(skill_post1, skill_post2, domain):
     """
     Return:
@@ -209,8 +227,6 @@ def __tree_edit_distance(cv_graph, post_graph):
     score = len(_ops) * unit_of_score
     return (score, ops)
 
-from flask import json
-
 def generate_graph_tree_with(domain, skills): 
     (graph_data, root) = cm.get_ontology(domain).generate_graph_dict(skills)
     # (_, _) = __generate_graph_with(domain, skills)
@@ -235,10 +251,5 @@ def generate_graph_tree_with(domain, skills):
     if not node_dict:
         node_dict['unknowed'] = Node('unknowed')
         return (node_dict['unknowed'], 1)
-    # print(node_dict[root])
-    # print(type(node_dict[root]))
-    # data = pickle.dumps(node_dict[root])
-    # with open('D:/evaluation/grap.json', 'w') as f:
-    #     f.write(json.dumps(node_dict))
-    # return (pickle.loads(data), len(graph_data.keys()))
+
     return (node_dict[root], len(graph_data.keys()))
