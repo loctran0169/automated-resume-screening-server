@@ -21,7 +21,7 @@ class SubcribeModel(db.Model):
 
     type = db.Column(db.Integer, nullable=False, default = 0)
     subcribe_date = db.Column(db.DateTime, nullable=False, default=datetime.now)
-    status = db.Column(db.Boolean, nullable=False, default=True)
+    status = db.Column(db.Integer, nullable=False, default=True)
 
     def __repr__(self):
         return "<Subcribe '{}'>".format(self.topic)

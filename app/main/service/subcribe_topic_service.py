@@ -14,13 +14,35 @@ from app.main.config import Config as config
 
 def get_subcribe(cand_id):
     subcribe = SubcribeModel.query.filter(SubcribeModel.cand_id==cand_id).first()
-    print(datetime.now())
-    print(datetime.now() + timedelta(27))
-
-    cand = CandidateModel.query.get(cand_id)
-    send_subcribe_mail(cand,"game","79",True)
-
     return subcribe
+
+def update_subcribe(cand_id,topic,province_id,_type,status):
+    subcribe = SubcribeModel.query.filter(SubcribeModel.cand_id==cand_id).first()
+    subcribe.topic = topic
+    subcribe.province_id = province_id
+    subcribe.type = _type
+    subcribe.status = status
+    try:
+        db.session.add(subcribe)
+        db.session.commit()
+        return response_object(200, "Update success", data=subcribe.to_json())
+    except Exception as ex:
+        return response_object(200, "Update fail", data=None)
+
+def delete_subcribe(cand_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+
+    if not cand.subcribe:
+        return response_object(200, "Delete success", data=None)
+
+    try:
+        db.session.delete(cand.subcribe)
+        db.session.commit()
+        return response_object(200, "Delete success", data=None)
+    except Exception as ex:
+        return response_object(400, "Delete fail", data=None)
 
 def subcribe_email(cand_id, topic,province_id):
     cand = CandidateModel.query.get(cand_id)
@@ -43,7 +65,7 @@ def subcribe_email(cand_id, topic,province_id):
     try:
         db.session.add(subcribe)
         db.session.commit()
-        return response_object(200, "Register topic searxh success", data=subcribe.to_json())
+        return response_object(200, "Register topic search success", data=subcribe.to_json())
     except Exception as ex:
         return response_object(200, "Register fail", data=None)
 
@@ -91,7 +113,7 @@ def cacular_score_jobs(jobs,resume,results):
             if overall >= MIN_SIMILAR:
                 results.append(job)
 
-def send_subcribe_mail(candidate,topic, province_id, is_suggest):
+def send_subcribe_mail(candidate,topic, province_id):
     query = JobPostModel.query \
         .filter(JobPostModel.closed_in is not None) \
         .filter(JobPostModel.deadline > datetime.now()) \
@@ -101,26 +123,32 @@ def send_subcribe_mail(candidate,topic, province_id, is_suggest):
     key = "%{word}%".format(word=topic)
     query = query.filter(JobPostModel.job_title.ilike(key))
 
-    if province_id:
+    if province_id and province_id != "":
         query = query.filter(JobPostModel.province_id.contains(province_id))
     jobs = []
     
-    start_time = time_log.time()
-    
-    if is_suggest:
-        if not candidate.resumes:
-            jobs = [i for i in query]
-        else:            
-            cacular_score_jobs(query,candidate.resumes[0],jobs)
-    else:
+    start_time = time_log.time()    
+
+    if not candidate.resumes:
         jobs = [i for i in query]
+    else:            
+        cacular_score_jobs(query,candidate.resumes[0],jobs)
+    print("jobs: "+str(len(jobs)))
     if jobs:
-        print("send email here")
         title = "Hi, " + candidate.full_name
-        message = "These job ads match find "+str(len(jobs))+" " + topic+" jobs for you"
+        message = "These job ads match find "+str(len(jobs))+" " + topic+" jobs for you."
         html = render_template('robot_suggest.html',title = title, message=message,content = jobs,my_website = config.BASE_URL_FE)
-        subject = "Please confirm your email"
+        subject = "AI Machting is hiring for "+topic
         send_email("loctran0169@gmail.com", subject, html)
 
     print("---send mail topic in %s seconds ---" %(time_log.time() - start_time))
     return None
+
+def func_scheduler():
+    subcribes = SubcribeModel.query.filter(SubcribeModel.status==1)
+    print(subcribes.count())
+    for subcribe in subcribes:
+        try:
+            send_subcribe_mail(subcribe.candidate,subcribe.topic,subcribe.province_id)
+        except Exception as ex:
+            print(str(ex.args))

@@ -27,7 +27,7 @@ class CandidateModel(db.Model):
 
     resumes = db.relationship('ResumeModel', backref=backref("candidate", lazy="joined"), lazy=True)
     saved_job_posts = db.relationship('CandidateJobSavesModel', uselist=True, backref="candidate")
-    subcribes = db.relationship('SubcribeModel', backref=backref("candidate", lazy="joined"), lazy=True)
+    subcribe = db.relationship('SubcribeModel', backref="candidate", uselist=False)
     
     @property
     def password(self):
