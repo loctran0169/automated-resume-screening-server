@@ -9,6 +9,7 @@ from app.main.model.recruiter_model import RecruiterModel
 from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from flask_restx import abort
 from sqlalchemy import or_
+import dateutil.parser
 
 def is_have_resume(resumes):
     if not resumes or len(resumes)==0:
@@ -28,7 +29,7 @@ def insert_new_account_candidate(account):
         phone = account['phone'],
         full_name = account['fullName'],
         gender = account['gender'],
-        date_of_birth = account['dateOfBirth'],
+        date_of_birth = dateutil.parser.isoparse(account['dateOfBirth']),
         access_token=create_token(id =1,email = account['email'], day = 1/24),
         province_id=account['province_id'],
         registered_on=datetime.datetime.utcnow()
