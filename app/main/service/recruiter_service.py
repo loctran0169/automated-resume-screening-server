@@ -28,8 +28,10 @@ def insert_new_account_recruiter(account):
     db.session.commit()
 
 
-def delete_a_recruiter_by_id(id):
-    return RecruiterModel.query.filter_by(id=id).first()
+def delete_a_recruiter_by_email(email):
+    recruiter = RecruiterModel.query.filter_by(email=email).first()
+    db.session.delete(recruiter)
+    db.session.commit()
 
 def get_a_recruiter_by_email(name):
     return RecruiterModel.query.filter_by(name=name).first()

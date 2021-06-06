@@ -1,16 +1,16 @@
+import re
 from app.main.util.response import response_object
 from app.main.util.custom_jwt import Candidate_only, HR_only
-from app.main.service.recruiter_service import get_a_account_recruiter_by_email
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
 from app.main import send_email
-from app.main.service.candidate_service import set_token_candidate,delete_a_candidate_by_id, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
+from app.main.service.candidate_service import delete_a_candidate_by_email, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
 from app.main.service.account_service import create_token, get_url_verify_email
 from flask_jwt_extended import decode_token
 import datetime
 
-from app.main.service.candidate_service import get_candidate_by_id, get_candidate_resumes, set_token_candidate,delete_a_candidate_by_id, \
+from app.main.service.candidate_service import get_candidate_by_id, get_candidate_resumes, set_token_candidate, \
     get_a_account_candidate_by_email, insert_new_account_candidate, verify_account_candidate, \
     get_candidate_by_id, alter_save_job, get_saved_job_posts, get_applied_job_posts
 
@@ -32,6 +32,15 @@ class RegisterCandidateList(Resource):
     def post(self):
         '''register a new account candiadate '''
         data = request.json
+
+        regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+
+        if not re.search(regex, data['email']):
+            return {
+                    'status': 'failure',
+                    'message': 'Email sai định dạng',
+                    'type':'candidate'
+                }, 400
         account = get_a_account_candidate_by_email(data['email'])
 
         # if account with email not exist
@@ -57,7 +66,10 @@ class RegisterCandidateList(Resource):
                         }, 200
 
                     except Exception as e: # delete account if send email error
-                        delete_a_candidate_by_id(account_inserted['id'])
+                        try:
+                            delete_a_candidate_by_email(data['email'])
+                        except Exception as ex:
+                            print(str(ex.args))
                         return {
                             'status': 'failure',
                             'message': 'Đăng ký thất bại. Email không tồn tại',
@@ -74,7 +86,7 @@ class RegisterCandidateList(Resource):
                 print(e.args)
                 return {
                     'status': 'failure',
-                    'message': 'Đăng ký không thành công 2',
+                    'message': 'Đăng ký không thành công',
                     'type':'candidate'
                 }, 409
         else:

@@ -1,5 +1,5 @@
 from sqlalchemy.ext.declarative.api import as_declarative
-from app.main.service.candidate_service import delete_a_candidate_by_id, get_a_account_candidate_by_email
+from app.main.service.candidate_service import get_a_account_candidate_by_email
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from flask_restx.fields import String

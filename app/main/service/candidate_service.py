@@ -37,8 +37,10 @@ def insert_new_account_candidate(account):
     db.session.add(new_account)
     db.session.commit()
 
-def delete_a_candidate_by_id(id):
-    return CandidateModel.query.filter_by(id=id).first()
+def delete_a_candidate_by_email(email):
+    cand = CandidateModel.query.filter_by(email=email).first()
+    db.session.delete(cand)
+    db.session.commit()
 
 def set_token_candidate(email, token):
     account = get_a_account_candidate_by_email(email)
