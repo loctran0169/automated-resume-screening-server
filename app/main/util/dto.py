@@ -130,6 +130,7 @@ class CandidateDto:
         'created_on': fields.DateTime(),
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
         'saved_date': fields.DateTime(),
+        'note': fields.String, 
     })
     pagination = api.model('pagination', {
         'page': fields.Integer,
@@ -149,6 +150,7 @@ class CandidateDto:
         'job_post_id': fields.Integer,
         'submit_date': fields.DateTime(),
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
+        'note': fields.String,
     })
     get_applied_job_post_list_response = api.inherit('get_applied_job_post_list_response', base, {
         'data': fields.List(fields.Nested(applied_job_post_fields)),

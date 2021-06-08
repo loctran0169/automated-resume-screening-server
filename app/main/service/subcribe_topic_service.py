@@ -50,7 +50,7 @@ def subcribe_email(cand_id, topic,province_id):
         return response_object(400, "Candidate not exist.", data=None)
 
     if not topic:
-        return response_object(400, "You must subcribe to domain or topic.", data=None)
+        return response_object(400, "You must subcribe.", data=None)
 
     subcribe = SubcribeModel.query.filter(SubcribeModel.cand_id==cand_id).first()
     if not subcribe:

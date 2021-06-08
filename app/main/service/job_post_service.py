@@ -340,6 +340,80 @@ def apply_cv_to_jp(jp_id, args):
         "is_calculating": False
     }
 
+def unapply_cv_to_jd(cand_id,jp_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+    if not cand.resumes:
+        return response_object(400, "Candidate not resume", data=None)
+    
+    applies = JobResumeSubmissionModel.query.filter(JobResumeSubmissionModel.job_post_id==jp_id) \
+                                    .filter(JobResumeSubmissionModel.resume_id==cand.resumes[0].id)
+
+    for apply in applies:
+        db.session.delete(apply)
+    db.session.commit()
+    return response_object(200, "Unapply success", data=None)
+
+def add_note_apply(cand_id,jp_id,args):
+    note = args['note']
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+    if not cand.resumes:
+        return response_object(400, "Candidate not resume", data=None)
+    if not cand.resumes[0].job_resume_submissions:
+        return response_object(400, "Candidate not apply jobs", data=None)
+    for sub in cand.resumes[0].job_resume_submissions:
+        if sub.job_post_id == jp_id:
+            sub.note = note
+            db.session.add(sub)
+            db.session.commit()
+            return response_object(200, "Update note success", data=None)
+    return response_object(400, "Candidate not apply this job", data=None)
+
+def delete_note_apply(cand_id,jp_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+    if not cand.resumes:
+        return response_object(400, "Candidate not resume", data=None)
+    if not cand.resumes[0].job_resume_submissions:
+        return response_object(400, "Candidate not apply jobs", data=None)
+    for sub in cand.resumes[0].job_resume_submissions:
+        if sub.job_post_id == jp_id:
+            db.session.delete(sub)
+            db.session.commit()
+            return response_object(200, "Delete note success", data=None)
+    return response_object(200, "Delete note success", data=None)
+
+def add_note_save(cand_id,jp_id,args):
+    note = args['note']
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+    if not cand.saved_job_posts:
+        return response_object(400, "Candidate not save jobs", data=None)
+    for save in cand.saved_job_posts:
+        if save.job_post_id == jp_id:
+            save.note = note
+            db.session.add(save)
+            db.session.commit()
+            return response_object(200, "Update note success", data=None)
+    return response_object(400, "Candidate not save this job", data=None)
+
+def delete_note_save(cand_id,jp_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found", data=None)
+    if not cand.saved_job_posts:
+        return response_object(400, "Candidate not save jobs", data=None)
+    for save in cand.saved_job_posts:
+        if save.job_post_id == jp_id:
+            db.session.delete(save)
+            db.session.commit()
+            return response_object(200, "Delete note success", data=None)
+    return response_object(200, "Delete note success", data=None)
 
 def calculate_scrore(submission, job_post_id, resume_id):
 
@@ -372,7 +446,6 @@ def calculate_scrore(submission, job_post_id, resume_id):
     submission.score_array = score_array
     submission.score_explanation_array = score_explanation_array
 
-
 def get_job_post_for_candidate(jp_id, cand_email):
 
     # Check if signed in
@@ -383,6 +456,7 @@ def get_job_post_for_candidate(jp_id, cand_email):
     save_record = None
     soft_skills = None
     technical_skills = None
+    isApplied = False
     if cand is not None:
         save_record = CandidateJobSavesModel \
             .query \
@@ -391,7 +465,9 @@ def get_job_post_for_candidate(jp_id, cand_email):
         if cand.resumes and len(cand.resumes) != 0:
             soft_skills = cand.resumes[0].soft_skills
             technical_skills = cand.resumes[0].technical_skills
-
+            for apply in cand.resumes[0].job_resume_submissions:
+                if apply.job_post_id == jp_id:
+                    isApplied = True
     saved_date = None
     if save_record is not None:
         saved_date = save_record.created_on
@@ -409,7 +485,8 @@ def get_job_post_for_candidate(jp_id, cand_email):
         'post': post,
         'cand_soft_skills': soft_skills,
         'cand_technical_skills': technical_skills,
-        'saved_date': saved_date
+        'saved_date': saved_date,
+        'is_applied': isApplied
     }
 
 def search_jd_for_cand(args):

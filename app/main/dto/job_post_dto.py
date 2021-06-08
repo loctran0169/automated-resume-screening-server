@@ -78,7 +78,8 @@ class JobPostDto:
         'post': fields.Nested(job_post_for_cand_fields),
         'cand_soft_skills': fields.String,
         'cand_technical_skills': fields.String,
-        'saved_date': fields.DateTime()
+        'saved_date': fields.DateTime(),
+        'is_applied': fields.Boolean
     })
     job_post_for_cand = api.inherit('job_post_for_cand', base, {
         'data': fields.Nested(job_post_response_for_cand_fields)
