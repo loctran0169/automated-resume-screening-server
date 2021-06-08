@@ -152,3 +152,6 @@ def func_scheduler():
             send_subcribe_mail(subcribe.candidate,subcribe.topic,subcribe.province_id)
         except Exception as ex:
             print(str(ex.args))
+
+def start_service_send_mail():
+    return None

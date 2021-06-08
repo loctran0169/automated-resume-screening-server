@@ -1,4 +1,4 @@
-from app.main.service.subcribe_topic_service import delete_subcribe, get_subcribe, subcribe_email, update_subcribe
+from app.main.service.subcribe_topic_service import delete_subcribe, get_subcribe, start_service_send_mail, subcribe_email, update_subcribe
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.util.dto import SubcribeEmailDto
@@ -41,7 +41,7 @@ class SubcribeEmail(Resource):
         cand_id = identity['id']
 
         topic = request.json['topic']
-        province_id = request.json['province_id']
+        province_id = request.json.get('province_id',None)
         return subcribe_email(cand_id,topic,province_id)
 
     @api.doc('delete subcribe email')
@@ -80,3 +80,18 @@ class UpdateSubcribe(Resource):
         status = data['status']
 
         return update_subcribe(cand_id,topic,province_id,type_sub,status)
+
+re_data_parser = api.parser()
+re_data_parser.add_argument("password", type=int, location="args", required=True)
+@api.route('/start-service')
+class StartService(Resource):
+    @api.doc('Start Service')
+    @api.expect(re_data_parser)
+    def post(self):
+        '''Start Service'''
+
+        password = request.args.get("password")
+
+        if password != "1999":
+            return "Wrong password"
+        return start_service_send_mail()
