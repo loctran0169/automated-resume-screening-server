@@ -11,10 +11,6 @@ api = SubcribeEmailDto.api
 subcribe_header = api.parser()
 subcribe_header.add_argument("Authorization", location="headers", required=True)
 
-subcribe_new_header = api.parser()
-subcribe_new_header.add_argument("Authorization", location="headers", required=True)
-subcribe_new_header.add_argument("topic", type=str ,location="args", required=True)
-subcribe_new_header.add_argument("province_id", type=str ,location="args", required=False, default = None)
 
 @api.route('')
 @api.response(404, 'Subcribe not found.')
@@ -32,7 +28,10 @@ class SubcribeEmail(Resource):
             return response_object()
         else:
             return response_object(200, "Thành công.", data=subcribe.to_json())
-    
+    subcribe_new_header = api.parser()
+    subcribe_new_header.add_argument("Authorization", location="headers", required=True)
+    subcribe_new_header.add_argument("topic", type=str ,location="json", required=True)
+    subcribe_new_header.add_argument("province_id", type=str ,location="json", required=False, default = None)
     @api.doc('subcribe email: (type= 0 daily, 1: week) (statis= 0: inactive, 1: active)')
     @api.expect(subcribe_new_header)
     @Candidate_only
@@ -41,8 +40,8 @@ class SubcribeEmail(Resource):
         identity = get_jwt_identity()
         cand_id = identity['id']
 
-        topic = request.args.get('topic')
-        province_id = request.args.get('province_id')
+        topic = request.json['topic']
+        province_id = request.json['province_id']
         return subcribe_email(cand_id,topic,province_id)
 
     @api.doc('delete subcribe email')
