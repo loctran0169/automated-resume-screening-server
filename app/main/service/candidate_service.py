@@ -222,9 +222,9 @@ def get_applied_job_posts(email, args):
         i['job_post_id'] = item.job_post_id
         i['submit_date'] = item.submit_date
         i['note'] = item.note
-        
+
         job_post = JobPostModel.query.get(item.job_post_id)
-        i['job_post'] =  job_post,
+        i['job_post'] =  job_post
         final_res.append(i)
 
     return final_res, {
