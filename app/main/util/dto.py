@@ -131,6 +131,7 @@ class CandidateDto:
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
         'saved_date': fields.DateTime(),
         'note': fields.String, 
+        'is_applied': fields.Boolean, 
     })
     pagination = api.model('pagination', {
         'page': fields.Integer,

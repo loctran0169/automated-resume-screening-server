@@ -143,6 +143,11 @@ def get_saved_job_posts(email, args):
     if cand is None: abort(400)
     cand_id = cand.id
 
+    apply_ids = []
+    if cand.resumes and len(cand.resumes) != 0:
+            for apply in cand.resumes[0].job_resume_submissions:
+                apply_ids.append(apply.job_post_id)
+
     query = CandidateJobSavesModel.query.filter(CandidateJobSavesModel.cand_id == cand_id)
 
     from_date = args.get('from-date', None)
@@ -167,11 +172,12 @@ def get_saved_job_posts(email, args):
         i['created_on'] = item.created_on
         i['saved_date'] = item.created_on
         i['note'] = item.note
+        i['is_applied'] = item.job_post_id in apply_ids
 
         job_post = JobPostModel.query.get(item.job_post_id)
         i['job_post'] =  job_post
         final_res.append(i)
-
+        print(item.job_post_id in apply_ids)
     return final_res, {
         'total': result.total,
         'page': result.page
