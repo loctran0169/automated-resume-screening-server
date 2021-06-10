@@ -1,4 +1,5 @@
 from email import message
+
 from app.main.service.account_service import get_url_verify_email
 from flask.templating import render_template
 from app.main.util.data_processing import distance_graph_score, score_skills_grahp, tree_matching_score_jd
@@ -8,9 +9,12 @@ from app.main.model.candidate_model import CandidateModel
 from app.main.util.response import response_object
 from app.main.model.subcribe_topic_mode import SubcribeModel
 from app.main import db, send_email
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta,date
 import time as time_log
 from app.main.config import Config as config
+import atexit
+from flask_apscheduler import APScheduler
+
 
 def get_subcribe(cand_id):
     subcribe = SubcribeModel.query.filter(SubcribeModel.cand_id==cand_id).first()
@@ -145,13 +149,19 @@ def send_subcribe_mail(candidate,topic, province_id):
     return None
 
 def func_scheduler():
+    print("start scheduler send email")
     subcribes = SubcribeModel.query.filter(SubcribeModel.status==1)
-    print(subcribes.count())
     for subcribe in subcribes:
+        if date.today().weekday() != 0 and subcribe.type == 1:
+            continue
         try:
             send_subcribe_mail(subcribe.candidate,subcribe.topic,subcribe.province_id)
         except Exception as ex:
             print(str(ex.args))
 
+scheduler = APScheduler()
+
 def start_service_send_mail():
-    return None
+    # a = date.today().weekday()
+    # print(a)
+    return "Thành công"
