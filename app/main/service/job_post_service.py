@@ -369,7 +369,7 @@ def add_note_apply(cand_id,jp_id,args):
             sub.note = note
             db.session.add(sub)
             db.session.commit()
-            return response_object(200, "Update note success", data=None)
+            return response_object(200, "Update note success", data=sub.to_json())
     return response_object(400, "Candidate not apply this job", data=None)
 
 def delete_note_apply(cand_id,jp_id):
@@ -399,7 +399,7 @@ def add_note_save(cand_id,jp_id,args):
             save.note = note
             db.session.add(save)
             db.session.commit()
-            return response_object(200, "Update note success", data=None)
+            return response_object(200, "Update note success", data=save.to_json())
     return response_object(400, "Candidate not save this job", data=None)
 
 def delete_note_save(cand_id,jp_id):

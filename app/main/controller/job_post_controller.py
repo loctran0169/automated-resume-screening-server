@@ -191,7 +191,7 @@ class ApplyJobNote(Resource):
     
     delete_note_add_parser = api.parser()
     delete_note_add_parser.add_argument("Authorization", location="headers", required=True)
-    @api.doc('delete note save job')    
+    @api.doc('delete note apply job')    
     @api.expect(delete_note_add_parser)
     @Candidate_only
     def delete(self, jp_id):
