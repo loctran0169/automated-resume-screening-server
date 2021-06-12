@@ -382,7 +382,8 @@ def delete_note_apply(cand_id,jp_id):
         return response_object(400, "Candidate not apply jobs", data=None)
     for sub in cand.resumes[0].job_resume_submissions:
         if sub.job_post_id == jp_id:
-            db.session.delete(sub)
+            sub.note = None
+            db.session.add(sub)
             db.session.commit()
             return response_object(200, "Delete note success", data=None)
     return response_object(200, "Delete note success", data=None)
@@ -410,7 +411,8 @@ def delete_note_save(cand_id,jp_id):
         return response_object(400, "Candidate not save jobs", data=None)
     for save in cand.saved_job_posts:
         if save.job_post_id == jp_id:
-            db.session.delete(save)
+            save.note = None
+            db.session.add(save)
             db.session.commit()
             return response_object(200, "Delete note success", data=None)
     return response_object(200, "Delete note success", data=None)
