@@ -9,6 +9,7 @@ class ProvinceModel(db.Model):
 
     province_id = db.Column(db.String(80), primary_key=True)
     province_name = db.Column(db.String(80))
+    province_name_en = db.Column(db.String(80))
     province_type = db.Column(db.String(80))
 
     def __repr__(self):
@@ -18,5 +19,6 @@ class ProvinceModel(db.Model):
         return {
             "province_id": self.province_id,
             "province_name": self.province_name,
+            "province_name_en": self.province_name_en,
             "province_type": self.province_type,
         }

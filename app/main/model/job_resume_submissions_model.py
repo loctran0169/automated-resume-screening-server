@@ -19,8 +19,6 @@ class JobResumeSubmissionModel(db.Model):
     submit_date = db.Column(db.DateTime, default=datetime.now)
     score = db.Column(db.Float, nullable=True)
 
-    note = db.Column(db.Text, nullable=True)
-
     process_status = db.Column(db.Boolean, nullable=True)
     score_array = db.Column(db.String(100), nullable=True)
     score_explanation_array = db.Column(db.String(100), nullable=True)
@@ -32,8 +30,7 @@ class JobResumeSubmissionModel(db.Model):
             "id": int(self.id),
             "resume_id": int(self.resume_id),
             "job_post_id": int(self.job_post_id),
-            "submit_date": str(self.submit_date),
-            "note": self.note
+            "submit_date": str(self.submit_date)
         }
 
     @hybrid_property

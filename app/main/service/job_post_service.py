@@ -1,3 +1,4 @@
+from app.main.model.job_note_model import JobNoteModel
 import codecs
 import os
 import pickle
@@ -355,64 +356,45 @@ def unapply_cv_to_jd(cand_id,jp_id):
     db.session.commit()
     return response_object(200, "Unapply success", data=None)
 
-def add_note_apply(cand_id,jp_id,args):
+def add_note(cand_id,jp_id,args):
     note = args['note']
     cand = CandidateModel.query.get(cand_id)
     if not cand:
         return response_object(400, "Candidate not found", data=None)
-    if not cand.resumes:
-        return response_object(400, "Candidate not resume", data=None)
-    if not cand.resumes[0].job_resume_submissions:
-        return response_object(400, "Candidate not apply jobs", data=None)
-    for sub in cand.resumes[0].job_resume_submissions:
-        if sub.job_post_id == jp_id:
-            sub.note = note
-            db.session.add(sub)
-            db.session.commit()
-            return response_object(200, "Update note success", data=sub.to_json())
-    return response_object(400, "Candidate not apply this job", data=None)
+    
+    job = JobPostModel.query.get(jp_id)
+    if not job:
+        return response_object(400, "Job post not found", data=None)
 
-def delete_note_apply(cand_id,jp_id):
+    job_note = JobNoteModel.query.filter_by(cand_id=cand_id,job_post_id = jp_id).first()
+    if not job_note:
+        job_note = JobNoteModel(
+            cand_id = cand_id,
+            job_post_id = jp_id,
+            note = note
+        )
+    else:
+        job_note.note = note
+    try:
+        db.session.add(job_note)
+        db.session.commit()
+        return response_object(200, "Update note success", data=job_note.to_json())
+    except Exception as ex:
+        print(str(ex.args))
+        return response_object(400, "Cannot update note for this job", data=None)
+
+def delete_note(cand_id,jp_id):
     cand = CandidateModel.query.get(cand_id)
     if not cand:
         return response_object(400, "Candidate not found", data=None)
-    if not cand.resumes:
-        return response_object(400, "Candidate not resume", data=None)
-    if not cand.resumes[0].job_resume_submissions:
-        return response_object(400, "Candidate not apply jobs", data=None)
-    for sub in cand.resumes[0].job_resume_submissions:
-        if sub.job_post_id == jp_id:
-            sub.note = None
-            db.session.add(sub)
-            db.session.commit()
-            return response_object(200, "Delete note success", data=None)
-    return response_object(200, "Delete note success", data=None)
+    
+    job = JobPostModel.query.get(jp_id)
+    if not job:
+        return response_object(400, "Job post not found", data=None)
 
-def add_note_save(cand_id,jp_id,args):
-    note = args['note']
-    cand = CandidateModel.query.get(cand_id)
-    if not cand:
-        return response_object(400, "Candidate not found", data=None)
-    if not cand.saved_job_posts:
-        return response_object(400, "Candidate not save jobs", data=None)
-    for save in cand.saved_job_posts:
-        if save.job_post_id == jp_id:
-            save.note = note
-            db.session.add(save)
-            db.session.commit()
-            return response_object(200, "Update note success", data=save.to_json())
-    return response_object(400, "Candidate not save this job", data=None)
-
-def delete_note_save(cand_id,jp_id):
-    cand = CandidateModel.query.get(cand_id)
-    if not cand:
-        return response_object(400, "Candidate not found", data=None)
-    if not cand.saved_job_posts:
-        return response_object(400, "Candidate not save jobs", data=None)
-    for save in cand.saved_job_posts:
-        if save.job_post_id == jp_id:
-            save.note = None
-            db.session.add(save)
+    for note in cand.note_jobs:
+        if note.job_post_id == jp_id:
+            db.session.delete(note)
             db.session.commit()
             return response_object(200, "Delete note success", data=None)
     return response_object(200, "Delete note success", data=None)

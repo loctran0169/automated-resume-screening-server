@@ -11,7 +11,6 @@ class CandidateJobSavesModel(db.Model):
     job_post_id = db.Column(db.Integer, db.ForeignKey(JobPostModel.id), nullable=False)
     created_on = db.Column(db.DateTime, default=datetime.now)
     updated_on = db.Column(db.DateTime, default=datetime.now, onupdate=datetime.now)
-    note = db.Column(db.Text, nullable=True, default = None)
 
     def to_json(self):
         return {
@@ -19,6 +18,5 @@ class CandidateJobSavesModel(db.Model):
             "cand_id": int(self.cand_id),
             "job_post_id": int(self.job_post_id),
             "created_on": str(self.created_on),
-            "updated_on": str(self.updated_on),
-            "note": self.note
+            "updated_on": str(self.updated_on)
         }

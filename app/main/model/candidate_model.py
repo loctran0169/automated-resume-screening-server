@@ -29,6 +29,8 @@ class CandidateModel(db.Model):
     saved_job_posts = db.relationship('CandidateJobSavesModel', uselist=True, backref="candidate")
     subcribe = db.relationship('SubcribeModel', backref="candidate", uselist=False)
     
+    note_jobs = db.relationship('JobNoteModel', uselist=True, backref="candidate")
+
     @property
     def password(self):
         raise AttributeError('password: write-only field')

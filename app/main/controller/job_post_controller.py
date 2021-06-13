@@ -10,8 +10,8 @@ from flask import request
 
 from ..dto.job_post_dto import JobPostDto
 from flask_restx import Resource
-from ..service.job_post_service import add_new_post, add_note_apply, add_note_save, count_jobs, \
-        delete_job_post, delete_note_apply, delete_note_save, get_hr_posts, get_similar_job_post_with_id, get_suggested_job_posts, hr_get_detail, apply_cv_to_jp,\
+from ..service.job_post_service import add_new_post, add_note, count_jobs, \
+        delete_job_post, delete_note, get_hr_posts, get_similar_job_post_with_id, get_suggested_job_posts, hr_get_detail, apply_cv_to_jp,\
         get_job_post_for_candidate, search_jd_for_cand, unapply_cv_to_jd, \
         update_jp, close_jp, proceed_resume, get_matched_cand_info_with_job_post, \
         get_matched_list_cand_info_with_job_post
@@ -174,57 +174,31 @@ class SubmitResumeForJD(Resource):
 
         return response_object(data=data), 200
 
-@api.route('/<int:jp_id>/apply/note')
+@api.route('/<int:jp_id>/note')
 class ApplyJobNote(Resource):
-    apply_note_add_parser = api.parser()
-    apply_note_add_parser.add_argument("Authorization", location="headers", required=True)
-    apply_note_add_parser.add_argument("note", type=str, location="json", required=True)
-    @api.doc('add note submit CV.')    
-    @api.expect(apply_note_add_parser)
+    note_add_parser = api.parser()
+    note_add_parser.add_argument("Authorization", location="headers", required=True)
+    note_add_parser.add_argument("note", type=str, location="json", required=True)
+    @api.doc('add note to JP')    
+    @api.expect(note_add_parser)
     @Candidate_only
     def post(self, jp_id):
         identity = get_jwt_identity() 
         cand_id = identity['id']
         
-        args = self.apply_note_add_parser.parse_args()
-        return add_note_apply(cand_id,jp_id, args)
+        args = self.note_add_parser.parse_args()
+        return add_note(cand_id,jp_id, args)
     
-    delete_note_add_parser = api.parser()
-    delete_note_add_parser.add_argument("Authorization", location="headers", required=True)
-    @api.doc('delete note apply job')    
-    @api.expect(delete_note_add_parser)
+    delete_note_parser = api.parser()
+    delete_note_parser.add_argument("Authorization", location="headers", required=True)
+    @api.doc('delete note job')    
+    @api.expect(delete_note_parser)
     @Candidate_only
     def delete(self, jp_id):
         identity = get_jwt_identity() 
         cand_id = identity['id']
     
-        return delete_note_apply(cand_id,jp_id)
-
-@api.route('/<int:jp_id>/save/note')
-class SaveJobNote(Resource):
-    save_note_add_parser = api.parser()
-    save_note_add_parser.add_argument("Authorization", location="headers", required=True)
-    save_note_add_parser.add_argument("note", type=str, location="json", required=True)
-    @api.doc('add note save job')    
-    @api.expect(save_note_add_parser)
-    @Candidate_only
-    def post(self, jp_id):
-        identity = get_jwt_identity() 
-        cand_id = identity['id']
-        
-        args = self.save_note_add_parser.parse_args()
-        return add_note_save(cand_id,jp_id, args)
-    
-    delete_note_add_parser = api.parser()
-    delete_note_add_parser.add_argument("Authorization", location="headers", required=True)
-    @api.doc('delete note save job')    
-    @api.expect(delete_note_add_parser)
-    @Candidate_only
-    def delete(self, jp_id):
-        identity = get_jwt_identity() 
-        cand_id = identity['id']
-    
-        return delete_note_save(cand_id,jp_id)
+        return delete_note(cand_id,jp_id)
 
 unapply_parser = api.parser()
 unapply_parser.add_argument("Authorization", location="headers", required=True)

@@ -9,4 +9,4 @@ class ProvinceList(Resource):
     @api.doc('list province')
     def get(self):
         provinces = get_all_provinces()
-        return [province.to_json() for province in provinces]
+        return provinces

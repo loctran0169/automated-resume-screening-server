@@ -54,6 +54,8 @@ class JobPostModel(db.Model):
 
     job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="job_post", lazy=True)
 
+    note_jobs = db.relationship('JobNoteModel', uselist=True, backref="job_post")
+
     def __repr__(self):
         return "<Job post: '{}'>".format(self.id)
 

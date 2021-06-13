@@ -171,7 +171,12 @@ def get_saved_job_posts(email, args):
         i['job_post_id'] = item.job_post_id
         i['created_on'] = item.created_on
         i['saved_date'] = item.created_on
-        i['note'] = item.note
+
+        i['note'] = None
+        for note in cand.note_jobs:
+            if note.job_post_id == item.job_post_id:
+                i['note'] = note.note
+
         i['is_applied'] = item.job_post_id in apply_ids
 
         job_post = JobPostModel.query.get(item.job_post_id)
@@ -221,13 +226,16 @@ def get_applied_job_posts(email, args):
     # get related info
     final_res = []
     for item in result.items:
-        print(item.note)
         i = {}
         i['id'] = item.id
         i['resume_id'] = item.resume_id
         i['job_post_id'] = item.job_post_id
         i['submit_date'] = item.submit_date
-        i['note'] = item.note
+
+        i['note'] = None
+        for note in cand.note_jobs:
+            if note.job_post_id == item.job_post_id:
+                i['note'] = note.note
 
         job_post = JobPostModel.query.get(item.job_post_id)
         i['job_post'] =  job_post

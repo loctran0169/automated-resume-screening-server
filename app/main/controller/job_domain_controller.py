@@ -33,7 +33,7 @@ add_task_parser.add_argument("content", type=str, location="args", required=True
 @api.route('/add-task')
 class JobDomainAddSkills(Resource):
     @api.doc('add task to domain')
-    @api.expect(add_skill_parser)
+    @api.expect(add_task_parser)
     def post(self):
         data = request.args
         return add_new_task_to_domain(data)
