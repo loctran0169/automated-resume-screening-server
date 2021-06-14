@@ -160,7 +160,9 @@ def get_saved_job_posts(email, args):
 
     page = args.get('page')
     page_size = args.get('page-size')
-    result = query.paginate(page=page, per_page=page_size)
+    result = query \
+        .order_by(CandidateJobSavesModel.created_on.desc()) \
+        .paginate(page=page, per_page=page_size)
 
     # get related info
     final_res = []
@@ -213,15 +215,17 @@ def get_applied_job_posts(email, args):
 
     from_date = args.get('from-date', None)
     if from_date is not None:
-        query = query.filter(CandidateJobSavesModel.created_on >= from_date)
+        query = query.filter(JobResumeSubmissionModel.submit_date >= from_date)
 
     to_date = args.get('to-date', None)
     if to_date is not None:
-        query = query.filter(CandidateJobSavesModel.created_on <= to_date)
+        query = query.filter(JobResumeSubmissionModel.submit_date <= to_date)
 
     page = args.get('page')
     page_size = args.get('page-size')
-    result = query.paginate(page=page, per_page=page_size)
+    result = query \
+        .order_by(JobResumeSubmissionModel.submit_date.desc()) \
+        .paginate(page=page, per_page=page_size)
 
     # get related info
     final_res = []

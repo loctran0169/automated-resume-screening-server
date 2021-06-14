@@ -14,12 +14,12 @@ def format_salary(min_salary, max_salary):
         if not max_salary:
             return "Thoả thuận"
         else: 
-            return "Lên đến {} triệu đồng".format(max_salary)
+            return "Lên đến {}$".format(int(max_salary))
     else:
         if not max_salary:
-            return "Từ {} triệu đồng".format(min_salary)
+            return "Từ {}$".format(int(min_salary))
         else:
-            return "{} - {} triệu đồng".format(min_salary, max_salary)
+            return "{} - {}$".format(int(min_salary), int(max_salary))
 
 
 def format_skill(resume):

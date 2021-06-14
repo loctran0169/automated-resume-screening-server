@@ -207,7 +207,7 @@ class UnsubmitResume(Resource):
     @api.doc('unapply CV.')    
     @api.expect(unapply_parser)
     @Candidate_only
-    def post(self, jp_id):
+    def delete(self, jp_id):
         identity = get_jwt_identity() 
         cand_id = identity['id']
 
