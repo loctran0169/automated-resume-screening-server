@@ -15,6 +15,7 @@ class CareerDto:
     special_skills = api.inherit('special_skills', {
         'id': fields.Integer,
         'name': fields.String,
+        'name_vn': fields.String,
     })
 
     domain = api.inherit('domain', {
@@ -102,6 +103,7 @@ class CareerDto:
         'alternative_name': fields.String,
         'logo': fields.String,
         'content': fields.String,
+        'content_vn': fields.String,
         'tasks': fields.List(fields.Nested(special_skills), attribute=lambda x: x.tasks)
     })
 

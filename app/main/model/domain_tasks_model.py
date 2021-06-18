@@ -8,6 +8,7 @@ class DomainTasksModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(512), nullable=False)
+    name_vn = db.Column(db.String(512), nullable=False)
 
     job_domain_id = db.Column(db.Integer, db.ForeignKey(JobDomainModel.id), nullable=False)
 
@@ -18,5 +19,6 @@ class DomainTasksModel(db.Model):
         return {
             'id': self.id,
             'name': self.name,
+            'name_vn': self.name_vn,
             'job_domain_id': self.job_domain_id
         }

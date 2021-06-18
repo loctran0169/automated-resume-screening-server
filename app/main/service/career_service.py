@@ -56,27 +56,24 @@ def match_domains_with_cand_skills(email, data):
 
     start_time = time_log.time()
     for domain in domains:
-        _domain = domain
         
         max_job = len([job for job in domain.job_posts if job.deadline > datetime.now()])
+        max_salary = 0
         min_salary = 0
         if domain.job_posts and len(domain.job_posts) > 0:
-            max_salary = max(domain.job_posts,
-                             key=lambda x: x.max_salary or 0).max_salary or 0
-            min_salary = min(domain.job_posts,
-                             key=lambda x: x.min_salary or 0).min_salary or 0
+            max_salary = domain.job_posts[0].max_salary or 0
+            min_salary = domain.job_posts[0].min_salary or 0
+            for post in domain.job_posts:
+                if post.max_salary and post.max_salary > max_salary:
+                    max_salary = post.max_salary
+                if post.min_salary and ((post.min_salary < min_salary and post.min_salary != 0) or (min_salary == 0)):
+                    min_salary = post.min_salary
 
         skills = domain.skills
         domain_skills = [skill.name.lower() for skill in skills]
         matched_set_skills = set(technical_skills) & set(domain_skills)
         matched_list_skills = sorted(
             matched_set_skills, key=lambda k: technical_skills.index(k))
-        # print(len(domain_skills))
-        # print(matched_list_skills)
-        # executor = ThreadPool.instance().executor
-        # domain_skills_res = executor.submit(get_technical_skills, domain.alternative_name, technical_skills)
-
-        # (matched_list_skills, _) = domain_skills_res.result()
 
         skills_main = [skill for skill in skills if skill.is_main != None and (','+str(domain.id)+',') in skill.is_main]
 
@@ -111,10 +108,13 @@ def match_domains_with_skill(data):
         max_salary = 0
         min_salary = 0
         if domain.job_posts and len(domain.job_posts) > 0:
-            max_salary = max(domain.job_posts,
-                             key=lambda x: x.max_salary or 0).max_salary or 0
-            min_salary = min(domain.job_posts,
-                             key=lambda x: x.min_salary or 0).min_salary or 0
+            max_salary = domain.job_posts[0].max_salary or 0
+            min_salary = domain.job_posts[0].min_salary or 0
+            for post in domain.job_posts:
+                if post.max_salary and post.max_salary > max_salary:
+                    max_salary = post.max_salary
+                if post.min_salary and ((post.min_salary < min_salary and post.min_salary != 0) or (min_salary == 0)):
+                    min_salary = post.min_salary
 
         domain_skills = [skill.name.lower() for skill in domain.skills]
         is_matched = data['skill'].strip() in domain_skills
@@ -130,14 +130,33 @@ def match_domains_with_skill(data):
                 }
             })
 
-    provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"] 
-
     jobs_in_provinces = []
 
     if len(domain_matched) > 0:
         query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
             JobPostModel.deadline > datetime.now())
         query = query.filter(or_(*contain_domain(domain_ids)))
+
+        #get hot province
+        provinces_ids = []
+        for job in query:
+                provinces_ids.append(job.province_id)
+        
+        provinces_str = "|".join(provinces_ids)
+
+        province_job_count = dict()
+        for i in range(1,97):
+            province_str = str(i).zfill(2)
+            count = provinces_str.count(province_str)
+            if count > 0:
+                province_job_count[province_str] = count
+        
+        sorted_x = sorted(province_job_count.items(), key=lambda x:x[1],reverse = True)
+
+        provinces_hot_id = []
+        
+        for hot in sorted_x:
+            provinces_hot_id.append(hot[0])
 
         #all_post top 10
         posts_all = query.filter(or_(JobPostModel.description_text.contains(
@@ -180,20 +199,41 @@ def domain_description(domain_id):
     max_salary = 0
     min_salary = 0
     if domain.job_posts and len(domain.job_posts) > 0:
-        max_salary = max(domain.job_posts,
-                            key=lambda x: x.max_salary or 0).max_salary or 0
-        min_salary = min(domain.job_posts,
-                            key=lambda x: x.min_salary or 0).min_salary or 0
+        max_salary = domain.job_posts[0].max_salary or 0
+        min_salary = domain.job_posts[0].min_salary or 0
+        for post in domain.job_posts:
+            if post.max_salary and post.max_salary > max_salary:
+                max_salary = post.max_salary
+            if post.min_salary and ((post.min_salary < min_salary and post.min_salary != 0) or (min_salary == 0)):
+                min_salary = post.min_salary
 
     skills_main = [skill for skill in domain.skills if skill.is_main != None and (','+str(domain.id)+',') in skill.is_main]
 
-    provinces_hot_id = ["79","46", "22", "74", "56", "89", "01", "38", "68"] 
-
     jobs_in_provinces = []
-    
+
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
         JobPostModel.deadline > datetime.now(), JobPostModel.job_domain_id==domain_id)
     max_job = query.count()
+
+    provinces_ids = []
+    for job in query:
+            provinces_ids.append(job.province_id)
+    
+    provinces_str = "|".join(provinces_ids)
+
+    province_job_count = dict()
+    for i in range(1,97):
+        province_str = str(i).zfill(2)
+        count = provinces_str.count(province_str)
+        if count > 0:
+            province_job_count[province_str] = count
+    
+    sorted_x = sorted(province_job_count.items(), key=lambda x:x[1],reverse = True)
+
+    provinces_hot_id = []
+    
+    for hot in sorted_x:
+        provinces_hot_id.append(hot[0])
 
     posts = query\
             .order_by(JobPostModel.last_edit)\
@@ -206,8 +246,13 @@ def domain_description(domain_id):
         max_salary_province = 0
         min_salary_province = 0
         if province_query and province_query.count() > 0:
-            max_salary_province = max(province_query, key=lambda x: x.max_salary or 0).max_salary or 0
-            min_salary_province = min(province_query, key=lambda x: x.min_salary or 0).min_salary or 0
+            max_salary_province = domain.job_posts[0].max_salary or 0
+            min_salary_province = domain.job_posts[0].min_salary or 0
+            for post in domain.job_posts:
+                if post.max_salary and post.max_salary > max_salary_province:
+                    max_salary_province = post.max_salary
+                if post.min_salary and ((post.min_salary < min_salary_province and post.min_salary != 0) or (min_salary_province == 0)):
+                    min_salary_province = post.min_salary
 
         jobs_in_provinces.append({
             "province_id": pro_id,

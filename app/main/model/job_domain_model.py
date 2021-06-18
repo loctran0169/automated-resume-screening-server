@@ -14,6 +14,7 @@ class JobDomainModel(db.Model):
     
     logo = db.Column(db.String(255))
     content = db.Column(db.String(512))
+    content_vn = db.Column(db.String(512))
 
     job_posts = db.relationship("JobPostModel", backref=backref("job_domain", lazy="joined"), lazy=True)
     resumes = db.relationship("ResumeModel", backref=backref("job_domain", lazy="joined"), lazy=True)

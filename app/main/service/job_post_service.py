@@ -720,7 +720,7 @@ def get_similar_job_post_with_id(job_id):
         else:
             break
     print("---similar job %s seconds ---" %(time_log.time() - start_time))
-    return all_items
+    return _all_items
 
 
 def get_suggested_job_posts(email, args):
