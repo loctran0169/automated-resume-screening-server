@@ -147,7 +147,7 @@ def get_hr_posts(page, page_size, sort_values, is_showing):
         'page': posts.page
     }
 
-    return response_object(code=200, message="Get list job success|Lấy danh sách thành công", data=res, pagination=pagination)
+    return response_object(code=200, message="Lấy danh sách thành công", data=res, pagination=pagination)
 
 
 def sort_job_list(sort_values):
@@ -312,7 +312,7 @@ def apply_cv_to_jp(jp_id, args):
     resume_id = args['resume_id']
 
     if ResumeModel.query.get(resume_id) == None:
-        return response_object(code=400,message="Resume not found|Resume not found",data = None)
+        return response_object(code=400,message="Resume not found|Không tìm thấy CV",data = None)
 
     if JobPostModel.query.get(jp_id) == None:
         return response_object(code=400,message="Job post not found|Không tìm thấy tin tuyển dụng",data = None)
@@ -537,7 +537,7 @@ def delete_job_post(ids):
 
     db.session.commit()
 
-    return response_object(message="Delete job post success|Xoá tin tuyển dụng thành công")
+    return response_object(message="Xoá tin tuyển dụng thành công")
 
 
 def proceed_resume(id, recruiter_email, args):
@@ -609,14 +609,14 @@ def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
     # Check existed rec
     recruiter = RecruiterModel.query.filter_by(email=rec_email).first()
     if recruiter is None:
-        abort(400, "No recruiter found.|Không tìm thấy nhà tuyển dụng")
+        abort(400, "Không tìm thấy nhà tuyển dụng")
 
     # Check job post
     job = JobPostModel.query.get(job_id)
     if job is None:
-        abort(400, "No job post found.|Không tìm thấy tin tuyển dụng")
+        abort(400, "Không tìm thấy tin tuyển dụng")
     if job.recruiter_id != recruiter.id:
-        abort(400, "The job post is not belong to the recruiter.|Công việc không có sẵn")
+        abort(400, "Công việc không có sẵn")
 
     domain_weight = args['domain_weight']
     general_weight = args['general_weight']

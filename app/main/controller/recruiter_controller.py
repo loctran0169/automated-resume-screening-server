@@ -54,7 +54,7 @@ class RegisterrecruiterList(Resource):
 
                         return {
                             'status': 'success',
-                            'message': 'Successfully registered. Please check your email to Verify account.|Đăng ký thành công. Vui lòng kiểm tra email để xác thực.',
+                            'message': 'Successfully registered. Please check your email to Verify account.',
                             'type':'recruiter'
                         }, 200
 
@@ -65,20 +65,20 @@ class RegisterrecruiterList(Resource):
                             print(str(ex.args))
                         return {
                             'status': 'failure',
-                            'message': 'Registation failed. Email not working.|Email thông tồn tại',
+                            'message': 'Registation failed. Email not working.',
                             'type':'recruiter'
                         }, 501
                 else:                    
                     return {
                         'status': 'failure',
-                        'message': 'Registation failed. Server occur|Thất bại',
+                        'message': 'Registation failed. Server occur',
                         'type':'recruiter'
                     }, 409
             except Exception as e:
                 
                 return {
                     'status': 'failure',
-                    'message': 'Registation failed. Server occur|Thất bại',
+                    'message': 'Registation failed. Server occur',
                     'type':'recruiter'
                 }, 409
         else:            
@@ -87,7 +87,7 @@ class RegisterrecruiterList(Resource):
             if account.confirmed:
                 return {
                     'status': 'failure',
-                    'message': 'Account already exists. Please Log in.|Tài khoản đã tồn tại',
+                    'message': 'Account already exists. Please Log in.',
                     'type': 'recruiter',
                 }, 409
             else:
@@ -104,19 +104,19 @@ class RegisterrecruiterList(Resource):
 
                         return{
                             'status': 'success',
-                            'message': 'Resend email successful.|Gửi thông tin xác thực thành công',
+                            'message': 'Resend email successful.',
                             'type':'recruiter'
                         },200
 
                     except Exception as e: # delete account if send email error
                         return {
                             'status': 'failure',
-                            'message': 'Resend email failure. Email not working.|Email không tồn tại. Thử lại sau',
+                            'message': 'Resend email failure. Email not working.',
                             'type':'recruiter'
                         }, 500
                 return {
                     'status': 'failure',
-                    'message': 'The account has been created but not verified, please check the email.|Vui lòng kiểm tra email để xác thực',
+                    'message': 'The account has been created but not verified, please check the email.',
                     'type': 'recruiter'
                 }, 201
 
@@ -139,31 +139,31 @@ class RecruiterVerify(Resource):
                     if account.confirmed:
                         return{
                             'status': 'success',
-                            'message': 'Account already confirmed. Please login.|Đã xác thực thành công',
+                            'message': 'Account already confirmed. Please login.',
                             'type':"recruiter"
                         }, 200
                     else:
                         verify_account_recruiter(account.email)
                         return{
                             'status': 'success',
-                            'message': 'You have confirmed your account. Thanks!|Xác thực thành công',
+                            'message': 'You have confirmed your account. Thanks!',
                             'type':"recruiter"
                         }, 200
                 else:
                     return {
                         'status': 'failure',
-                        'message': 'The confirmation link is not found.|Xác thực thất bại',
+                        'message': 'The confirmation link is not found.',
                         'type':"recruiter"
                     }, 404
             else:
                 return {
                     'status': 'failure',
-                    'message': 'The confirmation link is invalid or has expired.|Đường dẫn hết hạn',
+                    'message': 'The confirmation link is invalid or has expired.',
                     'type':"recruiter"
                 }, 403
         except Exception:
             return{
-                'status': 'failure|Thất bại',
+                'status': 'failure',
                 'message': 'Try again'
                 ,'type':"recruiter"
             }, 420
@@ -182,7 +182,7 @@ class RecruiterLogin(Resource):
         if not re.search(regex, data['email']):
             return {
                     'status': 'failure',
-                    'message': 'Email wrong format|Email sai định dạng',
+                    'message': 'Email sai định dạng',
                     'type':'candidate'
                 }, 400
         try:
@@ -193,7 +193,7 @@ class RecruiterLogin(Resource):
             if not account:
                 return {
                     'status': 'failure',
-                    'message': 'Account not exist|Tài khoàn không tồn tại',
+                    'message': 'Account not exist',
                     'type':'recruiter'
                 }, 404
 
@@ -210,7 +210,7 @@ class RecruiterLogin(Resource):
                             # send email here
                         return {
                             'status': 'failure',
-                            'message': 'The account has been created but not verified, please check the email.|Tài khoàn chưa được xác thực',
+                            'message': 'The account has been created but not verified, please check the email.',
                             'type':'recruiter'
                         }, 203
                     access_token = create_token(id = account.id, email=account.email, is_HR=True, company_id=account.company_id)
@@ -218,25 +218,25 @@ class RecruiterLogin(Resource):
                     return {
                         'status': 'success',
                         'access_token': access_token,
-                        'message': 'Login successfully|Đăng nhập thành công',
+                        'message': 'Login successfully with email: '+data['email'],
                         'type':'recruiter'
                     }, 200
                 except Exception as e:
                     return{
                         'status': 'failure',
-                        'message': 'Try again|Thất bại',
+                        'message': 'Try again',
                         'type':'recruiter'
                     }, 500
             else:
                 return {
                     'status': 'failure',
-                    'message': 'Email or password invalid|Sai mật khẩu',
+                    'message': 'Email or password invalid',
                     'type':'recruiter'
                 }, 401
         except Exception as e:
             return{
                 'status': 'failure',
-                'message': 'Try again|Thất bại',
+                'message': 'Try again',
                 'type':'recruiter'
             }, 500
 

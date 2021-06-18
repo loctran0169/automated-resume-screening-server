@@ -341,7 +341,7 @@ class GetListCandInfoForJobPost(Resource):
         (data, pagination, stats) = get_matched_list_cand_info_with_job_post(recruiter_email, job_id, args)
         return {
             'code': 200,
-            'message': "Success|Thành công",
+            'message': "Thành công",
             'data': data,
             'pagination': pagination,
             'statistics': stats
