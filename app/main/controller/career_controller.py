@@ -26,7 +26,7 @@ class ExploreSkills(Resource):
         data = request.json      
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': match_domains_with_cand_skills(email,data)
         }
 
@@ -42,7 +42,7 @@ class ExploreSkillsForDomain(Resource):
         data = explore_domain_for_skill.parse_args() 
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': match_domains_with_skill(data)
         }
 
@@ -58,6 +58,6 @@ class DomainDescription(Resource):
         data = explore_domain.parse_args() 
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': domain_description(data['domain_id'])
         }

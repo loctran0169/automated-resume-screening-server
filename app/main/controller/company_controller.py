@@ -32,7 +32,7 @@ class CompanyFind(Resource):
         if not companies:
             return response_object()
         else:
-            return response_object(200, "Thành công.", data=[company.to_json() for company in companies], pagination={"has_next": has_next})
+            return response_object(200, "Success|Thành công.", data=[company.to_json() for company in companies], pagination={"has_next": has_next})
 
 
 @api.route('')

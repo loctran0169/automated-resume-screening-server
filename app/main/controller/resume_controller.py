@@ -75,20 +75,20 @@ class UpdateCV(Resource):
             if not profile or not profile.resumes:
                 return {
                     'status': 'failure',
-                    'message': 'Delete cv failure. Profile not found',
+                    'message': 'Delete cv failure. Profile not found|Xóa CV thất bại',
                     'type' : 'candidate'
                 },400
 
             delete_cv_by_id(profile.resumes[0].id)
             return {
                 'status': 'success',
-                'message': 'Delete cv successfully',
+                'message': 'Delete cv successfully|Xóa CV thành công',
                 'type' : 'candidate'
             }, 200
         except Exception as ex:
             print(ex.args)
             return{
                 'status': 'failure',
-                'message': 'Delete cv failure. Server occur',
+                'message': 'Delete cv failure. Server occur|Xóa CV thất bại. Máy chủ lổi',
                 'type' : 'candidate'
             }, 200

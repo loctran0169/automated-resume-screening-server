@@ -60,7 +60,7 @@ def update_company(id, email):
     company = CompanyModel.query.get(id)
 
     if not company:
-        return response_object(400, "Bad request")
+        return response_object(400, "Compay not found|Không tìm thấy công ty")
 
     recruiter = RecruiterModel.query.filter_by(email=email).first()
 
@@ -70,4 +70,4 @@ def update_company(id, email):
 
     token = create_token(id=recruiter.id, email=email, is_HR=True, company_id=recruiter.company_id)
 
-    return response_object(200, "Cập nhật thông tin công ty thành công", data=token)
+    return response_object(200, "Update company success|Cập nhật thông tin công ty thành công", data=token)

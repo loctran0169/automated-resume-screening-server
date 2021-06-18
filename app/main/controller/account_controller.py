@@ -1,3 +1,4 @@
+from app.main.util.response import response_object
 from app.main.service.account_service import create_token
 from sys import stdout
 
@@ -23,4 +24,4 @@ class AccountLogout(Resource):
     def post(self):
         jti = get_raw_jwt()['jti']
         insert_token_to_backlist(jti)
-        return jsonify({"msg": "Successfully logged out"}), 200
+        return response_object(message="Successfully logged out|Đăng xuất thành công",data=None)

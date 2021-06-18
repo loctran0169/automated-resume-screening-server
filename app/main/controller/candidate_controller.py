@@ -38,7 +38,7 @@ class RegisterCandidateList(Resource):
         if not re.search(regex, data['email']):
             return {
                     'status': 'failure',
-                    'message': 'Email sai định dạng',
+                    'message': 'Email wrong format|Email sai định dạng',
                     'type':'candidate'
                 }, 400
         account = get_a_account_candidate_by_email(data['email'])
@@ -61,7 +61,7 @@ class RegisterCandidateList(Resource):
                         send_email(data['email'], subject, html)
                         return {
                             'status': 'success',
-                            'message': 'Đăng ký tài khoản thành công',
+                            'message': 'Register success|Đăng ký tài khoản thành công',
                             'type':'candidate'
                         }, 200
 
@@ -72,21 +72,21 @@ class RegisterCandidateList(Resource):
                             print(str(ex.args))
                         return {
                             'status': 'failure',
-                            'message': 'Đăng ký thất bại. Email không tồn tại',
+                            'message': 'Register fail. Email not exist.|Đăng ký thất bại. Email không tồn tại',
                             'type':'candidate'
                         }, 501
                 else:
                     print("chổ else")                    
                     return {
                         'status': 'failure',
-                        'message': 'Đăng ký không thành công',
+                        'message': 'Register fail|Đăng ký không thành công',
                         'type':'candidate'
                     }, 409
             except Exception as e:
                 print(e.args)
                 return {
                     'status': 'failure',
-                    'message': 'Đăng ký không thành công',
+                    'message': 'Register fail|Đăng ký không thành công',
                     'type':'candidate'
                 }, 409
         else:
@@ -94,7 +94,7 @@ class RegisterCandidateList(Resource):
             if account.confirmed:
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản đã tồn tại. Vui lòng đăng nhập',
+                    'message': 'Account already exist.|Tài khoản đã tồn tại. Vui lòng đăng nhập',
                     'type': 'candidate',
                 }, 409
             else:
@@ -111,19 +111,19 @@ class RegisterCandidateList(Resource):
 
                         return{
                             'status': 'success',
-                            'message': 'Gửi lại email thành công',
+                            'message': 'Send email success|Gửi lại email thành công',
                             'type':'candidate'
                         },200
 
                     except Exception as e: # delete account if send email error
                         return {
                             'status': 'failure',
-                            'message': 'Gửi lại email không thành công. Email không tồn tại',
+                            'message': 'Email not exist|Gửi lại email không thành công. Email không tồn tại',
                             'type':'candidate'
                         }, 500
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
+                    'message': 'Account already existed. Please check your email.|Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
                     'type': 'candidate'
                 }, 201
 
@@ -145,32 +145,32 @@ class CandidateVerify(Resource):
                     if account.confirmed:
                         return{
                             'status': 'success',
-                            'message': 'Tài khoản đã xác thực. Vui lòng đăng nhập.',
+                            'message': 'Account confirmed|Tài khoản đã xác thực. Vui lòng đăng nhập.',
                             'type':"candidate"
                         }, 200
                     else:
                         verify_account_candidate(account.email)
                         return{
                             'status': 'success',
-                            'message': 'Xác thực tài khoản thành công!',
+                            'message': 'Account verify success|Xác thực tài khoản thành công!',
                             'type':"candidate"
                         }, 200
                 else:
                     return {
                         'status': 'failure',
-                        'message': 'Đường dẫn không tồn tại',
+                        'message': 'Something when wrong|Đường dẫn không tồn tại',
                         'type':"candidate"
                     }, 404
             else:
                 return {
                     'status': 'failure',
-                    'message': 'Đường dẫn không tồn tại hoặc đã hết hạn',
+                    'message': 'Something when wrong|Đường dẫn không tồn tại hoặc đã hết hạn',
                     'type':"candidate"
                 }, 403
         except Exception:
             return{
                 'status': 'failure',
-                'message': 'Vui lòng thử lại'
+                'message': 'Try again|Vui lòng thử lại'
                 ,'type':"candidate"
             }, 420
 
@@ -191,7 +191,7 @@ class AccountLogin(Resource):
             if not account:
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản không tồn tại',
+                    'message': 'Account not exist|Tài khoản không tồn tại',
                     'type':'candidate'
                 }, 404
 
@@ -210,7 +210,7 @@ class AccountLogin(Resource):
                             # send email here
                         return {
                             'status': 'failure',
-                            'message': 'Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
+                            'message': 'Account not verify email|Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
                             'type':'candidate'
                         }, 403
 
@@ -218,25 +218,25 @@ class AccountLogin(Resource):
                     return {
                         'status': 'success',
                         'access_token': access_token,
-                        'message': 'Đăng nhập thành công',
+                        'message': 'Login success|Đăng nhập thành công',
                         'type':'candidate'
                     }, 200
                 except Exception as e:
                     return{
                         'status': 'failure',
-                        'message': 'Vui lòng thử lại',
+                        'message': 'Some thing when wrong|Vui lòng thử lại',
                         'type':'candidate'
                     }, 500
             else:
                 return {
                     'status': 'failure',
-                    'message': 'Email hoặc mật khẩu không chính xác',
+                    'message': 'Email not exist|Email hoặc mật khẩu không chính xác',
                     'type':'candidate'
                 }, 401
         except Exception as e:
             return{
                 'status': 'failure',
-                'message': 'Vui lòng thử lại',
+                'message': 'Some thing when wrong|Vui lòng thử lại',
                 'type':'candidate'
             }, 500
 
@@ -259,7 +259,7 @@ class CandidateFindProfile(Resource):
         if not profile:
             return {
                 'status': 'failure',
-                'message': 'Tài khoản không tồn tại',
+                'message': 'Account not exist|Tài khoản không tồn tại',
                 'type' : 'candidate'
             },400
         else:
@@ -294,7 +294,7 @@ class CandidateUpdateProfile(Resource):
         if not profile:
             return {
                 'status': 'failure',
-                'message': 'Profile not found',
+                'message': 'Profile not found|Thông tin không tồn tại',
                 'type' : 'candidate'
             },400
 
@@ -303,7 +303,7 @@ class CandidateUpdateProfile(Resource):
 
             return {
                 'status': 'success',
-                'message': 'Update profile successfully',
+                'message': 'Update profile successfully|Cập nhật thông tin thành công',
                 'data' :{
                     'profile':get_a_account_candidate_by_email(email_in_token).to_json()
                 },
@@ -314,7 +314,7 @@ class CandidateUpdateProfile(Resource):
             print(e.args)
             return {
                 'status': 'failure',
-                'message': 'Update profile failure',
+                'message': 'Update profile failure|Cập nhật thông tin thất bại',
                 'type' : 'candidate'
             },400 
 

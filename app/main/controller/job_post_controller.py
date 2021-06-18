@@ -169,7 +169,7 @@ class SubmitResumeForJD(Resource):
         if data == 409:
             return response_object(
                 code=409,
-                message="CV này đã gửi vào tin đăng này."
+                message="CV applied|CV này đã gửi vào tin đăng này."
             ), 409
 
         return response_object(data=data), 200
@@ -341,7 +341,7 @@ class GetListCandInfoForJobPost(Resource):
         (data, pagination, stats) = get_matched_list_cand_info_with_job_post(recruiter_email, job_id, args)
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': data,
             'pagination': pagination,
             'statistics': stats
@@ -365,7 +365,7 @@ class GetListJobPostSimilar(Resource):
         data = get_similar_job_post_with_id(args['job_post_id'])
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': data
         }
 

@@ -34,7 +34,7 @@ def add_new_filter(data):
         abort(400)
 
 
-    return response_object(message="Tạo bộ lọc mới thành công", data=new_filter.id)
+    return response_object(message="Create filter success|Tạo bộ lọc mới thành công", data=new_filter.id)
 
 
 def update_filter(data, id):
@@ -62,7 +62,7 @@ def update_filter(data, id):
     except Exception as e:
         abort(400)
 
-    return response_object(message="Cập nhật bộ lọc thành công")
+    return response_object(message="Update filter success|Cập nhật bộ lọc thành công")
 
 
 def delete_filter(ids):
@@ -76,7 +76,7 @@ def delete_filter(ids):
 
     db.session.commit()
 
-    return response_object(message="Xoá bộ lọc thành công")
+    return response_object(message="Delete filter success|Xoá bộ lọc thành công")
 
 
 def get_filter_list(args):

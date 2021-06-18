@@ -42,9 +42,9 @@ def add_new_skill(name):
     try:
         db.session.add(skill)
         db.session.commit()
-        return response_object(200, "Thêm skill thành công", data=skill.to_json())
+        return response_object(200, "Add skill success|Thêm skill thành công", data=skill.to_json())
     except Exception as ex:
-        return response_object(200, "Thêm skill thất bại", data=None)
+        return response_object(200, "Add skill fail|Thêm skill thất bại", data=None)
 
 def add_new_soft_skill(name):    
     skill = SpecialSkillsModel(
@@ -54,6 +54,6 @@ def add_new_soft_skill(name):
     try:
         db.session.add(skill)
         db.session.commit()
-        return response_object(200, "Thêm skill thành công", data=skill.to_json())
+        return response_object(200, "Add skill success|Thêm skill thành công", data=skill.to_json())
     except Exception as ex:
-        return response_object(200, "Thêm skill thất bại", data=None)
+        return response_object(200, "Add skill fail|Thêm skill thất bại", data=None)

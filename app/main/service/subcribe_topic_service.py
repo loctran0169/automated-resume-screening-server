@@ -29,32 +29,32 @@ def update_subcribe(cand_id,topic,province_id,_type,status):
     try:
         db.session.add(subcribe)
         db.session.commit()
-        return response_object(200, "Update success", data=subcribe.to_json())
+        return response_object(200, "Update success|Cập nhật thành công", data=subcribe.to_json())
     except Exception as ex:
-        return response_object(200, "Update fail", data=None)
+        return response_object(200, "Update fail|Cập nhậ thất bại", data=None)
 
 def delete_subcribe(cand_id):
     cand = CandidateModel.query.get(cand_id)
     if not cand:
-        return response_object(400, "Candidate not found", data=None)
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
 
     if not cand.subcribe:
-        return response_object(200, "Delete success", data=None)
+        return response_object(200, "Delete success|Xóa thành công", data=None)
 
     try:
         db.session.delete(cand.subcribe)
         db.session.commit()
-        return response_object(200, "Delete success", data=None)
+        return response_object(200, "Delete success|Xóa thành công", data=None)
     except Exception as ex:
-        return response_object(400, "Delete fail", data=None)
+        return response_object(400, "Delete fail|Xóa thất bại", data=None)
 
 def subcribe_email(cand_id, topic,province_id):
     cand = CandidateModel.query.get(cand_id)
     if not cand:
-        return response_object(400, "Candidate not exist.", data=None)
+        return response_object(400, "Candidate not exist.|Candidate not exist", data=None)
 
     if not topic:
-        return response_object(400, "You must subcribe.", data=None)
+        return response_object(400, "You must subcribe not empty topic.|Phải đăng ký vào 1 chủ đề", data=None)
 
     subcribe = SubcribeModel.query.filter(SubcribeModel.cand_id==cand_id).first()
     if not subcribe:
@@ -69,9 +69,9 @@ def subcribe_email(cand_id, topic,province_id):
     try:
         db.session.add(subcribe)
         db.session.commit()
-        return response_object(200, "Register topic search success", data=subcribe.to_json())
+        return response_object(200, "Register topic search success|Đăng ký thông báo thành công", data=subcribe.to_json())
     except Exception as ex:
-        return response_object(200, "Register fail", data=None)
+        return response_object(200, "Register fail|Đăng ký thông báo thất bại", data=None)
 
 def cacular_score_jobs(jobs,resume,results):
         MIN_SIMILAR = 3.3
@@ -160,8 +160,3 @@ def func_scheduler():
             print(str(ex.args))
 
 scheduler = APScheduler()
-
-def start_service_send_mail():
-    # a = date.today().weekday()
-    # print(a)
-    return "Thành công"

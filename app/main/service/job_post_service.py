@@ -55,7 +55,7 @@ def add_new_post(post):
     job_domain = JobDomainModel.query.get(post['job_domain_id'])
 
     if (not recruiter) | (not job_domain):
-        return "Error"
+        return response_object(code=400,message="Error|thất bại",data = None)
 
     txt = " ".join([post.get('requirement_text', ""),
                    post.get('description_text', "")])
@@ -109,7 +109,7 @@ def add_new_post(post):
 
     db.session.commit()
 
-    return response_object(code=200, message="Đăng tin tuyển dụng thành công.", data=new_post.to_json()), 200
+    return response_object(code=200, message="Post your job success|Đăng tin tuyển dụng thành công.", data=new_post.to_json()), 200
 
 
 @HR_only
@@ -147,7 +147,7 @@ def get_hr_posts(page, page_size, sort_values, is_showing):
         'page': posts.page
     }
 
-    return response_object(code=200, message="Lấy danh sách thành công", data=res, pagination=pagination)
+    return response_object(code=200, message="Get list job success|Lấy danh sách thành công", data=res, pagination=pagination)
 
 
 def sort_job_list(sort_values):
@@ -210,7 +210,7 @@ def hr_get_detail(id):
     post = JobPostModel.query.get(id)
 
     if not post:
-        return response_object(code=400, message="Thao tác không hợp lệ")
+        return response_object(code=400, message="Job post not found|Thao tác không hợp lệ")
 
     return post
 
@@ -312,10 +312,10 @@ def apply_cv_to_jp(jp_id, args):
     resume_id = args['resume_id']
 
     if ResumeModel.query.get(resume_id) == None:
-        abort(400)
+        return response_object(code=400,message="Resume not found|Resume not found",data = None)
 
     if JobPostModel.query.get(jp_id) == None:
-        abort(400)
+        return response_object(code=400,message="Job post not found|Không tìm thấy tin tuyển dụng",data = None)
 
     if JobResumeSubmissionModel.query.filter_by(resume_id=resume_id, job_post_id=jp_id).first() is not None:
         return 409
@@ -344,9 +344,9 @@ def apply_cv_to_jp(jp_id, args):
 def unapply_cv_to_jd(cand_id,jp_id):
     cand = CandidateModel.query.get(cand_id)
     if not cand:
-        return response_object(400, "Candidate not found", data=None)
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
     if not cand.resumes:
-        return response_object(400, "Candidate not resume", data=None)
+        return response_object(400, "Candidate not resume|Không tìm thấy CV", data=None)
     
     applies = JobResumeSubmissionModel.query.filter(JobResumeSubmissionModel.job_post_id==jp_id) \
                                     .filter(JobResumeSubmissionModel.resume_id==cand.resumes[0].id)
@@ -354,17 +354,17 @@ def unapply_cv_to_jd(cand_id,jp_id):
     for apply in applies:
         db.session.delete(apply)
     db.session.commit()
-    return response_object(200, "Unapply success", data=None)
+    return response_object(200, "Unapply success|Hủy ứng tuyển thành công", data=None)
 
 def add_note(cand_id,jp_id,args):
     note = args['note']
     cand = CandidateModel.query.get(cand_id)
     if not cand:
-        return response_object(400, "Candidate not found", data=None)
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
     
     job = JobPostModel.query.get(jp_id)
     if not job:
-        return response_object(400, "Job post not found", data=None)
+        return response_object(400, "Job post not found|Không tìm thấy tin tuyển dụng", data=None)
 
     job_note = JobNoteModel.query.filter_by(cand_id=cand_id,job_post_id = jp_id).first()
     if not job_note:
@@ -378,26 +378,26 @@ def add_note(cand_id,jp_id,args):
     try:
         db.session.add(job_note)
         db.session.commit()
-        return response_object(200, "Update note success", data=job_note.to_json())
+        return response_object(200, "Update note success|Cập nhật ghi chú thành công", data=job_note.to_json())
     except Exception as ex:
         print(str(ex.args))
-        return response_object(400, "Cannot update note for this job", data=None)
+        return response_object(400, "Cannot update note for this job|Cập nhật thất bại", data=None)
 
 def delete_note(cand_id,jp_id):
     cand = CandidateModel.query.get(cand_id)
     if not cand:
-        return response_object(400, "Candidate not found", data=None)
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
     
     job = JobPostModel.query.get(jp_id)
     if not job:
-        return response_object(400, "Job post not found", data=None)
+        return response_object(400, "Job post not found|Không tìm thấy tin tuyển dụng", data=None)
 
     for note in cand.note_jobs:
         if note.job_post_id == jp_id:
             db.session.delete(note)
             db.session.commit()
-            return response_object(200, "Delete note success", data=None)
-    return response_object(200, "Delete note success", data=None)
+            return response_object(200, "Delete note success|Xóa ghi chú thành công", data=None)
+    return response_object(200, "Delete note success|Xóa ghi chú thành công", data=None)
 
 def calculate_scrore(submission, job_post_id, resume_id):
 
@@ -537,7 +537,7 @@ def delete_job_post(ids):
 
     db.session.commit()
 
-    return response_object(message="Xoá tin tuyển dụng thành công")
+    return response_object(message="Delete job post success|Xoá tin tuyển dụng thành công")
 
 
 def proceed_resume(id, recruiter_email, args):
@@ -609,14 +609,14 @@ def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
     # Check existed rec
     recruiter = RecruiterModel.query.filter_by(email=rec_email).first()
     if recruiter is None:
-        abort(400, "No recruiter found.")
+        abort(400, "No recruiter found.|Không tìm thấy nhà tuyển dụng")
 
     # Check job post
     job = JobPostModel.query.get(job_id)
     if job is None:
-        abort(400, "No job post found.")
+        abort(400, "No job post found.|Không tìm thấy tin tuyển dụng")
     if job.recruiter_id != recruiter.id:
-        abort(400, "The job post is not belong to the recruiter.")
+        abort(400, "The job post is not belong to the recruiter.|Công việc không có sẵn")
 
     domain_weight = args['domain_weight']
     general_weight = args['general_weight']

@@ -89,7 +89,7 @@ def alter_save_resume(rec_email, args):
         remove = RecruiterResumeSavesModel.query\
             .filter_by(recruiter_id=rec_id, resume_id=res_id)\
             .first()
-        if remove is None: abort(400, "No saved resume found to remove.")
+        if remove is None: abort(200, "No saved resume found to remove.|Không có CV")
 
         db.session.delete(remove)
         db.session.commit()
