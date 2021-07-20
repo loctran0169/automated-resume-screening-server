@@ -261,6 +261,14 @@ def get_candidate_resumes(email):
 
     return hr.resumes
 
+def get_document(cand_id):
+
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(code = 400, data= None, message="Candidate not found|Không tìm thấy ứng viên")
+    
+    return response_object(data= [x.to_json() for x in cand.document], message="Success|Thành công")
+
 def create_candidate_document(cand_id,filepath, filename, file_ext):
 
     cand = CandidateModel.query.get(cand_id)
