@@ -310,3 +310,22 @@ def delete_document(cand_id, document_id):
                     print("delete docs fail "+ str(ex.args))
                     response_object(code=400, data= None, message="Delete file fail|Xóa tệp thất bại")
     return response_object(code=400, data= None, message="Candidate not have this file|Không tồn tại tệp này")
+
+def update_document(cand_id, document_id, name):
+
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(code = 400, data= None, message="Candidate not found|Không tìm thấy ứng viên")
+    
+    if cand.document:
+        for doc in cand.document:
+            if doc.id == document_id:
+                try:
+                    doc.name = name
+                    db.session.add(doc)
+                    db.session.commit() 
+                    return response_object(data= doc.to_json(), message="Update document success|Cập nhật tệp thành công")
+                except Exception as ex:
+                    print("Update docs fail "+ str(ex.args))
+                    response_object(code=400, data= None, message="Update file fail|Cập nhật tệp thất bại")
+    return response_object(code=400, data= None, message="Candidate not have this file|Không tồn tại tệp này")

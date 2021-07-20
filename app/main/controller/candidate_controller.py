@@ -5,7 +5,7 @@ from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
 from app.main import send_email
-from app.main.service.candidate_service import create_candidate_document, delete_a_candidate_by_email, delete_document, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
+from app.main.service.candidate_service import create_candidate_document, delete_a_candidate_by_email, delete_document, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, update_document, verify_account_candidate
 from app.main.service.account_service import create_token, get_url_verify_email
 from flask_jwt_extended import decode_token
 import datetime
@@ -427,6 +427,11 @@ create_document_parser.add_argument("file", type= FileStorage, location="files",
 create_document_parser.add_argument("name", type= str, location="args", required=True)
 create_document_parser.add_argument("Authorization", location="headers", required=True)
 
+update_document_parser = apiCandidate.parser()
+update_document_parser.add_argument("document_id", type= int, location="args", required=True)
+update_document_parser.add_argument("name", type= str, location="args", required=True)
+update_document_parser.add_argument("Authorization", location="headers", required=True)
+
 delete_document_parser = apiCandidate.parser()
 delete_document_parser.add_argument("document_id", type= int, location="args", required=True)
 delete_document_parser.add_argument("Authorization", location="headers", required=True)
@@ -437,6 +442,7 @@ class CandidateDocument(Resource):
     @apiCandidate.expect(create_document_parser)
     @Candidate_only
     def post(self):
+        '''add new document candiadate '''
         identity = get_jwt_identity()
         cand_id = identity['id']
         args = create_document_parser.parse_args()
@@ -454,10 +460,22 @@ class CandidateDocument(Resource):
 
         return create_candidate_document(cand_id, filepath, args['name'], file_ext)
 
+    @apiCandidate.doc("update document")
+    @apiCandidate.expect(update_document_parser)
+    @Candidate_only
+    def put(self):
+        '''update document name candiadate '''
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = update_document_parser.parse_args()
+
+        return update_document(cand_id, args['document_id'], args['name'])
+
     @apiCandidate.doc("delete document")
     @apiCandidate.expect(delete_document_parser)
     @Candidate_only
     def delete(self):
+        '''delete document candiadate '''
         identity = get_jwt_identity()
         cand_id = identity['id']
         args = delete_document_parser.parse_args()
