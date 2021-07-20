@@ -5,15 +5,16 @@ from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
 from app.main import send_email
-from app.main.service.candidate_service import delete_a_candidate_by_email, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
+from app.main.service.candidate_service import create_candidate_document, delete_a_candidate_by_email, delete_document, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
 from app.main.service.account_service import create_token, get_url_verify_email
 from flask_jwt_extended import decode_token
 import datetime
-
+from werkzeug.datastructures import FileStorage
 from app.main.service.candidate_service import get_candidate_by_id, get_candidate_resumes, set_token_candidate, \
     get_a_account_candidate_by_email, insert_new_account_candidate, verify_account_candidate, \
     get_candidate_by_id, alter_save_job, get_saved_job_posts, get_applied_job_posts
-
+import os
+import uuid
 from flask import request, jsonify, url_for, render_template
 from flask_restx import Resource, inputs
 from app.main.util.dto import CandidateDto
@@ -99,8 +100,12 @@ class RegisterCandidateList(Resource):
                 }, 409
             else:
                 # resend email if previously expired email
-                jwt_data = decode_token(account.access_token)
-                if datetime.datetime.now().timestamp() > jwt_data['exp']:
+                jwt_data = None
+                try:
+                    jwt_data = decode_token(account.access_token)
+                except Exception as ex:
+                    jwt_data = None
+                if jwt_data == None or datetime.datetime.now().timestamp() > jwt_data['exp']:
                     access_token = create_token(id = account.id ,email=account.email)
                     set_token_candidate(account.email, access_token)
                     try:
@@ -230,9 +235,9 @@ class AccountLogin(Resource):
             else:
                 return {
                     'status': 'failure',
-                    'message': 'Email not exist|Email hoặc mật khẩu không chính xác',
+                    'message': 'Email hoặc mật khẩu không chính xác',
                     'type':'candidate'
-                }, 401
+                }, 404
         except Exception as e:
             return{
                 'status': 'failure',
@@ -415,3 +420,46 @@ class CandidateResumes(Resource):
 
         data = get_candidate_resumes(email)
         return response_object(data=data)
+
+
+create_document_parser = apiCandidate.parser()
+create_document_parser.add_argument("file", type= FileStorage, location="files", required=True)
+create_document_parser.add_argument("name", type= str, location="args", required=True)
+create_document_parser.add_argument("Authorization", location="headers", required=True)
+
+delete_document_parser = apiCandidate.parser()
+delete_document_parser.add_argument("document_id", type= int, location="args", required=True)
+delete_document_parser.add_argument("Authorization", location="headers", required=True)
+@apiCandidate.route('/candidates/document')
+class CandidateDocument(Resource):
+
+    @apiCandidate.doc("uploaded document")
+    @apiCandidate.expect(create_document_parser)
+    @Candidate_only
+    def post(self):
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = create_document_parser.parse_args()
+
+        filepath = None
+        try:
+            file = args["file"]
+            file_ext = file.filename.split('.')[-1]
+            filename = file.filename.replace(".{}".format(file_ext), "")
+
+            filepath = os.path.join("temp_pdf", "{name}_{uid}.{ext}".format(name=filename, uid=str(uuid.uuid4().hex), ext=file_ext))
+            file.save(filepath)
+        except Exception as ex:
+            filepath = None
+
+        return create_candidate_document(cand_id, filepath, args['name'], file_ext)
+
+    @apiCandidate.doc("delete document")
+    @apiCandidate.expect(delete_document_parser)
+    @Candidate_only
+    def delete(self):
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = delete_document_parser.parse_args()
+
+        return delete_document(cand_id, args['document_id'])

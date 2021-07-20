@@ -21,7 +21,7 @@ from app.main.model.job_resume_submissions_model import JobResumeSubmissionModel
 from app.main.model.job_domain_model import JobDomainModel
 from app.main.model.candidate_job_save_model import CandidateJobSavesModel
 from app.main.model.candidate_education_model import CandidateEducationModel
-
+import numpy as np
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import HR_only
 from app.main.util.format_text import format_contract, format_education, format_salary
@@ -415,6 +415,11 @@ def calculate_scrore(submission, job_post_id, resume_id):
                                             pickle.loads(codecs.decode(resume.soft_skill_graph.encode(), "base64")))
     _general_score = distance_graph_score(pickle.loads(codecs.decode(job_post.skill_graph.encode(), "base64")),
                                             pickle.loads(codecs.decode(resume.technical_skill_graph.encode(), "base64")))
+    # print("### CV:")
+    # print(domain_dict["cv_graph"])
+
+    # print("### JD: "+str(job_post_id))
+    # print(domain_dict["post_graph"])
 
     domain_score = domain_dict['score']
     softskill_score = _softskill_score
@@ -771,10 +776,10 @@ def get_suggested_job_posts(email, args):
                                resume.soft_skills,
                                job.job_domain.alternative_name)
 
-        overall = match_domain['score'] * 2 + match_softskill['score'] * 1 + match_general['score'] * 1
+        overall = match_domain['score'] * 3 + match_softskill['score'] * 1 + match_general['score'] * 3
 
         dict[id] = overall
-        # print(str(id)+" "+str(overall)+" "+str(id)+" "+str(match_general['score'])+" "+str(match_domain['score'])+" "+str(match_softskill['score']))
+        print(str(id)+","+str(match_general['score'])+","+str(match_domain['score'])+","+str(match_softskill['score'])+","+str(np.round(overall, 4)))
         return overall
 
     scores = dict()

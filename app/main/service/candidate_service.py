@@ -1,3 +1,5 @@
+from app.main.util.response import response_object
+from app.main.model.document_model import DocumentModel
 from app.main.model.job_post_model import JobPostModel
 from app.main.service.account_service import create_token
 import datetime
@@ -10,6 +12,10 @@ from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from flask_restx import abort
 from sqlalchemy import or_
 import dateutil.parser
+from app.main.util.resume_extractor import ResumeExtractor, remove_temp_files
+from app.main.util.firebase import Firebase
+from app.main.util.thread_pool import ThreadPool
+import os
 
 def is_have_resume(resumes):
     if not resumes or len(resumes)==0:
@@ -30,7 +36,7 @@ def insert_new_account_candidate(account):
         full_name = account['fullName'],
         gender = account['gender'],
         date_of_birth = dateutil.parser.isoparse(account['dateOfBirth']),
-        access_token=create_token(id =1,email = account['email'], day = 1/24),
+        access_token=create_token(id =1,email = account['email'], day = 7),
         province_id=account['province_id'],
         registered_on=datetime.datetime.utcnow()
     )
@@ -254,3 +260,53 @@ def get_candidate_resumes(email):
     hr = CandidateModel.query.filter_by(email=email).first()
 
     return hr.resumes
+
+def create_candidate_document(cand_id,filepath, filename, file_ext):
+
+    cand = CandidateModel.query.get(cand_id)
+
+    if not cand:
+        return response_object(code = 400, data= None, message="Candidate not found|Không tìm thấy ứng viên")
+
+    if filepath == None:
+        return response_object(code = 400, data= None, message="Error file|Lỗi file")
+
+    executor = ThreadPool.instance().executor
+    blob_res = executor.submit(Firebase().upload, filepath)
+    blob = blob_res.result()
+
+    if os.path.exists(filepath): 
+        os.remove(filepath)
+
+    try:
+        new_document = DocumentModel(
+            name = filename,
+            url = blob.public_url
+        )
+        cand.document.append(new_document)
+        db.session.add(cand)
+        db.session.commit()
+        return response_object(data= new_document.to_json(), message="Upload success|Tải lên thành công")
+    except Exception as ex:
+        print("add docs fail "+ str(ex.args))
+        return response_object(code= 400, data= None, message="Unknow error|Lổi không xác định")
+
+def delete_document(cand_id, document_id):
+
+    cand = CandidateModel.query.get(cand_id)
+
+    if not cand:
+        return response_object(code = 400, data= None, message="Candidate not found|Không tìm thấy ứng viên")
+
+    if cand.document:
+        for doc in cand.document:
+            if doc.id == document_id:
+                try:
+                    cand.document.remove(doc)
+                    db.session.add(cand)
+                    db.session.commit() 
+                    return response_object(data= None, message="Delete document success|Xóa tệp thành công")
+                except Exception as ex:
+                    print("delete docs fail "+ str(ex.args))
+                    response_object(code=400, data= None, message="Delete file fail|Xóa tệp thất bại")
+    return response_object(code=400, data= None, message="Candidate not have this file|Không tồn tại tệp này")

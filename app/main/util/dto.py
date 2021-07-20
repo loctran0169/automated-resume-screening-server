@@ -78,6 +78,12 @@ class CandidateDto:
         'created_on': fields.DateTime(attribute='created_on')
     })
 
+    document = api.model('document', {
+        'id': fields.Integer,
+        'name': fields.String,
+        'url': fields.String
+    })
+
     response_profile = api.model('response_profile', {
         'id': fields.Integer,
         'email': fields.String,
@@ -89,7 +95,8 @@ class CandidateDto:
         'provinceId': fields.String(attribute='province_id'),
         'registeredOn': fields.String(attribute=lambda x: x.registered_on.strftime("%H:%M - %d/%m/%Y")),
         'isHaveResume': fields.Boolean(attribute=lambda x: is_have_resume(x.resumes)),
-        'resumes': fields.Nested(response_resume)
+        'resumes': fields.Nested(response_resume),
+        'document': fields.Nested(document)
     })
 
     candidate_profile = api.inherit('candidate_profile', base, {

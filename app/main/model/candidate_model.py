@@ -6,6 +6,11 @@ from .. import db, flask_bcrypt
 from app.main.util.response import json_serial
 from flask import json
 
+candidate_documents = db.Table('candidate_documents', db.Model.metadata,
+    db.Column('cand_id', db.Integer, db.ForeignKey('candidates.id'), primary_key=True),
+    db.Column('doc_id', db.Integer, db.ForeignKey('documents.id'), primary_key=True)
+)
+
 class CandidateModel(db.Model):
     """ Candidate Model for storing account related details """
     __tablename__ = "candidates"
@@ -30,6 +35,8 @@ class CandidateModel(db.Model):
     subcribe = db.relationship('SubcribeModel', backref="candidate", uselist=False)
     
     note_jobs = db.relationship('JobNoteModel', uselist=True, backref="candidate")
+
+    document = db.relationship('DocumentModel', secondary=candidate_documents, back_populates="candidate")
 
     @property
     def password(self):
