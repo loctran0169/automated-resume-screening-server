@@ -427,7 +427,7 @@ get_document_parser.add_argument("Authorization", location="headers", required=T
 
 create_document_parser = apiCandidate.parser()
 create_document_parser.add_argument("file", type= FileStorage, location="files", required=True)
-create_document_parser.add_argument("name", type= str, location="args", required=True)
+# create_document_parser.add_argument("name", type= str, location="form", required=True)
 create_document_parser.add_argument("Authorization", location="headers", required=True)
 
 update_document_parser = apiCandidate.parser()
@@ -471,7 +471,8 @@ class CandidateDocument(Resource):
         except Exception as ex:
             filepath = None
 
-        return create_candidate_document(cand_id, filepath, args['name'], file_ext)
+        return create_candidate_document(cand_id, filepath, file.filename, file_ext)
+        # return create_candidate_document(cand_id, filepath, args['name'], file_ext)
 
     @apiCandidate.doc("update document")
     @apiCandidate.expect(update_document_parser)
