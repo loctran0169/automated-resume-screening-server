@@ -1,0 +1,2 @@
+bỏ bào thư mục env/Script
+sau đó thay thế path file trong: install.bat 	
