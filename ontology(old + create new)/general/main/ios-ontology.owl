@@ -1,0 +1,1463 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#"
+     xml:base="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>App Annie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>appfollow io</rdfs:label>
+        <rdfs:label>appfollow-io</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Branch_Metrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Branch_Metrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CodePush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CodePush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cordova -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cordova">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CoreRender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CoreRender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Expo_Sketch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Expo_Sketch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>facebook-sonar</rdfs:label>
+        <rdfs:label>facebooksonar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Flutter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Flutter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ionic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ionic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+        <rdfs:label>m v c</rdfs:label>
+        <rdfs:label>m-v-c</rdfs:label>
+        <rdfs:label>model view controller</rdfs:label>
+        <rdfs:label>model-view-controller</rdfs:label>
+        <rdfs:label>modelviewcontroller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+        <rdfs:label>m v i</rdfs:label>
+        <rdfs:label>m-v-i</rdfs:label>
+        <rdfs:label>model view intent</rdfs:label>
+        <rdfs:label>model-view-intent</rdfs:label>
+        <rdfs:label>modelviewintent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+        <rdfs:label>Model View Presenter</rdfs:label>
+        <rdfs:label>Model-View-Presenter</rdfs:label>
+        <rdfs:label>ModelViewPresenter</rdfs:label>
+        <rdfs:label>m v p</rdfs:label>
+        <rdfs:label>m-v-p</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+        <rdfs:label>View Model ViewModel</rdfs:label>
+        <rdfs:label>View-Model-ViewModel</rdfs:label>
+        <rdfs:label>ViewModelViewModel</rdfs:label>
+        <rdfs:label>m v vm</rdfs:label>
+        <rdfs:label>m-v-vm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ratchet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ratchet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+        <rdfs:label>react-native</rdfs:label>
+        <rdfs:label>reactnative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensor_Tower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensor_Tower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UXcam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UXcam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Viper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Viper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Weex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Weex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin"/>
+        <rdfs:label>xamarin-test-cloud</rdfs:label>
+        <rdfs:label>xamarintestcloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#amp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#amp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#appthwack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#appthwack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#nachos-ui -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#nachos-ui">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#native-navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#native-navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#pcloudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#pcloudy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-material-design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-material-design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-ui-kitten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-ui-kitten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-virgin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-virgin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reactnativeautoupdater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reactnativeautoupdater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reagent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reagent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#replit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#replit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#testmunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#testmunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ARC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ARC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Allocations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Allocations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+        <rdfs:label>Allocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:label>AppStore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Autolayout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Autolayout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch"/>
+        <rdfs:label>Background mode</rdfs:label>
+        <rdfs:label>background task</rdfs:label>
+        <rdfs:label>work in background</rdfs:label>
+        <rdfs:label>work in background mode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Break-Pointer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Break-Pointer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+        <rdfs:label>Breakpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Build_Config -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Build_Config">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Carthage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Carthage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CocoaPods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CocoaPods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Code_Coverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Code_Coverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence"/>
+        <rdfs:label>CoreData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Foundation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Foundation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch"/>
+        <rdfs:label>Foundation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Crashlytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Crashlytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Creational -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Creational">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:label>Data Storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:label>Debug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Decodable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Decodable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation"/>
+        <rdfs:label>Delegate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Dependencies_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Dependencies_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture"/>
+        <rdfs:label>design pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Diagnostics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Diagnostics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#DispatchQueue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#DispatchQueue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Encodable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Encodable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Enums -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Enums">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift"/>
+        <rdfs:label>enum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fabric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fabric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fastlane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fastlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Firebase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Firebase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Frame-based_Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Frame-based_Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout"/>
+        <rdfs:label>frame-based</rdfs:label>
+        <rdfs:label>framebased</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+        <rdfs:label>Google Analytics</rdfs:label>
+        <rdfs:label>GoogleAnalytics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Queue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Queue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Gauges -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Gauges">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Heap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Heap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Initializers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Initializers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift"/>
+        <rdfs:label>initializer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON_Serialization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON_Serialization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize"/>
+        <rdfs:label>JSONSerialization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Jenkins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Jenkins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#KeyedArchiver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#KeyedArchiver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence"/>
+        <rdfs:label>Key Archiver</rdfs:label>
+        <rdfs:label>KeyArchiver</rdfs:label>
+        <rdfs:label>Keyed Archiver</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#LLDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#LLDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout_Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout_Instrument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Leaks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Leaks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+        <rdfs:label>Leak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Leaks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Leaks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+        <rdfs:label>Memory Leak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Mocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Mocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest"/>
+        <rdfs:label>Mock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:label>Concurrency</rdfs:label>
+        <rdfs:label>Multithreading</rdfs:label>
+        <rdfs:label>Multithreading Concurrency</rdfs:label>
+        <rdfs:label>Multithreading, Concurrency</rdfs:label>
+        <rdfs:label>Parallel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSLock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSLock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Networking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Networking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Notifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Notifications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues"/>
+        <rdfs:comment>obj-c</rdfs:comment>
+        <rdfs:comment>objc</rdfs:comment>
+        <rdfs:comment>objectivec</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Observing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Observing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation"/>
+        <rdfs:comment>Observer</rdfs:comment>
+        <rdfs:comment>Observers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#PList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#PList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Persistency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Persistency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Protocols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Protocols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift"/>
+        <rdfs:comment>protocol</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ReactiveCocoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ReactiveCocoa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:comment>Reactive Programme</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reference_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reference_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Retain_Cycles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Retain_Cycles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+        <rdfs:comment>Retain Cycle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Review_Guideline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Review_Guideline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store"/>
+        <rdfs:label>ReviewGuideline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Runloop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Runloop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#RxSwift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#RxSwift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Sanitizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Sanitizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Scheme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Scheme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence"/>
+        <rdfs:label>Serialization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Singleton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Singleton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:comment>software architectures</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#SpinLock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#SpinLock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Stack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift"/>
+        <rdfs:comment>struct</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift_Package_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift_Package_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager"/>
+        <rdfs:label>SwiftPackageManager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Synchronization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Synchronization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#System_Trace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#System_Trace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+        <rdfs:label>SystemTrace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TestFlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TestFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Time_Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Time_Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments"/>
+        <rdfs:label>TimeProfile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Travis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Travis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI"/>
+        <rdfs:label>travisci</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UICollectionView -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UICollectionView">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UINavigationController -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UINavigationController">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITabBarController -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITabBarController">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITableView -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITableView">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing"/>
+        <rdfs:label>UI Test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController_Lifecycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController_Lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController"/>
+        <rdfs:comment>uiviewcontroller lifecycles</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Unit_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Unit_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing"/>
+        <rdfs:label>Unit Test</rdfs:label>
+        <rdfs:label>UnitTest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UserHabit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UserHabit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Value_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Value_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Visual_Debugging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Visual_Debugging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging"/>
+        <rdfs:label>VisualDebugging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Xcode_Server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Xcode_Server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI"/>
+        <rdfs:label>XcodeServer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#apphub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#apphub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#blocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#blocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C"/>
+        <rdfs:label>block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#checkaso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#checkaso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#componentkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#componentkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#hubframework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#hubframework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iCloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iCloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iTunes_Connect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iTunes_Connect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#mobile_human_interface_guideline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#mobile_human_interface_guideline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:label>apple interface guideline</rdfs:label>
+        <rdfs:label>human interface guideline</rdfs:label>
+        <rdfs:label>ios interface guideline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#playground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#playground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#runtime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#runtime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#sqlite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#sqlite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#iOS_Developer"/>
+        <rdfs:comment>xcode ide</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

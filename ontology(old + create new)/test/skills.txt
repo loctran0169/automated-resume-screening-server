@@ -1,0 +1,297 @@
+api
+api testing
+auto it
+absence of error fallacy
+abstract
+acceptance testing
+acceptance criteria
+airline mode
+all nighter tour
+alpha and beta testing
+analysis and design
+android test
+appium
+apptim
+automation
+automation test
+availability
+bdd
+bva
+back alley tour
+behat
+behave
+blackbox testing
+bottom up
+boundar value analysis
+crud
+ctil
+ctis
+calabash
+calling another api
+centralize
+change the model
+checklist
+claims tour
+client libraries
+closure activities
+codeception
+colums
+communication
+compatibility testing
+complete
+complexity tour
+compliance testing
+component testing
+concordion
+conditions
+conduct system test
+configuration tour
+constraint
+contract and regulation
+corrective
+create test approach
+create workplan
+cucumber
+cypress
+data
+data driven testing
+database name
+database settings
+database testing
+datatype
+decentralize
+decision table based testing
+decision table testing
+decision testing and coverage
+defect clustering
+deliberate discovery
+densities
+design guideline
+design states
+determine resource requirements
+devices
+dynamic web
+early testing
+edge
+efficiency
+emulator
+end inventory creation
+end test design
+end to end testing
+equivalence class partitioning
+equivalence partitioning
+ergonomic
+error guessing
+evaluating exit criteria
+execution
+exhaustive testing
+exploratory
+exploratory testing
+feature tour
+field lengths
+flexibility
+foreign key
+functional incremental
+functional testing
+functions
+gprs
+goldilocks
+heuristic
+hiptest
+hub
+ios test
+identify test team
+implementation
+incremental
+index
+input to device
+install testing
+integration testing
+integrity
+interaction
+interface testing
+interoperability
+interrupt
+interruption
+inventory of test items
+jgiven
+json
+jasime
+jira
+jmeter
+junoone
+k6 tool
+kif
+katalon recorder
+katalon studio
+keys
+klaros
+kobiton
+kualitee
+lte
+landscape
+languages
+lettuce
+lightbdd
+load testing
+local database
+localization testing
+location
+manual test
+memory usage
+mnemonics
+mobifone
+mobile app
+mobile testing
+mocha
+money tour
+monkeyrunner
+monkeytalk
+nspec
+network
+network providers
+networks
+nodes
+non functional testing
+osawp
+obsessive compulsive tour
+obtain test
+operating system versions
+operational testing
+oracle
+partial
+perfecto
+performance
+permissions
+pesticide paradox
+planning
+platform
+platforms
+portability
+portrait
+postman
+practitest
+primary key
+procedures
+processes
+programming languages
+progressive
+protractor
+puppeteer
+pytest bdd
+qacoverage
+qase
+query
+radish
+rained out tour
+reqtest
+record
+recovery testing
+regression testing
+reliability
+replay
+reporting
+requirement
+responsive
+retest all
+retesting
+reuseability
+reverse
+robot framework
+robotium
+soapui
+sql
+sandwich
+sanity test
+scalability
+screen resolution
+security
+selective
+selendroid
+selenium
+selenium grid
+selenium ide
+selenium rc
+server
+sikuli
+simulator
+smoke test
+specification based
+spike testing
+spinach
+spock
+start acceptance test creation
+state transaction testing
+state transition
+statement testing and coverage
+status
+store
+stress testing
+structural testing
+structure based
+survivability
+swagger
+system and acceptance tests
+system test creation
+system testing
+tables
+testcaselab
+testcomplete
+testflo
+testmonitor
+testproject
+testrail
+test approach
+test cafe
+test collab
+test driven development
+test environments
+test levels
+test management tools
+test process
+test schedule
+test types
+testdroid
+testing principles
+testing techniques
+testing is context dependent
+testing shows presence of defects
+testpad
+top down
+tour
+ui automator
+unit
+unit testing
+usability
+use case testing
+useful approximations
+user acceptance testing
+user scenarios
+user tour
+validate
+vietnammobile
+viettel
+vinaphone
+volume testing
+vows
+webdriver
+whitebox testing
+wifi
+workplan
+xqual
+xray
+zephyr
+zephyr scale
+angular
+angularjs
+aqua
+coffeescript
+java
+javascript
+linux
+php
+python
+qtest
+ruby
+xbehave
+3g

@@ -1,0 +1,219 @@
+subject,predicate,object
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie,http://www.w3.org/2000/01/rdf-schema#label,App Annie
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO,http://www.w3.org/2000/01/rdf-schema#label,appfollow io,appfollow-io
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Branch_Metrics,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CodePush,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cordova,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CoreRender,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Expo_Sketch,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar,http://www.w3.org/2000/01/rdf-schema#label,facebook-sonar,facebooksonar
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Flutter,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ionic,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC,http://www.w3.org/2000/01/rdf-schema#label,m v c,m-v-c,model view controller,model-view-controller,modelviewcontroller
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI,http://www.w3.org/2000/01/rdf-schema#label,m v i,m-v-i,model view intent,model-view-intent,modelviewintent
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP,http://www.w3.org/2000/01/rdf-schema#label,Model View Presenter,Model-View-Presenter,ModelViewPresenter,m v p,m-v-p
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM,http://www.w3.org/2000/01/rdf-schema#label,View Model ViewModel,View-Model-ViewModel,ViewModelViewModel,m v vm,m-v-vm
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ratchet,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native,http://www.w3.org/2000/01/rdf-schema#label,react-native,reactnative
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensor_Tower,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UXcam,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Viper,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Weex,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud,http://www.w3.org/2000/01/rdf-schema#label,xamarin-test-cloud,xamarintestcloud
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#amp,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#appthwack,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#nachos-ui,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#native-navigation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#pcloudy,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-material-design,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-paper,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-ui-kitten,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-navigation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-virgin,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reactnativeautoupdater,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reagent,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#replit,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#testmunk,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ARC,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Activity,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Allocations,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Allocations,http://www.w3.org/2000/01/rdf-schema#label,Allocation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store,http://www.w3.org/2000/01/rdf-schema#label,AppStore
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Autolayout,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Background,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Background,http://www.w3.org/2000/01/rdf-schema#label,Background mode,background task,work in background,work in background mode
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Break-Pointer,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Break-Pointer,http://www.w3.org/2000/01/rdf-schema#label,Breakpoint
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Build_Config,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cache,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Carthage,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CocoaPods,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Code_Coverage,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data,http://www.w3.org/2000/01/rdf-schema#label,CoreData
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Foundation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Foundation,http://www.w3.org/2000/01/rdf-schema#label,Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Crashlytics,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Creational,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence,http://www.w3.org/2000/01/rdf-schema#label,Data Storage
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging,http://www.w3.org/2000/01/rdf-schema#label,Debug
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Decodable,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegate,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Delegation,http://www.w3.org/2000/01/rdf-schema#label,Delegate
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Dependencies_Management,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns,http://www.w3.org/2000/01/rdf-schema#label,design pattern
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Diagnostics,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#DispatchQueue,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Encodable,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Codable
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Energy,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Enums,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Enums,http://www.w3.org/2000/01/rdf-schema#label,enum
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fabric,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Fastlane,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Firebase,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Frame-based_Layout,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Frame-based_Layout,http://www.w3.org/2000/01/rdf-schema#label,frame-based,framebased
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GA,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GA,http://www.w3.org/2000/01/rdf-schema#label,Google Analytics,GoogleAnalytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Event,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD_Queue,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#GCD
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Gauges,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Heap,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Initializers,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Initializers,http://www.w3.org/2000/01/rdf-schema#label,initializer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON_Serialization,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#JSON_Serialization,http://www.w3.org/2000/01/rdf-schema#label,JSONSerialization
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Jenkins,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#KeyedArchiver,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#KeyedArchiver,http://www.w3.org/2000/01/rdf-schema#label,Key Archiver,KeyArchiver,Keyed Archiver
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#LLDB,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Layout_Instrument,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Leaks,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Leaks,http://www.w3.org/2000/01/rdf-schema#label,Leak
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Leaks,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Leaks,http://www.w3.org/2000/01/rdf-schema#label,Memory Leak
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Mocks,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Mocks,http://www.w3.org/2000/01/rdf-schema#label,Mock
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency,http://www.w3.org/2000/01/rdf-schema#label,Concurrency,Multithreading,Multithreading Concurrency,Multithreading, Concurrency,Parallel
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSLock,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#NSOperation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Network,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Networking,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Notifications,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C,http://www.w3.org/2000/01/rdf-schema#comment,obj-c,objc,objectivec
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Observing,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Observing,http://www.w3.org/2000/01/rdf-schema#comment,Observer,Observers
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Operation,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#PList,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Persistency,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Protocols,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Protocols,http://www.w3.org/2000/01/rdf-schema#comment,protocol
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#ReactiveCocoa,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming,http://www.w3.org/2000/01/rdf-schema#comment,Reactive Programme
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Realm,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reference_Type,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Retain_Cycles,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Retain_Cycles,http://www.w3.org/2000/01/rdf-schema#comment,Retain Cycle
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Review_Guideline,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Review_Guideline,http://www.w3.org/2000/01/rdf-schema#label,ReviewGuideline
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Runloop,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#RxSwift,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Reactive_Programming
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Sanitizer,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Scheme,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialization,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Foundation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Data_Persistence
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Serialize,http://www.w3.org/2000/01/rdf-schema#label,Serialization
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Singleton,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Software_Architecture,http://www.w3.org/2000/01/rdf-schema#comment,software architectures
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#SpinLock,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Lock
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Stack,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structs,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structs,http://www.w3.org/2000/01/rdf-schema#comment,struct
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Structural,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Design_patterns
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Programming_Languagues
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift_Package_Manager,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Package_Manager
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Swift_Package_Manager,http://www.w3.org/2000/01/rdf-schema#label,SwiftPackageManager
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Synchronization,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Multithreading_And_Concurrency
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#System_Trace,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#System_Trace,http://www.w3.org/2000/01/rdf-schema#label,SystemTrace
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TDD,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Target,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Project
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#TestFlight,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Time_Profile,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Instruments
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Time_Profile,http://www.w3.org/2000/01/rdf-schema#label,TimeProfile
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Travis,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Travis,http://www.w3.org/2000/01/rdf-schema#label,travisci
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIApplication,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UICollectionView,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cocoa_Touch
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UINavigationController,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITabBarController,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Navigation
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITableView,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITest,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UITest,http://www.w3.org/2000/01/rdf-schema#label,UI Test
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController_Lifecycle,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViewController_Lifecycle,http://www.w3.org/2000/01/rdf-schema#comment,uiviewcontroller lifecycles
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIViews,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UIKit
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Unit_Tests,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Unit_Tests,http://www.w3.org/2000/01/rdf-schema#label,Unit Test,UnitTest
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#UserHabit,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Value_Type,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Memory_Management
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Visual_Debugging,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Debugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Visual_Debugging,http://www.w3.org/2000/01/rdf-schema#label,VisualDebugging
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#XCTest,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Testing
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Xcode_Server,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#CI
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Xcode_Server,http://www.w3.org/2000/01/rdf-schema#label,XcodeServer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#apphub,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#blocks,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#blocks,http://www.w3.org/2000/01/rdf-schema#label,block
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#checkaso,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Analytics
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#componentkit,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#hubframework,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iCloud,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Cloud
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iTunes_Connect,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#App_Store
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#mobile_human_interface_guideline,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#mobile_human_interface_guideline,http://www.w3.org/2000/01/rdf-schema#label,apple interface guideline,human interface guideline,ios interface guideline
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#playground,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#runtime,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Objective-C
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#sqlite,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#Core_Data
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode,http://www.w3.org/2000/01/rdf-schema#subClassOf,http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#iOS_Developer
+http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer#xcode,http://www.w3.org/2000/01/rdf-schema#comment,xcode ide

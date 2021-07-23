@@ -1,0 +1,2170 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#"
+     xml:base="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Accessiblility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Accessiblility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity_Lifecycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity_Lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Adaptative_Icons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Adaptative_Icons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Adapter_View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Adapter_View">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>analytic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Debug_Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Debug_Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Lint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Lint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linters"/>
+        <rdfs:label>androidlint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+        <rdfs:label>animations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation_Drawables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation_Drawables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppAnnie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>app annie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_APK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_APK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing"/>
+        <rdfs:label>apk</rdfs:label>
+        <rdfs:label>application apk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store"/>
+        <rdfs:label>app action</rdfs:label>
+        <rdfs:label>application action</rdfs:label>
+        <rdfs:label>application actions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components"/>
+        <rdfs:label>application bar</rdfs:label>
+        <rdfs:label>toolbar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Billing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Billing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store"/>
+        <rdfs:label>app bill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Bundle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Bundle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing"/>
+        <rdfs:label>application bundle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Manifest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Indexing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Indexing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>app index</rdfs:label>
+        <rdfs:label>appindex</rdfs:label>
+        <rdfs:label>appindexing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Links -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Links">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store"/>
+        <rdfs:label>app link</rdfs:label>
+        <rdfs:label>application link</rdfs:label>
+        <rdfs:label>application links</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Manifest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Manifest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+        <rdfs:label>Appication Publishing</rdfs:label>
+        <rdfs:label>app publication</rdfs:label>
+        <rdfs:label>application publication</rdfs:label>
+        <rdfs:label>publish app</rdfs:label>
+        <rdfs:label>publish application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Startup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Startup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+        <rdfs:label>application startup</rdfs:label>
+        <rdfs:label>applicationstartup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#AppfollowIO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>appfollow io</rdfs:label>
+        <rdfs:label>appfollow-io</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack"/>
+        <rdfs:label>Architecture Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Async_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Async_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Thread_Handling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Backstack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Backstack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bitmap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bitmap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bluetooth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bluetooth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Branch_Metrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Branch_Metrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>branchmetrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Broadcast_Receiver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Broadcast_Receiver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bubbles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Bubbles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notifications"/>
+        <rdfs:label>bubble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Flavors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Flavors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Configuration"/>
+        <rdfs:label>Build Flavor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Configuration"/>
+        <rdfs:label>build type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CPU_Profiler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CPU_Profiler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CameraX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CameraX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CircleCI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CircleCI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Clean_Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Clean_Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Code"/>
+        <rdfs:label>cleanarchitecture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Clickable_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Clickable_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cloud_Messaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cloud_Messaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>cloud message</rdfs:label>
+        <rdfs:label>cloudmessage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Code -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Code">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CodePush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CodePush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+        <rdfs:label>connectivitymanager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Constraint_Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Constraint_Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts"/>
+        <rdfs:label>constraintlayout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Content_Providers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Content_Providers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+        <rdfs:label>content provider</rdfs:label>
+        <rdfs:label>contentprovider</rdfs:label>
+        <rdfs:label>contentproviders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Conversations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Conversations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notifications"/>
+        <rdfs:label>conversation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cordova -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cordova">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CoreRender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CoreRender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Coroutines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Coroutines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Thread_Handling"/>
+        <rdfs:label>coroutine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Crashlytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Crashlytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>crashlytic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dagger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dagger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dependency_Injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Backup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Backup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Manifest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Network_Handling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_binding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_binding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack"/>
+        <rdfs:label>databinding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Debugger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Debugger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dependency_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dependency_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Detekt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Detekt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dialogs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dialogs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+        <rdfs:label>dialog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Download_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Download_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+        <rdfs:label>downloadmanager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Downloadable_Fonts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Downloadable_Fonts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fonts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dynamic_Links -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dynamic_Links">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>dynamic link</rdfs:label>
+        <rdfs:label>dynamiclink</rdfs:label>
+        <rdfs:label>dynamiclinks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Emoji -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Emoji">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Emulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Emulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Espresso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Espresso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ExoPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ExoPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Explicit_Intents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Explicit_Intents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Expo_Sketch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Expo_Sketch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Facebook_Sonar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>facebook-sonar</rdfs:label>
+        <rdfs:label>facebooksonar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fastlane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fastlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Formats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Formats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Storage"/>
+        <rdfs:label>fileprovider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Storage"/>
+        <rdfs:label>filestorage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Libraries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firestore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firestore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#FlatBuffer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#FlatBuffer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format"/>
+        <rdfs:label>Flat Buffer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Flutter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Flutter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fonts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fonts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Lifecycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Transaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Frame_Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Frame_Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts"/>
+        <rdfs:label>framelayout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Glide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Glide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Image_Loaders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Maps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Maps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Libraries"/>
+        <rdfs:label>google map</rdfs:label>
+        <rdfs:label>googlemap</rdfs:label>
+        <rdfs:label>googlemaps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Play_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Play_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Google_Libraries"/>
+        <rdfs:label>Google Play Service</rdfs:label>
+        <rdfs:label>GooglePlayService</rdfs:label>
+        <rdfs:label>GooglePlayServices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Gradle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Gradle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Build_Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#GraphQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#GraphQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Grid_View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Grid_View">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views"/>
+        <rdfs:label>gridview</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Groovy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Groovy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Gradle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Gson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Gson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Json_Converters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Handlers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Handlers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Thread_Handling"/>
+        <rdfs:label>handler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hilt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hilt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dagger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Image_Loaders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Image_Loaders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components"/>
+        <rdfs:label>image loader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Implicit_Intents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Implicit_Intents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Input_fields -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Input_fields">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Instant_Apps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Instant_Apps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store"/>
+        <rdfs:label>instant app</rdfs:label>
+        <rdfs:label>instant application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Instrumentation_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Instrumentation_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+        <rdfs:label>instrumentation test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Integration_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Integration_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+        <rdfs:label>integration test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent_Filters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent_Filters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ionic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ionic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#JUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#JUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Jenkins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Jenkins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Json_Converters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Json_Converters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Network_Handling"/>
+        <rdfs:label>Json Converter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Keystore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Keystore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Kodein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Kodein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dependency_Injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Koin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Koin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dependency_Injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Kotlin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Kotlin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#KtLint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#KtLint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Lifecycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linear_Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linear_Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts"/>
+        <rdfs:label>linearlayout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Linters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quality_Assurance"/>
+        <rdfs:label>linter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#List_View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#List_View">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views"/>
+        <rdfs:label>listview</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Livedata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Livedata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Localizeable_Strings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Localizeable_Strings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ML_Kit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ML_Kit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>mlkit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation"/>
+        <rdfs:comment>modelviewcontroller</rdfs:comment>
+        <rdfs:label>m v c</rdfs:label>
+        <rdfs:label>m-v-c</rdfs:label>
+        <rdfs:label>model view controller</rdfs:label>
+        <rdfs:label>model-view-controller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation"/>
+        <rdfs:comment>modelviewintent</rdfs:comment>
+        <rdfs:label>m v i</rdfs:label>
+        <rdfs:label>m-v-i</rdfs:label>
+        <rdfs:label>model view intent</rdfs:label>
+        <rdfs:label>model-view-intent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation"/>
+        <rdfs:comment>ModelViewPresenter</rdfs:comment>
+        <rdfs:label>M V P</rdfs:label>
+        <rdfs:label>M-V-P</rdfs:label>
+        <rdfs:label>Model View Presenter</rdfs:label>
+        <rdfs:label>Model-View-Presenter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MVVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation"/>
+        <rdfs:label>M V VM</rdfs:label>
+        <rdfs:label>M-V-VM</rdfs:label>
+        <rdfs:label>Model View ViewModel</rdfs:label>
+        <rdfs:label>Model-View-ViewModel</rdfs:label>
+        <rdfs:label>ModelViewViewModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Material_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Material_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MediaPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#MediaPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Media_Recorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Media_Recorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Mipmap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Mipmap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Moshi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Moshi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Json_Converters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Multimedia_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#NFC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#NFC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Jetpack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Network_Handling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Network_Handling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notification_Channels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notification_Channels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notifications"/>
+        <rdfs:label>notification channel</rdfs:label>
+        <rdfs:label>notificationchannel</rdfs:label>
+        <rdfs:label>notificationchannels</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Notifications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+        <rdfs:label>notification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Object_Animator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Object_Animator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation"/>
+        <rdfs:label>objectanimator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Paging_Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Paging_Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Permissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Permissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Manifest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Picasso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Picasso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Image_Loaders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Pickers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Pickers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+        <rdfs:label>picker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Play_Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing"/>
+        <rdfs:label>playstore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Position">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Programming_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Programming_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Progress_Bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Progress_Bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+        <rdfs:label>progressbar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Proguard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Proguard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Protocol_Buffer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Protocol_Buffer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format"/>
+        <rdfs:label>protocolbuffer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quality_Assurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quality_Assurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quantity_Strings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quantity_Strings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#R8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#R8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#REST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#REST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Transfer_Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ratchet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Ratchet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+        <rdfs:label>react-native</rdfs:label>
+        <rdfs:label>reactnative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Recycler_View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Recycler_View">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views"/>
+        <rdfs:label>recycleview</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Relative_Layout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Relative_Layout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts"/>
+        <rdfs:label>relativelayout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Remote_Config -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Remote_Config">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Retrofit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Retrofit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Network_Handling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Robolectric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Robolectric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Robotium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Robotium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SDK_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SDK_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SIM_Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SIM_Card">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Telecom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SQLite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SQLite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Screen_Readers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Screen_Readers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Accessiblility"/>
+        <rdfs:label>screen reader</rdfs:label>
+        <rdfs:label>screenreader</rdfs:label>
+        <rdfs:label>screenreaders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Search_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Search_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+        <rdfs:label>searchinterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Selendroid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Selendroid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensor_Tower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensor_Tower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+        <rdfs:label>sensor-tower</rdfs:label>
+        <rdfs:label>sensortower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sensors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Shared_Preferences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Shared_Preferences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Storage"/>
+        <rdfs:label>shared preference</rdfs:label>
+        <rdfs:label>sharedpreference</rdfs:label>
+        <rdfs:label>sharedpreferences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Smoke_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Smoke_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+        <rdfs:label>smoke test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Snackbar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Snackbar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Spans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Spans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Spinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Spinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Data_Views"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#String_Array -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#String_Array">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Strings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styleables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styleables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sync_Adapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Sync_Adapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+        <rdfs:label>syncadapter</rdfs:label>
+        <rdfs:label>synchronize adapter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tasks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Telecom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Telecom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Test_Lab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Test_Lab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firebase"/>
+        <rdfs:label>testlab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quality_Assurance"/>
+        <rdfs:label>test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Themes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Themes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Styles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Thread_Handling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Thread_Handling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Toast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Toast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Transition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Transition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Animation"/>
+        <rdfs:label>transitions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#TravisCI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#TravisCI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Automator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Automator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+        <rdfs:label>uiautomator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UI_Layouts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UXcam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#UXcam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Unit_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Unit_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tests"/>
+        <rdfs:label>unit test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#User_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Android_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Vector_Drawables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Vector_Drawables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Drawables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ViewModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ViewModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Viper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Viper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Presentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Weex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Weex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Wifi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Wifi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Connectivity"/>
+        <rdfs:label>wi-fi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#WorkManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#WorkManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Architecture_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#XML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#XML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#XML_Fonts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#XML_Fonts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fonts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Hybrid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin_Test_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Xamarin"/>
+        <rdfs:label>xamarin-test-cloud</rdfs:label>
+        <rdfs:label>xamarintestcloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#amp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#amp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#appthwack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#appthwack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#calendar_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#calendar_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Content_Providers"/>
+        <rdfs:label>calendarprovider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#contact_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#contact_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Content_Providers"/>
+        <rdfs:label>contactprovider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#deeplinkdispatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#deeplinkdispatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#lauchkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#lauchkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Startup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#nachos-ui -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#nachos-ui">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#native-navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#native-navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#pcloudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#pcloudy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-material-design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-material-design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-ui-kitten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-native-ui-kitten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-navigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-navigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-virgin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#react-virgin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reactnativeautoupdater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reactnativeautoupdater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reagent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#reagent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#React_Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#replit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#replit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#testmunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#testmunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Third_Parties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CI/CD_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Publishing"/>
+        <rdfs:label>CI CD Tool</rdfs:label>
+        <rdfs:label>CI CD Tools</rdfs:label>
+        <rdfs:label>CI/CD tool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Broadcast_Receiver"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Service"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Activity_Lifecycle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Backstack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Tasks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Analytics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#App_Indexing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Authentication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Cloud_Messaging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Crashlytics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Dynamic_Links"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Firestore"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#ML_Kit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Remote_Config"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Test_Lab"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_Debug_Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Emulator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#SDK_Manager"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Android_SDK"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#CPU_Profiler"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Debugger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#File_Formats"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Explicit_Intents"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Implicit_Intents"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Intent_Filters"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Lifecycle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Manager"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Fragment_Transaction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Localizeable_Strings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Quantity_Strings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#Spans"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development#String_Array"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2436 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#"
+     xml:base="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_constructive_criticism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_constructive_criticism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_fitness_exercises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_fitness_exercises">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_to_changes_in_technological_development_plans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_to_changes_in_technological_development_plans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#address_problems_critically -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#address_problems_critically">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#akan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#akan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#amharic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#amharic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#analyse_own_performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#analyse_own_performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_export_strategies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_export_strategies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_import_strategies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_import_strategies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_strategic_thinking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_strategic_thinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#arabic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#arabic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#archive_documentation_related_to_the_work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#archive_documentation_related_to_the_work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ask_questions_at_events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ask_questions_at_events">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#assamese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#assamese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#attend_meetings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#attend_meetings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#awadhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#awadhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#azeri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#azeri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#baluchi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#baluchi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#be_attentive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#be_attentive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#belorussian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#belorussian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bengali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bengali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bhojpuri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bhojpuri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#brainstorm_ideas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#brainstorm_ideas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#burmese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#burmese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cantonese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cantonese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cebuano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cebuano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chair_a_meeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chair_a_meeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chewa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chewa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chhattisgarhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chhattisgarhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chittagonian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chittagonian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coach_employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coach_employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_designers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_designers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collect_customer_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collect_customer_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_analytical_insight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_analytical_insight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_mathematical_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_mathematical_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_price_changes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_price_changes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_problems_to_senior_colleagues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_problems_to_senior_colleagues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_production_plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_production_plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_technicalities_with_clients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_technicalities_with_clients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_verbal_instructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_verbal_instructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#condense_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#condense_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conduct_research_interview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conduct_research_interview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conducting_studies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conducting_studies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_design_team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_design_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_technical_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_technical_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_talent_agents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_talent_agents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_colleagues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_colleagues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_models -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_models">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_sets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_sets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_project_specifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_project_specifications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_solutions_to_problems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_solutions_to_problems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#creativity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#creativity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#czech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#czech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#deal_with_changing_operational_demand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#deal_with_changing_operational_demand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#define_roles_of_team_members -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#define_roles_of_team_members">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dekhini -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dekhini">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#delegate_activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#delegate_activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#develop_personal_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#develop_personal_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dhundhari -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dhundhari">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dutch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dutch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#eastern_min_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#eastern_min_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#english -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#english">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#execute_working_instructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#execute_working_instructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#exercise_sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#exercise_sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#explain_interview_purposes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#explain_interview_purposes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_given_instructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_given_instructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_up_complaint_reports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_up_complaint_reports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#french -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#french">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#fulani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#fulani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gan_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gan_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#german -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#german">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_constructive_feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_constructive_feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_instructions_to_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_instructions_to_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#greek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#greek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gujarati -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gujarati">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haitian_creole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haitian_creole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hakka_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hakka_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_complaints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_complaints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_customer_complaints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_customer_complaints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_evidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_evidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_helpdesk_problems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_helpdesk_problems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haryanvi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haryanvi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hausa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hausa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hiligaynon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hiligaynon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hindi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hindi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hmong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hmong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hungarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hungarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer_objectives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer_objectives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_improvement_actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_improvement_actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_parts_requested_by_customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_parts_requested_by_customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_purpose_of_analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_purpose_of_analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_service_requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_service_requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#igbo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#igbo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ilocano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ilocano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#implement_instructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#implement_instructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#information_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#information_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#initiate_contact_with_customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#initiate_contact_with_customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#instruct_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#instruct_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_users_to_gather_requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_users_to_gather_requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interview_people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interview_people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#italian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#italian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#japanese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#japanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#javanese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#javanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#jin_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#jin_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kannada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kannada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kazakh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kazakh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#khmer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#khmer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kinyarwanda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kinyarwanda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kirundi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kirundi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#konkani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#konkani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#korean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#korean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kurdish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kurdish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_a_team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_a_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_colleagues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_colleagues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#listen_actively -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#listen_actively">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#madurese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#madurese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#magahi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#magahi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maintain_relationships_with_customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maintain_relationships_with_customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maithili -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maithili">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_decisions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_decisions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#making_decisions"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_time-critical_decisions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_improvements_to_work_activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_improvements_to_work_activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_time-critical_decisions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_time-critical_decisions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#making_decisions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#making_decisions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#making_decisions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malagasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malagasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malayalam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malayalam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_a_team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_a_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_difficult_clients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_difficult_clients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_employee_complaints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_employee_complaints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_members -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_members">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conducting_studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_workflow_processes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_workflow_processes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#management_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#management_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mandarin_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mandarin_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marathi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marathi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marwari -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marwari">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#master_language_rules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#master_language_rules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#memorise_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#memorise_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentor_individual_employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentor_individual_employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#min_nan_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#min_nan_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#moderate_a_debate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#moderate_a_debate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#monitor_daily_work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#monitor_daily_work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mossi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mossi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#nepali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#nepali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#northern_min_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#northern_min_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#odia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#odia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#oromo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#oromo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#pashto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#pashto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_interviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_interviews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_lectures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_lectures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persuade_clients_with_alternatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persuade_clients_with_alternatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#plan_research_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#plan_research_process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#polish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#polish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#portuguese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#portuguese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practise_extreme_sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practise_extreme_sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_publishing_plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_publishing_plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_reports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_reports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#process_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#process_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_feedback_on_job_performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_feedback_on_job_performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#leading_and_motivating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_mentorship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_mentorship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coaching_and_mentoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_performance_feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_performance_feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#punjabi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#punjabi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#quechua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#quechua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_books -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_books">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reinforce_positive_behaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reinforce_positive_behaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#respond_to_complaints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#respond_to_complaints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#negotiating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#romanian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#romanian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#russian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#russian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#saraiki -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#saraiki">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#serbo-croatian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#serbo-croatian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#shona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#shona">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#show_confidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#show_confidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sindhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sindhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#singhalese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#singhalese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#somali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#somali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#spanish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#spanish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_different_languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_different_languages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_in_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_in_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#presenting_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#strategic_planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#structure_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#structure_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#managing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sundanese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sundanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervise_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervise_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervising_people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_colleagues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_colleagues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swedish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swedish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practising_sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sylheti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sylheti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tagalog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tagalog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tamil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tamil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#telugu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#telugu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#thai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#thai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#think_analytically -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#think_analytically">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#think_creatively -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#think_creatively">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#creativity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_foreign_language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_foreign_language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_texts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_texts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#troubleshoot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#troubleshoot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#solving_problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkmen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkmen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uighur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uighur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ukrainian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ukrainian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#understand_instructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#understand_instructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#urdu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#urdu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_dictionaries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_dictionaries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#processing_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_internet_chat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_internet_chat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaising_and_networking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uzbek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uzbek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#verbal_interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#verbal_interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#vietnamese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#vietnamese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_as_a_team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_as_a_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_with_circus_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_with_circus_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_in_teams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_in_teams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_different_languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_different_languages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#Soft_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#writing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#writing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#using_foreign_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#wu_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#wu_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xhosa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xhosa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xiang_chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xiang_chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#yoruba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#yoruba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zhuang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zhuang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zulu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zulu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_clients&apos;_needs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_clients&apos;_needs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer&apos;s_needs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer&apos;s_needs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_performers&apos;_needs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_performers&apos;_needs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#obtaining_information"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_constructive_criticism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#accept_feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_designers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collaborate_with_engineers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_verbal_instructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_colleagues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#execute_working_instructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_given_instructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_constructive_feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#give_instructions_to_staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#implement_instructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_others"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_workflow_processes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_feedback_on_job_performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_performance_feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reinforce_positive_behaviour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#show_confidence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_colleagues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#support_managers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#understand_instructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_as_a_team"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#work_with_circus_group"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_in_teams"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_fitness_exercises"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#exercise_sports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#practise_extreme_sports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swim"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#adapt_to_changes_in_technological_development_plans"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#address_problems_critically"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_export_strategies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_import_strategies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_solutions_to_problems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#deal_with_changing_operational_demand"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_helpdesk_problems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_improvement_actions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#make_improvements_to_work_activities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#think_analytically"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#troubleshoot"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#akan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#amharic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#arabic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#assamese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#awadhi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#azeri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#baluchi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#belorussian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bengali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#bhojpuri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#burmese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cantonese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cebuano"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chewa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chhattisgarhi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chittagonian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#czech"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dekhini"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dhundhari"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#dutch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#eastern_min_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#english"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#french"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#fulani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gan_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#german"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#greek"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#gujarati"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haitian_creole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hakka_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#haryanvi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hausa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hiligaynon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hindi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hmong"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#hungarian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#igbo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ilocano"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#italian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#japanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#javanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#jin_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kannada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kazakh"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#khmer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kinyarwanda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kirundi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#konkani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#korean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#kurdish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#madurese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#magahi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maithili"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malagasy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#malayalam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mandarin_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marathi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#marwari"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#min_nan_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mossi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#nepali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#northern_min_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#odia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#oromo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#pashto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#polish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#portuguese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#punjabi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#quechua"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#romanian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#russian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#saraiki"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#serbo-croatian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#shona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sindhi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#singhalese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#somali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#spanish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sundanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#swedish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#sylheti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tagalog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#tamil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#telugu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#thai"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#turkmen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uighur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ukrainian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#urdu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#uzbek"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#vietnamese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#wu_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xhosa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#xiang_chinese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#yoruba"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zhuang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#zulu"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#analyse_own_performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#define_roles_of_team_members"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#delegate_activities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_a_team"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_a_team"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_members"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#monitor_daily_work"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#supervise_staff"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#apply_strategic_thinking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_project_specifications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_training"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#plan_research_process"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#archive_documentation_related_to_the_work"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#create_data_sets"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#organise_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#structure_information"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#ask_questions_at_events"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#be_attentive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_problems_to_senior_colleagues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#conduct_research_interview"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_technical_staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#explain_interview_purposes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer_objectives"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_parts_requested_by_customers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_purpose_of_analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_service_requirements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interact_with_users_to_gather_requirements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#interview_people"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#listen_actively"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_difficult_clients"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#moderate_a_debate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_interviews"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#persuade_clients_with_alternatives"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#verbal_interaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_clients&apos;_needs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_customer&apos;s_needs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#identify_performers&apos;_needs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#attend_meetings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#brainstorm_ideas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_analytical_insight"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_price_changes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_production_plan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_technicalities_with_clients"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#consult_with_design_team"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_customers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#contact_talent_agents"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#cooperate_with_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#initiate_contact_with_customer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_colleagues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#liaise_with_managers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#maintain_relationships_with_customers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_internet_chat"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#chair_a_meeting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#communicate_mathematical_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#condense_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_evidence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#instruct_public"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#perform_lectures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_publishing_plan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#present_reports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_books"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_in_public"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#coach_employees"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#develop_personal_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentor_individual_employees"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#mentoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_mentorship"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#collect_customer_data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#memorise_information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#process_data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#read_people"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#use_dictionaries"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#english"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#master_language_rules"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#reading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#speak_different_languages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_foreign_language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#translate_texts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#working_with_different_languages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#writing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#follow_up_complaint_reports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_complaints"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#handle_customer_complaints"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#manage_employee_complaints"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#respond_to_complaints"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#guide_others"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#lead_others"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_employees"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#motivate_others"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/3/softskill-ontology#provide_leadership"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

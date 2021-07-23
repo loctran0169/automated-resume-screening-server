@@ -1,0 +1,3248 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#"
+     xml:base="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PostgreSQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PostgreSQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_athena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_athena">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_aurora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_aurora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_dynamodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_dynamodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_ebs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_ebs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_elasticache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_elasticache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_emr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_emr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_rds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_rds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_redshift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_redshift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_s3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_s3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_sqs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_sqs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#arangodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#arangodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws_glue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws_glue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_cosmos_db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_cosmos_db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_data_factory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_data_factory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_service_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_service_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_sql_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_sql_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cleardb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cleardb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cockroachdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cockroachdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchbase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchbase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dgraph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dgraph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dinamodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dinamodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#doctrine2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#doctrine2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework_core -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework_core">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#firebase_realtime_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#firebase_realtime_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_bigquery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_bigquery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_bigtable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_bigtable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_firestore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_firestore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_memorystore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_memorystore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_sql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_sql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku_postgres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku_postgres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hibernate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hibernate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kafka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kafka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#leveldb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#leveldb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcached -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcached">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcachier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcachier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memsql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memsql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#microsoft_sql_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#microsoft_sql_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongodb_atlas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongodb_atlas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongoose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongoose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mssql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mssql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql_workbench -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql_workbench">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#neo4j -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#neo4j">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nosql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nosql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#postgis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#postgis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pouchdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pouchdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rabbitmq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rabbitmq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ravendb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ravendb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rethinkdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rethinkdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sequelize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sequelize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sidekiq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sidekiq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snowflake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snowflake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlalchemy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlalchemy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#timescaledb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#timescaledb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#hadoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#hadoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Agglomerative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Agglomerative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Apriori_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Apriori_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Assocaition_Rule_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Assocaition_Rule_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Assocaition_Rule_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Unsupervised_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Bagging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Bagging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Ensemble_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Boosting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Boosting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Ensemble_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Supervised_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification_Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification_Rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Unsupervised_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#DBSCAN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#DBSCAN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Decision_Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Decision_Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Unsupervised_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#ECLAT_algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#ECLAT_algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Assocaition_Rule_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Ensemble_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Ensemble_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#FP_Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#FP_Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Assocaition_Rule_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Fuzzy_C-Means -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Fuzzy_C-Means">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Gaussian_Mixture_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Gaussian_Mixture_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#HDBSCAN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#HDBSCAN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Hierachical_Clustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Hierachical_Clustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#K-Means_Clustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#K-Means_Clustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#K-Nearest_Neighbour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#K-Nearest_Neighbour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+        <rdfs:label>K-Nearest Neighbour</rdfs:label>
+        <rdfs:label>KNN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Linear_Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Linear_Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Regression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Logistic_Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Logistic_Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+        <rdfs:label>ML</rdfs:label>
+        <rdfs:label>Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Mean_Shift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Mean_Shift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#NMF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#NMF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Naive_Bayes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Naive_Bayes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#OPTICS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#OPTICS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Poisson_Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Poisson_Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Regression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Principal_Component_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Principal_Component_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Q-Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Q-Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Reinforment_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Random_Projection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Random_Projection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Supervised_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Reinforment_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Reinforment_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Stacking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Stacking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Ensemble_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Supervised_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Supervised_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Support_Vector_Machine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Support_Vector_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Classification"/>
+        <rdfs:label>SVM</rdfs:label>
+        <rdfs:label>Support Vector Machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#T-SNE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#T-SNE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#UMAP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#UMAP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Dimensionality_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Unsupervised_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Unsupervised_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#bias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#bias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#cost_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#cost_function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#gradient_descent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#gradient_descent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#lift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#lift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#overfitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#overfitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#precision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#precision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#recall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#recall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#regular_expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#regular_expression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+        <rdfs:label>regex</rdfs:label>
+        <rdfs:label>regular expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#test_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#test_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#underfitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#underfitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#validation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#validation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#variance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#variance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#AdaDelta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#AdaDelta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#AdaGrad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#AdaGrad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Adam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Adam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Awesome_Deep_Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Awesome_Deep_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Batch_Normalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Batch_Normalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Batch_size_effects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Batch_size_effects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Bayes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Bayes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BiLSTM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BiLSTM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#recurrent_neural_network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Bokeh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Bokeh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#CSV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#CSV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Data_Formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Central_limit_theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Central_limit_theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#important_laws"/>
+        <rdfs:label>CLT</rdfs:label>
+        <rdfs:label>Central limit theorem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Conditional_probability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Conditional_probability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Confidence_Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Confidence_Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#D3.js -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#D3.js">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Dash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Dash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Data_Formats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Data_Formats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Estimation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Estimation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Evolving_Architectures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Evolving_Architectures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#GRU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#GRU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#recurrent_neural_network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Go -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Go">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Huggingface_Transformers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Huggingface_Transformers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Hypothesis_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Hypothesis_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#JSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#JSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Data_Formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Kernel_Density_Estimation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Kernel_Density_Estimation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Estimation"/>
+        <rdfs:label>KDE</rdfs:label>
+        <rdfs:label>Kernel Density Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#LSTM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#LSTM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#recurrent_neural_network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Learning_Rate_Schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Learning_Rate_Schedule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#MLFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#MLFlow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Markov -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Markov">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Matplotlib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Matplotlib">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Maximum_Likelihood_Estimation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Maximum_Likelihood_Estimation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Estimation"/>
+        <rdfs:label>MLE</rdfs:label>
+        <rdfs:label>Maximum Likelihood Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Momentum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Momentum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Monto_Carlo_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Monto_Carlo_Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#NEAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#NEAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Nadam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Nadam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Architecture_Search -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Architecture_Search">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#model_optimization"/>
+        <rdfs:label>NAS</rdfs:label>
+        <rdfs:label>Neural Architecture Search</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Numpy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Numpy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#PCA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#PCA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+        <rdfs:label>PCA</rdfs:label>
+        <rdfs:label>Principal component analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pandas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pandas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#convolutional_neural_network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#PowerBI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#PowerBI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pytorch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Pytorch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#R -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#R">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#RMSProp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#RMSProp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Residual_Connections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Residual_Connections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#SGD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#SGD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Optimizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tableau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tableau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#BI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tensorboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tensorboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tensorflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tensorflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Transformer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Transformer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#XML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#XML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Data_Formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#activation_functions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#activation_functions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#adversarial_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#adversarial_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#attention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#attention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Transformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#autoencoder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#autoencoder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#beta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#beta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#binning_sparse_values -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#binning_sparse_values">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#binomial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#binomial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#convolutional_neural_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#convolutional_neural_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+        <rdfs:label>CNN</rdfs:label>
+        <rdfs:label>convolutional neural network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#covariance_and_correlation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#covariance_and_correlation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#curriculum_learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#curriculum_learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_augmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_augmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_frames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_frames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_mining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_mining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_preparation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_preparation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Machine_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_scrubbing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#data_scrubbing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#decoder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#decoder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Transformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#denoising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#denoising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dimensionality_reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dimensionality_reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dirichlet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dirichlet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#distillation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#distillation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#model_optimization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dropout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#dropout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#early_stopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#early_stopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#encoder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#encoder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Transformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#expectation_and_mean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#expectation_and_mean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#exponential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#exponential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#feature_extraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#feature_extraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#feedfoward_neural_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#feedfoward_neural_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#gaussian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#gaussian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#generative_adversarial_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#generative_adversarial_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+        <rdfs:label>GAN</rdfs:label>
+        <rdfs:label>generative adversarial network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#gensim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#gensim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#geometric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#geometric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#google_colab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#google_colab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#handling_missing_value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#handling_missing_value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#hypergeometric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#hypergeometric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#iid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#iid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#important_laws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#important_laws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#indepence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#indepence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#interquartile_range -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#interquartile_range">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#ipyvolume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#ipyvolume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#javascript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#javascript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#julia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#julia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter_lab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter_lab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter_notebook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter_notebook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#jupyter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#kaggle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#kaggle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#law_of_large_numbers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#law_of_large_numbers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#important_laws"/>
+        <rdfs:label>LLN</rdfs:label>
+        <rdfs:label>law of large numbers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#linear_algebra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#linear_algebra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#loss_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#loss_function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#matrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#matrix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#median -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#median">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#model_optimization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#model_optimization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#multinomial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#multinomial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#multitask_learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#multitask_learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#nltk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#nltk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#normalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#normalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#numerosity_reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#numerosity_reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#parameter_penalties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#parameter_penalties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#percentile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#percentile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#plotnine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#plotnine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#poisson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#poisson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#python">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quantile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quantile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quantization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quantization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#model_optimization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quartile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#quartile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#random_sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#random_sample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#random_variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#random_variable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#randomness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#randomness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#probability_theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#recurrent_neural_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#recurrent_neural_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+        <rdfs:label>RNN</rdfs:label>
+        <rdfs:label>recurrent neural network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#regulization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#reporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#reporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#scala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#scala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#scikit-learn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#scikit-learn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#seaborn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#seaborn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#series">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#siamese_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#siamese_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#streamlit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#streamlit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#tabular_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#tabular_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#transfer_learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#transfer_learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Train_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#unbiased_estimator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#unbiased_estimator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#uniform_continuous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#uniform_continuous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#continuous_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#uniform_discrete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#uniform_discrete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Discrete_distributions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#vanishing_gradient_problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#vanishing_gradient_problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#varianceand_standard_deviation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#varianceand_standard_deviation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#summary_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#vega-lite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#vega-lite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#virtual_environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#virtual_environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#web_scraping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#web_scraping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Fundamentals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Neural_Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#word2vec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#word2vec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#.NET -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#.NET">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ab_tasty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ab_tasty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ackee_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ackee_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#adobe_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#adobe_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#alation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#alation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon-mobile-analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon-mobile-analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_ab_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_ab_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_quicksight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_quicksight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amplitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amplitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ananas_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ananas_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appsee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appsee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#astronomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#astronomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#atscale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#atscale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#autotrack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#autotrack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_databricks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_databricks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_synapse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_synapse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#birst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#birst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chartbeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chartbeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chartio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chartio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clevertap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clevertap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clicktale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clicktale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clicky -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clicky">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cluvio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cluvio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#countly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#countly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#crazy_egg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#crazy_egg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cubejs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cubejs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+        <rdfs:label>cube-js</rdfs:label>
+        <rdfs:label>cube.js</rdfs:label>
+        <rdfs:label>cubejs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cumul.io -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cumul.io">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cyfe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cyfe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#data_studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#data_studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databaselog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databaselog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databricks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#databricks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dataform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dataform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#datahero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#datahero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#domo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#domo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#facebook_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#facebook_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#facebook_pixel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#facebook_pixel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#fathom_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#fathom_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#flask_jsondash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#flask_jsondash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#freeboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#freeboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#freshpaint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#freshpaint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#geckoboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#geckoboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gooddata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gooddata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_datastudio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_datastudio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_optimize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_optimize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_search_console -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_search_console">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_tag_manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_tag_manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gosquared -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gosquared">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#grouparoo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#grouparoo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#heatmaps.io -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#heatmaps.io">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#holistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#holistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hotjar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hotjar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ibm_cognos_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ibm_cognos_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#insights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#insights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#interana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#interana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#keen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#keen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kissmetrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kissmetrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#klipfolio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#klipfolio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knowage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knowage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knowi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knowi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#koko_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#koko_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#linkurious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#linkurious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#localytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#localytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#matomo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#matomo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#metabase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#metabase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_ssrs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_ssrs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mixpanel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mixpanel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#moengage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#moengage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#obviously.ai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#obviously.ai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#optimizely -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#optimizely">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#panelbear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#panelbear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#parsely -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#parsely">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#periscope_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#periscope_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#piwik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#piwik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#popcorn_metrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#popcorn_metrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#posthog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#posthog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#power_bi_embedded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#power_bi_embedded">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#powerbi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#powerbi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+        <rdfs:label>power bi</rdfs:label>
+        <rdfs:label>power-bi</rdfs:label>
+        <rdfs:label>powerbi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#predictleads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#predictleads">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik_sense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik_sense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlikview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlikview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qlik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qrvey_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#qrvey_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#quantcast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#quantcast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#quickmetrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#quickmetrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rakam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rakam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#redash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#redash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rjmetrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rjmetrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sap_crystal_reports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sap_crystal_reports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#seevolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#seevolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#segment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#seldon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#seldon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#shiny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#shiny">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#similarweb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#similarweb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sisense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sisense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#smartlook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#smartlook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spinnakr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spinnakr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#statbot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#statbot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#statsbot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#statsbot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#superset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#superset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#tableau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#tableau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#taplytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#taplytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#toasted_analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#toasted_analytics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#usabilla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#usabilla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#useberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#useberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#usertrack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#usertrack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vidpulse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vidpulse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#visual_website_optimizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#visual_website_optimizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#yandex_metrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#yandex_metrica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#DataScience"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

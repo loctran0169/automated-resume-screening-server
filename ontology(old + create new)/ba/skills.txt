@@ -1,0 +1,400 @@
+hr
+operating system
+organizational skills
+sem
+serps
+acceptance testing
+account management
+accounting
+adobe acrobat
+advertisement
+advertising
+agile
+agile project management
+air cargo business
+airport cargo operation
+algorithmic trading
+analysis
+analyst ii
+analyst relations
+analytical
+analytical skills
+analytics
+api
+application development
+application programming
+architects
+architectural design
+aws
+axure
+ba
+ba consultant
+backlogs
+bacs
+bank
+banking
+bba
+bde
+bdm
+bidding
+branding
+brd
+business
+business analyst
+business analyst consultant
+business analytics
+business case
+business consultant
+business consulting
+business development
+business development manager
+business documentation
+business functional consultant
+business intelligence
+business operations
+business planning
+business process
+business requirement analysis
+business research
+business skill
+business strategy
+calypso
+capital market
+change coach
+change management
+client
+client communication
+client coordination
+client handling
+client management
+client servicing
+cloud computing
+commercial lending
+communication
+communication skills
+competitive intelligence
+computer science
+consolidation
+consultant
+consulting
+consumer finance
+convincing power
+core banking
+corporate actions
+corporate banking
+corporate business development
+corporate sales
+correspondence
+cost
+cost benefit analysis
+cost estimation
+creating dashboards
+credit research
+critical thinking
+crm
+customer service
+data analysis
+data analyst
+data dictionary
+data flow
+data management
+database
+ddl
+derivatives
+design
+design development
+development management
+development testing
+digital business analyst
+digital marketing
+document
+document management
+documentation
+documentation skills
+drafting business process flow
+due diligence
+e-commerce
+e-learning
+ecommerce
+education
+effort estimation
+elicitation
+engineering
+epic
+erp
+excel powerpoint
+excellent analytical
+execution
+experience
+fastag
+faster payments
+finance
+financial analysis
+financial analyst
+financial product
+financial services
+financial statement analysis
+fintech environments
+fixed income
+flow charts
+flow diagrams
+flowchart tools
+foreign exchange
+frs
+functional analysis
+functional consultancy
+functional consultant
+functional specifications
+functional support
+fx derivatives
+gap analysis
+git
+good database knowledge
+google cloud
+graphic tools
+gtid
+healthcare
+heathcare consultant
+high level design
+hiring
+hybris
+ict
+impact analysis
+implementation
+incident management
+information gathering
+insurance product
+interfaces
+internet banking
+internet marketing
+internet technologies
+interpersonal skills
+interviewing
+investment banking
+it business analysis
+it business analyst
+it consulting
+it project coordinator
+it sales
+iterative
+javascript
+jira
+languages
+lead developers
+lead generation
+lead management
+leadership
+leadership training
+lending
+leveraged investment
+life cycle
+linux
+loan
+loan management system
+loan origination
+loan servicing
+logistics
+mac os
+management
+management consulting
+management lead
+management reporting
+manager quality assurance
+manager technology
+market analysis
+market assessment
+market intelligence
+market research
+marketing
+marketing support
+matrix
+mba
+methodologies
+metrics
+metrics analysis
+microsoft azure
+mobile applications
+mobile product
+mock up
+monitoring
+mortgage
+ms
+ms excel
+ms office
+ms project
+ms visio
+ms word
+murex
+mysql
+netc
+online bidding
+operations
+operations management
+payment gateways
+payments
+performance monitoring
+point of sale
+pos
+power bi
+power point presentation
+prepaid cards
+preparation test scenarios
+presales
+presentation skills
+printing
+problem solving
+process definition
+process flow
+process improvement
+process mapping
+process re-engineering
+process study
+process transition
+product
+product design
+product development
+product handling
+product life cycle management
+product management
+product manager
+product owner
+product owners
+product research
+product type
+program management
+programming
+project accounting
+project coordination
+project coordinator
+project delivery
+project documentation
+project estimation
+project management
+project manager
+project planning
+proposal management
+proposal writing
+prototype
+prototype design
+prototyping
+public sector
+python
+qa
+quality standards
+rca
+regulatory reporting
+remote support
+replication logging
+report generation
+requirement analysis
+requirement gathering
+requirement planning
+requirements
+requirements management
+research
+research analyst
+resource analyst
+resource management
+resourcing
+rest api
+rfp
+rfq
+road map creation
+roadmap creation
+sales
+sales process
+sales support
+salesforce
+scheduling
+scope
+scripting languages
+scrum
+scrum master
+scrum methodology
+self learning
+senior business analyst
+senior management
+seo
+sepa
+settlements
+social networking
+soft skill
+software
+software development
+software development life cycle
+software engineering
+software sales
+software solutions
+software testing
+solution design
+solution implementation
+specification guide
+specifications
+sprint
+sql
+sql.dba
+sql queries.
+stakeholder management
+stakeholders
+strategic planning
+strong communication skills
+structured notes
+supply chain.
+support
+swift
+swift payments
+system architecture
+tableau
+target achievement
+team development
+team management
+technical ba
+technical design documentation
+technical documentation
+technical writing
+techno functional
+test case review
+test cases
+test management
+test plan
+test planning
+test scenarios
+test scripts
+testing
+testing process
+tool
+traceability matrix
+tradding
+trade life cycle
+trading application
+trading systems
+training
+transition
+translation
+uat test
+uk payments
+uml
+unit testing
+unix
+use case and user stories
+use cases
+user acceptance
+user acceptance testing
+user administration
+user documentation
+user experience
+user manuals
+user story
+ux
+verbal communication
+waterfall
+web application
+web product
+windows
+wireframe
+workflow
+workflow management
+writing skills
+writing test cases
+written communication
+.net

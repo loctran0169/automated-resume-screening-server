@@ -1,0 +1,12 @@
+thêm domain
+
+1. tạo ontology = protege
+2. dùng create pickdle ontology.pt để tạo file cso.p từ file ontology.owl
+3. tạo cache model từ model word2vec + cso.p(dùng gesim 4.0.0)
+
+out 2,3 dc: file cso.p, combine.json(tên file là tên domain vd: game_develop)
+
+bỏ game_develop).p vào: automated-resume-screening-server\app\main\process_data\models\ontology
+bỏ file game_develop.json vào: automated-resume-screening-server\app\main\process_data\models\cached_model
+
+sau đó thêm domain vào: automated-resume-screening-server\seeds\domains.json

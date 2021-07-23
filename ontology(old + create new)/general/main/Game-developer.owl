@@ -1,0 +1,2868 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/game-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#A-Frame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#A-Frame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Beanstalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Beanstalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_CloudFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_CloudFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_IAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_IAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Lambda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Lambda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Creative_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Creative_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Photoshop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Photoshop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Advanced_Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Advanced_Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adventure_Game_Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adventure_Game_Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_DynamoDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_DynamoDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_EC2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_EC2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Fire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Fire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Lumberyard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Lumberyard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_RDS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_RDS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Analytical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Analytical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Android_TV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Android_TV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Android_sdk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Android_sdk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Anticipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Appeal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Appeal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Arcs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Arcs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Assembly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Assembly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Associate_Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Associate_Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_3DsMax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_3DsMax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_Maya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_Maya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#BabylonJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#BabylonJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Bootstrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Bootstrap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSharp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSharp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Rigging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Rigging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ClickTeam_Fusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ClickTeam_Fusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cloudwatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cloudwatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Collaboration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Collaboration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Communication_Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Communication_Skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sound_Designer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Construct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Construct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Construct_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Construct_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Core_Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Core_Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cosmos_DB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cosmos_DB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_Azure_SQL_Database"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#sql_database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Crafty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Crafty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#gameQuery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CryEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CryEngine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Dart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Dart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Debugger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Debugger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX11">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Docker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Docker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DynamoDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DynamoDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#EPIC_Unreal_Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#EPIC_Unreal_Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Emulators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Emulators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Exaggeration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Exaggeration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Experience_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Experience_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Interface_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flowlab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flowlab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flutter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flutter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Frame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GDevelop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GDevelop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameFroot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameFroot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameMaker_Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameMaker_Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameSalad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameSalad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Ffeatures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Ffeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Maker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Maker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Maker_Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Maker_Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Prototype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Prototype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Space_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Space_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game__Logic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game__Logic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot_Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot_Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Golang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Golang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Google_BigQuery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Google_BigQuery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Google_Cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Google_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Google_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#HTML5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#HTML5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#IT_Professional_Practice_Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#IT_Professional_Practice_Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Icons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Icons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ImpactJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ImpactJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Interface_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Interface_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Key_Frame_Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Key_Frame_Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kivy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kivy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kotlin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kotlin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Laravel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Laravel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Level_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Level_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#LibGDX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#LibGDX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Logo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Logo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MCV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MCV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MVVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MVVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mac_OS_X -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mac_OS_X">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Marmalade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Marmalade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Maya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Maya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Memory_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Memory_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_Azure_SQL_Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_Azure_SQL_Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_UWP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_UWP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mo_cap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mo_cap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MonoGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MonoGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Motion_Capturers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Motion_Capturers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Multithread_Programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Multithread_Programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Music_Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Music_Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Composer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Neo4j -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Neo4j">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#graph_db"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Node.js -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Node.js">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#OOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#OOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Objective_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Objective_C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Organizational_Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Organizational_Skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PS_Vita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PS_Vita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Panda3D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Panda3D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Particles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Particles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Passion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Passion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Persistence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Persistence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhaserJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhaserJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Physics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Physics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhysicsJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhysicsJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PixiJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PixiJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PlayCanvas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PlayCanvas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Play_Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Play_Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Visualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Visualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Viz_Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Viz_Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyKyra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyKyra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyOpenGL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyOpenGL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pygame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pygame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pyglet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pyglet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Ogre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Ogre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RPG_Maker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RPG_Maker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RenPy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RenPy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rendering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rendering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Research -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Research">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Restful_webservices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Restful_webservices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rigger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rigger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Scripting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Scripting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Search_Engine_Optimization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Search_Engine_Optimization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Secondary_Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Secondary_Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Security_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Security_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Shader_Programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Shader_Programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Simulators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Simulators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Solid_Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Solid_Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sony_PlayStation_4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sony_PlayStation_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sound_Designer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sound_Designer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sound_Effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sound_Effect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Special_Effects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Special_Effects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine_Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine_Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sploder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sploder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spring_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spring_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Squash_Stretch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Squash_Stretch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Staging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Staging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#SteamOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#SteamOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stencyl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stencyl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Straight_Ahead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Straight_Ahead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Surface_Modeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Surface_Modeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Systems_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Systems_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Technical_Animator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Technical_Animator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Tester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Tester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Time_Managements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Time_Managements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Timing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Timing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Tizen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Tizen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Twine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Twine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UnReal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UnReal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity2D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity2D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity3D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity3D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity_Graphic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity_Graphic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Development_Kit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Development_Kit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine_4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#VR_Platforms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#VR_Platforms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_PC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_PC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_Phone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_Phone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Writing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Writing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#XNA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#XNA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Xbox_One -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Xbox_One">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Zbrush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Zbrush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#adobe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#adobe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#android -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#android">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#angularjs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#angularjs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#aws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#blackberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#blackberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c++"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#construct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#construct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#web"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#fireTV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#fireTV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#functional_programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#functional_programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#gameQuery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#gameQuery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#graph_db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#graph_db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#iphone_game_programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#iphone_game_programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#iphone_sdk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#iphone_sdk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#macos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#macos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#maths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#maths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#melonJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#melonJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#microservices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#microservices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mongoDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mongoDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ms_sql_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ms_sql_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#networking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#networking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#nosql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#nosql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#optimization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#optimization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#playfab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#playfab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#postgreSQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#postgreSQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#protocol-oriented_programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#protocol-oriented_programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#reactive_programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#reactive_programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#sound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#sound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#sql_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#sql_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_Azure_SQL_Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#storyboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#storyboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ubuntu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ubuntu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#user_experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#user_experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#web -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#web">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#xcode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#xcode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#xml -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#xml">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#.Net -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#.Net">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_Characters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_Characters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_textures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_textures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2d_Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2d_Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Characters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Characters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Environmental_Objects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Environmental_Objects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Hard_Surface_Modeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Hard_Surface_Modeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3_Layers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3_Layers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Generalist_CG_Skills​ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Generalist_CG_Skills​">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Ren&apos;Py -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Ren&apos;Py">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c++ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c++">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Game_developer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_Azure_SQL_Database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mongoDB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ms_sql_server"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#postgreSQL"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Java"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Assembly"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSharp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Dart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Golang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kotlin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c++"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology#Java"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CSharp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Javascript"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#c++"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#A-Frame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#BabylonJS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Crafty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GDevelop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ImpactJS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhaserJS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PhysicsJS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PixiJS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PlayCanvas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#gameQuery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#melonJS"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#IT_Professional_Practice_Project"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Physics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Production"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Audio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Graphics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#IT_Professional_Practice_Project"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Physics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Beanstalk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_CloudFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_IAM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#AWS_Lambda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_EC2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_RDS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cloudwatch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DynamoDB"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Collaboration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Communication_Skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Organizational_Skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Passion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Persistence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Research"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Time_Managements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Writing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Collaboration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Communication_Skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Organizational_Skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Persistence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Research"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Time_Managements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Writing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Communication_Skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stay_Abreast_of_Industry_Developments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adaptability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Creative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design_UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Problem_solving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Thinking_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Video_game_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Visual_arts"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Creative_Cloud"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Anticipation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Appeal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Arcs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_3DsMax"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_Maya"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Rigging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Exaggeration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Frame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Key_Frame_Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mo_cap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Motion_Capturers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Visualization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Viz_Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rigger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Secondary_Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Solid_Drawing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Spine_Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Squash_Stretch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Staging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Straight_Ahead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Technical_Animator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Timing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#adobe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Generalist_CG_Skills​"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Creative_Cloud"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Anticipation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Appeal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Arcs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_3DsMax"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Autodesk_Maya"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Rigging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Exaggeration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Frame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Key_Frame_Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mo_cap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Motion_Capturers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Visualization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pre_Viz_Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rigger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Secondary_Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Solid_Drawing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Squash_Stretch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Staging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Straight_Ahead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Technical_Animator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Timing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Generalist_CG_Skills​"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adobe_Photoshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2D"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Space_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Level_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Marmalade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MonoGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PlayCanvas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Scripting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Systems_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine_4"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adventure_Game_Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Lumberyard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ClickTeam_Fusion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Construct_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CryEngine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Docker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#EPIC_Unreal_Engine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flowlab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GDevelop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameFroot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameMaker_Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameSalad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Maker_Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot_Engine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Maya"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RPG_Maker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sploder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Stencyl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Twine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Development_Kit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Engine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Zbrush"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#construct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Ren&apos;Py"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Adventure_Game_Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Lumberyard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#CryEngine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GDevelop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#GameMaker_Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Godot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RPG_Maker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Twine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unreal_Development_Kit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Ren&apos;Py"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Amazon_Fire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Android_TV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Flash"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#HTML5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Microsoft_UWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PS_Vita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sony_PlayStation_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#SteamOS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Tizen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#VR_Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#XNA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Xbox_One"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#fireTV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#web"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Framework"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_languge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#soft_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#technical_skills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#tools"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Animator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mo_cap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Rigger"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Character_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Space_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Level_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Scripting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Systems_Design"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Cocos2d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Kivy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Panda3D"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyKyra"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#PyOpenGL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pygame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Pyglet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Python_Ogre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#RenPy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#IT_Professional_Practice_Project"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#User_Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Virtual_Reality_Software_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Database_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Datastructure_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Models"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#programming_paradigm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UnReal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Unity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX12"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#DirectX9"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Emulators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Simulators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_Phone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#android"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ios"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Play_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Game_Space_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Scripting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Systems_Design"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#HTML5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Linux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Mac_OS_X"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Sony_PlayStation_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#SteamOS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#VR_Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Windows_PC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Xbox_One"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#desktop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#mobile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#web"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Icons"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Logo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Particles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Special_Effects"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#UI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_Characters"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#2D_textures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Characters"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Environmental_Objects"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3D_Hard_Surface_Modeling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MCV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#MVVM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#3_Layers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Multithread_Programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#OOP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#Shader_Programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#functional_programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#protocol-oriented_programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#reactive_programming"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#OOP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#functional_programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#protocol-oriented_programming"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#reactive_programming"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#macos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#ubuntu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6#windows"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

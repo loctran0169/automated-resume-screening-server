@@ -1,0 +1,3837 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#"
+     xml:base="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ACID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ACID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#AVL_tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#AVL_tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Breadth_First_Search -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Breadth_First_Search">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#search_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#CAP_theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#CAP_theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C_Sharp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C_Sharp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+        <rdfs:comment>C Sharp</rdfs:comment>
+        <rdfs:comment>C#</rdfs:comment>
+        <rdfs:comment>Csharp</rdfs:comment>
+        <rdfs:comment>c-sharp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Depth_First_Search -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Depth_First_Search">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#search_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Groovy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Groovy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#J2EE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#J2EE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#JavaSE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#JavaSE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Java_Core -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Java_Core">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#MD5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#MD5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+        <rdfs:comment>Mongo</rdfs:comment>
+        <rdfs:comment>MongoDB</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Node.js -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Node.js">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>Node js</rdfs:comment>
+        <rdfs:comment>Node.js</rdfs:comment>
+        <rdfs:comment>Nodejs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+        <rdfs:comment>ORM</rdfs:comment>
+        <rdfs:comment>object relational mapping</rdfs:comment>
+        <rdfs:comment>object-relational mapping</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PHP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PHP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PostgreSQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#PostgreSQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Python">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#REST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#REST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Rails -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Rails">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>Rails</rdfs:comment>
+        <rdfs:comment>Ruby on rails</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#SAML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#SAML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#SHA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#SHA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Scala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Scala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Transactions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Transactions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_athena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_athena">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_aurora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_aurora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_dynamodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_dynamodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_ebs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_ebs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_elasticache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_elasticache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_emr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_emr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_rds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_rds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_redshift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_redshift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_s3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_s3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_sqs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#amazon_sqs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#apollo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#apollo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graphql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#appveyor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#appveyor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#arangodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#arangodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#array -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#array">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws_glue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws_glue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_cosmos_db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_cosmos_db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_data_factory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_data_factory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_service_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_service_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_sql_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_sql_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#azure_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bcrypt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bcrypt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#binary_search -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#binary_search">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#search_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#binary_tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#binary_tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bubble_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bubble_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bucket_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#bucket_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#buildbot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#buildbot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cakephp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cakephp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cassandra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cleardb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cleardb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cockroachdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cockroachdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codebeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codebeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codeception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codeception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codefresh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codefresh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codeigniter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#codeigniter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#concurrency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#concurrency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cookie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cookie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchbase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchbase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#couchdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cpanel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#cpanel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_replication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_replication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#database_normalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#database_normalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#deploybot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#deploybot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#deployer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#deployer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dgraph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dgraph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dijkstra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dijkstra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dinamodb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dinamodb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#django -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#django">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#doctrine2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#doctrine2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dynamic_programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#dynamic_programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#elixir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#elixir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework_core -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#entity_framework_core">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#express.js -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#express.js">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>express.js</rdfs:comment>
+        <rdfs:comment>expressjs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#express_gateway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#express_gateway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#firebase_realtime_database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#firebase_realtime_database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#flink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#functional_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#functional_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#golang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#golang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+        <rdfs:label>Go</rdfs:label>
+        <rdfs:label>golang</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_bigquery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_bigquery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_bigtable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_bigtable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_firestore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_firestore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_memorystore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_memorystore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_sql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_sql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graphql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graphql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hapi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hapi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hash_table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hash_table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#haskell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#haskell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#haxe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#haxe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heap_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heap_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku-ci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku-ci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku_postgres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#heroku_postgres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hibernate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hibernate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#indexes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#indexes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#insertion_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#insertion_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#integration_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#integration_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kafka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kafka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#koa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#koa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kotlin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#kotlin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#laravel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#laravel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#laravel_elixir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#laravel_elixir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#leveldb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#leveldb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linked_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linked_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#linq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mariadb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#math -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#math">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:comment>math</rdfs:comment>
+        <rdfs:comment>mathematics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcached -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcached">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcachier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memcachier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memory_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memory_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memsql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#memsql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#merge_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#merge_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#microsoft_sql_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#microsoft_sql_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongodb_atlas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongodb_atlas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Mongo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongoose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mongoose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ODM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mssql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mssql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#multithreading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#multithreading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+        <rdfs:comment>multi threading</rdfs:comment>
+        <rdfs:comment>multi-threading</rdfs:comment>
+        <rdfs:comment>multithreading</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql_workbench -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql_workbench">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#mysql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#neo4j -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#neo4j">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graph_db"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nestjs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nestjs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>nest.js</rdfs:comment>
+        <rdfs:comment>nestjs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#networking_concepts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#networking_concepts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nosql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nosql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nuget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#nuget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#package_manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#openid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#openid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>OS</rdfs:label>
+        <rdfs:label>operating system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#oracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#package_manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#package_manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#package_manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#postgis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#postgis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pouchdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pouchdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pre-commit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pre-commit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#process_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#process_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pyramid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#pyramid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#queue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#queue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#quick_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#quick_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rabbitmq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rabbitmq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rails_spring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rails_spring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rancheros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rancheros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ravendb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ravendb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#recursion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#recursion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#redis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#regular_expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#regular_expression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+        <rdfs:label>regex</rdfs:label>
+        <rdfs:label>regular expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#relay_modern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#relay_modern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#graphql"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#restful -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#restful">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rethinkdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rethinkdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rhodecode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rhodecode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#rust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sailsjs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sailsjs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#scrypt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#scrypt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#hashing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#search_algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#search_algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#selection_sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#selection_sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#selenide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#selenide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sequelize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sequelize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sharding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sharding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sidekiq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sidekiq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#skaffold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#skaffold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snap-ci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snap-ci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snowflake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#snowflake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sort_algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#specflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#specflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#splunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spring_boot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spring_boot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spring_mvc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#spring_mvc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sql">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlalchemy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlalchemy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#ORM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#sqlite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#stack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#data_structures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#string_matching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#string_matching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#symfony -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#symfony">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#termius -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#termius">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testcafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testcafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testfairy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testfairy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testrail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#testrail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#threads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#threads">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#timescaledb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#timescaledb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#token_authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#token_authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#unit_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#unit_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#zuul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#zuul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>.net</rdfs:comment>
+        <rdfs:comment>asp.net</rdfs:comment>
+        <rdfs:comment>dot-net</rdfs:comment>
+        <rdfs:comment>dotnet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net_core -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net_core">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>.net core</rdfs:comment>
+        <rdfs:comment>asp.net core</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net_mvc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#.net_mvc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Framework"/>
+        <rdfs:comment>.net mvc</rdfs:comment>
+        <rdfs:comment>asp.net mvc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C++ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#C++">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+        <rdfs:comment>C++</rdfs:comment>
+        <rdfs:comment>Cplusplus</rdfs:comment>
+        <rdfs:comment>Cpp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#I/O_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#I/O_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#operation_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#N+1_problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#N+1_problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#Agile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#Agile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#BDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#BDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:comment>behavior-driven development</rdfs:comment>
+        <rdfs:label>BDD</rdfs:label>
+        <rdfs:label>behavior driven development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#MVC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#MVC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>Mode - View - Controller</rdfs:label>
+        <rdfs:label>Mode-View-Controller</rdfs:label>
+        <rdfs:label>Model View Controller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#MVVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#MVVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>Mode - View - ViewModel</rdfs:label>
+        <rdfs:label>Mode-View-ViewModel</rdfs:label>
+        <rdfs:label>Model View ViewModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#OOD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#OOD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>OOD</rdfs:label>
+        <rdfs:label>object oriented design</rdfs:label>
+        <rdfs:label>object-oriented design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#OOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#OOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>OOP</rdfs:label>
+        <rdfs:label>object oriented programming</rdfs:label>
+        <rdfs:label>object-oriented programming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#Scrum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#Scrum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#TDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology#TDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Knowledge"/>
+        <rdfs:label>TDD</rdfs:label>
+        <rdfs:label>Test driven development</rdfs:label>
+        <rdfs:label>Test-Driven Development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#Javascript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#Javascript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Programming_Language"/>
+        <rdfs:label>java-script</rdfs:label>
+        <rdfs:label>javascript</rdfs:label>
+        <rdfs:label>js</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#hadoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology#hadoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Databases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Docker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#Docker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ably -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ably">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_api_gateway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_api_gateway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_ec2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_ec2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_lightsail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_lightsail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_vpc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#amazon_vpc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ansible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ansible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apache_camel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apache_camel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apache_httpd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apache_httpd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apollo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#apollo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appfog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appfog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#paas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appharbor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appharbor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appsmith -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#appsmith">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aspose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aspose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#auth0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#auth0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>amazon web services</rdfs:label>
+        <rdfs:label>aws</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_appsync -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_appsync">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_batch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_batch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codebuild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codebuild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codecommit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codecommit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codedeploy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codedeploy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codepipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codepipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codestar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_codestar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_elastic_beanstalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_elastic_beanstalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_firecracker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_firecracker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_lambda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_lambda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_mobile_hub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_mobile_hub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_outposts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws_outposts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_pipelines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_pipelines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_stack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#azure_stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#baas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#baas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>baas</rdfs:label>
+        <rdfs:label>backend as a service</rdfs:label>
+        <rdfs:label>backend-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#back4app -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#back4app">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#backand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#backand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bazel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bazel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitbucket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitbucket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitbucket_pipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitbucket_pipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitrise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#bitrise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#blazor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#blazor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#boot2docker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#boot2docker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#browserify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#browserify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#browserstack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#browserstack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#buildkite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#buildkite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#capistrano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#capistrano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#caprover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#caprover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#chai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cincopa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cincopa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#circleci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#circleci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clever_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#clever_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cloud_foundry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cloud_foundry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cloudify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cloudify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#codeship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#codeship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#concourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#concourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#conoha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#conoha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#convox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#convox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cucumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cucumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cypress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#cypress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#daas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#daas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>daas</rdfs:label>
+        <rdfs:label>desktop as a service</rdfs:label>
+        <rdfs:label>desktop-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dataddo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dataddo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deepstream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deepstream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deis_workflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deis_workflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#deis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#digitalocean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#digitalocean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#directadmin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#directadmin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#djangae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#djangae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dkron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dkron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#docker-compose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#docker-compose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dreamfactory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dreamfactory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dreamhost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#dreamhost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#drone.io -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#drone.io">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elastic_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elastic_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elastichosts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elastichosts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elasticsearch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#elasticsearch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#engine_yard_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#engine_yard_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#entity_signal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#entity_signal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#equinix_metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#equinix_metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#etcd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#etcd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#faas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#faas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>faas</rdfs:label>
+        <rdfs:label>function as a service</rdfs:label>
+        <rdfs:label>function-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#faasd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#faasd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_cloude_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_cloude_function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_hosting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase_hosting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#fortrabbit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#fortrabbit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gandi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gandi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#geoserver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#geoserver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#git -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#git">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#github -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#github">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#github_actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#github_actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitkraken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitkraken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitlab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitlab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitlab-ci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gitlab-ci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#glassfish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#glassfish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#glitch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#glitch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#goblin_base_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#goblin_base_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#godaddy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#godaddy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gogs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gogs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_anthos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_anthos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_app_engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_app_engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_app_maker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_app_maker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_functions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_functions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_pubsub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_pubsub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_run -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud_run">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_compute_engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_compute_engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#google_cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#graphcool-framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#graphcool-framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gunicorn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#gunicorn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#haproxy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#haproxy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hasura_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hasura_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#helm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#helm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#heroku -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#heroku">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hetzner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hetzner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hirefire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hirefire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hockeyapp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#hockeyapp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#iaas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#iaas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>iaas</rdfs:label>
+        <rdfs:label>infrastructure as a service</rdfs:label>
+        <rdfs:label>infrastructure-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#istio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#istio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jasmine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jasmine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jboss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jboss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jelastic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jelastic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jenkins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jenkins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jetty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#jetty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#joyent_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#joyent_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#junit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#junit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kinsta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kinsta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kinto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kinto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kintohub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kintohub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#knative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kontena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kontena">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubeless -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubeless">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubernetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubernetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubesail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kubesail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kumologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#kumologica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lambada_framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lambada_framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lambdatest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lambdatest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#laravel_forge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#laravel_forge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#laravel_vapor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#laravel_vapor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#leancloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#leancloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#baas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lighttpd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lighttpd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#linode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#linode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lwan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#lwan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#magento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#magento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#magic-xpa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#magic-xpa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#media_temple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#media_temple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mendix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mendix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#message-db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#message-db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#meteor_galaxy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#meteor_galaxy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_azure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_azure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>azure</rdfs:label>
+        <rdfs:label>microsoft azure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_iis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#microsoft_iis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mocha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mocha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mockito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mockito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mongodb_stitch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mongodb_stitch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mongoose_web_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#mongoose_web_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#namecheap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#namecheap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nanobox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nanobox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#netlify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#netlify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nginx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nginx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nginx_unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nginx_unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nginx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nimbella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nimbella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nodaljs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#nodaljs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#oauth2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#oauth2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#octopus_deploy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#octopus_deploy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#omniauth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#omniauth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#authentication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#open_telekom_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#open_telekom_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#iaas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openfaas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openfaas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openresty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openresty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openvpn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#openvpn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#oracle_weblogic_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#oracle_weblogic_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#paas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#paas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>paas</rdfs:label>
+        <rdfs:label>platform as a service</rdfs:label>
+        <rdfs:label>platform-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#parse_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#parse_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#payara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#payara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#phabricator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#phabricator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#phpunit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#phpunit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pivotal_web_services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pivotal_web_services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#platform.sh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#platform.sh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#playfab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#playfab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#plesk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#plesk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#portainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#portainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#prisma_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#prisma_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pubnub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pubnub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pusher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pusher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pytest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pytest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pythonanywhere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#pythonanywhere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rackspace_cloud_servers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rackspace_cloud_servers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ramnode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ramnode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rancher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rancher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ratchet_php -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ratchet_php">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#react_native_firebase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#react_native_firebase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#firebase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#reactphp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#reactphp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#red_hat_openshift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#red_hat_openshift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#robot_framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#robot_framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rspec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#rspec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#saas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#saas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+        <rdfs:label>saas</rdfs:label>
+        <rdfs:label>software as a service</rdfs:label>
+        <rdfs:label>software-as-a-service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sauce_labs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sauce_labs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#scaleway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#scaleway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#selenium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#selenium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless-dev-tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless-dev-tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#signalr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#signalr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#singlehop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#singlehop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#siteground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#siteground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#snyk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#snyk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#socket_io -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#socket_io">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#socketcluster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#socketcluster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sourcetree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sourcetree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#source_control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spinnaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spinnaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spring_cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#spring_cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sproutvideo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#sproutvideo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackmob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackmob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackpath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackpath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackpath_serverless_edgeengine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#stackpath_serverless_edgeengine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#supabase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#supabase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#svn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#svn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#syncano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#syncano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#teamcity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#teamcity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#tomcat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#tomcat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#traefik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#traefik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#travis-ci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#travis-ci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#triggermesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#triggermesh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#saas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#twilio_functions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#twilio_functions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#upcloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#upcloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#uwsgi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#uwsgi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vidyard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vidyard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vultr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#vultr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wcf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wcf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#webfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#webfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#websphere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#websphere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#websphere_liberty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#websphere_liberty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wercker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wercker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wildfly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#wildfly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#xampp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#xampp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zend_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zend_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zero_server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zero_server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zoho_catalyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zoho_catalyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#serverless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#zope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#8base -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#8base">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Hosting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ad/ontologies/2021/0/untitled-ontology-16#ci/cd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology#Deploy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Backend_Developer"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,5061 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sonhungel/ontologies/2021/2/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sonhungel/ontologies/2021/2/untitled-ontology-11">
+    <Prefix name="" IRI="http://www.semanticweb.org/sonhungel/ontologies/2021/2/untitled-ontology-11"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AWS_Beanstalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AWS_CloudFormation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AWS_IAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AWS_Lambda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Active_listening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdaDelta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdaGrad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adaptability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agglomerative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amazon_DynamoDB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amazon_EC2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amazon_RDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analytical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Android"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apriori_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asp_.NET"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bagging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Banking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Batch_Normalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Batch_size_effects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiLSTM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boosting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budget_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bulma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CNN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSharp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CakePHP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification_Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cloudwatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clustering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coldelgniter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conflict_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cosmos_DB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DBSCAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delegating_tasks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Designing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevOps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Django"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamoDB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECLAT_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embedded_Linux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ensemble_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity_framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolving_Architectures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpressJS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FP_Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FastAPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foundation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fuzzy_C-Means"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GRU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gaussian_Mixture_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Git"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Go"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Google_BigQuery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Google_Cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HDBSCAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hierachical_Clustering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interpersonal_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iterative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Javascript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#K-Means_Clustering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kali_Linux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Koa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kotlin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LSTM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laravel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning_Rate_Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logistic_Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MCV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MVVM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintaining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_UI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Materialize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mean_Shift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microsoft_Azure_SQL_Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microsoft_Planner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microsoft_Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Momentum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multithread_Programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NEAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NLP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NMF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nadam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Naive_Bayes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name_Entity_Recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negotiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neo4j"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neural_Architecture_Search"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nextjs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ODM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OOP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OPTICS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ORM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optimizers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phoenix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poisson_Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostgreSQL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Presentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Principal_Component_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_solving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming_language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Q-Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RMSProp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RNN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Random_Projection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reinforment_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reporting_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Research_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residual_Connections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ruby_on_Rails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SGD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SVM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentiment_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shader_Programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source_control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spring_Boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stacking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Summarization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supervised_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Svelte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swift_UI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symfony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T-SNE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tailwind_CSS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technical_writing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technologically_savvy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thinking_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Travel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trello"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UIkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UMAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unsupervised_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#V"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vue.js"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yii2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#abstracting_and_indexing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#action_selection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#action_spaces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#activation_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#activity_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#actor_critic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adaptive_boosting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adversarial_training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ajax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_athena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_aurora"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_ebs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_elasticache"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_emr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_redshift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_s3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amazon_sqs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#angular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#api"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#api_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#appearance_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#arangodb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aritficial_intelligence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#array"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#associative_classifiters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#attention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#audio-visual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#autoencoder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#automation_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#average_reward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#avl_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aws"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aws_glue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azure_cosmos_db"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azure_data_factory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azure_service_bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azure_sql_database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azure_storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#back_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#backpropagation_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bayes_classifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#big_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#binary_decision_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#binary_pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#binary_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bitbucket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#black_box"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bootstrap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#breakdown_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#buble_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#business_administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#business_executive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c4.5_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cassandra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#character_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ci_cd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#circle_list"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#class_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cleardb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#client_handling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cockroachdb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#color_images"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compatibility_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compliance_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#computational_grammars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#computing_with_words"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conditional_random_field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#continuous_state_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#continuous_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#controlling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#corrective_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cost_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cost_planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#couchbase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#couchdb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cross_functional_leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#css"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#curriculum_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_augmentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#database_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#database_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#databases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#debugging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#decoder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deep_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#delete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#delivery_leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dependency_parsing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#digital_media"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dinamodb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#distillation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#doctrine2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#document_analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#document_processing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#double_list"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dropout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#e2e_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#early_stopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ecommerce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emotion_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#encoder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity_framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity_framework_core"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#environmental_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#face_alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#face_detection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#face_images"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#face_models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#face_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#feature_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#feedfoward_neural_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#finance_control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#financial_risk_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#firebase_realtime_database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#forecasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#front_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#functional_programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#functional_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fuzzy_classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fuzzy_decision_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#generative_adversarial_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gesture_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#get"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#git"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#github"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gitlab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#google_cloud_bigtable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#google_cloud_firestore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#google_cloud_memorystore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#google_cloud_sql"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#google_cloud_storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gradient_descent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#graph_db"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#graph_matching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hadoop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hand_written_character_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#handwritting_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hardware_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hash_table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#heap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#heap_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#heroku_postgres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hibernate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hosting_server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#html"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#http"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#https"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#imitation_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#information_extraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insertion_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#installation_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#integration_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#jquery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#json"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kafka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#learning_agents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leveldb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lexical_database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lexical_semantics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#linkedlist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#linq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#local_host"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#loss_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#machine_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#machine_translations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#macos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#manual_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#manufacturing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mariadb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#market_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#marketing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maximum_entropy_models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#media"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#memcached"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#memcachier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#memsql"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#merge_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobile_banking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_optimization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mongoDB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mongoose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#monitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ms_sql_server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multitask_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multithreading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mysql"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#n-gram_language_models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#natural_language_generation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#network_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#neural_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nosql"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#online_banking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ooad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#open_project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operating_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operational_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operations_leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oracle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#organizational_development"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#overfitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameter_penalties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parse_tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parsing_algorthm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#part_of_speech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pattern_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#payments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#performance_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phalcon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#php"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#play_framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#policy_iteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#post"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#postgis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#postgreSQL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pouchdb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#precision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#predictive_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preventive_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#programming_paradigm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_billing_schedules_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_coordination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_handling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_scheduling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#project_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#protocol-oriented_programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#put"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pyramid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#qa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#qc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#question_answering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quick_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rabbitmq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#random_forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ravendb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#react"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reactive_programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#recall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#record_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#redis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regression_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regulization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#relevance_models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reliability_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resource_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resource_planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rest_api"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rethinkdb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reward_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_analytics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_governance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_identification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_management_tracking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_mitigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risk_modeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#risks_able_to_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ruby"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scala"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sdlc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#security_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#selection_sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#semantic_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sematic_UI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sentiment_analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sequelize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sequence_labeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sequential_decision_making"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siamese_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sidekiq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#singly_list"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sketch_recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#snowflake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#soft_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#software_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#speech_tranmissions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#splunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spring_boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spring_mvc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sql_database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sqlalchemy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sqlite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#statiscal_language_modeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#strategic_planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stress_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#supply_chain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#synsets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#syntactic_analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#syntactic_features"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#syntactic_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#syntactic_parsing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#system_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#system_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#task_scheduling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tcp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technical_leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technical_skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technology_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technology_solutions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_management_tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_scenarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_scripts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text_classifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text_detection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text_procssing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#timescaledb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#topic_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#transfer_learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ubuntu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#udp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ui_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#underfitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#validate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#validation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vanishing_gradient_problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#variance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verbal_communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#visual_basic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#white_box"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#windows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#windows_10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#windows_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#windows_8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#word_embedding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#word_segmentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#written"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#yesod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#&apos;K-Nearest_Neighbour&apos;"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3_Layers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c++"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AWS_Beanstalk"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AWS_CloudFormation"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AWS_IAM"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AWS_Lambda"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active_listening"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actix"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdaDelta"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdaGrad"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adam"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adaptability"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agglomerative"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agile"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amazon_DynamoDB"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amazon_EC2"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amazon_RDS"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analytical"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Android"/>
+        <Class IRI="#operating_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apriori_Algorithm"/>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asp_.NET"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+        <Class IRI="#Unsupervised_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bagging"/>
+        <Class IRI="#Ensemble_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banking"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batch_Normalization"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batch_size_effects"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiLSTM"/>
+        <Class IRI="#RNN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boosting"/>
+        <Class IRI="#Ensemble_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Budget_management"/>
+        <Class IRI="#finance_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bulma"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CNN"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSharp"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CakePHP"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <Class IRI="#Supervised_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification_Rate"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cloudwatch"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clustering"/>
+        <Class IRI="#Unsupervised_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coldelgniter"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conflict_management"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cosmos_DB"/>
+        <Class IRI="#Microsoft_Azure_SQL_Database"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creative"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DBSCAN"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Datastructure_Algorithm"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_Tree"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delegating_tasks"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Designing"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimensionality_Reduction"/>
+        <Class IRI="#Unsupervised_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Django"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamoDB"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECLAT_algorithm"/>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Education"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embedded_Linux"/>
+        <Class IRI="#Linux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ensemble_Learning"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entity_framework"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolving_Architectures"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressJS"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FP_Tree"/>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastAPI"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finance"/>
+        <Class IRI="#finance_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flask"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foundation"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Framework"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fuzzy_C-Means"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GRU"/>
+        <Class IRI="#RNN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gaussian_Mixture_Model"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Git"/>
+        <Class IRI="#tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Go"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Google_BigQuery"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Google_Cloud"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HDBSCAN"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hierachical_Clustering"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IOS"/>
+        <Class IRI="#operating_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interpersonal_skills"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iterative"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Java"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Javascript"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jira"/>
+        <Class IRI="#tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#K-Means_Clustering"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kali_Linux"/>
+        <Class IRI="#Linux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Koa"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kotlin"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LSTM"/>
+        <Class IRI="#RNN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laravel"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lean"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Learning_Rate_Schedule"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Regression"/>
+        <Class IRI="#Regression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linux"/>
+        <Class IRI="#operating_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Logistic_Regression"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MCV"/>
+        <Class IRI="#Models"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MVVM"/>
+        <Class IRI="#Models"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintaining"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_UI"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Materialize"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mean_Shift"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microsoft_Azure_SQL_Database"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microsoft_Planner"/>
+        <Class IRI="#tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microsoft_Project"/>
+        <Class IRI="#tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Models"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Momentum"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motivation"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multithread_Programming"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NEAT"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NLP"/>
+        <Class IRI="#aritficial_intelligence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NMF"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nadam"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Naive_Bayes"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name_Entity_Recognition"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negotiation"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neo4j"/>
+        <Class IRI="#graph_db"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neural_Architecture_Search"/>
+        <Class IRI="#model_optimization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nextjs"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ODM"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OOP"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OPTICS"/>
+        <Class IRI="#Clustering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ORM"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Objective_C"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optimizers"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phoenix"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poisson_Regression"/>
+        <Class IRI="#Regression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_knowledge"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pooling"/>
+        <Class IRI="#CNN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostgreSQL"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Presentation"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Component_Analysis"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem_solving"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming_language"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Python"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Q-Learning"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RMSProp"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RNN"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Random_Projection"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regression"/>
+        <Class IRI="#Supervised_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reinforment_Learning"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reporting_skills"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Research_skills"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residual_Connections"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ruby_on_Rails"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SGD"/>
+        <Class IRI="#Optimizers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVM"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scrum"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sentiment_Analysis"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shader_Programming"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source_control"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiral"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spring_Boot"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stacking"/>
+        <Class IRI="#Ensemble_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Summarization"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervised_Learning"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Svelte"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swift_UI"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symfony"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T-SNE"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tailwind_CSS"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical_writing"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technologically_savvy"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thinking_skills"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train_model"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Travel"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trello"/>
+        <Class IRI="#tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UIkit"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UMAP"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unix"/>
+        <Class IRI="#operating_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unsupervised_Learning"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#V"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vue.js"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yii2"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#abstracting_and_indexing"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#action_selection"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#action_spaces"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#activation_functions"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#activity_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#actor_critic"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adaptive_boosting"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adversarial_training"/>
+        <Class IRI="#regulization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ajax"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_athena"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_aurora"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_ebs"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_elasticache"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_emr"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_redshift"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_s3"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amazon_sqs"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#angular"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#api"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#api_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#appearance_model"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#arangodb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aritficial_intelligence"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#array"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#associative_classifiters"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#attention"/>
+        <Class IRI="#Transformer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#audio-visual"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#autoencoder"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#automation_test"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#average_reward"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#avl_tree"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aws"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aws_glue"/>
+        <Class IRI="#aws"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azure_cosmos_db"/>
+        <Class IRI="#azure_storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azure_data_factory"/>
+        <Class IRI="#azure_storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azure_service_bus"/>
+        <Class IRI="#azure_storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azure_sql_database"/>
+        <Class IRI="#azure_storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azure_storage"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#back_end"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#backpropagation_algorithm"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bayes_classifier"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bias"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#big_data"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#binary_decision_tree"/>
+        <Class IRI="#Decision_Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#binary_pattern"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#binary_tree"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bitbucket"/>
+        <Class IRI="#Source_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#black_box"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bootstrap"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#breakdown_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#buble_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#business_administration"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#business_executive"/>
+        <Class IRI="#business_administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c4.5_algorithm"/>
+        <Class IRI="#Decision_Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cassandra"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#character_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ci_cd"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#circle_list"/>
+        <Class IRI="#linkedlist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#class_information"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cleardb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#client_handling"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cloud"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cockroachdb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#color_images"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compatibility_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#computational_grammars"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#computing_with_words"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conditional_random_field"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#continuous_state_space"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#continuous_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#controlling"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#corrective_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cost_function"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cost_planning"/>
+        <Class IRI="#finance_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#couchbase"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#couchdb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#css"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#curriculum_learning"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dart"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_augmentation"/>
+        <Class IRI="#regulization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_management"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#database_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#database_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#databases"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#debugging"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#decoder"/>
+        <Class IRI="#Transformer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deep_learning"/>
+        <Class IRI="#aritficial_intelligence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deep_learning"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delete"/>
+        <Class IRI="#http"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delete"/>
+        <Class IRI="#https"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dependency_parsing"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#digital_media"/>
+        <Class IRI="#media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dinamodb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#distillation"/>
+        <Class IRI="#model_optimization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#doctrine2"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#document_analysis"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#document_processing"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#double_list"/>
+        <Class IRI="#linkedlist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dropout"/>
+        <Class IRI="#regulization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#e2e_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#early_stopping"/>
+        <Class IRI="#regulization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ecommerce"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ember"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emotion_recognition"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#encoder"/>
+        <Class IRI="#Transformer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#entity_framework"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#entity_framework_core"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#environmental_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#face_alignment"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#face_detection"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#face_images"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#face_models"/>
+        <Class IRI="#face_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#face_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feature_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#feedfoward_neural_network"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finance"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#financial_risk_management"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#firebase_realtime_database"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flink"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#forecasting"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#front_end"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#functional_programming"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#functional_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fuzzy_classification"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fuzzy_decision_tree"/>
+        <Class IRI="#Decision_Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#generative_adversarial_network"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gesture_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#get"/>
+        <Class IRI="#http"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#get"/>
+        <Class IRI="#https"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#git"/>
+        <Class IRI="#Source_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#github"/>
+        <Class IRI="#Source_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gitlab"/>
+        <Class IRI="#Source_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#google_cloud_bigtable"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#google_cloud_firestore"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#google_cloud_memorystore"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#google_cloud_sql"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#google_cloud_storage"/>
+        <Class IRI="#Google_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#government"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gradient_descent"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#graph_db"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#graph_matching"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hadoop"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hand_written_character_recognition"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#handwritting_recognition"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hardware_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hash_table"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#head"/>
+        <Class IRI="#http"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#head"/>
+        <Class IRI="#https"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#heap"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#heap_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#heroku_postgres"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hibernate"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hive"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hosting_server"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#html"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#http"/>
+        <Class IRI="#protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#https"/>
+        <Class IRI="#protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imitation_learning"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#information_extraction"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insertion_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#installation_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insurance"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#integration_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#jquery"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#json"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kafka"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leadership"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#learning_agents"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leveldb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lexical_database"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lexical_semantics"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lift"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linkedlist"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#linq"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#local_host"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loss_function"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#machine_learning"/>
+        <Class IRI="#aritficial_intelligence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#machine_translations"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#macos"/>
+        <Class IRI="#Linux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance"/>
+        <Class IRI="#qa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#manual_test"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#manufacturing"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mariadb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#market_risk"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#marketing"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maximum_entropy_models"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#media"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#memcached"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#memcachier"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#memsql"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#merge_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobile_banking"/>
+        <Class IRI="#Banking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_optimization"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mongoDB"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mongoose"/>
+        <Class IRI="#ODM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#monitoring"/>
+        <Class IRI="#project_scheduling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ms_sql_server"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multitask_learning"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multithreading"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mysql"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#n-gram_language_models"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#natural_language_generation"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#network_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#neural_network"/>
+        <Class IRI="#aritficial_intelligence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nosql"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#online_banking"/>
+        <Class IRI="#Banking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ooad"/>
+        <Class IRI="#sdlc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#open_project"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operating_system"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operational_risk"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oracle"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#organizational_development"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overfitting"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parameter_penalties"/>
+        <Class IRI="#regulization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parse_tree"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parsing_algorthm"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#part_of_speech"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pattern_recognition"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#payments"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#performance_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phalcon"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#php"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#play_framework"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#policy_iteration"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#post"/>
+        <Class IRI="#http"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#post"/>
+        <Class IRI="#https"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#postgis"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#postgreSQL"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pouchdb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preact"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#precision"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#predictive_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preventive_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#programming_paradigm"/>
+        <Class IRI="#technical_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_billing_schedules_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_coordination"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_handling"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_scheduling"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#project_type"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#protocol"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#protocol-oriented_programming"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#put"/>
+        <Class IRI="#http"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#put"/>
+        <Class IRI="#https"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pyramid"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#qa"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#qc"/>
+        <Class IRI="#qa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantization"/>
+        <Class IRI="#model_optimization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#question_answering"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quick_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rabbitmq"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#random_forest"/>
+        <Class IRI="#Decision_Tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ravendb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#react"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reactive_programming"/>
+        <Class IRI="#programming_paradigm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#recall"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#redis"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regression_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regulization"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#relevance_models"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reliability_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resource_management"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resource_planning"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rest_api"/>
+        <Class IRI="#back_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rethinkdb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reward_function"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_analytics"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_assessment"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_control"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_governance"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_identification"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_management_tracking"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_mitigation"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risk_modeling"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#risks_able_to_recognition"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ruby"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scala"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sdlc"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#security_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#selection_sort"/>
+        <Class IRI="#sort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#semantic_similarity"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sematic_UI"/>
+        <Class IRI="#front_end"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sentiment_analysis"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sequelize"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sequence_labeling"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sequential_decision_making"/>
+        <Class IRI="#Reinforment_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siamese_network"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sidekiq"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#singly_list"/>
+        <Class IRI="#linkedlist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sketch_recognition"/>
+        <Class IRI="#pattern_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#snowflake"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#soft_skills"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#software_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sort"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spark"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speech_tranmissions"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#splunk"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spring_boot"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spring_mvc"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sql_database"/>
+        <Class IRI="#Microsoft_Azure_SQL_Database"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sqlalchemy"/>
+        <Class IRI="#ORM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sqlite"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#statiscal_language_modeling"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#strategic_planning"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stress_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supply_chain"/>
+        <Class IRI="#finance_control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#synsets"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#syntactic_analysis"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#syntactic_features"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#syntactic_information"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#syntactic_parsing"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#system_maintenance"/>
+        <Class IRI="#maintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#system_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_scheduling"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tcp"/>
+        <Class IRI="#protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technical_leadership"/>
+        <Class IRI="#leadership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technical_skills"/>
+        <Class IRI="#Project_Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technology_risk"/>
+        <Class IRI="#risk_management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_case"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_data"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_data"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_execution"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_management_tool"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_scenarios"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_scripts"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_strategy"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#testing"/>
+        <Class IRI="#qa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#text_classifier"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#text_detection"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#text_procssing"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_management"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#timescaledb"/>
+        <Class IRI="#databases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tools"/>
+        <Class IRI="#project_coordination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#topic_model"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trade"/>
+        <Class IRI="#project_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#training"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#transfer_learning"/>
+        <Class IRI="#Train_model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree"/>
+        <Class IRI="#Datastructure_Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ubuntu"/>
+        <Class IRI="#Linux"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#udp"/>
+        <Class IRI="#protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ui_testing"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#underfitting"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#validate"/>
+        <Class IRI="#qa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#validation"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vanishing_gradient_problem"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#variance"/>
+        <Class IRI="#machine_learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verbal_communication"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#visual_basic"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weight"/>
+        <Class IRI="#neural_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#white_box"/>
+        <Class IRI="#testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#windows"/>
+        <Class IRI="#operating_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#windows_10"/>
+        <Class IRI="#windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#windows_7"/>
+        <Class IRI="#windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#windows_8"/>
+        <Class IRI="#windows"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#word_embedding"/>
+        <Class IRI="#NLP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#word_segmentation"/>
+        <Class IRI="#character_recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#written"/>
+        <Class IRI="#soft_skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#yesod"/>
+        <Class IRI="#Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;K-Nearest_Neighbour&apos;"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3_Layers"/>
+        <Class IRI="#Models"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c++"/>
+        <Class IRI="#Programming_language"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AWS_Beanstalk"/>
+        <Class IRI="#AWS_CloudFormation"/>
+        <Class IRI="#AWS_IAM"/>
+        <Class IRI="#AWS_Lambda"/>
+        <Class IRI="#Amazon_EC2"/>
+        <Class IRI="#Amazon_RDS"/>
+        <Class IRI="#Cloudwatch"/>
+        <Class IRI="#DynamoDB"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AWS_Beanstalk"/>
+        <Class IRI="#AWS_CloudFormation"/>
+        <Class IRI="#AWS_IAM"/>
+        <Class IRI="#AWS_Lambda"/>
+        <Class IRI="#Amazon_EC2"/>
+        <Class IRI="#Amazon_RDS"/>
+        <Class IRI="#Cloudwatch"/>
+        <Class IRI="#DynamoDB"/>
+        <Class IRI="#amazon_athena"/>
+        <Class IRI="#amazon_aurora"/>
+        <Class IRI="#amazon_ebs"/>
+        <Class IRI="#amazon_elasticache"/>
+        <Class IRI="#amazon_emr"/>
+        <Class IRI="#amazon_redshift"/>
+        <Class IRI="#amazon_s3"/>
+        <Class IRI="#amazon_sqs"/>
+        <Class IRI="#aws_glue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Actix"/>
+        <Class IRI="#Asp_.NET"/>
+        <Class IRI="#CakePHP"/>
+        <Class IRI="#Coldelgniter"/>
+        <Class IRI="#Django"/>
+        <Class IRI="#Entity_framework"/>
+        <Class IRI="#ExpressJS"/>
+        <Class IRI="#FastAPI"/>
+        <Class IRI="#Flask"/>
+        <Class IRI="#Koa"/>
+        <Class IRI="#Laravel"/>
+        <Class IRI="#Nextjs"/>
+        <Class IRI="#Phoenix"/>
+        <Class IRI="#Ruby_on_Rails"/>
+        <Class IRI="#Spring_Boot"/>
+        <Class IRI="#Symfony"/>
+        <Class IRI="#Yii2"/>
+        <Class IRI="#phalcon"/>
+        <Class IRI="#play_framework"/>
+        <Class IRI="#pyramid"/>
+        <Class IRI="#spring_boot"/>
+        <Class IRI="#spring_mvc"/>
+        <Class IRI="#yesod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Actix"/>
+        <Class IRI="#Asp_.NET"/>
+        <Class IRI="#CakePHP"/>
+        <Class IRI="#Coldelgniter"/>
+        <Class IRI="#Django"/>
+        <Class IRI="#ExpressJS"/>
+        <Class IRI="#FastAPI"/>
+        <Class IRI="#Flask"/>
+        <Class IRI="#Koa"/>
+        <Class IRI="#Laravel"/>
+        <Class IRI="#Nextjs"/>
+        <Class IRI="#Phoenix"/>
+        <Class IRI="#Ruby_on_Rails"/>
+        <Class IRI="#Spring_Boot"/>
+        <Class IRI="#Symfony"/>
+        <Class IRI="#Yii2"/>
+        <Class IRI="#phalcon"/>
+        <Class IRI="#play_framework"/>
+        <Class IRI="#pyramid"/>
+        <Class IRI="#spring_boot"/>
+        <Class IRI="#spring_mvc"/>
+        <Class IRI="#yesod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AdaDelta"/>
+        <Class IRI="#AdaGrad"/>
+        <Class IRI="#Adam"/>
+        <Class IRI="#Momentum"/>
+        <Class IRI="#Nadam"/>
+        <Class IRI="#RMSProp"/>
+        <Class IRI="#SGD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Adaptability"/>
+        <Class IRI="#Analytical"/>
+        <Class IRI="#Creative"/>
+        <Class IRI="#Presentation"/>
+        <Class IRI="#Problem_solving"/>
+        <Class IRI="#Thinking_skills"/>
+        <Class IRI="#resource_planning"/>
+        <Class IRI="#task_scheduling"/>
+        <Class IRI="#time_management"/>
+        <Class IRI="#verbal_communication"/>
+        <Class IRI="#written"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Adaptability"/>
+        <Class IRI="#Analytical"/>
+        <Class IRI="#Creative"/>
+        <Class IRI="#Presentation"/>
+        <Class IRI="#Problem_solving"/>
+        <Class IRI="#resource_planning"/>
+        <Class IRI="#task_scheduling"/>
+        <Class IRI="#time_management"/>
+        <Class IRI="#verbal_communication"/>
+        <Class IRI="#written"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agglomerative"/>
+        <Class IRI="#DBSCAN"/>
+        <Class IRI="#Fuzzy_C-Means"/>
+        <Class IRI="#HDBSCAN"/>
+        <Class IRI="#Hierachical_Clustering"/>
+        <Class IRI="#K-Means_Clustering"/>
+        <Class IRI="#Mean_Shift"/>
+        <Class IRI="#OPTICS"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agile"/>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#Iterative"/>
+        <Class IRI="#Lean"/>
+        <Class IRI="#Scrum"/>
+        <Class IRI="#Spiral"/>
+        <Class IRI="#V"/>
+        <Class IRI="#Waterfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agile"/>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#Iterative"/>
+        <Class IRI="#Lean"/>
+        <Class IRI="#Scrum"/>
+        <Class IRI="#Spiral"/>
+        <Class IRI="#V"/>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#ci_cd"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agile"/>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#Iterative"/>
+        <Class IRI="#Lean"/>
+        <Class IRI="#Scrum"/>
+        <Class IRI="#Spiral"/>
+        <Class IRI="#V"/>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#ci_cd"/>
+        <Class IRI="#ooad"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Amazon_DynamoDB"/>
+        <Class IRI="#Google_Cloud"/>
+        <Class IRI="#Microsoft_Azure_SQL_Database"/>
+        <Class IRI="#aws"/>
+        <Class IRI="#cassandra"/>
+        <Class IRI="#graph_db"/>
+        <Class IRI="#hive"/>
+        <Class IRI="#mariadb"/>
+        <Class IRI="#mongoDB"/>
+        <Class IRI="#ms_sql_server"/>
+        <Class IRI="#mysql"/>
+        <Class IRI="#nosql"/>
+        <Class IRI="#oracle"/>
+        <Class IRI="#postgreSQL"/>
+        <Class IRI="#redis"/>
+        <Class IRI="#splunk"/>
+        <Class IRI="#sqlite"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Android"/>
+        <Class IRI="#Embedded_Linux"/>
+        <Class IRI="#IOS"/>
+        <Class IRI="#Kali_Linux"/>
+        <Class IRI="#Linux"/>
+        <Class IRI="#Unix"/>
+        <Class IRI="#ubuntu"/>
+        <Class IRI="#windows"/>
+        <Class IRI="#windows_10"/>
+        <Class IRI="#windows_7"/>
+        <Class IRI="#windows_8"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Android"/>
+        <Class IRI="#IOS"/>
+        <Class IRI="#Linux"/>
+        <Class IRI="#Unix"/>
+        <Class IRI="#macos"/>
+        <Class IRI="#windows"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Apriori_Algorithm"/>
+        <Class IRI="#ECLAT_algorithm"/>
+        <Class IRI="#FP_Tree"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#CSharp"/>
+        <Class IRI="#Go"/>
+        <Class IRI="#Java"/>
+        <Class IRI="#Javascript"/>
+        <Class IRI="#Kotlin"/>
+        <Class IRI="#Objective_C"/>
+        <Class IRI="#Python"/>
+        <Class IRI="#c"/>
+        <Class IRI="#dart"/>
+        <Class IRI="#php"/>
+        <Class IRI="#ruby"/>
+        <Class IRI="#scala"/>
+        <Class IRI="#visual_basic"/>
+        <Class IRI="#c++"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#CSharp"/>
+        <Class IRI="#Go"/>
+        <Class IRI="#Java"/>
+        <Class IRI="#Javascript"/>
+        <Class IRI="#Kotlin"/>
+        <Class IRI="#Objective_C"/>
+        <Class IRI="#Python"/>
+        <Class IRI="#c"/>
+        <Class IRI="#scala"/>
+        <Class IRI="#c++"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assocaition_Rule_Learning"/>
+        <Class IRI="#Clustering"/>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bagging"/>
+        <Class IRI="#Boosting"/>
+        <Class IRI="#Stacking"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Banking"/>
+        <Class IRI="#Education"/>
+        <Class IRI="#Travel"/>
+        <Class IRI="#big_data"/>
+        <Class IRI="#business_administration"/>
+        <Class IRI="#business_executive"/>
+        <Class IRI="#digital_media"/>
+        <Class IRI="#finance"/>
+        <Class IRI="#forecasting"/>
+        <Class IRI="#government"/>
+        <Class IRI="#insurance"/>
+        <Class IRI="#marketing"/>
+        <Class IRI="#media"/>
+        <Class IRI="#mobile_banking"/>
+        <Class IRI="#online_banking"/>
+        <Class IRI="#payments"/>
+        <Class IRI="#trade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Batch_Normalization"/>
+        <Class IRI="#Batch_size_effects"/>
+        <Class IRI="#Learning_Rate_Schedule"/>
+        <Class IRI="#Optimizers"/>
+        <Class IRI="#curriculum_learning"/>
+        <Class IRI="#multitask_learning"/>
+        <Class IRI="#regulization"/>
+        <Class IRI="#transfer_learning"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BiLSTM"/>
+        <Class IRI="#GRU"/>
+        <Class IRI="#LSTM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bulma"/>
+        <Class IRI="#Foundation"/>
+        <Class IRI="#Material_UI"/>
+        <Class IRI="#Materialize"/>
+        <Class IRI="#Svelte"/>
+        <Class IRI="#Swift_UI"/>
+        <Class IRI="#Tailwind_CSS"/>
+        <Class IRI="#UIkit"/>
+        <Class IRI="#Vue.js"/>
+        <Class IRI="#angular"/>
+        <Class IRI="#bootstrap"/>
+        <Class IRI="#css"/>
+        <Class IRI="#ember"/>
+        <Class IRI="#html"/>
+        <Class IRI="#preact"/>
+        <Class IRI="#react"/>
+        <Class IRI="#sematic_UI"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CNN"/>
+        <Class IRI="#Evolving_Architectures"/>
+        <Class IRI="#NEAT"/>
+        <Class IRI="#RNN"/>
+        <Class IRI="#Residual_Connections"/>
+        <Class IRI="#Train_model"/>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#activation_functions"/>
+        <Class IRI="#autoencoder"/>
+        <Class IRI="#backpropagation_algorithm"/>
+        <Class IRI="#deep_learning"/>
+        <Class IRI="#feedfoward_neural_network"/>
+        <Class IRI="#generative_adversarial_network"/>
+        <Class IRI="#loss_function"/>
+        <Class IRI="#model_optimization"/>
+        <Class IRI="#siamese_network"/>
+        <Class IRI="#vanishing_gradient_problem"/>
+        <Class IRI="#weight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Classification"/>
+        <Class IRI="#Regression"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Classification_Rate"/>
+        <Class IRI="#Decision_Tree"/>
+        <Class IRI="#Gaussian_Mixture_Model"/>
+        <Class IRI="#Logistic_Regression"/>
+        <Class IRI="#Naive_Bayes"/>
+        <Class IRI="#SVM"/>
+        <Class IRI="#adaptive_boosting"/>
+        <Class IRI="#associative_classifiters"/>
+        <Class IRI="#bayes_classifier"/>
+        <Class IRI="#fuzzy_classification"/>
+        <Class IRI="#text_classifier"/>
+        <Class IRI="#&apos;K-Nearest_Neighbour&apos;"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Communication"/>
+        <Class IRI="#client_handling"/>
+        <Class IRI="#data_management"/>
+        <Class IRI="#open_project"/>
+        <Class IRI="#project_scheduling"/>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#tools"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cosmos_DB"/>
+        <Class IRI="#sql_database"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Datastructure_Algorithm"/>
+        <Class IRI="#MCV"/>
+        <Class IRI="#MVVM"/>
+        <Class IRI="#Models"/>
+        <Class IRI="#Multithread_Programming"/>
+        <Class IRI="#OOP"/>
+        <Class IRI="#Shader_Programming"/>
+        <Class IRI="#functional_programming"/>
+        <Class IRI="#programming_paradigm"/>
+        <Class IRI="#protocol-oriented_programming"/>
+        <Class IRI="#reactive_programming"/>
+        <Class IRI="#3_Layers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Datastructure_Algorithm"/>
+        <Class IRI="#Models"/>
+        <Class IRI="#Source_control"/>
+        <Class IRI="#bitbucket"/>
+        <Class IRI="#git"/>
+        <Class IRI="#github"/>
+        <Class IRI="#gitlab"/>
+        <Class IRI="#programming_paradigm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Datastructure_Algorithm"/>
+        <Class IRI="#Models"/>
+        <Class IRI="#Source_control"/>
+        <Class IRI="#multithreading"/>
+        <Class IRI="#programming_paradigm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Delegating_tasks"/>
+        <Class IRI="#Designing"/>
+        <Class IRI="#Maintaining"/>
+        <Class IRI="#controlling"/>
+        <Class IRI="#manufacturing"/>
+        <Class IRI="#monitoring"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Delegating_tasks"/>
+        <Class IRI="#Designing"/>
+        <Class IRI="#Maintaining"/>
+        <Class IRI="#controlling"/>
+        <Class IRI="#monitoring"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ensemble_Learning"/>
+        <Class IRI="#Reinforment_Learning"/>
+        <Class IRI="#Supervised_Learning"/>
+        <Class IRI="#Unsupervised_Learning"/>
+        <Class IRI="#bias"/>
+        <Class IRI="#conditional_random_field"/>
+        <Class IRI="#cost_function"/>
+        <Class IRI="#gradient_descent"/>
+        <Class IRI="#lift"/>
+        <Class IRI="#overfitting"/>
+        <Class IRI="#pattern_recognition"/>
+        <Class IRI="#precision"/>
+        <Class IRI="#recall"/>
+        <Class IRI="#test_data"/>
+        <Class IRI="#topic_model"/>
+        <Class IRI="#training"/>
+        <Class IRI="#underfitting"/>
+        <Class IRI="#validation"/>
+        <Class IRI="#variance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#Programming_language"/>
+        <Class IRI="#aritficial_intelligence"/>
+        <Class IRI="#back_end"/>
+        <Class IRI="#data_management"/>
+        <Class IRI="#databases"/>
+        <Class IRI="#ecommerce"/>
+        <Class IRI="#front_end"/>
+        <Class IRI="#leadership"/>
+        <Class IRI="#operating_system"/>
+        <Class IRI="#project_coordination"/>
+        <Class IRI="#project_type"/>
+        <Class IRI="#qa"/>
+        <Class IRI="#sdlc"/>
+        <Class IRI="#soft_skills"/>
+        <Class IRI="#technical_skills"/>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#testing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#Programming_language"/>
+        <Class IRI="#aritficial_intelligence"/>
+        <Class IRI="#back_end"/>
+        <Class IRI="#data_management"/>
+        <Class IRI="#databases"/>
+        <Class IRI="#ecommerce"/>
+        <Class IRI="#front_end"/>
+        <Class IRI="#leadership"/>
+        <Class IRI="#operating_system"/>
+        <Class IRI="#project_coordination"/>
+        <Class IRI="#project_type"/>
+        <Class IRI="#sdlc"/>
+        <Class IRI="#soft_skills"/>
+        <Class IRI="#technical_skills"/>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#testing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#ajax"/>
+        <Class IRI="#api"/>
+        <Class IRI="#cloud"/>
+        <Class IRI="#hosting_server"/>
+        <Class IRI="#jquery"/>
+        <Class IRI="#json"/>
+        <Class IRI="#local_host"/>
+        <Class IRI="#protocol"/>
+        <Class IRI="#rest_api"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#api"/>
+        <Class IRI="#cloud"/>
+        <Class IRI="#hosting_server"/>
+        <Class IRI="#json"/>
+        <Class IRI="#local_host"/>
+        <Class IRI="#protocol"/>
+        <Class IRI="#rest_api"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#api"/>
+        <Class IRI="#cloud"/>
+        <Class IRI="#json"/>
+        <Class IRI="#protocol"/>
+        <Class IRI="#rest_api"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#api"/>
+        <Class IRI="#delete"/>
+        <Class IRI="#get"/>
+        <Class IRI="#head"/>
+        <Class IRI="#http"/>
+        <Class IRI="#https"/>
+        <Class IRI="#post"/>
+        <Class IRI="#protocol"/>
+        <Class IRI="#put"/>
+        <Class IRI="#rest_api"/>
+        <Class IRI="#tcp"/>
+        <Class IRI="#udp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Framework"/>
+        <Class IRI="#api"/>
+        <Class IRI="#delete"/>
+        <Class IRI="#get"/>
+        <Class IRI="#head"/>
+        <Class IRI="#http"/>
+        <Class IRI="#https"/>
+        <Class IRI="#post"/>
+        <Class IRI="#put"/>
+        <Class IRI="#rest_api"/>
+        <Class IRI="#tcp"/>
+        <Class IRI="#udp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Google_BigQuery"/>
+        <Class IRI="#google_cloud_bigtable"/>
+        <Class IRI="#google_cloud_firestore"/>
+        <Class IRI="#google_cloud_memorystore"/>
+        <Class IRI="#google_cloud_sql"/>
+        <Class IRI="#google_cloud_storage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Linear_Regression"/>
+        <Class IRI="#Poisson_Regression"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Microsoft_Planner"/>
+        <Class IRI="#Microsoft_Project"/>
+        <Class IRI="#Trello"/>
+        <Class IRI="#data_management"/>
+        <Class IRI="#open_project"/>
+        <Class IRI="#project_scheduling"/>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#tools"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NLP"/>
+        <Class IRI="#deep_learning"/>
+        <Class IRI="#machine_learning"/>
+        <Class IRI="#neural_network"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NMF"/>
+        <Class IRI="#Principal_Component_Analysis"/>
+        <Class IRI="#Random_Projection"/>
+        <Class IRI="#T-SNE"/>
+        <Class IRI="#UMAP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Name_Entity_Recognition"/>
+        <Class IRI="#Sentiment_Analysis"/>
+        <Class IRI="#Summarization"/>
+        <Class IRI="#abstracting_and_indexing"/>
+        <Class IRI="#computational_grammars"/>
+        <Class IRI="#computing_with_words"/>
+        <Class IRI="#dependency_parsing"/>
+        <Class IRI="#information_extraction"/>
+        <Class IRI="#lexical_database"/>
+        <Class IRI="#lexical_semantics"/>
+        <Class IRI="#machine_translations"/>
+        <Class IRI="#maximum_entropy_models"/>
+        <Class IRI="#n-gram_language_models"/>
+        <Class IRI="#natural_language_generation"/>
+        <Class IRI="#parse_tree"/>
+        <Class IRI="#parsing_algorthm"/>
+        <Class IRI="#part_of_speech"/>
+        <Class IRI="#question_answering"/>
+        <Class IRI="#relevance_models"/>
+        <Class IRI="#semantic_similarity"/>
+        <Class IRI="#sentiment_analysis"/>
+        <Class IRI="#sequence_labeling"/>
+        <Class IRI="#speech_tranmissions"/>
+        <Class IRI="#statiscal_language_modeling"/>
+        <Class IRI="#synsets"/>
+        <Class IRI="#syntactic_analysis"/>
+        <Class IRI="#syntactic_features"/>
+        <Class IRI="#syntactic_information"/>
+        <Class IRI="#syntactic_parsing"/>
+        <Class IRI="#text_procssing"/>
+        <Class IRI="#word_embedding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negotiation"/>
+        <Class IRI="#Organization"/>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#organizational_development"/>
+        <Class IRI="#project_handling"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#resource_management"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#strategic_planning"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Neural_Architecture_Search"/>
+        <Class IRI="#distillation"/>
+        <Class IRI="#quantization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Organization"/>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#organizational_development"/>
+        <Class IRI="#project_handling"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#resource_management"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#strategic_planning"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Q-Learning"/>
+        <Class IRI="#action_selection"/>
+        <Class IRI="#action_spaces"/>
+        <Class IRI="#actor_critic"/>
+        <Class IRI="#average_reward"/>
+        <Class IRI="#continuous_state_space"/>
+        <Class IRI="#imitation_learning"/>
+        <Class IRI="#learning_agents"/>
+        <Class IRI="#policy_iteration"/>
+        <Class IRI="#reward_function"/>
+        <Class IRI="#sequential_decision_making"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#activity_recognition"/>
+        <Class IRI="#character_recognition"/>
+        <Class IRI="#color_images"/>
+        <Class IRI="#face_recognition"/>
+        <Class IRI="#feature_recognition"/>
+        <Class IRI="#gesture_recognition"/>
+        <Class IRI="#graph_matching"/>
+        <Class IRI="#object_recognition"/>
+        <Class IRI="#sketch_recognition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#adversarial_training"/>
+        <Class IRI="#data_augmentation"/>
+        <Class IRI="#dropout"/>
+        <Class IRI="#early_stopping"/>
+        <Class IRI="#parameter_penalties"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#api_testing"/>
+        <Class IRI="#automation_test"/>
+        <Class IRI="#black_box"/>
+        <Class IRI="#compatibility_testing"/>
+        <Class IRI="#continuous_testing"/>
+        <Class IRI="#database_testing"/>
+        <Class IRI="#debugging"/>
+        <Class IRI="#e2e_testing"/>
+        <Class IRI="#environmental_testing"/>
+        <Class IRI="#functional_testing"/>
+        <Class IRI="#installation_testing"/>
+        <Class IRI="#integration_testing"/>
+        <Class IRI="#manual_test"/>
+        <Class IRI="#performance_testing"/>
+        <Class IRI="#regression_testing"/>
+        <Class IRI="#reliability_testing"/>
+        <Class IRI="#security_testing"/>
+        <Class IRI="#software_testing"/>
+        <Class IRI="#stress_testing"/>
+        <Class IRI="#system_testing"/>
+        <Class IRI="#test_case"/>
+        <Class IRI="#test_data"/>
+        <Class IRI="#test_execution"/>
+        <Class IRI="#test_management_tool"/>
+        <Class IRI="#test_scenarios"/>
+        <Class IRI="#test_scripts"/>
+        <Class IRI="#test_strategy"/>
+        <Class IRI="#ui_testing"/>
+        <Class IRI="#white_box"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#appearance_model"/>
+        <Class IRI="#audio-visual"/>
+        <Class IRI="#binary_pattern"/>
+        <Class IRI="#class_information"/>
+        <Class IRI="#emotion_recognition"/>
+        <Class IRI="#face_alignment"/>
+        <Class IRI="#face_detection"/>
+        <Class IRI="#face_images"/>
+        <Class IRI="#face_models"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#array"/>
+        <Class IRI="#avl_tree"/>
+        <Class IRI="#binary_tree"/>
+        <Class IRI="#buble_sort"/>
+        <Class IRI="#circle_list"/>
+        <Class IRI="#double_list"/>
+        <Class IRI="#hash_table"/>
+        <Class IRI="#heap"/>
+        <Class IRI="#heap_sort"/>
+        <Class IRI="#insertion_sort"/>
+        <Class IRI="#linkedlist"/>
+        <Class IRI="#merge_sort"/>
+        <Class IRI="#quick_sort"/>
+        <Class IRI="#selection_sort"/>
+        <Class IRI="#singly_list"/>
+        <Class IRI="#sort"/>
+        <Class IRI="#tree"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#attention"/>
+        <Class IRI="#decoder"/>
+        <Class IRI="#encoder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#automation_test"/>
+        <Class IRI="#black_box"/>
+        <Class IRI="#debugging"/>
+        <Class IRI="#manual_test"/>
+        <Class IRI="#test_case"/>
+        <Class IRI="#white_box"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#azure_cosmos_db"/>
+        <Class IRI="#azure_data_factory"/>
+        <Class IRI="#azure_service_bus"/>
+        <Class IRI="#azure_sql_database"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#binary_decision_tree"/>
+        <Class IRI="#c4.5_algorithm"/>
+        <Class IRI="#fuzzy_decision_tree"/>
+        <Class IRI="#random_forest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#breakdown_maintenance"/>
+        <Class IRI="#corrective_maintenance"/>
+        <Class IRI="#database_maintenance"/>
+        <Class IRI="#hardware_maintenance"/>
+        <Class IRI="#network_maintenance"/>
+        <Class IRI="#predictive_maintenance"/>
+        <Class IRI="#preventive_maintenance"/>
+        <Class IRI="#project_billing_schedules_maintenance"/>
+        <Class IRI="#record_maintenance"/>
+        <Class IRI="#system_maintenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#breakdown_maintenance"/>
+        <Class IRI="#corrective_maintenance"/>
+        <Class IRI="#preventive_maintenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#client_handling"/>
+        <Class IRI="#data_management"/>
+        <Class IRI="#open_project"/>
+        <Class IRI="#project_scheduling"/>
+        <Class IRI="#technology_solutions"/>
+        <Class IRI="#tools"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#financial_risk_management"/>
+        <Class IRI="#market_risk"/>
+        <Class IRI="#operational_risk"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#resource_management"/>
+        <Class IRI="#risk_analytics"/>
+        <Class IRI="#risk_assessment"/>
+        <Class IRI="#risk_control"/>
+        <Class IRI="#risk_governance"/>
+        <Class IRI="#risk_identification"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#risk_management_tracking"/>
+        <Class IRI="#risk_mitigation"/>
+        <Class IRI="#risk_modeling"/>
+        <Class IRI="#risks_able_to_recognition"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+        <Class IRI="#technology_risk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#organizational_development"/>
+        <Class IRI="#project_handling"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#resource_management"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#strategic_planning"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#compliance_management"/>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#finance_control"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#cost_planning"/>
+        <Class IRI="#supply_chain"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#risk_management"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#cross_functional_leadership"/>
+        <Class IRI="#delivery_leadership"/>
+        <Class IRI="#operations_leadership"/>
+        <Class IRI="#project_leadership"/>
+        <Class IRI="#strong_leadership_and_influencing_capabilities"/>
+        <Class IRI="#technical_leadership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#data_management"/>
+        <Class IRI="#open_project"/>
+        <Class IRI="#project_scheduling"/>
+        <Class IRI="#technology_solutions"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#data_management"/>
+        <Class IRI="#open_project"/>
+        <Class IRI="#technology_solutions"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#delete"/>
+        <Class IRI="#get"/>
+        <Class IRI="#head"/>
+        <Class IRI="#post"/>
+        <Class IRI="#put"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#doctrine2"/>
+        <Class IRI="#entity_framework"/>
+        <Class IRI="#entity_framework_core"/>
+        <Class IRI="#hibernate"/>
+        <Class IRI="#linq"/>
+        <Class IRI="#sequelize"/>
+        <Class IRI="#sqlalchemy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#document_analysis"/>
+        <Class IRI="#document_processing"/>
+        <Class IRI="#hand_written_character_recognition"/>
+        <Class IRI="#handwritting_recognition"/>
+        <Class IRI="#text_detection"/>
+        <Class IRI="#word_segmentation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#maintenance"/>
+        <Class IRI="#qc"/>
+        <Class IRI="#testing"/>
+        <Class IRI="#validate"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Batch_size_effects</IRI>
+        <Literal>Batch_size_effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Batch_size_effects</IRI>
+        <Literal>Batch_size_effects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Delegating_tasks</IRI>
+        <Literal>Delegating_task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Delegating_tasks</IRI>
+        <Literal>Delegating_tasks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Evolving_Architectures</IRI>
+        <Literal>Evolving_Architecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Evolving_Architectures</IRI>
+        <Literal>Evolving_Architectures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Finance</IRI>
+        <Literal>Finance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Finance</IRI>
+        <Literal>Finances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Interpersonal_skills</IRI>
+        <Literal>Interpersonal_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Interpersonal_skills</IRI>
+        <Literal>Interpersonal_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Models</IRI>
+        <Literal>Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Models</IRI>
+        <Literal>Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Naive_Bayes</IRI>
+        <Literal>Naive_Bayes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Optimizers</IRI>
+        <Literal>Optimizer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Optimizers</IRI>
+        <Literal>Optimizers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Project_Manager</IRI>
+        <Literal>PM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Project_Manager</IRI>
+        <Literal>Project_Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reporting_skills</IRI>
+        <Literal>Reporting_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reporting_skills</IRI>
+        <Literal>Reporting_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Research_skills</IRI>
+        <Literal>Research_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Research_skills</IRI>
+        <Literal>Research_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sentiment_Analysis</IRI>
+        <Literal>Sentiment_Analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thinking_skills</IRI>
+        <Literal>Thinking_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thinking_skills</IRI>
+        <Literal>Thinking_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#action_spaces</IRI>
+        <Literal>action_space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#action_spaces</IRI>
+        <Literal>action_spaces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#activation_functions</IRI>
+        <Literal>activation_function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#activation_functions</IRI>
+        <Literal>activation_functions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#associative_classifiters</IRI>
+        <Literal>associative_classifiter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#associative_classifiters</IRI>
+        <Literal>associative_classifiters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bayes_classifier</IRI>
+        <Literal>bayes_classifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bayes_classifier</IRI>
+        <Literal>bayes_classifiers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#computational_grammars</IRI>
+        <Literal>computational_grammar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#computational_grammars</IRI>
+        <Literal>computational_grammars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#computing_with_words</IRI>
+        <Literal>computing_with_word</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#computing_with_words</IRI>
+        <Literal>computing_with_words</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deep_learning</IRI>
+        <Literal>deep_learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#face_images</IRI>
+        <Literal>face_image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#face_images</IRI>
+        <Literal>face_images</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#face_models</IRI>
+        <Literal>face_model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#face_models</IRI>
+        <Literal>face_models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#learning_agents</IRI>
+        <Literal>learning_agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#learning_agents</IRI>
+        <Literal>learning_agents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lexical_semantics</IRI>
+        <Literal>lexical_semantic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lexical_semantics</IRI>
+        <Literal>lexical_semantics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#machine_translations</IRI>
+        <Literal>machine_translation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#machine_translations</IRI>
+        <Literal>machine_translations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#macos</IRI>
+        <Literal>macOS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#macos</IRI>
+        <Literal>macos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maximum_entropy_models</IRI>
+        <Literal>maximum_entropy_model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maximum_entropy_models</IRI>
+        <Literal>maximum_entropy_models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n-gram_language_models</IRI>
+        <Literal>n-gram_language_model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#n-gram_language_models</IRI>
+        <Literal>n-gram_language_models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameter_penalties</IRI>
+        <Literal>parameter_penalties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameter_penalties</IRI>
+        <Literal>parameter_penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#payments</IRI>
+        <Literal>payment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#payments</IRI>
+        <Literal>payments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relevance_models</IRI>
+        <Literal>relevance_model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relevance_models</IRI>
+        <Literal>relevance_models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#soft_skills</IRI>
+        <Literal>soft_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#soft_skills</IRI>
+        <Literal>soft_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#speech_tranmissions</IRI>
+        <Literal>speech_tranmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#speech_tranmissions</IRI>
+        <Literal>speech_tranmissions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#strong_leadership_and_influencing_capabilities</IRI>
+        <Literal>strong_leadership_and_influencing_capabilitie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#strong_leadership_and_influencing_capabilities</IRI>
+        <Literal>strong_leadership_and_influencing_capabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supply_chain</IRI>
+        <Literal>supply_chain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supply_chain</IRI>
+        <Literal>supply_chains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#synsets</IRI>
+        <Literal>synset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#synsets</IRI>
+        <Literal>synsets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technical_skills</IRI>
+        <Literal>technical_skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technical_skills</IRI>
+        <Literal>technical_skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technology_solutions</IRI>
+        <Literal>technology_solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technology_solutions</IRI>
+        <Literal>technology_solutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#test_scenarios</IRI>
+        <Literal>test_scenario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#test_scenarios</IRI>
+        <Literal>test_scenarios</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#test_scripts</IRI>
+        <Literal>test_script</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#test_scripts</IRI>
+        <Literal>test_scripts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windows</IRI>
+        <Literal>window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#windows</IRI>
+        <Literal>windows</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

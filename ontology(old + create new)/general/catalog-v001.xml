@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology" uri="BE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology" uri="FE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology" uri="full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology" uri="ai.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology" uri="data_si.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/ad/ontologies/2021/0/devops-ontology" uri="devsop.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6" uri="Game-developer.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4" uri="Tester_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development" uri="android.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer" uri="ios-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2020/11/backend-ontology" uri="main/BE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2020/11/frontend-ontology" uri="main/FE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2020/11/fullstack-ontology" uri="main/full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2021/0/AIEngineer-ontology" uri="main/ai.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2021/0/datascience-ontology" uri="main/data_si.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/ad/ontologies/2021/0/devops-ontology" uri="main/devsop.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/admin/ontologies/2021/2/untitled-ontology-6" uri="main/Game-developer.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4" uri="main/Tester_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/vinhpham/ontologies/2021/0/android-development" uri="main/android.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618196257895" name="shadowed:http://www.semanticweb.org/vinhpham/ontologies/2021/0/ios-developer" uri="main/ios-ontology.owl"/>
+    </group>
+</catalog>

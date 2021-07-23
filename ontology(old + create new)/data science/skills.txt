@@ -1,0 +1,395 @@
+databases
+mongo
+odm
+orm
+postgresql
+amazon athena
+amazon aurora
+amazon dynamodb
+amazon ebs
+amazon elasticache
+amazon emr
+amazon rds
+amazon redshift
+amazon s3
+amazon sqs
+arangodb
+aws
+aws glue
+azure cosmos db
+azure data factory
+azure service bus
+azure sql database
+azure storage
+cassandra
+cleardb
+cockroachdb
+couchbase
+couchdb
+dgraph
+dinamodb
+doctrine2
+entity framework
+entity framework core
+firebase realtime database
+flink
+google bigquery
+google cloud
+google cloud bigtable
+google cloud firestore
+google cloud memorystore
+google cloud sql
+google cloud storage
+graph db
+heroku postgres
+hibernate
+hive
+kafka
+leveldb
+linq
+mariadb
+memcached
+memcachier
+memsql
+microsoft sql server
+mongodb atlas
+mongoose
+mssql
+mysql
+mysql workbench
+neo4j
+nosql
+oracle
+postgis
+pouchdb
+rabbitmq
+ravendb
+redis
+rethinkdb
+sequelize
+sidekiq
+snowflake
+spark
+splunk
+sql
+sqlalchemy
+sqlite
+timescaledb
+hadoop
+agglomerative
+apriori algorithm
+assocaition rule learning
+bagging
+boosting
+classification
+classification rate
+clustering
+dbscan
+decision tree
+dimensionality reduction
+eclat algorithm
+ensemble learning
+fp tree
+fuzzy c-means
+gaussian mixture model
+hdbscan
+hierachical clustering
+k-means clustering
+k-nearest neighbour
+linear regression
+logistic regression
+machine learning
+mean shift
+nmf
+naive bayes
+optics
+poisson regression
+principal component analysis
+q-learning
+random projection
+regression
+reinforment learning
+stacking
+supervised learning
+support vector machine
+t-sne
+umap
+unsupervised learning
+bias
+cost function
+gradient descent
+lift
+overfitting
+precision
+recall
+regular expression
+test data
+training
+underfitting
+validation
+variance
+adadelta
+adagrad
+adam
+awesome deep learning
+bi
+batch normalization
+batch size effects
+bayes
+bilstm
+bokeh
+csv
+central limit theorem
+conditional probability
+confidence interval
+d3
+dash
+data formats
+discrete distributions
+estimation
+evolving architectures
+fundamentals
+gru
+go
+huggingface transformers
+hypothesis testing
+json
+java
+kernel density estimation
+lstm
+learning rate schedule
+library
+mlflow
+markov
+matplotlib
+maximum likelihood estimation
+momentum
+monto carlo method
+neat
+nadam
+neural architecture search
+neural networks
+numpy
+optimizers
+pca
+pandas
+pooling
+powerbi
+programming language
+pytorch
+r
+rmsprop
+residual connections
+sgd
+statistics
+tableau
+tensorboard
+tensorflow
+tools
+train model
+transformer
+visualization
+xml
+activation functions
+adversarial training
+attention
+autoencoder
+beta
+binning sparse values
+binomial
+continuous distributions
+convolutional neural network
+covariance and correlation
+curriculum learning
+data augmentation
+data cleaning
+data frames
+data mining
+data preparation
+data scrubbing
+dataset
+decoder
+denoising
+dirichlet
+distillation
+dropout
+early stopping
+encoder
+expectation and mean
+exponential
+feature extraction
+feedfoward neural network
+gaussian
+generative adversarial network
+gensim
+geometric
+google colab
+handling missing value
+hypergeometric
+iid
+important laws
+indepence
+interquartile range
+ipyvolume
+javascript
+julia
+jupyter
+jupyter lab
+jupyter notebook
+kaggle
+law of large numbers
+linear algebra
+loss function
+matrix
+median
+mode
+model optimization
+multinomial
+multitask learning
+nltk
+normalization
+numerosity reduction
+parameter penalties
+percentile
+plotnine
+poisson
+probability distribution
+probability theory
+python
+quantile
+quantization
+quartile
+random sample
+random variable
+randomness
+recurrent neural network
+regulization
+reporting
+scala
+scikit-learn
+seaborn
+series
+siamese network
+streamlit
+summary statistics
+tabular data
+transfer learning
+unbiased estimator
+uniform continuous
+uniform discrete
+vanishing gradient problem
+varianceand standard deviation
+vega-lite
+virtual environment
+web scraping
+weight
+word2vec
+
+analytics
+ab tasty
+ackee analytics
+adobe analytics
+alation
+amazon-mobile-analytics
+amazon ab testing
+amazon quicksight
+amplitude
+ananas analytics
+appsee
+astronomer
+atscale
+autotrack
+azure databricks
+azure synapse
+birst
+chartbeat
+chartio
+clevertap
+clicktale
+clicky
+cluvio
+countly
+crazy egg
+cubejs
+cumul
+cyfe
+data studio
+databaselog
+databox
+databricks
+dataform
+datahero
+domo
+facebook analytics
+facebook pixel
+fathom analytics
+flask jsondash
+freeboard
+freshpaint
+geckoboard
+gooddata
+google analytics
+google datastudio
+google optimize
+google search console
+google tag manager
+gosquared
+grouparoo
+heatmaps
+holistics
+hotjar
+ibm cognos analytics
+insights
+interana
+keen
+kissmetrics
+klipfolio
+knowage
+knowi
+koko analytics
+linkurious
+localytics
+matomo
+metabase
+microsoft ssrs
+mixpanel
+moengage
+obviously
+optimizely
+panelbear
+parsely
+periscope data
+piwik
+popcorn metrics
+posthog
+power bi embedded
+predictleads
+qlik
+qlik sense
+qlikview
+qrvey analytics
+quantcast
+quickmetrics
+rakam
+redash
+rjmetrics
+sap crystal reports
+seevolution
+segment
+seldon
+shiny
+similarweb
+sisense
+smartlook
+spinnakr
+statbot
+statsbot
+superset
+taplytics
+toasted analytics
+usabilla
+useberry
+usertrack
+vidpulse
+visual website optimizer
+yandex metrica

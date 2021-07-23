@@ -1,0 +1,276 @@
+cassandra
+hive
+mariadb
+mysql
+oracle
+redis
+splunk
+sqlite
+java
+a-frame
+ai
+ar
+aws beanstalk
+aws cloudformation
+aws iam
+aws lambda
+adaptability
+adobe creative cloud
+adobe photoshop
+advanced java
+adventure game studio
+amazon dynamodb
+amazon ec2
+amazon fire
+amazon lumberyard
+amazon rds
+analytical
+android tv
+android sdk
+animation
+animator
+anticipation
+appeal
+arcs
+assembly
+associate producer
+audio
+autodesk 3dsmax
+autodesk maya
+babylonjs
+bootstrap
+css
+csharp
+character design
+character rigging
+clickteam fusion
+cloudwatch
+cocos2d
+collaboration
+communication skills
+composer
+construct
+construct 2
+core java
+cosmos db
+crafty
+creative
+cryengine
+dart
+database design
+datastructure algorithm
+debugger
+design
+design ui
+directx
+directx11
+directx12
+directx9
+docker
+drawing
+dynamodb
+epic unreal engine
+emulators
+exaggeration
+experience design
+flash
+flowlab
+flutter
+frame
+framework
+gdevelop
+gamefroot
+gamemaker studio
+gamesalad
+game design
+game ffeatures
+game maker
+game maker studio
+game play
+game play design
+game prototype
+game space design
+game  logic
+games
+godot
+godot engine
+golang
+google bigquery
+google cloud
+graphics
+html5
+hardware
+hybrid
+it professional practice project
+icons
+impactjs
+interface design
+javascript
+javascript framework
+key frame animation
+kivy
+kotlin
+laravel
+level design
+libgdx
+linux
+logo
+mcv
+mvvm
+mac os x
+marmalade
+maya
+memory management
+microsoft azure sql database
+microsoft uwp
+mo cap
+models
+monogame
+motion capturers
+multithread programming
+music composer
+neo4j
+node.js
+oop
+objective c
+organizational skills
+ps vita
+panda3d
+particles
+passion
+persistence
+phaserjs
+physics
+physicsjs
+pixijs
+playcanvas
+play store
+pre visualization
+pre viz artist
+presentation
+problem solving
+production
+production staff
+pykyra
+pyopengl
+pygame
+pyglet
+python
+python framework
+python ogre
+rpg maker
+renpy
+rendering
+research
+restful webservices
+rigger
+scripting
+search engine optimization
+secondary action
+security services
+shader programming
+simulators
+solid drawing
+sony playstation 4
+sound designer
+sound effect
+special effects
+spine
+spine animation
+sploder
+spring security
+squash stretch
+staging
+stay abreast of industry developments
+steamos
+stencyl
+straight ahead
+surface modeling
+systems design
+technical animator
+tester
+thinking skills
+time managements
+timing
+tizen
+twine
+ui
+unreal
+unity
+unity2d
+unity3d
+unity graphic
+unreal development kit
+unreal engine
+unreal engine 4
+user interface
+vr platforms
+video game design
+virtual reality
+virtual reality software design
+visual studio
+visual arts
+windows pc
+windows phone
+writing
+xna
+xbox one
+zbrush
+adobe
+android
+angularjs
+architecture
+aws
+blackberry
+c
+database
+desktop
+firetv
+functional programming
+gamequery
+graph db
+ios
+iphone game programming
+iphone sdk
+macos
+maths
+melonjs
+microservices
+mobile
+mongodb
+ms sql server
+networking
+nosql
+optimization
+performance
+platform
+playfab
+postgresql
+programming languge
+programming paradigm
+protocol-oriented programming
+reactive programming
+soft skills
+sound
+sql database
+storyboard
+technical skills
+tools
+ubuntu
+user experience
+web
+windows
+xcode
+xml
+.net
+2d characters
+2d textures
+2d artist
+3d characters
+3d environmental objects
+3d hard surface modeling
+3 layers
+generalist cg skills?
+ren'py
+c++
+networks

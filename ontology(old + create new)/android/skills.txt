@@ -1,0 +1,240 @@
+accessiblility
+activity
+activity lifecycle
+adaptative icons
+adapter view
+analytics
+android debug bridge
+android jetpack
+android lint
+android sdk
+android studio
+animation
+animation drawables
+appannie
+app apk
+app actions
+app bar
+app billing
+app bundle
+app components
+app indexing
+app links
+app manifest
+app publishing
+app startup
+appfollowio
+architecture
+architecture components
+async task
+authentication
+backstack
+bitmap
+bluetooth
+branch metrics
+broadcast receiver
+bubbles
+build configuration
+build flavors
+build types
+cpu profiler
+camera
+camerax
+circleci
+clean architecture
+clickable components
+cloud messaging
+code
+codepush
+connectivity
+connectivity manager
+constraint layout
+content providers
+conversations
+cordova
+corerender
+coroutines
+crashlytics
+dagger
+data backup
+data storage
+data transfer format
+data views
+data binding
+debugger
+dependency injection
+detekt
+dialogs
+download manager
+downloadable fonts
+drawables
+dynamic links
+emoji
+emulator
+environment
+espresso
+exoplayer
+explicit intents
+expo sketch
+facebook sonar
+fastlane
+file formats
+file provider
+file storage
+firebase
+firestore
+flatbuffer
+flutter
+fonts
+fragment lifecycle
+fragment manager
+fragment transaction
+fragments
+frame layout
+glide
+google libraries
+google maps
+google play services
+gradle
+graphql
+grid view
+groovy
+gson
+handlers
+hilt
+hybrid
+image loaders
+implicit intents
+input fields
+instant apps
+instrumentation tests
+integration tests
+intent
+intent filters
+intent service
+ionic
+junit
+java
+jenkins
+json converters
+keystore
+kodein
+koin
+kotlin
+ktlint
+lifecycle
+linear layout
+linters
+list view
+livedata
+localizeable strings
+ml kit
+mvc
+mvi
+mvp
+mvvm
+material design
+mediaplayer
+media recorder
+mipmap
+moshi
+motion
+multimedia components
+nfc
+navigation
+network handling
+notification channels
+notifications
+object animator
+paging library
+permissions
+picasso
+pickers
+play store
+position
+presentation
+programming language
+progress bar
+proguard
+protocol buffer
+quality assurance
+quantity strings
+r8
+rest
+ratchet
+react native
+realm
+recycler view
+relative layout
+remote config
+resources
+retrofit
+robolectric
+robotium
+room
+sdk manager
+sim card
+sqlite
+screen readers
+search interface
+security
+selendroid
+sensor tower
+sensors
+service
+shared preferences
+smoke tests
+snackbar
+spans
+spinner
+storage
+string array
+strings
+styleables
+styles
+sync adapter
+tasks
+telecom
+test lab
+tests
+themes
+third parties
+thread handling
+toast
+transition
+travisci
+ui automator
+ui components
+ui layouts
+uxcam
+unit tests
+user interface
+vector drawables
+viewmodel
+viper
+weex
+wifi
+workmanager
+xml
+xml fonts
+xamarin
+xamarin test cloud
+amp
+appthwack
+calendar provider
+contact provider
+deeplinkdispatch
+lauchkit
+nachos-ui
+native-navigation
+pcloudy
+react-native-material-design
+react-native-paper
+react-native-ui-kitten
+react-navigation
+react-virgin
+reactnativeautoupdater
+reagent
+replit
+testmunk
+ci/cd tools

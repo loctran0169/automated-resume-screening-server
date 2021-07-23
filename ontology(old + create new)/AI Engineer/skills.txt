@@ -1,0 +1,375 @@
+databases
+mongo
+odm
+orm
+postgresql
+amazon athena
+amazon aurora
+amazon dynamodb
+amazon ebs
+amazon elasticache
+amazon emr
+amazon rds
+amazon redshift
+amazon s3
+amazon sqs
+arangodb
+aws
+aws glue
+azure cosmos db
+azure data factory
+azure service bus
+azure sql database
+azure storage
+cassandra
+cleardb
+cockroachdb
+couchbase
+couchdb
+dgraph
+dinamodb
+doctrine2
+entity framework
+entity framework core
+firebase realtime database
+flink
+google bigquery
+google cloud
+google cloud bigtable
+google cloud firestore
+google cloud memorystore
+google cloud sql
+google cloud storage
+graph db
+heroku postgres
+hibernate
+hive
+kafka
+leveldb
+linq
+mariadb
+memcached
+memcachier
+memsql
+microsoft sql server
+mongodb atlas
+mongoose
+mssql
+mysql
+mysql workbench
+neo4j
+nosql
+oracle
+postgis
+pouchdb
+rabbitmq
+ravendb
+redis
+rethinkdb
+sequelize
+sidekiq
+snowflake
+spark
+splunk
+sql
+sqlalchemy
+sqlite
+timescaledb
+hadoop
+agglomerative
+apriori algorithm
+assocaition rule learning
+bagging
+boosting
+classification
+classification rate
+clustering
+dbscan
+decision tree
+dimensionality reduction
+eclat algorithm
+ensemble learning
+fp tree
+fuzzy c-means
+gaussian mixture model
+hdbscan
+hierachical clustering
+java
+k-means clustering
+k-nearest neighbour
+linear regression
+logistic regression
+machine learning
+mean shift
+nmf
+naive bayes
+optics
+poisson regression
+principal component analysis
+q-learning
+r
+random projection
+regression
+reinforment learning
+stacking
+supervised learning
+support vector machine
+t-sne
+umap
+unsupervised learning
+abstracting and indexing
+action selection
+action spaces
+activity recognition
+actor critic
+adaptive boosting
+answer extraction
+appearance model
+approximate inference
+associative classifiters
+audio-visual
+automatic evaluation
+automatic translation
+average reward
+backpropagation algorithm
+bayes classifier
+bayesian
+bayesian classifier
+bayesian estimation
+bayesian filtering
+bayesian frameworks
+bayesian inference
+bayesian networks
+bias
+bilingual dictionary
+binary decision tree
+binary pattern
+c4
+character recognition
+class information
+color images
+computational grammars
+computing with words
+concept similarity
+conditional random field
+content distribution networks
+continuous state space
+cost function
+deep belief networks
+deep learning
+dependency parsing
+dependency tree
+distributed control system
+distributed parameter networks
+distributed processing
+distribution network
+distribution of goods
+document analysis
+document classification
+document processing
+document representation
+dom tree
+emotion recognition
+extracting information
+eye detection
+face alignment
+face detection
+face detection and recognition
+face images
+face models
+face recognition
+feature recognition
+free texts
+fuzzy classification
+fuzzy decision tree
+gesture recognition
+gibbs sampler
+gibbs sampling
+gradient descent
+graph matching
+graphic model
+graphic modeling
+hand written character recognition
+handwritting recognition
+imitation learning
+information extraction
+javascript
+latent variable models
+learning agents
+lexical database
+lexical semantics
+lift
+loopy belief propagation
+machine translations
+marginals
+markov chain
+matplotlib
+maximum entropy models
+mcmc
+message passing algorithm
+n-gram language models
+natural language generation
+natural language questions
+nltk
+object recognition
+overfitting
+parse tree
+parsing algorthm
+part of speech
+passage retrieval
+pattern recognition
+policy iteration
+pos tagging
+posterior distributions
+precision
+predictive distributions
+prior distribution
+probabilistic graphical models
+probabilistic models
+python
+qa system
+question answering
+question classification
+random forest
+recall
+regular expression
+relation extraction
+relevance models
+reward function
+scalars
+semantic distance
+semantic similarity
+sentence similarity
+sentiment analysis
+sentiment classification
+sequence labeling
+sequential decision making
+sketch recognition
+skin-color segmentation
+skin detection
+spacy
+speech-to-speech translation
+speech tranmissions
+statiscal language modeling
+structure-learnng
+subject headings
+synsets
+syntactic analysis
+syntactic features
+syntactic information
+syntactic parsing
+tensors
+term frequency
+test data
+text classification
+text classifier
+text clustering
+text detection
+text entry
+text lines
+text mining
+text procssing
+text recognition
+text summarization
+topic model
+training
+translation models
+underfitting
+validation
+variance
+vectors
+word embedding
+word processing
+word segmentation
+word similarity
+wordnet
+c++
+adadelta
+adagrad
+adam
+batch normalization
+batch size effects
+bilstm
+csv
+data formats
+evolving architectures
+fundamentals
+gru
+json
+lstm
+learning rate schedule
+library
+mlflow
+momentum
+neat
+nadam
+name entity recognition
+natural language processing
+neural architecture search
+neural networks
+numpy
+optimizers
+pandas
+pooling
+programming language
+pytorch
+rmsprop
+residual connections
+sgd
+summarization
+tensorboard
+tensorflow
+tools
+train model
+transformer
+xml
+activation functions
+adversarial training
+attention
+autoencoder
+binning sparse values
+convolutional neural network
+curriculum learning
+data augmentation
+data frames
+data mining
+data scrubbing
+dataset
+decoder
+denoising
+distillation
+dropout
+early stopping
+encoder
+feature extraction
+feedfoward neural network
+generative adversarial network
+gensim
+google colab
+handling missing value
+jupyter
+jupyter lab
+jupyter notebook
+linear algebra
+loss function
+matrices
+model optimization
+multitask learning
+normalization
+numerosity reduction
+parameter penalties
+quantization
+recurrent neural network
+regulization
+reporting
+scikit-learn
+series
+siamese network
+tabular data
+transfer learning
+unbiased estimator
+vanishing gradient problem
+virtual environment
+web scraping
+weight
+word2vec

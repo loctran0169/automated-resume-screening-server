@@ -1,0 +1,3123 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#AUTO_IT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#AUTO_IT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sikuli"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Absence_Of_Error_Fallacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Absence_Of_Error_Fallacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Abstract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Abstract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_criteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Airline_Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Airline_Mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#All_Nighter_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#All_Nighter_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Alpha_And_Beta_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Alpha_And_Beta_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Analysis_And_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Analysis_And_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Android_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Android_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Appium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Appium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Apptim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Apptim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BVA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BVA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Back_Alley_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Back_Alley_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Bottom_Up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Bottom_Up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Boundar_Value_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Boundar_Value_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CRUD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CRUD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CTIL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CTIL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Component_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CTIS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CTIS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CTIS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Component_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calabash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calabash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calling_Another_API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calling_Another_API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Centralize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Centralize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Change_The_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Change_The_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Claims_tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Claims_tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Client_Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Client_Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_RC"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Closure_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Closure_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Codeception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Codeception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Colums -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Colums">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compatibility_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compatibility_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complexity_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complexity_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compliance_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compliance_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Component_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Component_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Concordion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Concordion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conduct_System_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conduct_System_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Configuration_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Configuration_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Constraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Contract_And_Regulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Contract_And_Regulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Corrective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Corrective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Test_Approach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Test_Approach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Workplan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Workplan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cucumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cucumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cypress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cypress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data_Driven_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data_Driven_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Settings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Settings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Datatype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Datatype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decentralize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decentralize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Based_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Based_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Testing_And_Coverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Testing_And_Coverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Whitebox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Defect_Clustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Defect_Clustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Deliberate_Discovery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Deliberate_Discovery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Densities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Densities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_Guideline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_Guideline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_States -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_States">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Determine_Resource_Requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Determine_Resource_Requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Devices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Devices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Dynamic_Web -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Dynamic_Web">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Early_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Early_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#EdGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#EdGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Efficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Emulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Emulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Simulator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Inventory_Creation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Inventory_Creation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Test_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Test_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Class_Partitioning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Class_Partitioning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Partitioning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Partitioning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Ergonomic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Ergonomic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Error_Guessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Error_Guessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Evaluating_Exit_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Evaluating_Exit_Criteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Execution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Execution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exhaustive_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exhaustive_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Feature_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Feature_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Field_Lengths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Field_Lengths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Flexibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Flexibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Foreign_Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Foreign_Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Incremental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Incremental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#GPRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#GPRS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Goldilocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Goldilocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hiptest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hiptest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#IOS_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#IOS_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Identify_Test_Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Identify_Test_Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Incremental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Incremental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Index -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Index">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Input_To_Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Input_To_Device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Install_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Install_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integrity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integrity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interface_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interface_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interoperability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interoperability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interrupt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interrupt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interruption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interruption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Inventory_Of_Test_Items -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Inventory_Of_Test_Items">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JGiven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JGiven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jasime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jasime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mocha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jira -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jira">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jmeter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jmeter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#K6_Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JunoOne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JunoOne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#K6_Tool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#K6_Tool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#KIF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#KIF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_Recorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_Recorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Klaros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Klaros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kobiton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kobiton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kualitee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kualitee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LTE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LTE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Landscape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Landscape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Languages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Lettuce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Lettuce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LightBDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LightBDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Load_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Load_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Local_Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Local_Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Localization_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Localization_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Memory_Usage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Memory_Usage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobifone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobifone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_App -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_App">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mocha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mocha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Money_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Money_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyRunner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyRunner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyTalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyTalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#NSpec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#NSpec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Nodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Nodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#OSAWP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#OSAWP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obsessive_Compulsive_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obsessive_Compulsive_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obtain_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obtain_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operating_System_Versions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operating_System_Versions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operational_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operational_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Oracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Oracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Partial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Partial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Perfecto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Perfecto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Permissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Permissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pesticide_Paradox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pesticide_Paradox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portrait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portrait">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#PractiTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#PractiTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Primary_Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Primary_Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Procedures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Procedures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Processes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Processes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Progressive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Progressive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Protractor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Protractor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Puppeteer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Puppeteer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pytest_BDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pytest_BDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#QACoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#QACoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Qase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Qase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Query -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Query">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Radish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Radish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Rained_Out_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Rained_Out_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ReQtest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ReQtest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Record">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Recovery_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Recovery_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reliability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reliability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Replay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Replay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Responsive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Responsive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retest_all -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retest_all">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retesting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retesting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reuseability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reuseability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reverse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reverse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robot_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robot_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robotium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robotium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sandwich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sandwich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sanity_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sanity_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Scalability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Scalability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Screen_Resolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Screen_Resolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selendroid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selendroid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_RC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_RC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_RC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sikuli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sikuli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Simulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Simulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Manual_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Specification_based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Specification_based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spike_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spike_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spinach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spinach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Start_Acceptance_Test_Creation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Start_Acceptance_Test_Creation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transaction_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transaction_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Statement_Testing_And_Coverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Statement_Testing_And_Coverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Whitebox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Stress_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Stress_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structural_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structural_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structure_based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structure_based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Survivability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Survivability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_And_Acceptance_Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_And_Acceptance_Tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Test_Creation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Test_Creation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestCaseLab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestCaseLab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestFLO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestFLO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestMonitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestMonitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestProject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestProject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestRail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestRail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Approach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Approach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Cafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Cafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Collab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Collab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Driven_Development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Driven_Development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Environments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Environments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Schedule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testdroid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testdroid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_is_context_dependent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_is_context_dependent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_shows_presence_of_defects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_shows_presence_of_defects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testpad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testpad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Top_Down -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Top_Down">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#UI_Automator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#UI_Automator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation_Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Use_Case_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Use_Case_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Useful_Approximations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Useful_Approximations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Acceptance_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Acceptance_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Scenarios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Scenarios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Tour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Validate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Validate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vietnammobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vietnammobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Viettel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Viettel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vinaphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vinaphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Volume_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Volume_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Whitebox_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Whitebox_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Wifi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Wifi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Workplan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Workplan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#XQual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#XQual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Xray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Xray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr_Scale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr_Scale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angularjs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angularjs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#aqua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#aqua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#coffeescript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#coffeescript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Cafe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#javascript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#javascript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#php -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#php">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#python">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#qTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#qTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ruby -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ruby">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#xBehave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#xBehave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#3G -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#3G">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lqtpl/ontologies/2021/2/all-ontology#Tester"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calling_Another_API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Settings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Devices"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Index"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Status"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calling_Another_API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Status"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Oracle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SQL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Automation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Programming_Languages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Levels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Management_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Types"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Principles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_Techniques"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#API_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Oracle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SQL"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#AUTO_IT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Dynamic_Web"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sikuli"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Abstract"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#CRUD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Centralize"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Change_The_Model"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decentralize"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Goldilocks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interrupt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reverse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Useful_Approximations"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Component_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_criteria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Airline_Mode"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conditions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Conduct_System_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Test_Approach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Create_Workplan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Densities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_Guideline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_States"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Determine_Resource_Requirements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Inventory_Creation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_Test_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Identify_Test_Team"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Inventory_Of_Test_Items"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Landscape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Languages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Local_Database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Memory_Usage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_App"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obtain_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operating_System_Versions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Permissions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portrait"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Procedures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Processes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Screen_Resolution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Start_Acceptance_Test_Creation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_And_Acceptance_Tests"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Test_Creation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Approach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Schedule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Workplan"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_criteria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Densities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_Guideline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Landscape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_App"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operating_System_Versions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portrait"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Screen_Resolution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Acceptance_criteria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Densities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Design_Guideline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Landscape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobile_App"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network_Providers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Networks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operating_System_Versions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portrait"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Screen_Resolution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#All_Nighter_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Back_Alley_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Claims_tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complexity_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Configuration_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Feature_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Money_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Obsessive_Compulsive_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Rained_Out_Tour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Tour"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Alpha_And_Beta_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Contract_And_Regulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Operational_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Acceptance_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Analysis_And_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Closure_Activities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Evaluating_Exit_Criteria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Execution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Implementation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Planning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reporting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Android_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Emulator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#IOS_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platforms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Responsive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Simulator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Android_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Emulator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#IOS_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Responsive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Simulator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Appium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Apptim"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Calabash"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#KIF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kobiton"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyRunner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyTalk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Perfecto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robotium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selendroid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestProject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testdroid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#UI_Automator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Appium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyRunner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#MonkeyTalk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robotium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selendroid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#UI_Automator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Availability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compatibility_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compliance_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Efficiency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Flexibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Install_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integrity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interoperability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Load_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Localization_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Recovery_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reliability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reuseability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Scalability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spike_testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Stress_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Survivability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Volume_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Availability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Compatibility_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Efficiency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Flexibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Install_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integrity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interoperability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Load_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Recovery_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reliability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reuseability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Scalability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spike_testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Stress_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Survivability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Volume_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Availability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Efficiency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Flexibility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integrity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interoperability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Portability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reliability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Reuseability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Scalability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spike_testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Survivability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BDD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#End_To_End_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestComplete"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#BVA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Blackbox_testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Based_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Class_Partitioning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Error_Guessing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Specification_based"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structure_based"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Whitebox_testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Behave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Codeception"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Concordion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cucumber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Deliberate_Discovery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hiptest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JGiven"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jasime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Lettuce"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LightBDD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mocha"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#NSpec"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pytest_BDD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Radish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spinach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Driven_Development"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vows"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#xBehave"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Bottom_Up"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Incremental"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Incremental"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sandwich"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Top_Down"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Boundar_Value_Analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Decision_Table_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Equivalence_Partitioning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#State_Transaction_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Use_Case_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mnemonics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Checklist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Heuristic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tour"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Colums"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Datatype"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Field_Lengths"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Ergonomic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Input_To_Device"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interruption"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Network"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Store"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Usability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#User_Scenarios"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Complete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Corrective"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Partial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Progressive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retest_all"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selective"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Concordion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JGiven"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Spock"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Concordion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LightBDD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#NSpec"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#xBehave"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Constraint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Foreign_Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Primary_Key"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cucumber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Deliberate_Discovery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Driven_Development"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Cypress"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Puppeteer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Cafe"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Data_Driven_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Record"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Replay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Environments"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Database_Settings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Devices"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Index"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Keys"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Oracle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Query"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SQL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Tables"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Validate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Defect_Clustering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Early_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exhaustive_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Pesticide_Paradox"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_is_context_dependent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testing_shows_presence_of_defects"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#EdGE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#GPRS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#LTE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Wifi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#3G"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Exploratory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retesting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structural_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Functional_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Non_Functional_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Regression_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Retesting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Structural_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Hub"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JSON"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Nodes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Interface_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sanity_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#System_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Integration_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sanity_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jira"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#JunoOne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Klaros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Kualitee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#PractiTest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#QACoverage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Qase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ReQtest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestCaseLab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestFLO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestMonitor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestRail"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Test_Collab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Testpad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#XQual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Xray"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Zephyr_Scale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#aqua"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#qTest"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Jira"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#TestRail"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#qTest"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_Recorder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Katalon_studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Protractor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Robot_Framework"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Mobifone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vietnammobile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Viettel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Vinaphone"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Postman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#SOAPUI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Swagger"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Sanity_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Smoke_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Unit_Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_Grid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_IDE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#Selenium_RC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#WebDriver"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angular"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#angularjs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#java"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#javascript"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#php"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#python"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/2/untitled-ontology-4#ruby"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
