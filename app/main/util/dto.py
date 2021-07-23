@@ -1,3 +1,4 @@
+from app.main.service.candidate_service import is_have_resume
 from app.main.util.format_text import format_edit_time
 from flask_restx import Namespace, fields
 
@@ -6,6 +7,17 @@ from app.main.dto.base_dto import base
 from app.main.dto.resume_dto import ResumeDTO
 from app.main.dto.job_post_dto import JobPostDto
 
+class SubcribeEmailDto:
+    api = Namespace(
+        'SubcribeEmail', description='Subcribe Email related operations')
+
+class ProvinceDto:
+    api = Namespace(
+        'Province', description='Province related operations')
+
+class DataDto:
+    api = Namespace(
+        'Data', description='data related operations')
 class CompanyDto:
     api = Namespace(
         'Company', description='company related operations')
@@ -19,6 +31,12 @@ class CompanyDto:
         'website': fields.String(required=True, description='company website'),
         'description': fields.String(required=True, description='company description'),
     })
+class SkillDto:
+    api = Namespace(
+        'Skill', description='skill related operations')
+    skill = api.model('skill', {
+        'name': fields.String(required=True, description='company name')
+    })
 
 class CandidateDto:
     api = Namespace(
@@ -30,15 +48,14 @@ class CandidateDto:
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
         'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
-        'province_id': fields.Integer(required=True, description='candidate location'),
+        'province_id': fields.String(required=True, description='candidate location'),
     })
-    profile = api.model('candidate_profile', {
-        'email': fields.String(required=True, description='user email address'),
+    profile_update = api.model('profile_update', {
         'fullName': fields.String(required=True, description='user full name'),
         'phone': fields.String(required=True, description='user phone'),
         'gender': fields.Boolean(required=True, description='user gender'),
-        'dateOfBirth': fields.DateTime(required=True, description='candidate birthday'),
-        'provinceId': fields.Integer(required=True , description='province_id'),
+        'dateOfBirth': fields.String(attribute=lambda x: x.date_of_birth.strftime("%Y-%m-%d")),
+        'provinceId': fields.String(required=True , description='province_id'),
     })
     account = api.model('account', {
         'email': fields.String(required=True, description='user email address'),
@@ -57,7 +74,14 @@ class CandidateDto:
         'educations': fields.String,
         'experiences': fields.String,
         'job_domain_id': fields.Integer,
-        'edit': fields.DateTime(attribute='last_edit')
+        'edit': fields.DateTime(attribute='last_edit'),
+        'created_on': fields.DateTime(attribute='created_on')
+    })
+
+    document = api.model('document', {
+        'id': fields.Integer,
+        'name': fields.String,
+        'url': fields.String
     })
 
     response_profile = api.model('response_profile', {
@@ -68,9 +92,11 @@ class CandidateDto:
         'dateOfBirth': fields.String(attribute=lambda x: x.date_of_birth.strftime("%d/%m/%Y")),
         'gender': fields.Boolean,
         'status': fields.Boolean,
-        'provinceId': fields.Integer(attribute='province_id'),
+        'provinceId': fields.String(attribute='province_id'),
         'registeredOn': fields.String(attribute=lambda x: x.registered_on.strftime("%H:%M - %d/%m/%Y")),
-        'resumes': fields.Nested(response_resume)
+        'isHaveResume': fields.Boolean(attribute=lambda x: is_have_resume(x.resumes)),
+        'resumes': fields.Nested(response_resume),
+        'document': fields.Nested(document)
     })
 
     candidate_profile = api.inherit('candidate_profile', base, {
@@ -89,7 +115,7 @@ class CandidateDto:
         'gender': fields.Boolean(attribute="cand.gender"),
         'date_of_birth': fields.DateTime(attribute="cand.date_of_birth"),
         'status': fields.Integer(attribute="cand.status"),
-        'province_id': fields.Integer(attribute="cand.province_id"),
+        'province_id': fields.String(attribute="cand.province_id"),
         'access_token': fields.String(attribute="cand.access_token"),
         'registered_on': fields.DateTime(attribute="cand.registered_on"),
         'confirmed': fields.Boolean(attribute="cand.confirmed"),
@@ -110,6 +136,9 @@ class CandidateDto:
         'resume_id': fields.Integer, 
         'created_on': fields.DateTime(),
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
+        'saved_date': fields.DateTime(),
+        'note': fields.String, 
+        'is_applied': fields.Boolean, 
     })
     pagination = api.model('pagination', {
         'page': fields.Integer,
@@ -129,6 +158,7 @@ class CandidateDto:
         'job_post_id': fields.Integer,
         'submit_date': fields.DateTime(),
         'job_post': fields.Nested(JobPostDto.job_post_for_cand_fields),
+        'note': fields.String,
     })
     get_applied_job_post_list_response = api.inherit('get_applied_job_post_list_response', base, {
         'data': fields.List(fields.Nested(applied_job_post_fields)),
@@ -204,7 +234,7 @@ class RecruiterDto:
         'cand_name': fields.String(attribute='candidate.full_name'),
         'cand_email': fields.String(attribute='candidate.email'),
         'cand_phone_from_user_input': fields.String(attribute='candidate.phone'),
-        'province_id': fields.Integer(attribute='candidate.province_id'),
+        'province_id': fields.String(attribute='candidate.province_id'),
         'last_edit': fields.String(attribute=lambda x: format_edit_time(x))
     })
     saved_resume_info_fields = api.model("saved_resume_info_fields", {

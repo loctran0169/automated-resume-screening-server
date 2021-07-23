@@ -82,6 +82,7 @@ find_candidates_parser.add_argument("months_of_experience", type=int, location="
 class FindCandidates(Resource):
     @api.doc('find candidates')
     @api.marshal_with(FilterDto.candidate_list, code=200)
+    @api.expect(find_candidates_parser)
     @HR_only
     def get(self):
         identity = get_jwt_identity()

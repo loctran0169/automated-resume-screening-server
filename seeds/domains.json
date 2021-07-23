@@ -1,61 +1,85 @@
 [{
         "id": 1,
         "name": "Frontend Developer",
-        "alternative_name": "frontend"
+        "alternative_name": "frontend",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 2,
         "name": "Backend Developer",
-        "alternative_name": "backend"
+        "alternative_name": "backend",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 3,
         "name": "Fullstack Developer",
-        "alternative_name": "fullstack"
+        "alternative_name": "fullstack",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 4,
         "name": "Data Engineer",
-        "alternative_name": "data_engineer"
+        "alternative_name": "data_engineer",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 5,
         "name": "Devops Engineer",
-        "alternative_name": "devops"
+        "alternative_name": "devops",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 6,
         "name": "iOS Developer",
-        "alternative_name": "ios"
+        "alternative_name": "ios",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 7,
         "name": "Android Developer",
-        "alternative_name": "android"
+        "alternative_name": "android",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 8,
         "name": "AI Engineer",
-        "alternative_name": "ai_engineer"
+        "alternative_name": "ai_engineer",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 9,
         "name": "Game Developer",
-        "alternative_name": "game"
+        "alternative_name": "game",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 10,
         "name": "Tester",
-        "alternative_name": "test"
+        "alternative_name": "test",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 11,
         "name": "Business Analyst",
-        "alternative_name": "ba"
+        "alternative_name": "ba",
+        "logo": "",
+        "content": ""
     },
     {
         "id": 12,
         "name": "Project Manager",
-        "alternative_name": "pm"
+        "alternative_name": "pm",
+        "logo": "",
+        "content": ""
     }
 ]

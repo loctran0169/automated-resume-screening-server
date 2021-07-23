@@ -1,20 +1,20 @@
+import re
 from app.main.util.response import response_object
 from app.main.util.custom_jwt import Candidate_only, HR_only
-from app.main.service.recruiter_service import get_a_account_recruiter_by_email
-from app.main import send_email
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from app.main.service.recruiter_service import get_a_account_recruiter_by_email
 from app.main import send_email
-from app.main.service.candidate_service import set_token_candidate,delete_a_candidate_by_id, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, verify_account_candidate
+from app.main.service.candidate_service import create_candidate_document, delete_a_candidate_by_email, delete_document, get_document, set_token_candidate, get_a_account_candidate_by_email, insert_new_account_candidate, update_candidate_profile, update_document, verify_account_candidate
 from app.main.service.account_service import create_token, get_url_verify_email
 from flask_jwt_extended import decode_token
 import datetime
-
-from app.main.service.candidate_service import get_candidate_by_id, get_candidate_resumes, set_token_candidate,delete_a_candidate_by_id, \
+from werkzeug.datastructures import FileStorage
+from app.main.service.candidate_service import get_candidate_by_id, get_candidate_resumes, set_token_candidate, \
     get_a_account_candidate_by_email, insert_new_account_candidate, verify_account_candidate, \
     get_candidate_by_id, alter_save_job, get_saved_job_posts, get_applied_job_posts
-
+import os
+import uuid
 from flask import request, jsonify, url_for, render_template
 from flask_restx import Resource, inputs
 from app.main.util.dto import CandidateDto
@@ -22,7 +22,7 @@ from app.main.util.custom_jwt import get_jwt_identity
 
 apiCandidate = CandidateDto.api
 _candidate = CandidateDto.candidate
-_candidateProfile = CandidateDto.profile
+_candidateUpdateProfile = CandidateDto.profile_update
 _candidateAccount = CandidateDto.account
 @apiCandidate.route('/candidate/register')
 class RegisterCandidateList(Resource):
@@ -33,6 +33,15 @@ class RegisterCandidateList(Resource):
     def post(self):
         '''register a new account candiadate '''
         data = request.json
+
+        regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+
+        if not re.search(regex, data['email']):
+            return {
+                    'status': 'failure',
+                    'message': 'Email wrong format|Email sai định dạng',
+                    'type':'candidate'
+                }, 400
         account = get_a_account_candidate_by_email(data['email'])
 
         # if account with email not exist
@@ -53,27 +62,32 @@ class RegisterCandidateList(Resource):
                         send_email(data['email'], subject, html)
                         return {
                             'status': 'success',
-                            'message': 'Đăng ký tài khoản thành công',
+                            'message': 'Register success|Đăng ký tài khoản thành công',
                             'type':'candidate'
                         }, 200
 
                     except Exception as e: # delete account if send email error
-                        delete_a_candidate_by_id(account_inserted['id'])
+                        try:
+                            delete_a_candidate_by_email(data['email'])
+                        except Exception as ex:
+                            print(str(ex.args))
                         return {
                             'status': 'failure',
-                            'message': 'Đăng ký thất bại. Email không tồn tại',
+                            'message': 'Register fail. Email not exist.|Đăng ký thất bại. Email không tồn tại',
                             'type':'candidate'
                         }, 501
-                else:                    
+                else:
+                    print("chổ else")                    
                     return {
                         'status': 'failure',
-                        'message': 'Đăng ký không thành công',
+                        'message': 'Register fail|Đăng ký không thành công',
                         'type':'candidate'
                     }, 409
             except Exception as e:
+                print(e.args)
                 return {
                     'status': 'failure',
-                    'message': 'Đăng ký không thành công',
+                    'message': 'Register fail|Đăng ký không thành công',
                     'type':'candidate'
                 }, 409
         else:
@@ -81,14 +95,18 @@ class RegisterCandidateList(Resource):
             if account.confirmed:
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản đã tồn tại. Vui lòng đăng nhập',
+                    'message': 'Account already exist.|Tài khoản đã tồn tại. Vui lòng đăng nhập',
                     'type': 'candidate',
                 }, 409
             else:
                 # resend email if previously expired email
-                jwt_data = decode_token(account.access_token)
-                if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                    access_token = create_token(email=account.email)
+                jwt_data = None
+                try:
+                    jwt_data = decode_token(account.access_token)
+                except Exception as ex:
+                    jwt_data = None
+                if jwt_data == None or datetime.datetime.now().timestamp() > jwt_data['exp']:
+                    access_token = create_token(id = account.id ,email=account.email)
                     set_token_candidate(account.email, access_token)
                     try:
                         confirm_url = url_for('api.Candidate_candidate_verify',token=account.access_token, _external=True)
@@ -98,19 +116,19 @@ class RegisterCandidateList(Resource):
 
                         return{
                             'status': 'success',
-                            'message': 'Gửi lại email thành công',
+                            'message': 'Send email success|Gửi lại email thành công',
                             'type':'candidate'
                         },200
 
                     except Exception as e: # delete account if send email error
                         return {
                             'status': 'failure',
-                            'message': 'Gửi lại email không thành công. Email không tồn tại',
+                            'message': 'Email not exist|Gửi lại email không thành công. Email không tồn tại',
                             'type':'candidate'
                         }, 500
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
+                    'message': 'Account already existed. Please check your email.|Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
                     'type': 'candidate'
                 }, 201
 
@@ -132,32 +150,32 @@ class CandidateVerify(Resource):
                     if account.confirmed:
                         return{
                             'status': 'success',
-                            'message': 'Tài khoản đã xác thực. Vui lòng đăng nhập.',
+                            'message': 'Account confirmed|Tài khoản đã xác thực. Vui lòng đăng nhập.',
                             'type':"candidate"
                         }, 200
                     else:
                         verify_account_candidate(account.email)
                         return{
                             'status': 'success',
-                            'message': 'Xác thực tài khoản thành công!',
+                            'message': 'Account verify success|Xác thực tài khoản thành công!',
                             'type':"candidate"
                         }, 200
                 else:
                     return {
                         'status': 'failure',
-                        'message': 'Đường dẫn không tồn tại',
+                        'message': 'Something when wrong|Đường dẫn không tồn tại',
                         'type':"candidate"
                     }, 404
             else:
                 return {
                     'status': 'failure',
-                    'message': 'Đường dẫn không tồn tại hoặc đã hết hạn',
+                    'message': 'Something when wrong|Đường dẫn không tồn tại hoặc đã hết hạn',
                     'type':"candidate"
                 }, 403
         except Exception:
             return{
                 'status': 'failure',
-                'message': 'Vui lòng thử lại'
+                'message': 'Try again|Vui lòng thử lại'
                 ,'type':"candidate"
             }, 420
 
@@ -178,7 +196,7 @@ class AccountLogin(Resource):
             if not account:
                 return {
                     'status': 'failure',
-                    'message': 'Tài khoản không tồn tại',
+                    'message': 'Account not exist|Tài khoản không tồn tại',
                     'type':'candidate'
                 }, 404
 
@@ -192,26 +210,26 @@ class AccountLogin(Resource):
                         # resend email if previously expired email
                         jwt_data = decode_token(account.access_token)
                         if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                            access_token = create_token(email=account.email)
+                            access_token = create_token(id = account.id ,email=account.email)
                             set_token_candidate(account.email, access_token)
                             # send email here
                         return {
                             'status': 'failure',
-                            'message': 'Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
+                            'message': 'Account not verify email|Tài khoản đã đăng ký thành công nhưng chưa được xác thực. Vui lòng kiểm tra email để xác thực tài khoản',
                             'type':'candidate'
                         }, 403
 
-                    access_token = create_token(email=account.email)
+                    access_token = create_token(id = account.id ,email=account.email)
                     return {
                         'status': 'success',
                         'access_token': access_token,
-                        'message': 'Đăng nhập thành công',
+                        'message': 'Login success|Đăng nhập thành công',
                         'type':'candidate'
                     }, 200
                 except Exception as e:
                     return{
                         'status': 'failure',
-                        'message': 'Vui lòng thử lại',
+                        'message': 'Some thing when wrong|Vui lòng thử lại',
                         'type':'candidate'
                     }, 500
             else:
@@ -219,23 +237,26 @@ class AccountLogin(Resource):
                     'status': 'failure',
                     'message': 'Email hoặc mật khẩu không chính xác',
                     'type':'candidate'
-                }, 401
+                }, 404
         except Exception as e:
             return{
                 'status': 'failure',
-                'message': 'Vui lòng thử lại',
+                'message': 'Some thing when wrong|Vui lòng thử lại',
                 'type':'candidate'
             }, 500
 
+candidate_profile_header = apiCandidate.parser()
+candidate_profile_header.add_argument("Authorization", location="headers", required=True)
 @apiCandidate.route('/candidate/profile')
 @apiCandidate.response(404, 'Profile not found.')
 class CandidateFindProfile(Resource):
     @apiCandidate.doc('Find list companies')
     @apiCandidate.marshal_with(CandidateDto.candidate_profile, code=200)
+    @apiCandidate.expect(candidate_profile_header)
     @Candidate_only
     def get(self):
         '''get profile by token'''
-        identity = get_jwt_identity()
+        identity = get_jwt_identity() 
         email = identity['email']
 
         profile = get_a_account_candidate_by_email(email)
@@ -243,19 +264,21 @@ class CandidateFindProfile(Resource):
         if not profile:
             return {
                 'status': 'failure',
-                'message': 'Tài khoản không tồn tại',
+                'message': 'Account not exist|Tài khoản không tồn tại',
                 'type' : 'candidate'
             },400
         else:
             return response_object(data=profile)
-
+            
+candidate_update_profile = apiCandidate.parser()
+candidate_update_profile.add_argument("Authorization", location="headers", required=True)
 @apiCandidate.route('/candidate/profile/update')
 @apiCandidate.response(404, 'Profile not found.')
 class CandidateUpdateProfile(Resource):
 
-    @apiCandidate.response(200, 'update profile successfully.')
+    # @apiCandidate.response(200, 'update profile successfully.')
     @apiCandidate.doc('update a profile candidate')
-    @apiCandidate.expect(_candidateProfile, validate=True)
+    @apiCandidate.expect(candidate_update_profile,CandidateDto.profile_update, validate=True)
     @Candidate_only
     def post(self):
         '''update a new profile candiadate '''
@@ -264,19 +287,19 @@ class CandidateUpdateProfile(Resource):
         identity = get_jwt_identity()
         email_in_token = identity['email']
 
-        if email_in_token != data['email']:
-            return {
-                'status': 'failure',
-                'message': 'Email does not match to data body email',
-                'type' : 'candidate'
-            }, 200
+        # if email_in_token != data['email']:
+        #     return {
+        #         'status': 'failure',
+        #         'message': 'Email does not match to data body email',
+        #         'type' : 'candidate'
+        #     }, 200
 
         profile = get_a_account_candidate_by_email(email_in_token)
 
         if not profile:
             return {
                 'status': 'failure',
-                'message': 'Profile not found',
+                'message': 'Profile not found|Thông tin không tồn tại',
                 'type' : 'candidate'
             },400
 
@@ -285,7 +308,7 @@ class CandidateUpdateProfile(Resource):
 
             return {
                 'status': 'success',
-                'message': 'Update profile successfully',
+                'message': 'Update profile successfully|Cập nhật thông tin thành công',
                 'data' :{
                     'profile':get_a_account_candidate_by_email(email_in_token).to_json()
                 },
@@ -296,7 +319,7 @@ class CandidateUpdateProfile(Resource):
             print(e.args)
             return {
                 'status': 'failure',
-                'message': 'Update profile failure',
+                'message': 'Update profile failure|Cập nhật thông tin thất bại',
                 'type' : 'candidate'
             },400 
 
@@ -334,7 +357,7 @@ save_res_parser.add_argument('job_post_id', type=int, location='json', required=
 save_res_parser.add_argument('status', type=int, location='json', required=True)
 
 get_res_parser = apiCandidate.parser()
-get_res_parser.add_argument("Authorization", location="headers", required=False)
+get_res_parser.add_argument("Authorization", location="headers", required=True)
 get_res_parser.add_argument("page", type=int, location="args", required=False, default=1)
 get_res_parser.add_argument("page-size", type=int, location="args", required=False, default=10)
 get_res_parser.add_argument("from-date", type=inputs.datetime_from_iso8601, location="args", required=False)
@@ -397,3 +420,78 @@ class CandidateResumes(Resource):
 
         data = get_candidate_resumes(email)
         return response_object(data=data)
+
+
+get_document_parser = apiCandidate.parser()
+get_document_parser.add_argument("Authorization", location="headers", required=True)
+
+create_document_parser = apiCandidate.parser()
+create_document_parser.add_argument("file", type= FileStorage, location="files", required=True)
+# create_document_parser.add_argument("name", type= str, location="form", required=True)
+create_document_parser.add_argument("Authorization", location="headers", required=True)
+
+update_document_parser = apiCandidate.parser()
+update_document_parser.add_argument("document_id", type= int, location="args", required=True)
+update_document_parser.add_argument("name", type= str, location="args", required=True)
+update_document_parser.add_argument("Authorization", location="headers", required=True)
+
+delete_document_parser = apiCandidate.parser()
+delete_document_parser.add_argument("document_id", type= int, location="args", required=True)
+delete_document_parser.add_argument("Authorization", location="headers", required=True)
+@apiCandidate.route('/candidates/document')
+class CandidateDocument(Resource):
+
+    @apiCandidate.doc("get documents for candidate")
+    @apiCandidate.expect(get_document_parser)
+    @Candidate_only
+    def get(self):
+        '''get document candiadate '''
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+
+        return get_document(cand_id)
+
+    @apiCandidate.doc("uploaded document")
+    @apiCandidate.expect(create_document_parser)
+    @Candidate_only
+    def post(self):
+        '''Upload new document candiadate '''
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = create_document_parser.parse_args()
+
+        filepath = None
+        try:
+            file = args["file"]
+            file_ext = file.filename.split('.')[-1]
+            filename = file.filename.replace(".{}".format(file_ext), "")
+
+            filepath = os.path.join("temp_pdf", "{name}_{uid}.{ext}".format(name=filename, uid=str(uuid.uuid4().hex), ext=file_ext))
+            file.save(filepath)
+        except Exception as ex:
+            filepath = None
+
+        return create_candidate_document(cand_id, filepath, file.filename, file_ext)
+        # return create_candidate_document(cand_id, filepath, args['name'], file_ext)
+
+    @apiCandidate.doc("update document")
+    @apiCandidate.expect(update_document_parser)
+    @Candidate_only
+    def put(self):
+        '''update document name candiadate '''
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = update_document_parser.parse_args()
+
+        return update_document(cand_id, args['document_id'], args['name'])
+
+    @apiCandidate.doc("delete document")
+    @apiCandidate.expect(delete_document_parser)
+    @Candidate_only
+    def delete(self):
+        '''delete document candiadate '''
+        identity = get_jwt_identity()
+        cand_id = identity['id']
+        args = delete_document_parser.parse_args()
+
+        return delete_document(cand_id, args['document_id'])

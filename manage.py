@@ -1,16 +1,12 @@
+from app.main.service.subcribe_topic_service import func_scheduler
 from seeds.seed import seed_data
-from app.main.service.account_service import get_url_verify_email
 import os
 import unittest
-
+import atexit
 from flask_cors import CORS
-from flask_jwt_extended.jwt_manager import JWTManager
-from flask_mail import Mail, Message
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
-import jwt
-
-from app.main.model import candidate_education_model, candidate_job_save_model, candidate_model, company_model, filter_candidates, job_domain_model, job_post_model, job_resume_submissions_model, recruiter_model, recruiter_resume_save_model, resume_model
+from flask_apscheduler import APScheduler
 
 from app import blueprint
 from app.main import create_app, db
@@ -23,11 +19,12 @@ app.config['SQLALCHEMY_POOL_SIZE'] = 100
 app.config['SQLALCHEMY_POOL_RECYCLE'] = 280
 app.app_context().push()
 
-mail = Mail(app)
+scheduler = APScheduler()
 manager = Manager(app)
 migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
-CORS(app, resources={r"/api/*": { "origins": "http://localhost:3000" }})
+CORS(app, resources={r"/api/*": { "origins": ["http://localhost:3000","http://23.98.70.192:3000"] }})
+
 
 @app.route('/')
 def index():
@@ -45,6 +42,7 @@ def bad_request():
 @manager.command
 def run():
     seed_data(db)
+    # app.run(debug=True, host='0.0.0.0', use_reloader=False)
     app.run(debug=True, host='0.0.0.0')
 
 
@@ -57,6 +55,13 @@ def test():
         return 0
     return 1
 
+def schedule_task():
+    with app.app_context():
+        func_scheduler()
 
 if __name__ == '__main__':
+    scheduler.add_job(id = 'Scheduled Task', func=schedule_task, trigger="interval", seconds=86400)
+    scheduler.start()
     manager.run()
+
+atexit.register(lambda: scheduler.shutdown())

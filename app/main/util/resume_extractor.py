@@ -1,3 +1,5 @@
+import codecs
+import pickle
 import cv2
 from nltk.corpus.reader import twitter
 from pdf2image import convert_from_path
@@ -8,7 +10,7 @@ import re
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 import json
-from app.main.util.data_processing import get_technical_skills
+from app.main.util.data_processing import generate_graph_tree_with, get_technical_skills
 from app.main.util.regex_helper import RegexHelper
 import cloudmersive_convert_api_client as convert
 from cloudmersive_convert_api_client.rest import ApiException
@@ -259,6 +261,13 @@ def cv_segmentation(local_cv_path, is_pdf):
     (tech_skills, _) = get_general_technical_skills('\n'.join(sentences))
     (soft_skills, _) = get_soft_skills('\n'.join(sentences))
 
+    (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=tech_skills)
+    (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=soft_skills)
+
+
+    pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+    pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+    
     links = get_links('\n'.join(sentences))
 
     return {
@@ -273,5 +282,7 @@ def cv_segmentation(local_cv_path, is_pdf):
         "linkedin": links['linkedin'],
         "email": links['email'],
         "phone": links['phone'],
+        "graph_general" : pickled_general,
+        "graph_softskill" : pickled_softskill
         # 'award': '\n'.join(awards),
     }

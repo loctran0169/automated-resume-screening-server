@@ -21,15 +21,17 @@ def insert_new_account_recruiter(account):
         phone = account['phone'],
         full_name = account['fullName'],
         gender = account['gender'],
-        access_token=create_token(account['email'], 1/24),
+        access_token=create_token(id = 1 ,email = account['email'], day = 1/24),
         registered_on=datetime.datetime.utcnow()
     )
     db.session.add(new_account)
     db.session.commit()
 
 
-def delete_a_recruiter_by_id(id):
-    return RecruiterModel.query.filter_by(id=id).first()
+def delete_a_recruiter_by_email(email):
+    recruiter = RecruiterModel.query.filter_by(email=email).first()
+    db.session.delete(recruiter)
+    db.session.commit()
 
 def get_a_recruiter_by_email(name):
     return RecruiterModel.query.filter_by(name=name).first()
@@ -87,7 +89,7 @@ def alter_save_resume(rec_email, args):
         remove = RecruiterResumeSavesModel.query\
             .filter_by(recruiter_id=rec_id, resume_id=res_id)\
             .first()
-        if remove is None: abort(400, "No saved resume found to remove.")
+        if remove is None: abort(200, "No saved resume found to remove.|Không có CV")
 
         db.session.delete(remove)
         db.session.commit()

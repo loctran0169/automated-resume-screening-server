@@ -9,6 +9,8 @@ from .. import db
 from datetime import datetime
 from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
 from sqlalchemy import func
+from bs4 import BeautifulSoup
+from app.main.config import Config as config
 
 class JobPostModel(db.Model):
     __tablename__ = "job_posts"
@@ -48,8 +50,11 @@ class JobPostModel(db.Model):
 
     skill_graph = db.Column(db.Text, nullable=True)
     domain_skill_graph = db.Column(db.Text, nullable=True)
+    soft_skill_graph = db.Column(db.Text, nullable=True)
 
     job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="job_post", lazy=True)
+
+    note_jobs = db.relationship('JobNoteModel', uselist=True, backref="job_post")
 
     def __repr__(self):
         return "<Job post: '{}'>".format(self.id)
@@ -65,6 +70,9 @@ class JobPostModel(db.Model):
             'contract': self.contract_type,
             'min_salary': self.min_salary,
             'max_salary': self.max_salary,
+            'domain_skills': self.domain_skills,
+            'soft_skills': self.soft_skills,
+            'general_skills': self.general_skills,
             'amount': self.amount,  
             'is_active': self.is_active,  
             'deadline': json.dumps(self.deadline, default=json_serial),
@@ -72,3 +80,20 @@ class JobPostModel(db.Model):
             'last_edit': json.dumps(self.last_edit, default=json_serial),
             'closed_in': json.dumps(self.closed_in, default=json_serial),
         }
+
+    def get_salary(self):
+        if not self.min_salary and not self.max_salary:
+            return "Enjoy"
+        if self.min_salary and self.max_salary:
+            return str(int(self.min_salary))+"$-"+str(int(self.max_salary))+"$"
+        if self.min_salary:
+            return ">="+str(int(self.min_salary))+"$"
+        if self.max_salary:
+            return "Up to "+str(int(self.max_salary))+"$"
+    
+    def get_short_description(self):
+        soup = BeautifulSoup('<div>'+self.description_text+'</div>')
+        return soup.text[:130]+"..."
+    
+    def get_url_detail(self):
+     return config.BASE_URL_FE + "job-detail/"+ str(self.id)

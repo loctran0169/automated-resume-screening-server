@@ -1,9 +1,13 @@
+from app.main.model.job_note_model import JobNoteModel
+import codecs
+import os
+import pickle
 from app.main.process_data.classify_wrapper.skill_paper import SkillPaper
 from sqlalchemy.sql.expression import true
 from app.main.model.recruiter_resume_save_model import RecruiterResumeSavesModel
 from sys import float_info
 from datetime import datetime, timedelta
-import time as log_time
+import time as time_log
 import dateutil.parser
 from flask import json
 import math
@@ -17,12 +21,12 @@ from app.main.model.job_resume_submissions_model import JobResumeSubmissionModel
 from app.main.model.job_domain_model import JobDomainModel
 from app.main.model.candidate_job_save_model import CandidateJobSavesModel
 from app.main.model.candidate_education_model import CandidateEducationModel
-
+import numpy as np
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import HR_only
 from app.main.util.format_text import format_contract, format_education, format_salary
 from app.main.util.response import json_serial, response_object
-from app.main.util.data_processing import get_technical_skills, tree_matching_score_jd
+from app.main.util.data_processing import distance_graph_score, generate_graph_tree_with, get_technical_skills, score_skills_grahp, tree_matching_score_jd
 from flask_restx import abort
 from sqlalchemy import or_, func, and_
 from app.main.util.data_processing import tree_matching_score
@@ -51,7 +55,7 @@ def add_new_post(post):
     job_domain = JobDomainModel.query.get(post['job_domain_id'])
 
     if (not recruiter) | (not job_domain):
-        return "Error"
+        return response_object(code=400,message="Error|thất bại",data = None)
 
     txt = " ".join([post.get('requirement_text', ""),
                    post.get('description_text', "")])
@@ -66,7 +70,16 @@ def add_new_post(post):
     (general_skills, _) = general_skills_res.result()
     (soft_skills, _) = soft_skills_res.result()
 
+    (domain_skills_graph, _) = generate_graph_tree_with(domain=job_domain.alternative_name, skills=domain_skills)
+    (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=general_skills)
+    (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=soft_skills)
+
+    pickled_domain = codecs.encode(pickle.dumps(domain_skills_graph), "base64").decode()
+    pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+    pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+
     new_post = JobPostModel(
+        recruiter_id = recruiter.id,
         job_domain_id=post['job_domain_id'],
         description_text=post['description_text'],
         requirement_text=post['requirement_text'],
@@ -78,21 +91,25 @@ def add_new_post(post):
         amount=post['amount'],
         education_level=post['education_level'],
         province_id=post['province_id'],
-        domain_skills='|'.join(domain_skills),
-        general_skills='|'.join(general_skills),
-        soft_skills='|'.join(soft_skills),
-        deadline=parse_deadline
+        domain_skills='|'.join(domain_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+        general_skills='|'.join(general_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+        soft_skills='|'.join(soft_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True",""),
+        deadline=parse_deadline,
+
+        skill_graph=pickled_domain,
+        domain_skill_graph=pickled_general,
+        soft_skill_graph=pickled_softskill,
     )
 
-    recruiter.job_posts.append(new_post)
-    job_domain.job_posts.append(new_post)
+    # recruiter.job_posts.append(new_post)
+    # job_domain.job_posts.append(new_post)
 
-    db.session.add(recruiter)
-    db.session.add(job_domain)
+    # db.session.add(recruiter)
+    db.session.add(new_post)
 
     db.session.commit()
 
-    return response_object(code=200, message="Đăng tin tuyển dụng thành công.", data=new_post.to_json()), 200
+    return response_object(code=200, message="Post your job success|Đăng tin tuyển dụng thành công.", data=new_post.to_json()), 200
 
 
 @HR_only
@@ -193,7 +210,7 @@ def hr_get_detail(id):
     post = JobPostModel.query.get(id)
 
     if not post:
-        return response_object(code=400, message="Thao tác không hợp lệ")
+        return response_object(code=400, message="Job post not found|Thao tác không hợp lệ")
 
     return post
 
@@ -215,7 +232,7 @@ def update_jp(id, recruiter_email, args):
     min_salary = args.get("min_salary", None)
     max_salary = args.get("max_salary", None)
     amount = args.get("amount", None)
-    is_active = args.get("is_active", None)
+    education_level = args.get("education_level", None)
     deadline = args.get("deadline", None)
     province_id = args.get("province_id", None)
 
@@ -227,24 +244,34 @@ def update_jp(id, recruiter_email, args):
 
     is_change_desc = False
     is_change_req = False
-    print(job_post.job_domain.alternative_name)
+    
     if description_text != job_post.description_text or requirement_text != job_post.requirement_text or is_change_desc == False:
-        domain_skills_res = executor.submit(
-            get_technical_skills, job_post.job_domain.alternative_name, txt)
-        general_skills_res = executor.submit(
-            get_technical_skills, "general", txt)
-        soft_skills_res = executor.submit(
-            get_technical_skills, "softskill", txt)
+        domain_skills_res = executor.submit(get_technical_skills, job_post.job_domain.alternative_name, txt)
+        general_skills_res = executor.submit(get_technical_skills, "general", txt)
+        soft_skills_res = executor.submit(get_technical_skills, "softskill", txt)
 
         (domain_skills, _) = domain_skills_res.result()
         (general_skills, _) = general_skills_res.result()
         (soft_skills, _) = soft_skills_res.result()
-        print(domain_skills)
-        print(general_skills)
-        print(soft_skills)
-        job_post.domain_skills = '|'.join(domain_skills)
-        job_post.general_skills = '|'.join(general_skills)
-        job_post.soft_skills = '|'.join(soft_skills)
+
+        (domain_skills_graph, _) = generate_graph_tree_with(domain=job_post.alternative_name, skills=domain_skills)
+        (general_skills_graph, _) = generate_graph_tree_with(domain='general', skills=general_skills)
+        (soft_skills_graph, _) = generate_graph_tree_with(domain='softskill', skills=soft_skills)
+
+        pickled_domain = codecs.encode(pickle.dumps(domain_skills_graph), "base64").decode()
+        pickled_general = codecs.encode(pickle.dumps(general_skills_graph), "base64").decode()
+        pickled_softskill = codecs.encode(pickle.dumps(soft_skills_graph), "base64").decode()
+
+        #update skills
+        job_post.domain_skills = '|'.join(domain_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True","")
+        job_post.general_skills = '|'.join(general_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True","")
+        job_post.soft_skills = '|'.join(soft_skills).replace("|True|","|").replace("True|","").replace("|True","").replace("True","")
+        
+        #update graph
+        job_post.skill_graph = pickled_domain
+        job_post.domain_skill_graph = pickled_general
+        job_post.soft_skill_graph = pickled_softskill
+
     job_post.job_domain_id = job_domain_id
     job_post.description_text = description_text
     job_post.requirement_text = requirement_text
@@ -253,7 +280,7 @@ def update_jp(id, recruiter_email, args):
     job_post.min_salary = min_salary
     job_post.max_salary = max_salary
     job_post.amount = amount
-    job_post.is_active = is_active
+    job_post.is_active = education_level
     job_post.deadline = dateutil.parser.isoparse(deadline)
     job_post.contract_type = contract_type
     job_post.province_id = province_id
@@ -285,10 +312,10 @@ def apply_cv_to_jp(jp_id, args):
     resume_id = args['resume_id']
 
     if ResumeModel.query.get(resume_id) == None:
-        abort(400)
+        return response_object(code=400,message="Resume not found|Không tìm thấy CV",data = None)
 
     if JobPostModel.query.get(jp_id) == None:
-        abort(400)
+        return response_object(code=400,message="Job post not found|Không tìm thấy tin tuyển dụng",data = None)
 
     if JobResumeSubmissionModel.query.filter_by(resume_id=resume_id, job_post_id=jp_id).first() is not None:
         return 409
@@ -314,6 +341,63 @@ def apply_cv_to_jp(jp_id, args):
         "is_calculating": False
     }
 
+def unapply_cv_to_jd(cand_id,jp_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
+    if not cand.resumes:
+        return response_object(400, "Candidate not resume|Không tìm thấy CV", data=None)
+    
+    applies = JobResumeSubmissionModel.query.filter(JobResumeSubmissionModel.job_post_id==jp_id) \
+                                    .filter(JobResumeSubmissionModel.resume_id==cand.resumes[0].id)
+
+    for apply in applies:
+        db.session.delete(apply)
+    db.session.commit()
+    return response_object(200, "Unapply success|Hủy ứng tuyển thành công", data=None)
+
+def add_note(cand_id,jp_id,args):
+    note = args['note']
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
+    
+    job = JobPostModel.query.get(jp_id)
+    if not job:
+        return response_object(400, "Job post not found|Không tìm thấy tin tuyển dụng", data=None)
+
+    job_note = JobNoteModel.query.filter_by(cand_id=cand_id,job_post_id = jp_id).first()
+    if not job_note:
+        job_note = JobNoteModel(
+            cand_id = cand_id,
+            job_post_id = jp_id,
+            note = note
+        )
+    else:
+        job_note.note = note
+    try:
+        db.session.add(job_note)
+        db.session.commit()
+        return response_object(200, "Update note success|Cập nhật ghi chú thành công", data=job_note.to_json())
+    except Exception as ex:
+        print(str(ex.args))
+        return response_object(400, "Cannot update note for this job|Cập nhật thất bại", data=None)
+
+def delete_note(cand_id,jp_id):
+    cand = CandidateModel.query.get(cand_id)
+    if not cand:
+        return response_object(400, "Candidate not found|Không tìm thấy ứng viên", data=None)
+    
+    job = JobPostModel.query.get(jp_id)
+    if not job:
+        return response_object(400, "Job post not found|Không tìm thấy tin tuyển dụng", data=None)
+
+    for note in cand.note_jobs:
+        if note.job_post_id == jp_id:
+            db.session.delete(note)
+            db.session.commit()
+            return response_object(200, "Delete note success|Xóa ghi chú thành công", data=None)
+    return response_object(200, "Delete note success|Xóa ghi chú thành công", data=None)
 
 def calculate_scrore(submission, job_post_id, resume_id):
 
@@ -322,19 +406,24 @@ def calculate_scrore(submission, job_post_id, resume_id):
     resume = ResumeModel.query.get(resume_id)
 
     job_post_text = job_post.description_text + " " + job_post.requirement_text
-    resume_text = " ".join(
-        [resume.educations, resume.experiences, resume.technical_skills, resume.soft_skills])
+    resume_text = " ".join([resume.educations, resume.experiences, resume.technical_skills, resume.soft_skills])
 
     # Scores
-    domain_dict = tree_matching_score(
-        job_post_text, resume_text, job_post.job_domain.alternative_name)
-    softskill_dict = tree_matching_score(
-        job_post_text, resume_text, 'softskill')
-    general_dict = tree_matching_score(job_post_text, resume_text, 'general')
+    domain_dict = tree_matching_score(job_post_text, resume_text, job_post.job_domain.alternative_name)
+
+    _softskill_score = distance_graph_score(pickle.loads(codecs.decode(job_post.soft_skill_graph.encode(), "base64")),
+                                            pickle.loads(codecs.decode(resume.soft_skill_graph.encode(), "base64")))
+    _general_score = distance_graph_score(pickle.loads(codecs.decode(job_post.skill_graph.encode(), "base64")),
+                                            pickle.loads(codecs.decode(resume.technical_skill_graph.encode(), "base64")))
+    # print("### CV:")
+    # print(domain_dict["cv_graph"])
+
+    # print("### JD: "+str(job_post_id))
+    # print(domain_dict["post_graph"])
 
     domain_score = domain_dict['score']
-    softskill_score = softskill_dict['score']
-    general_score = general_dict['score']
+    softskill_score = _softskill_score
+    general_score = _general_score
 
     score_explanation_array = '|'.join(
         ['domain_score', 'general_score', 'softskill_score'])
@@ -346,7 +435,6 @@ def calculate_scrore(submission, job_post_id, resume_id):
     submission.score_array = score_array
     submission.score_explanation_array = score_explanation_array
 
-
 def get_job_post_for_candidate(jp_id, cand_email):
 
     # Check if signed in
@@ -355,12 +443,20 @@ def get_job_post_for_candidate(jp_id, cand_email):
         cand = CandidateModel.query.filter_by(email=cand_email).first()
 
     save_record = None
+    soft_skills = None
+    technical_skills = None
+    isApplied = False
     if cand is not None:
         save_record = CandidateJobSavesModel \
             .query \
             .filter_by(cand_id=cand.id, job_post_id=jp_id) \
             .first()
-
+        if cand.resumes and len(cand.resumes) != 0:
+            soft_skills = cand.resumes[0].soft_skills
+            technical_skills = cand.resumes[0].technical_skills
+            for apply in cand.resumes[0].job_resume_submissions:
+                if apply.job_post_id == jp_id:
+                    isApplied = True
     saved_date = None
     if save_record is not None:
         saved_date = save_record.created_on
@@ -376,13 +472,15 @@ def get_job_post_for_candidate(jp_id, cand_email):
 
     return {
         'post': post,
-        'saved_date': saved_date
+        'cand_soft_skills': soft_skills,
+        'cand_technical_skills': technical_skills,
+        'saved_date': saved_date,
+        'is_applied': isApplied
     }
-
 
 def search_jd_for_cand(args):
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
-        JobPostModel.deadline > datetime.now())
+        JobPostModel.deadline > datetime.now()).order_by(JobPostModel.last_edit.desc())
 
     posted_date = args.get('posted_date')
     contract_type = args.get('contract_type')
@@ -516,14 +614,14 @@ def get_matched_list_cand_info_with_job_post(rec_email, job_id, args):
     # Check existed rec
     recruiter = RecruiterModel.query.filter_by(email=rec_email).first()
     if recruiter is None:
-        abort(400, "No recruiter found.")
+        abort(400, "Không tìm thấy nhà tuyển dụng")
 
     # Check job post
     job = JobPostModel.query.get(job_id)
     if job is None:
-        abort(400, "No job post found.")
+        abort(400, "Không tìm thấy tin tuyển dụng")
     if job.recruiter_id != recruiter.id:
-        abort(400, "The job post is not belong to the recruiter.")
+        abort(400, "Công việc không có sẵn")
 
     domain_weight = args['domain_weight']
     general_weight = args['general_weight']
@@ -607,40 +705,47 @@ def get_similar_job_post_with_id(job_id):
     query = query.filter(and_(*contain_province(job.province_id)))
 
     result = query\
-        .order_by(JobPostModel.last_edit)
+        .order_by(JobPostModel.last_edit.desc())
+    start_time = time_log.time()
+    
     _job_result = []
-
+    scores = dict()
     for _job in result:
-        if len(_job_result) <= 10:
-            domain_dict = tree_matching_score_jd(job.general_skills.split("|"),
-                                                 _job.general_skills.split(
-                "|"),
-                job.job_domain.alternative_name)
-            if domain_dict['score'] >= 0.7:
-                _job_result.append(_job)
-    return _job_result
+        score = distance_graph_score(pickle.loads(codecs.decode(job.domain_skill_graph.encode(), "base64")),
+                                    pickle.loads(codecs.decode(_job.domain_skill_graph.encode(), "base64")))
+        if score > 0.8:
+            scores[_job.id] = score
+            _job_result.append(_job)
+    
+    all_items = sorted(_job_result, key=lambda x: scores[x.id], reverse=True)
+    _all_items = []
+    for index, item in enumerate(all_items):
+        if index <=9:
+            _all_items.append(item)
+        else:
+            break
+    print("---similar job %s seconds ---" %(time_log.time() - start_time))
+    return _all_items
 
 
 def get_suggested_job_posts(email, args):
-
-    min_similar = 0.8
 
     # Check Cand
     cand = CandidateModel.query.filter_by(email=email).first()
     if cand is None:
         abort(400)
 
-    if len(cand.resumes) == 0:
+    province_id = args['province_id']
+    if not cand.resumes or len(cand.resumes) == 0 or province_id == "":
         return None, {
             'total': 0,
             'page': 0
         }
-    technical_skills = cand.resumes[0].technical_skills.split("|")
+    resume  = cand.resumes[0]
 
     page = args['page']
     page_size = args['page_size']
     domain_id = args['domain_id']
-    province_id = args['province_id']
 
     query = JobPostModel.query.filter(JobPostModel.closed_in is not None).filter(
         JobPostModel.deadline > datetime.now(), JobPostModel.job_domain_id == domain_id)
@@ -651,27 +756,42 @@ def get_suggested_job_posts(email, args):
 
     min_salary = db.session.query(func.max(
         JobPostModel.min_salary)).filter(JobPostModel.job_domain_id == domain_id).scalar()
-
+    
     query = query.filter(JobPostModel.job_domain_id == domain_id)
     query = query.filter(and_(*contain_province_with_one(province_id)))
     all_items = query.all()
+    start_time = time_log.time()
 
-    def cacular_score(job,dict, id):
-        score = tree_matching_score_jd(technical_skills,
-                               job.general_skills.split("|"),
-                               job.job_domain.alternative_name)['score']
-        print(str(id)+" "+str(score))
-        dict[id] = score
-        return score
-    
+    def cacular_score(job,dict, id):                                                                   
+
+        match_general = tree_matching_score_jd(job.general_skills.split("|"),
+                               resume.technical_skills,
+                               job.job_domain.alternative_name)
+
+        match_domain = tree_matching_score_jd(job.domain_skills.split("|"),
+                               resume.technical_skills,
+                               job.job_domain.alternative_name)
+
+        match_softskill = tree_matching_score_jd(job.soft_skills.split("|"),
+                               resume.soft_skills,
+                               job.job_domain.alternative_name)
+
+        overall = match_domain['score'] * 3 + match_softskill['score'] * 1 + match_general['score'] * 3
+
+        dict[id] = overall
+        print(str(id)+","+str(match_general['score'])+","+str(match_domain['score'])+","+str(match_softskill['score'])+","+str(np.round(overall, 4)))
+        return overall
+
     scores = dict()
 
     all_items = sorted(all_items, key=lambda x: cacular_score(x,scores,x.id), reverse=True)
- 
-    all_items = list(filter(lambda x: scores[x.id] >= min_similar, all_items))
-   
-    chunks = [all_items[i:i+page_size]
-              for i in range(0, len(all_items), page_size)]
+
+    MIN_SIMILAR = 3.3
+
+    all_items = list(filter(lambda x: scores[x.id] >= MIN_SIMILAR, all_items))
+
+    chunks = [all_items[i:i+page_size] for i in range(0, len(all_items), page_size)]
+
     items = []
 
     if page > len(chunks):
@@ -688,6 +808,7 @@ def get_suggested_job_posts(email, args):
             'min': min_salary
         }
     }
+    print("---domain description in %s seconds ---" %(time_log.time() - start_time))
     return data, {
         'page': page,
         'total': len(all_items)

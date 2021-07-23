@@ -1,5 +1,5 @@
 from sqlalchemy.ext.declarative.api import as_declarative
-from app.main.service.candidate_service import delete_a_candidate_by_id, get_a_account_candidate_by_email
+from app.main.service.candidate_service import get_a_account_candidate_by_email
 from flask_jwt_extended.utils import get_jwt_identity
 from app.main.util.custom_jwt import Candidate_only
 from flask_restx.fields import String
@@ -46,6 +46,7 @@ update_cv_parser.add_argument("resume_id", type=int, location="json", required=T
 update_cv_parser.add_argument("educations", location="json", required=True)
 update_cv_parser.add_argument("experiences", location="json", required=True)
 update_cv_parser.add_argument("skills", location="json", required=True)
+update_cv_parser.add_argument("softskills", location="json", required=True)
 update_cv_parser.add_argument("months_of_experience", type=int, location="json", required=True)
 update_cv_parser.add_argument("Authorization", location="headers", required=True)
 @api.route("/update")
@@ -69,25 +70,25 @@ class UpdateCV(Resource):
     def delete(self):
         identity = get_jwt_identity()
         email_in_token = identity['email']
-        # try:
-        profile = get_a_account_candidate_by_email(email_in_token)
-        if not profile or not profile.resumes:
-            return {
-                'status': 'failure',
-                'message': 'Delete cv failure. Profile not found',
-                'type' : 'candidate'
-            },400
+        try:
+            profile = get_a_account_candidate_by_email(email_in_token)
+            if not profile or not profile.resumes:
+                return {
+                    'status': 'failure',
+                    'message': 'Delete cv failure. Profile not found|Xóa CV thất bại',
+                    'type' : 'candidate'
+                },400
 
-        delete_cv_by_id(profile.resumes[0].id)
-        return {
-            'status': 'success',
-            'message': 'Delete cv successfully',
-            'type' : 'candidate'
-        }, 200
-        # except Exception as ex:
-        #     print(ex.args)
-        #     return{
-        #         'status': 'failure',
-        #         'message': 'Delete cv failure. Server occur',
-        #         'type' : 'candidate'
-        #     }, 200
+            delete_cv_by_id(profile.resumes[0].id)
+            return {
+                'status': 'success',
+                'message': 'Delete cv successfully|Xóa CV thành công',
+                'type' : 'candidate'
+            }, 200
+        except Exception as ex:
+            print(ex.args)
+            return{
+                'status': 'failure',
+                'message': 'Delete cv failure. Server occur|Xóa CV thất bại. Máy chủ lổi',
+                'type' : 'candidate'
+            }, 200

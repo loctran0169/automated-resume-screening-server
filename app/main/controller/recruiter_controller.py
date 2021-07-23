@@ -1,10 +1,11 @@
 from operator import truediv
+import re
 from sys import exec_prefix
 
 from flask_restx.fields import DateTime
 from app.main.service.candidate_service import get_a_account_candidate_by_email
 from app.main import send_email
-from app.main.service.recruiter_service import get_a_account_recruiter_by_email, set_token_recruiter,delete_a_recruiter_by_id, \
+from app.main.service.recruiter_service import delete_a_recruiter_by_email, get_a_account_recruiter_by_email, set_token_recruiter, \
     insert_new_account_recruiter, verify_account_recruiter, alter_save_resume, get_saved_resumes
 from app.main.service.account_service import create_token, get_url_verify_email
 from flask_jwt_extended.utils import get_jwt_identity
@@ -58,7 +59,10 @@ class RegisterrecruiterList(Resource):
                         }, 200
 
                     except Exception as e: # delete account if send email error
-                        delete_a_recruiter_by_id(account_inserted['id'])
+                        try:
+                            delete_a_recruiter_by_email(data['email'])
+                        except Exception as ex:
+                            print(str(ex.args))
                         return {
                             'status': 'failure',
                             'message': 'Registation failed. Email not working.',
@@ -90,7 +94,7 @@ class RegisterrecruiterList(Resource):
                 # resend email if previously expired email
                 jwt_data = decode_token(account.access_token)
                 if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                    access_token = create_token(email=account.email)
+                    access_token = create_token(id = account.id,email=account.email)
                     set_token_recruiter(account.email, access_token)
                     try:
                         confirm_url = url_for('api.Recruiter_recruiter_verify',token=account.access_token, _external=True)
@@ -173,6 +177,14 @@ class RecruiterLogin(Resource):
     def post(self):
         '''login account with recruiter'''
         data = request.json
+
+        regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+        if not re.search(regex, data['email']):
+            return {
+                    'status': 'failure',
+                    'message': 'Email sai định dạng',
+                    'type':'candidate'
+                }, 400
         try:
             # find account with email
             account = get_a_account_recruiter_by_email(data['email'])
@@ -193,7 +205,7 @@ class RecruiterLogin(Resource):
                         # resend email if previously expired email
                         jwt_data = decode_token(account.access_token)
                         if datetime.datetime.now().timestamp() > jwt_data['exp']:
-                            access_token = create_token(email=account.email, is_HR=True, company_id=account.company_id)
+                            access_token = create_token(id = account.id,email=account.email, is_HR=True, company_id=account.company_id)
                             set_token_recruiter(account.email, access_token)
                             # send email here
                         return {
@@ -201,7 +213,7 @@ class RecruiterLogin(Resource):
                             'message': 'The account has been created but not verified, please check the email.',
                             'type':'recruiter'
                         }, 203
-                    access_token = create_token(email=account.email, is_HR=True, company_id=account.company_id)
+                    access_token = create_token(id = account.id, email=account.email, is_HR=True, company_id=account.company_id)
 
                     return {
                         'status': 'success',

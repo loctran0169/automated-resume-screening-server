@@ -10,9 +10,9 @@ from flask import request
 
 from ..dto.job_post_dto import JobPostDto
 from flask_restx import Resource
-from ..service.job_post_service import add_new_post, count_jobs, \
-        delete_job_post, get_hr_posts, get_similar_job_post_with_id, get_suggested_job_posts, hr_get_detail, apply_cv_to_jp,\
-        get_job_post_for_candidate, search_jd_for_cand, \
+from ..service.job_post_service import add_new_post, add_note, count_jobs, \
+        delete_job_post, delete_note, get_hr_posts, get_similar_job_post_with_id, get_suggested_job_posts, hr_get_detail, apply_cv_to_jp,\
+        get_job_post_for_candidate, search_jd_for_cand, unapply_cv_to_jd, \
         update_jp, close_jp, proceed_resume, get_matched_cand_info_with_job_post, \
         get_matched_list_cand_info_with_job_post
 
@@ -101,13 +101,17 @@ update_JP_parser.add_argument("contract_type", type=int, location="json")
 update_JP_parser.add_argument("min_salary", type=float, location="json")
 update_JP_parser.add_argument("max_salary", type=float, location="json")
 update_JP_parser.add_argument("amount", type=int, location="json")
-update_JP_parser.add_argument("is_active", type=bool, location="json")
+update_JP_parser.add_argument("education_level", type=int, location="json")
 update_JP_parser.add_argument("deadline", type=str, location="json")
 update_JP_parser.add_argument("province_id", type=str, location="json")
+
+detail_get_parser = api.parser()
+detail_get_parser.add_argument("Authorization", location="headers", required=True)
 @api.route('/<int:id>')
 class JobPostDetail(Resource):
     @api.doc('get detail of job post')
     @api.marshal_with(JobPostDto.response_jp_for_edit, code=200)
+    @api.expect(detail_get_parser)
     def get(self, id):
 
         data = hr_get_detail(id)
@@ -157,7 +161,7 @@ class SubmitResumeForJD(Resource):
     apply_parser.add_argument("Authorization", location="headers", required=True)
     @api.doc('Submit CV.')    
     @api.expect(apply_parser)
-    # @Candidate_only
+    @Candidate_only
     def post(self, jp_id):
         args = self.apply_parser.parse_args()
         data = apply_cv_to_jp(jp_id, args)
@@ -165,11 +169,49 @@ class SubmitResumeForJD(Resource):
         if data == 409:
             return response_object(
                 code=409,
-                message="CV này đã gửi vào tin đăng này."
+                message="CV applied|CV này đã gửi vào tin đăng này."
             ), 409
 
         return response_object(data=data), 200
 
+@api.route('/<int:jp_id>/note')
+class ApplyJobNote(Resource):
+    note_add_parser = api.parser()
+    note_add_parser.add_argument("Authorization", location="headers", required=True)
+    note_add_parser.add_argument("note", type=str, location="json", required=True)
+    @api.doc('add note to JP')    
+    @api.expect(note_add_parser)
+    @Candidate_only
+    def post(self, jp_id):
+        identity = get_jwt_identity() 
+        cand_id = identity['id']
+        
+        args = self.note_add_parser.parse_args()
+        return add_note(cand_id,jp_id, args)
+    
+    delete_note_parser = api.parser()
+    delete_note_parser.add_argument("Authorization", location="headers", required=True)
+    @api.doc('delete note job')    
+    @api.expect(delete_note_parser)
+    @Candidate_only
+    def delete(self, jp_id):
+        identity = get_jwt_identity() 
+        cand_id = identity['id']
+    
+        return delete_note(cand_id,jp_id)
+
+unapply_parser = api.parser()
+unapply_parser.add_argument("Authorization", location="headers", required=True)
+@api.route('/<int:jp_id>/unapply')
+class UnsubmitResume(Resource):
+    @api.doc('unapply CV.')    
+    @api.expect(unapply_parser)
+    @Candidate_only
+    def delete(self, jp_id):
+        identity = get_jwt_identity() 
+        cand_id = identity['id']
+
+        return unapply_cv_to_jd(cand_id,jp_id)
 
 
 #################################
@@ -323,7 +365,7 @@ class GetListJobPostSimilar(Resource):
         data = get_similar_job_post_with_id(args['job_post_id'])
         return {
             'code': 200,
-            'message': "Thành công",
+            'message': "Success|Thành công",
             'data': data
         }
 
@@ -332,7 +374,7 @@ class GetListJobPostSimilar(Resource):
 get_suggest_job = api.parser()
 get_suggest_job.add_argument("Authorization", location="headers", required=True)
 get_suggest_job.add_argument("domain_id", type=int, location="args", required=True)
-get_suggest_job.add_argument("province_id", type=int, location="args", required=True)
+get_suggest_job.add_argument("province_id", type=str, location="args", required=True)
 get_suggest_job.add_argument("page", type=int, location="args", required=False, default=1)
 get_suggest_job.add_argument("page_size", type=int, location="args", required=False, default=10)
 @api.route('/suggest')

@@ -25,6 +25,14 @@ class JobResumeSubmissionModel(db.Model):
 
     is_calculating = db.Column(db.Boolean, default=False)
 
+    def to_json(self):
+        return {
+            "id": int(self.id),
+            "resume_id": int(self.resume_id),
+            "job_post_id": int(self.job_post_id),
+            "submit_date": str(self.submit_date)
+        }
+
     @hybrid_property
     def score_dict(self):
         exps = self.score_explanation_array.split('|')

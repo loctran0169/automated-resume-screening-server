@@ -36,7 +36,7 @@ class JobPostDto:
         'max_salary': NullableFloat(required=False, description='maximum salary'),
         'amount': fields.Integer(required=True, description='amount of candidates is recruiting'),
         'is_active': fields.Boolean(required=True, description='is allow show'),
-        'province_id': fields.Integer(required=True, description='locations of candidates is recruiting'),
+        'province_id': fields.String(required=True, description='locations of candidates is recruiting'),
         'deadline': fields.DateTime(required=True, description='last day for candidate to apply'),
     })
 
@@ -69,11 +69,17 @@ class JobPostDto:
         'company_background': fields.String(attribute=lambda x: x.recruiter.company.background if x.recruiter.company is not None else None),
         'provinces': fields.List(fields.String, attribute=lambda x: format_provinces(x.province_id)),
         'education': fields.String(attribute=lambda x: format_education(x)),
-        'saved_date': fields.String
+        'domain_skills': fields.String,
+        'soft_skills': fields.String,
+        'general_skills': fields.String,
+        # 'saved_date': fields.String
     })
     job_post_response_for_cand_fields = api.model("job_post_response_for_cand_fields", {
         'post': fields.Nested(job_post_for_cand_fields),
-        'save_date': fields.DateTime()
+        'cand_soft_skills': fields.String,
+        'cand_technical_skills': fields.String,
+        'saved_date': fields.DateTime(),
+        'is_applied': fields.Boolean
     })
     job_post_for_cand = api.inherit('job_post_for_cand', base, {
         'data': fields.Nested(job_post_response_for_cand_fields)
@@ -100,7 +106,10 @@ class JobPostDto:
         'total_apply': fields.Integer(attribute=lambda x: len(x.job_resume_submissions)),
         'provinces': fields.List(fields.String, attribute=lambda x: x.province_id.split(",")),
         'education': fields.String(attribute=lambda x: format_education(x)),
-        'education_level': fields.Integer
+        'education_level': fields.Integer,
+        'domain_skills': fields.String,
+        'soft_skills': fields.String,
+        'general_skills': fields.String,
     })
 
     response_jp_for_edit = api.inherit('response_jp_for_edit', base, {
@@ -163,7 +172,7 @@ class JobPostDto:
     })
     list_suggest_job = api.inherit('list_suggest_job', {
         "items": fields.List(fields.Nested(single_job_post_in_search_fields_with_company)),
-        "province_id": fields.Integer,
+        "province_id": fields.String,
         "totalCount": fields.Integer,
         "salary": fields.Nested(max_min_salary)
     })
@@ -205,7 +214,7 @@ class JobPostDto:
         'gender': fields.Boolean,
         'date_of_birth': fields.DateTime(),
         'status': fields.Integer,
-        'province_id': fields.Integer,
+        'province_id': fields.String,
         'access_token': fields.String,
         'registered_on': fields.DateTime(),
         'confirmed': fields.Boolean,

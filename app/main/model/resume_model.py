@@ -36,10 +36,13 @@ class ResumeModel(db.Model):
     created_on = db.Column(db.DateTime, default=datetime.now)
     last_edit = db.Column(db.DateTime, default=datetime.now, onupdate=datetime.now)
 
+    technical_skill_graph = db.Column(db.Text, nullable=True)
+    soft_skill_graph = db.Column(db.Text, nullable=True)
+
     job_domain_id = db.Column(db.Integer, db.ForeignKey(JobDomainModel.id), nullable=True)
 
-    job_resume_submissions = db.relationship('JobResumeSubmissionModel', backref="resume_submit", lazy=True)
-
+    job_resume_submissions = db.relationship('JobResumeSubmissionModel',cascade='all,delete' , backref="resume_submit", lazy=True)
+    
     def __repr__(self):
         return "<Resume '{}'>".format(self.id)
 

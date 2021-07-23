@@ -3,7 +3,13 @@ from enum import auto
 from flask_restx.fields import Date, DateTime, String
 from sqlalchemy.orm import backref
 from .. import db, flask_bcrypt
+from app.main.util.response import json_serial
+from flask import json
 
+candidate_documents = db.Table('candidate_documents', db.Model.metadata,
+    db.Column('cand_id', db.Integer, db.ForeignKey('candidates.id'), primary_key=True),
+    db.Column('doc_id', db.Integer, db.ForeignKey('documents.id'), primary_key=True)
+)
 
 class CandidateModel(db.Model):
     """ Candidate Model for storing account related details """
@@ -17,7 +23,7 @@ class CandidateModel(db.Model):
     gender = db.Column(db.Boolean, nullable=False, default=False)
     date_of_birth = db.Column(db.DateTime, nullable=True)
     status = db.Column(db.Integer, nullable=True,default=1)
-    province_id = db.Column(db.Integer, nullable=True)
+    province_id = db.Column(db.String(100), nullable=True)
     
     access_token = db.Column(db.String(512), nullable=True)
     registered_on = db.Column(db.DateTime, nullable=False)
@@ -26,6 +32,11 @@ class CandidateModel(db.Model):
 
     resumes = db.relationship('ResumeModel', backref=backref("candidate", lazy="joined"), lazy=True)
     saved_job_posts = db.relationship('CandidateJobSavesModel', uselist=True, backref="candidate")
+    subcribe = db.relationship('SubcribeModel', backref="candidate", uselist=False)
+    
+    note_jobs = db.relationship('JobNoteModel', uselist=True, backref="candidate")
+
+    document = db.relationship('DocumentModel', secondary=candidate_documents, back_populates="candidate")
 
     @property
     def password(self):
@@ -41,3 +52,16 @@ class CandidateModel(db.Model):
 
     def __repr__(self):
         return "<Candidate '{}'>".format(self.email)
+    
+    def to_json(self):
+        return {
+            'id': int(self.id),
+            'email': self.email,
+            'phone': self.phone,
+            'fullName': self.full_name,
+            'dateOfBirth': str(self.date_of_birth),
+            'gender': self.gender,
+            'status': self.status,
+            'provinceId': self.province_id,
+            'registeredOn': str(self.registered_on)
+        }
